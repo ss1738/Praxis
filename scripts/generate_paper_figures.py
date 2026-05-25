@@ -1,10 +1,13 @@
 #!/usr/bin/env python3
-"""Regenerate paper figures with the LLM-judge added.
+"""Regenerate the result figures (PNG + PDF) used in the README.
 
-Outputs:
-    docs/dissertation/paper/figures/fig_saturation_contrast.pdf   (3-panel rubric comparison)
-    docs/dissertation/paper/figures/fig_trustscore_radar.pdf       (per-check radar, unchanged)
-    docs/dissertation/paper/figures/fig_constitutional_trajectory.pdf  (unchanged)
+Outputs (written to docs/figures/):
+    fig_saturation_contrast.{png,pdf}        (3-panel rubric comparison)
+    fig_trustscore_radar.{png,pdf}           (per-check radar)
+    fig_constitutional_trajectory.{png,pdf}
+    fig_wer_comparison.{png,pdf}             (AUSCULT vs whisper-large-v3)
+    fig_der_comparison.{png,pdf}             (TIMBRE vs hybrid vs pyannote)
+    ... and the remaining figures embedded in the README.
 
 Run:
     python3 scripts/generate_paper_figures.py
