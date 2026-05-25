@@ -32,7 +32,7 @@ PRAXIS converts GP consultation audio into structured SOAP notes with SNOMED CT 
 
 ## Novel Contributions
 
-1. **PRAXIS-AUSCULT.** Custom Conformer-CTC ASR for British GP audio. 117M live inference parameters (119.6M in checkpoint state-dict; ~2.5M training-only output-head params are stripped at load), 18 Conformer blocks, d=512, 8 heads, vocab 3001. Trained from scratch on PriMock57 chunked data (4,824 segments). 50.12% WER on PriMock57 test (honest negative result against Whisper-large-v3 at 27.69%). RTF 0.036 to 0.044. The first ASR trained specifically on UK GP consultations.
+1. **PRAXIS-AUSCULT.** Custom Conformer-CTC ASR for British GP audio. 117M live inference parameters (119.6M in checkpoint state-dict; ~2.5M training-only output-head params are stripped at load), 18 Conformer blocks, d=512, 8 heads, vocab 3001. Trained from scratch on PriMock57 chunked data (4,824 segments). 50.12% WER on PriMock57 test (honest negative result against Whisper-large-v3 at 27.69%). RTF 0.036 to 0.044. To our knowledge, the first ASR trained specifically on UK GP consultations.
 
 2. **PRAXIS-TIMBRE.** Custom ECAPA-TDNN speaker diariser. 5.80M live inference parameters (the 365K-param classifier head used during AAM-Softmax training is discarded at inference), 256-dimensional embeddings, spectral clustering. Trained on LibriSpeech (1,417 speakers, `train-clean-100` plus `train-other-500`); applied zero-shot to PriMock57 doctor and patient audio. Standalone DER is 44.3% (n=7), but in a **hybrid pipeline** (pyannote VAD + TIMBRE embeddings + KMeans) it reaches **DER 10.05%, statistically tied with pyannote 3.1** (10.45%; 4-3 split, Wilcoxon p=1.0). RTF 0.0095 on Mac CPU.
 
