@@ -62,8 +62,8 @@ async def pipeline_status():
     status: dict = {}
 
     # Conformer
-    best = _REPO_ROOT / "data/models/conformer_v2/best_model_v2_80M.pt"
-    final = _REPO_ROOT / "data/models/conformer_v2/final_model_v2_80M.pt"
+    best = _REPO_ROOT / "data/models/conformer_v2/best_model_v2_120M.pt"
+    final = _REPO_ROOT / "data/models/conformer_v2/final_model_v2_120M.pt"
     active = best if best.exists() else final
     status["praxis_conformer"] = {
         "loaded": active.exists(),

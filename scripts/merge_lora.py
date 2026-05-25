@@ -2,7 +2,7 @@
 Merge LoRA deltas into base Conformer weights so WER scripts can load the result
 as a plain ConformerASR checkpoint.
 
-Reads:  data/models/conformer_v2/best_model_v2_80M.pt   (pre-FT base)
+Reads:  data/models/conformer_v2/best_model_v2_120M.pt   (pre-FT base)
         data/models/conformer_v2/lora_only.pt           (LoRA A/B per block)
 Writes: data/models/conformer_v2/best_lora_merged.pt    (drop-in ConformerASR checkpoint)
 """
@@ -12,7 +12,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--base", default=os.path.join(ROOT, "data/models/conformer_v2/best_model_v2_80M.pt"))
+    ap.add_argument("--base", default=os.path.join(ROOT, "data/models/conformer_v2/best_model_v2_120M.pt"))
     ap.add_argument("--lora", default=os.path.join(ROOT, "data/models/conformer_v2/lora_only.pt"))
     ap.add_argument("--out",  default=os.path.join(ROOT, "data/models/conformer_v2/best_lora_merged.pt"))
     args = ap.parse_args()

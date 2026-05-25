@@ -56,7 +56,7 @@ A **117M-parameter (live inference)** Conformer-CTC speech recogniser trained fr
 
 **AUSCULT** is named after Latin *auscultare*, *"to listen carefully"*, the root of *auscultation*, the foundational act of clinical listening with a stethoscope. The model learns to listen to GP consultations the way a clinician learns to listen to a chest.
 
-> ⚠️ **Filename note.** The on-disk filename includes `_80M` (an early naming convention); the actual checkpoint state-dict is 119.6M params, of which **117M are loaded for inference** (≈2.5M training-only output-head params are stripped at load).
+> ⚠️ **Filename note.** The `_120M` suffix reflects the checkpoint state-dict size (119.6M params); **117M of those are loaded for inference** (≈2.5M training-only output-head params are stripped at load).
 
 ## Model summary
 
@@ -163,12 +163,12 @@ The PRAXIS deterministic verification stack (TrustScore, Constitutional self-cor
 
 | File | Purpose |
 |---|---|
-| `best_model_v2_80M.pt` | Generic checkpoint, val_loss 0.679 on the multi-corpus validation set. |
-| `final_model_v2_80M.pt` | Final-epoch generic checkpoint. |
+| `best_model_v2_120M.pt` | Generic checkpoint, val_loss 0.679 on the multi-corpus validation set. |
+| `final_model_v2_120M.pt` | Final-epoch generic checkpoint. |
 | `praxis_tokenizer_v2.model` | SentencePiece tokeniser, vocab 3,001. Required for inference. |
 | `vast_train.py` | The exact training script used on vast.ai. Provided for reproducibility. |
 
-> **Which checkpoint to use.** The PRAXIS reference engine prefers a PriMock57-fine-tuned checkpoint (`best_primock57.pt`) when it is present locally; otherwise it falls back to `best_model_v2_80M.pt`. The PriMock-fine-tuned variant is the one used to obtain the dissertation WER number (50.12% on PriMock57 test) and is recommended for British GP audio. The `_80M` suffix in the filename is historical (an early target size); the live inference graph is **117M params** (checkpoint state-dict 119.6M; ~2.5M training-only output-head params are stripped at load).
+> **Which checkpoint to use.** The PRAXIS reference engine prefers a PriMock57-fine-tuned checkpoint (`best_primock57.pt`) when it is present locally; otherwise it falls back to `best_model_v2_120M.pt`. The PriMock-fine-tuned variant is the one used to obtain the dissertation WER number (50.12% on PriMock57 test) and is recommended for British GP audio. The `_120M` suffix reflects the checkpoint state-dict size (119.6M params); the live inference graph is **117M params** (~2.5M training-only output-head params are stripped at load).
 
 ## How to use
 
@@ -184,7 +184,7 @@ This works standalone:
 import torch
 from huggingface_hub import hf_hub_download
 
-ckpt_path = hf_hub_download(repo_id="Satyawan1/praxis-auscult", filename="best_model_v2_80M.pt")
+ckpt_path = hf_hub_download(repo_id="Satyawan1/praxis-auscult", filename="best_model_v2_120M.pt")
 ckpt = torch.load(ckpt_path, map_location="cpu", weights_only=False)
 
 print(ckpt["config"])

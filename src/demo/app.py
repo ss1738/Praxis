@@ -18,7 +18,6 @@ st.set_page_config(
     layout="wide",
 )
 
-BENCHMARK_PATH = PROJECT_ROOT / "data" / "benchmark_final_v2.json"
 TRAINING_LOG_PATH = PROJECT_ROOT / "data" / "training_v3_full.log"
 
 # sidebar
@@ -226,22 +225,21 @@ if page == "Home":
 
         PRAXIS is an end-to-end pipeline that:
 
-        1. **Transcribes** doctor-patient audio using fine-tuned speech-to-text models
-           (Whisper, MedASR) evaluated on the PriMock57 British GP dataset
-        2. **Identifies speakers** via Pyannote neural diarisation (with rule-based fallback)
-        3. **Extracts medical entities** using MedCAT + medspaCy (SNOMED CT linking, negation detection)
-        4. **Generates SOAP notes** using QLoRA fine-tuned medical LLMs (Med42-8B,
-           Meditron3-8B) trained on a combined dataset of PriMock57, MTSamples,
-           ChatDoctor, and synthetic GP consultations
+        1. **Transcribes** doctor-patient audio with PRAXIS-AUSCULT, a custom 117M
+           Conformer-CTC ASR trained from scratch on PriMock57 British GP audio
+        2. **Identifies speakers** with PRAXIS-TIMBRE (custom 5.80M ECAPA-TDNN embeddings),
+           with pyannote / rule-based fallbacks
+        3. **Extracts medical entities** using scispaCy + medspaCy (SNOMED CT linking, negation detection)
+        4. **Generates SOAP notes** with PRAXIS-SOAP-v1 (QLoRA fine-tune of Med42-8B),
+           then validates them with TrustScore + Constitutional Clinical AI
 
         ### Key Contributions
 
-        - First published evaluation of Google MedASR on British English GP audio
-          (93.2% WER - effectively unusable due to accent mismatch)
-        - Identification and mitigation of catastrophic hallucination in LoRA-tuned
-          Whisper (514% WER reduced to 57.4% via encoder freezing)
-        - QLoRA fine-tuning of Med42-8B and Meditron3-8B for UK GP SOAP note
-          generation with SNOMED CT coding
+        - **PRAXIS-AUSCULT**: a custom 117M Conformer-CTC ASR trained from scratch on UK GP audio (50.12% WER)
+        - **TrustScore**: a deterministic 7-check clinical-note rubric that recovers model
+          stratification where LLM-judge auto-rubrics saturate
+        - **Constitutional Clinical AI**: a self-correction loop (mean +7.5 TrustScore across 8 cases)
+        - **QLoRA fine-tuning** of Med42-8B for UK GP SOAP note generation with SNOMED CT coding
         - Fully offline-capable system using quantised GGUF models via Ollama
         """
     )
@@ -740,51 +738,21 @@ elif page == "STT Benchmarks":
         "(British English mock GP consultations). WER = Word Error Rate (lower is better)."
     )
 
-    if BENCHMARK_PATH.exists():
-        with open(BENCHMARK_PATH) as f:
-            data = json.load(f)
-
-        rows = []
-        for model_name, samples in data.items():
-            wers = [s["wer"] for s in samples]
-            cers = [s["cer"] for s in samples]
-            times = [s["time"] for s in samples]
-            rows.append({
-                "Model": model_name,
-                "Avg WER (%)": round(sum(wers) / len(wers) * 100, 1),
-                "Avg CER (%)": round(sum(cers) / len(cers) * 100, 1),
-                "Avg Inference Time (s)": round(sum(times) / len(times), 2),
-                "Test Samples": len(samples),
-            })
-
-        df = pd.DataFrame(rows)
-        st.dataframe(df, use_container_width=True, hide_index=True)
-
-        st.markdown("---")
-        st.subheader("Word Error Rate Comparison")
-        chart_df = df[["Model", "Avg WER (%)"]].set_index("Model")
-        st.bar_chart(chart_df)
-
-        st.markdown("---")
-        st.subheader("Key Findings")
-        st.markdown(
-            """
-            - **Google MedASR** achieves 93.2% WER on British GP audio - trained on
-              US English radiology dictation, the accent mismatch renders it unusable
-            - **Whisper Small (base)** performs best at 50.1% WER without any fine-tuning
-            - **LoRA fine-tuning** on small data (90 samples) caused catastrophic
-              hallucination (514% WER) due to seq2seq repetition loops
-            - **Encoder freezing + generation constraints** mitigated hallucination
-              (57.4% WER) but did not improve over the base model
-            - **MedASR fine-tuning** (CTC architecture) showed 11.6% relative
-              improvement - CTC models are safer for small-data fine-tuning
-            """
-        )
-    else:
-        st.warning(
-            "Benchmark results file not found. Run `python scripts/final_benchmark.py` "
-            "to generate results."
-        )
+    st.markdown(
+        """
+        | Result | Value | Notes |
+        |--------|-------|-------|
+        | PRAXIS-AUSCULT WER (PriMock57) | 50.12% | custom 117M Conformer-CTC, on-device |
+        | Whisper-large-v3 WER (same split) | 27.69% | 1.55B cloud frontier (honest negative) |
+        | Diarisation DER (hybrid, TIMBRE embeddings) | 10.05% | tied with pyannote 3.1 (10.45%) |
+        | TrustScore span across 4 SOAP models | 21.2 pts (49.4-70.6) | auto-rubric saturates within 0.211 |
+        | Constitutional Clinical AI | +7.5 mean TrustScore (8/8 cases) | self-correction, no retraining |
+        """
+    )
+    st.caption(
+        "Numbers are regenerable from data/evaluation_results/ via "
+        "`make eval-tables` and `python3 scripts/generate_paper_figures.py`."
+    )
 
 
 # =====================================================================
@@ -805,17 +773,17 @@ elif page == "System Architecture":
         (
             "Speech-to-Text",
             "done",
-            "Whisper Small + Google MedASR, LoRA fine-tuned on PriMock57 (British GP)",
+            "PRAXIS-AUSCULT: custom 117M Conformer-CTC trained from scratch on PriMock57 (British GP)",
         ),
         (
             "Speaker Diarisation",
             "done",
-            "Rule-based doctor/patient turn detection from lexical cues",
+            "PRAXIS-TIMBRE (5.80M ECAPA-TDNN embeddings); pyannote / rule-based fallbacks",
         ),
         (
             "Entity Extraction",
             "done",
-            "Regex-based medical NER: symptoms, medications, conditions, negations",
+            "scispaCy + medspaCy NER: symptoms, medications, conditions, negation, SNOMED CT",
         ),
         (
             "SOAP Generation",
@@ -880,11 +848,11 @@ elif page == "System Architecture":
         """
         | Component | Technology |
         |-----------|------------|
-        | Speech-to-Text | OpenAI Whisper, Google MedASR, HuggingFace Transformers |
-        | Fine-tuning (STT) | LoRA via PEFT, PyTorch |
+        | Speech-to-Text | PRAXIS-AUSCULT (custom Conformer-CTC) + PRAXIS-TIMBRE (ECAPA-TDNN), PyTorch |
+        | ASR training | Conformer-CTC trained from scratch (SentencePiece BPE), PyTorch |
         | Fine-tuning (LLM) | QLoRA 4-bit via Unsloth, TRL SFTTrainer |
         | Inference | Ollama (GGUF quantised models, fully offline) |
-        | Entity Extraction | Regex-based medical NER |
+        | Entity Extraction | scispaCy + medspaCy (SNOMED CT linking, negation) |
         | API | FastAPI |
         | Demo | Streamlit |
         | Experiment Tracking | Weights & Biases, MLflow |

@@ -3,7 +3,7 @@
 """
 LoRA fine-tune on PriMock57 (+ optional LibriSpeech replay buffer).
 
-Starts from /workspace/best_model_v2_80M.pt (the ~1,200h pre-trained base, NOT
+Starts from /workspace/best_model_v2_120M.pt (the ~1,200h pre-trained base, NOT
 the already-fine-tuned best_primock57.pt) so the LoRA delta is cleanly
 attributable.
 
@@ -43,7 +43,7 @@ MAX_AUDIO_FRAMES = 1500
 CTC_BLANK = 0
 TOKEN_OFFSET = 1
 WORKSPACE = "/workspace"
-CKPT_IN   = os.path.join(WORKSPACE, "best_model_v2_80M.pt")
+CKPT_IN   = os.path.join(WORKSPACE, "best_model_v2_120M.pt")
 TOK_PATH  = os.path.join(WORKSPACE, "praxis_tokenizer_v2.model")
 TRAIN_JS  = os.path.join(WORKSPACE, "train.json")
 VAL_JS    = os.path.join(WORKSPACE, "val.json")

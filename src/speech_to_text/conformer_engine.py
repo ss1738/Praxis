@@ -172,8 +172,8 @@ class ConformerEngine:
         import sentencepiece as spm
 
         primock_path = self._dir / "best_primock57.pt"
-        best_path = self._dir / "best_model_v2_80M.pt"
-        final_path = self._dir / "final_model_v2_80M.pt"
+        best_path = self._dir / "best_model_v2_120M.pt"
+        final_path = self._dir / "final_model_v2_120M.pt"
         ckpt_path = primock_path if primock_path.exists() else (best_path if best_path.exists() else final_path)
         tok_path = self._dir / "praxis_tokenizer_v2.model"
         if not ckpt_path.exists() or not tok_path.exists():

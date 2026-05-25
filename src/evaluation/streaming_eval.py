@@ -20,10 +20,14 @@ Per-case metrics:
 
 Aggregate: mean + bootstrap 95% CI (1000 iters, seed 42) for each metric.
 
-This produces the dissertation table comparing the three strategies and the
-headline number for slide 9 onward: streaming veto reduces shipped-sentence
-hallucination rate to ~0% (by construction) at the cost of ~2-3× generation
-latency.
+This produces the table comparing the three strategies. The authoritative
+result is the real run (run_real), stored in
+data/evaluation_results/streaming_eval_real_*.json. In that run the
+per-sentence veto drives shipped-sentence hallucination rate to 0%, but it
+does so by suppressing unsupported sentences: on these eight transcripts the
+streaming strategy frequently collapses to a [CLINICAL_REVIEW_REQUIRED] stub
+rather than a complete note. The 0% hallucination figure should therefore be
+read alongside the resulting loss of content, not as a free improvement.
 
 Usage (with Ollama running):
     python3 -m src.evaluation.streaming_eval
@@ -31,8 +35,9 @@ Usage (with Ollama running):
 Usage (dry run, no Ollama needed):
     python3 -m src.evaluation.streaming_eval --dry-run
 
-The dry-run emits canned numbers that match the framework's expected output
-shape so the dissertation table generator and tests work without an LLM.
+The dry-run emits illustrative placeholder numbers (not empirical) that match
+the framework's expected output shape so the table generator and tests run
+without an LLM.
 """
 from __future__ import annotations
 
@@ -228,9 +233,13 @@ def run_real(seed: int = 42) -> StreamingBenchmark:
 
 # ── Dry run (canned numbers, no Ollama / NLI dependency) ─────────────
 
-# Numbers chosen to match the headline story: streaming reduces
-# hallucination rate to near zero by construction at the cost of 2-3x
-# latency, while preserving (and slightly improving) TrustScore.
+# Illustrative placeholder values (NOT empirical) used only to exercise the
+# aggregation, table, and serialisation code paths without an LLM. The
+# authoritative results come from run_real() and are stored in
+# data/evaluation_results/streaming_eval_real_*.json. In the real run the
+# per-sentence veto often suppresses entire sections, so streaming's 0%
+# hallucination rate comes with notes collapsing to a [CLINICAL_REVIEW_REQUIRED]
+# stub rather than the fuller notes sketched below.
 _DRY_RUN_NUMBERS: dict[str, dict[str, dict]] = {
     "Lower Back Pain": {
         "baseline":       dict(trust=65, hr=0.21, t=11.3),

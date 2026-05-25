@@ -23,7 +23,7 @@ import sentencepiece as spm
 from jiwer import wer
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-CKPT = os.path.join(ROOT, "data/models/conformer_v2/final_model_v2_80M.pt")
+CKPT = os.path.join(ROOT, "data/models/conformer_v2/final_model_v2_120M.pt")
 TOK  = os.path.join(ROOT, "data/models/conformer_v2/praxis_tokenizer_v2.model")
 TEST = os.path.join(ROOT, "data/processed/primock57_chunked/test.json")
 

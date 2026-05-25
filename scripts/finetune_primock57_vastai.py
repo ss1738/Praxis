@@ -6,7 +6,7 @@ Fine-tune the 117M ConformerASR v2 checkpoint on PriMock57 train split.
 Designed to run on vast.ai (RTX 4090 24GB or A100 40GB).
 
 Expected layout on the vast.ai box (all at /workspace):
-  /workspace/best_model_v2_80M.pt          (starting weights, 1.42GB)
+  /workspace/best_model_v2_120M.pt          (starting weights, 1.42GB)
   /workspace/praxis_tokenizer_v2.model
   /workspace/train.json                     (primock57 chunked train manifest)
   /workspace/val.json
@@ -37,7 +37,7 @@ MAX_AUDIO_FRAMES = 1500
 CTC_BLANK = 0
 TOKEN_OFFSET = 1
 WORKSPACE = "/workspace"
-CKPT_IN   = os.path.join(WORKSPACE, "best_model_v2_80M.pt")
+CKPT_IN   = os.path.join(WORKSPACE, "best_model_v2_120M.pt")
 TOK_PATH  = os.path.join(WORKSPACE, "praxis_tokenizer_v2.model")
 TRAIN_JS  = os.path.join(WORKSPACE, "train.json")
 VAL_JS    = os.path.join(WORKSPACE, "val.json")

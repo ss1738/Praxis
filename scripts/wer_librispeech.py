@@ -14,7 +14,7 @@ from wer_primock57 import (ConformerASR, mel_fb, normalize, ctc_greedy,
                            N_MELS, N_FFT, HOP, MAX_FRAMES, TARGET_SR)
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-CKPT = os.path.join(ROOT, "data/models/conformer_v2/final_model_v2_80M.pt")
+CKPT = os.path.join(ROOT, "data/models/conformer_v2/final_model_v2_120M.pt")
 TOK  = os.path.join(ROOT, "data/models/conformer_v2/praxis_tokenizer_v2.model")
 LS   = os.path.join(ROOT, "data/librispeech/LibriSpeech/test-clean")
 
