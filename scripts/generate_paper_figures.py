@@ -66,7 +66,7 @@ def fig_saturation_contrast() -> None:
     bars = ax.bar(range(len(MODELS)), vals, color=COLORS, edgecolor="black", linewidth=0.5)
     ax.set_ylim(0, 1.05)
     ax.set_ylabel("Score (0-1)")
-    ax.set_title("(a) Rule-based auto-rubric\nrange = 0.211")
+    ax.set_title(f"(a) Rule-based auto-rubric\nrange = {max(vals) - min(vals):.3f}")
     ax.set_xticks(range(len(MODELS)))
     ax.set_xticklabels(LABELS, fontsize=7.5, rotation=0)
     ax.axhline(1.0, color="grey", linestyle=":", linewidth=0.6, alpha=0.5)
@@ -86,7 +86,7 @@ def fig_saturation_contrast() -> None:
     bars = ax.bar(range(len(MODELS)), vals, color=COLORS, edgecolor="black", linewidth=0.5)
     ax.set_ylim(0, 1.05)
     ax.set_ylabel("Score (0-1)")
-    ax.set_title("(b) LLM-judge (Mistral-7B)\nrange = 0.065")
+    ax.set_title(f"(b) LLM-judge (Mistral-7B)\nrange = {max(vals) - min(vals):.3f}")
     ax.set_xticks(range(len(MODELS)))
     ax.set_xticklabels(LABELS, fontsize=7.5, rotation=0)
     ax.axhline(1.0, color="grey", linestyle=":", linewidth=0.6, alpha=0.5)
@@ -105,7 +105,7 @@ def fig_saturation_contrast() -> None:
     bars = ax.bar(range(len(MODELS)), vals, color=COLORS, edgecolor="black", linewidth=0.5)
     ax.set_ylim(0, 100)
     ax.set_ylabel("TrustScore (0-100)")
-    ax.set_title("(c) TrustScore (deterministic)\nrange = 21.9")
+    ax.set_title(f"(c) TrustScore (deterministic)\nrange = {max(vals) - min(vals):.1f}")
     ax.set_xticks(range(len(MODELS)))
     ax.set_xticklabels(LABELS, fontsize=7.5, rotation=0)
     # Verdict thresholds
@@ -177,46 +177,44 @@ def fig_trustscore_radar() -> None:
 
 
 def fig_constitutional_trajectory() -> None:
-    """Per-case TrustScore trajectory across iterations. Uses the actual saved
-    constitutional eval JSON (not the dissertation Table 5.4 which has divergent
-    per-case values)."""
-    eval_file = ROOT / "data" / "evaluation_results" / "constitutional_eval_dryrun_20260511_171105.json"
+    """Single-pass baseline vs the best-kept Constitutional result, per case,
+    from the REAL run (constitutional_eval_real_latest.json). The loop keeps the
+    best-scoring iteration, so the delivered score is best_trust_score, not the
+    raw final iteration (raw iterations frequently regress). This is an honest
+    near-flat result, consistent with the hallucination analysis."""
+    eval_file = ROOT / "data" / "evaluation_results" / "constitutional_eval_real_latest.json"
     eval_data = json.load(open(eval_file))
-    cases = [(c["case_name"], c["score_trajectory"]) for c in eval_data["cases"]]
+    cases = eval_data["cases"]
+    base = [c["baseline_trust_score"] for c in cases]
+    best = [c["best_trust_score"] for c in cases]
+    n = len(cases)
+    agg = eval_data["aggregate"]
+    mean_base, mean_best = agg["mean_baseline_score"], agg["mean_final_score"]
 
     fig, ax = plt.subplots(figsize=(8, 5), constrained_layout=True)
-    max_iter = max(len(t) for _, t in cases)
-    mean_curve = []
-    for it in range(max_iter):
-        vals = [t[it] if it < len(t) else t[-1] for _, t in cases]
-        mean_curve.append(sum(vals) / len(vals))
+    for b, k in zip(base, best):
+        ax.plot([0, 1], [b, k], color="grey", alpha=0.45, linewidth=1.0, marker="o", markersize=3)
 
-    for label, traj in cases:
-        x = list(range(len(traj)))
-        ax.plot(x, traj, color="grey", alpha=0.45, linewidth=1.0, marker="o", markersize=3)
-
-    ax.plot(range(max_iter), mean_curve, color="#1f77b4", linewidth=2.6,
-             marker="o", markersize=7, label=f"mean ({len(cases)} cases)")
+    ax.plot([0, 1], [mean_base, mean_best], color="#1f77b4", linewidth=2.6,
+             marker="o", markersize=7, label=f"mean ({n} cases)")
     ax.axhline(70, color="green", linestyle="--", linewidth=0.8, alpha=0.7,
                 label="approved threshold (≥70)")
 
-    ax.set_xlabel("Iteration")
     ax.set_ylabel("TrustScore (0-100)")
-    ax.set_title("Constitutional Clinical AI: per-case TrustScore trajectory")
-    ax.set_xticks(range(max_iter))
-    labels = ["baseline", "final"] if max_iter == 2 else ["baseline"] + [f"iter {i+1}" for i in range(max_iter - 1)]
-    ax.set_xticklabels(labels)
-    ax.set_ylim(50, 90)
+    ax.set_title("Constitutional Clinical AI: baseline vs best-kept (real run)")
+    ax.set_xticks([0, 1])
+    ax.set_xticklabels(["single-pass\nbaseline", "Constitutional\n(best-kept)"])
+    ax.set_xlim(-0.3, 1.3)
+    ax.set_ylim(30, 90)
     ax.grid(True, alpha=0.3, linewidth=0.5)
     ax.set_axisbelow(True)
-    ax.legend(loc="lower right", fontsize=9)
+    ax.legend(loc="upper right", fontsize=9)
 
-    # Annotate +7.5 mean lift
     ax.annotate(
-        f"Δ = +{mean_curve[-1] - mean_curve[0]:.1f} (mean)",
-        xy=(max_iter - 1, mean_curve[-1]),
-        xytext=(max_iter - 1.4, mean_curve[-1] + 4),
-        fontsize=10, color="#1f77b4",
+        f"Δ = {agg['mean_improvement']:+.1f} (mean)\n"
+        f"{agg['n_improved']}/{n} improved, {agg['n_unchanged']}/{n} unchanged",
+        xy=(1, mean_best), xytext=(0.42, mean_best + 11),
+        fontsize=9.5, color="#1f77b4", ha="center",
         arrowprops=dict(arrowstyle="->", color="#1f77b4", lw=0.8),
     )
 

@@ -40,7 +40,7 @@ PRAXIS converts GP consultation audio into structured SOAP notes with SNOMED CT 
 
 4. **TrustScore: multi-source deterministic clinical-note verification.** 7-check pipeline (6 rule-based plus 1 optional NLI entailment gate) scoring 0 to 100 across SNOMED CT, NICE CKS, BNF drug interactions, structural completeness, and per-sentence hallucination detection. Recovers model stratification where LLM-judge auto-rubrics saturate: the rubric clusters all four models within a 0.211 band (0.980 / 0.979 / 0.969 / 0.769), while TrustScore spans 21.2 points (70.6 / 69.4 / 65.6 / 49.4).
 
-5. **Constitutional Clinical AI.** Iterative self-correction loop: generate → TrustScore → surgical section repair → re-validate, up to N iterations. Surgical section splicing avoids regenerating correct sections, making repairs targeted. Demonstrated mean 7.5 point TrustScore improvement (69.4 → 76.9) vs single-pass baseline across 8 GP consultation types, 8/8 cases converged. `POST /api/v1/soap/constitutional`.
+5. **Constitutional Clinical AI.** Iterative self-correction loop: generate → TrustScore → surgical section repair → re-validate, up to N iterations, keeping the best-scoring iteration. Surgical section splicing avoids regenerating correct sections, making repairs targeted. On the real 8-case run the mean lift is marginal — **+0.6 TrustScore (64.4 → 65.0 best-kept), 1/8 cases improved and 7/8 unchanged**, with raw iterations frequently regressing before the best is kept. This is reported as an honest negative result at this TrustScore/Med42 operating point, consistent with the hallucination analysis below; the contribution is the mechanism, not a large empirical lift. `POST /api/v1/soap/constitutional`.
 
 6. **Medical Hallucination Index (MHI).** Consequence-weighted error metric replacing WER for clinical text. Drugs and red-flags weighted 10×, doses and negation 9×, labs 8×, diagnoses 7×, vs stop-words 1×. Separates omission (missed terms) from hallucination (fabricated terms).
 
@@ -70,7 +70,7 @@ Results are stored in `data/evaluation_results/` as timestamped JSON files with 
 
 ![TrustScore radar](docs/figures/fig_trustscore_radar.png)
 
-**Constitutional Clinical AI — mean +7.5 TrustScore improvement across 8 GP consultation types:**
+**Constitutional Clinical AI — real 8-case run: mean +0.6 TrustScore (best-kept), 1/8 improved, 7/8 unchanged (honest negative result):**
 
 ![Constitutional trajectory](docs/figures/fig_constitutional_trajectory.png)
 

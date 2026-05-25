@@ -238,7 +238,7 @@ if page == "Home":
         - **PRAXIS-AUSCULT**: a custom 117M Conformer-CTC ASR trained from scratch on UK GP audio (50.12% WER)
         - **TrustScore**: a deterministic 7-check clinical-note rubric that recovers model
           stratification where LLM-judge auto-rubrics saturate
-        - **Constitutional Clinical AI**: a self-correction loop (mean +7.5 TrustScore across 8 cases)
+        - **Constitutional Clinical AI**: a best-kept self-correction loop (real 8-case run: mean +0.6 TrustScore, 1/8 improved — an honest negative result)
         - **QLoRA fine-tuning** of Med42-8B for UK GP SOAP note generation with SNOMED CT coding
         - Fully offline-capable system using quantised GGUF models via Ollama
         """
@@ -746,7 +746,7 @@ elif page == "STT Benchmarks":
         | Whisper-large-v3 WER (same split) | 27.69% | 1.55B cloud frontier (honest negative) |
         | Diarisation DER (hybrid, TIMBRE embeddings) | 10.05% | tied with pyannote 3.1 (10.45%) |
         | TrustScore span across 4 SOAP models | 21.2 pts (49.4-70.6) | auto-rubric saturates within 0.211 |
-        | Constitutional Clinical AI | +7.5 mean TrustScore (8/8 cases) | self-correction, no retraining |
+        | Constitutional Clinical AI | +0.6 mean TrustScore (1/8 improved) | best-kept self-correction, no retraining (honest negative) |
         """
     )
     st.caption(

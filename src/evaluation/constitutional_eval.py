@@ -13,9 +13,12 @@ Records per-case and aggregate:
   - converged                    - whether ≥70 was reached
   - num_iterations               - repairs needed
 
-This produces Table N in the dissertation: Constitutional AI improves
-TrustScore by mean X points across 8 GP consultation types, with Y/8
-notes reaching 'approved' verdict vs Z/8 from baseline.
+On the real 8-case run (constitutional_eval_real_latest.json) the loop keeps
+the best-scoring iteration and the mean lift is marginal: +0.6 TrustScore
+(64.4 -> 65.0 best-kept), 1/8 cases improved and 7/8 unchanged, with 2/8
+reaching the 'approved' (>=70) verdict. Raw iterations frequently regress
+before the best is kept. Reported as an honest negative result at this
+TrustScore/Med42 operating point.
 
 Usage (with Ollama running):
     python3 -m src.evaluation.constitutional_eval

@@ -120,10 +120,13 @@ class PipelineResult:
 class ClinicalScribePipeline:
     """End-to-end pipeline from audio/transcript to SOAP note.
 
-    Currently supports:
-    - STT: via existing Whisper/MedASR engines (when audio provided)
-    - Diarisation: placeholder (labels doctor/patient turns from text cues)
-    - Entity extraction: rule-based medical entity detection
+    Stages:
+    - STT: via the engine factory (PRAXIS-AUSCULT, or a Whisper/MedASR baseline)
+      when audio is provided
+    - Diarisation: PRAXIS-TIMBRE -> pyannote 3.1 -> text-cue heuristic, via
+      diarise_with_fallback (audio path uses TIMBRE; transcript-only falls back
+      to the text-cue heuristic)
+    - Entity extraction: rule-based / scispaCy medical entity detection
     - SOAP generation: via fine-tuned LLMs through Ollama
     """
 

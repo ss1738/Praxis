@@ -129,15 +129,16 @@ _BENCHMARK_CACHE = _REPO_ROOT / "data/benchmarks/latest_report.json"
 
 @router.get("/benchmark")
 async def get_benchmark():
-    """Return last benchmark report. Run via scripts/run_benchmark.py to refresh."""
+    """Return last benchmark report. Produced by running scripts/benchmark.py and
+    saving its output to data/benchmarks/latest_report.json."""
     if _BENCHMARK_CACHE.exists():
         return json.loads(_BENCHMARK_CACHE.read_text())
     return {
         "status": "no_report",
-        "note": "Run scripts/benchmark_engines.py to produce data/benchmarks/latest_report.json",
+        "note": "Run scripts/benchmark.py and save its output to data/benchmarks/latest_report.json to populate this endpoint.",
         "placeholder": [
             {"engine": "praxis_conformer", "wer": None, "cer": None, "rtf": None},
-            {"engine": "whisper_small", "wer": None, "cer": None, "rtf": None},
+            {"engine": "whisper", "wer": None, "cer": None, "rtf": None},
             {"engine": "faster_whisper", "wer": None, "cer": None, "rtf": None},
             {"engine": "medasr", "wer": None, "cer": None, "rtf": None},
         ],
