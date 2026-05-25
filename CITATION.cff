@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use PRAXIS in your work, please cite it as below."
+title: "PRAXIS: End-to-End AI Clinical Documentation for UK General Practice"
+abstract: >-
+  PRAXIS converts GP consultation audio into structured SOAP notes with SNOMED CT
+  coding, safety-netting, and post-generation quality validation. It combines a
+  custom Conformer-CTC ASR (PRAXIS-AUSCULT), an ECAPA-TDNN diariser (PRAXIS-TIMBRE),
+  a QLoRA SOAP generator (PRAXIS-SOAP-v1), and a TrustScore verification stack.
+  Developed as a University of Leicester MSc dissertation project (module MA7097).
+type: software
+authors:
+  - given-names: Satyawan
+    family-names: Singh
+    affiliation: "University of Leicester"
+version: "0.1.0"
+date-released: "2026-05-25"
+url: "https://github.com/ss1738/Praxis"
+repository-code: "https://github.com/ss1738/Praxis"
+keywords:
+  - clinical-documentation
+  - speech-to-text
+  - medical-asr
+  - diarisation
+  - soap-notes
+  - snomed-ct
+  - nhs
+  - hallucination-detection
