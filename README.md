@@ -28,6 +28,8 @@ PRAXIS converts GP consultation audio into structured SOAP notes with SNOMED CT 
 └─────────────┘    └────────────┘    └────────────────┘    └─────────────┘
 ```
 
+![PRAXIS methodology overview](docs/figures/fig_methodology_overview.png)
+
 ## Novel Contributions
 
 1. **PRAXIS-AUSCULT.** Custom Conformer-CTC ASR for British GP audio. 117M live inference parameters (119.6M in checkpoint state-dict; ~2.5M training-only output-head params are stripped at load), 18 Conformer blocks, d=512, 8 heads, vocab 3001. Trained from scratch on PriMock57 chunked data (4,824 segments). 50.12% WER on PriMock57 test (honest negative result against Whisper-large-v3 at 27.69%). RTF 0.036 to 0.044. The first ASR trained specifically on UK GP consultations.
@@ -56,7 +58,21 @@ PRAXIS converts GP consultation audio into structured SOAP notes with SNOMED CT 
 
 *Run `make benchmark-all` to generate results, or `make eval-tables` to regenerate tables from existing results.*
 
-Results are stored in `data/evaluation_results/` as timestamped JSON files with LaTeX and Markdown table exports.
+Results are stored in `data/evaluation_results/` as timestamped JSON files with LaTeX and Markdown table exports. The charts below are regenerable with `python3 scripts/generate_paper_figures.py`.
+
+### Result highlights
+
+**The headline finding — LLM-judge auto-rubrics saturate, while TrustScore recovers model stratification:**
+
+![Auto-rubric saturation vs TrustScore](docs/figures/fig_saturation_contrast.png)
+
+**TrustScore multi-axis profile across the four SOAP models:**
+
+![TrustScore radar](docs/figures/fig_trustscore_radar.png)
+
+**Constitutional Clinical AI — mean +7.5 TrustScore improvement across 8 GP consultation types:**
+
+![Constitutional trajectory](docs/figures/fig_constitutional_trajectory.png)
 
 ### ASR (Word Error Rate)
 

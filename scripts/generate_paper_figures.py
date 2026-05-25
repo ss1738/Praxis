@@ -35,7 +35,7 @@ mpl.rcParams.update({
 })
 
 ROOT = Path(__file__).resolve().parent.parent
-OUT = ROOT / "docs" / "dissertation" / "paper" / "figures"
+OUT = ROOT / "docs" / "figures"
 OUT.mkdir(parents=True, exist_ok=True)
 
 MODELS = ["praxis-soap-v1", "mistral", "med42", "meditron:7b"]
