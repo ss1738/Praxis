@@ -8,7 +8,7 @@ version = "0.1.0"
 description = "PRAXIS - end-to-end AI clinical documentation (ASR, diarisation, SOAP generation, verification) for UK general practice"
 readme = "README.md"
 requires-python = ">=3.11,<3.13"
-license = {text = "MIT"}
+license = {file = "LICENSE"}
 authors = [
     {name = "Satyawan Singh"},
 ]

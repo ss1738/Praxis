@@ -1,0 +1,27 @@
+PRAXIS — All Rights Reserved
+
+Copyright (c) 2026 Satyawan Singh.
+
+Developed as a University of Leicester MSc dissertation project (module
+MA7097). All rights reserved.
+
+No permission is granted to use, copy, modify, merge, publish, distribute,
+sublicense, or sell any part of this software, in source or binary form,
+without the prior written permission of the copyright holder. This is a
+deliberately closed licence pending a formal open licence after dissertation
+submission.
+
+For research or non-commercial use, contact the author.
+
+The published model checkpoints (Satyawan1/praxis-auscult,
+Satyawan1/praxis-timbre) are distributed separately on Hugging Face under
+CC-BY-NC-4.0 (non-commercial) and are access-gated; they are not covered by
+this licence.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT. THIS SOFTWARE IS NOT A
+CLINICAL DEVICE AND MUST NOT BE USED FOR CLINICAL DECISION-MAKING WITHOUT
+QUALIFIED HUMAN REVIEW. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY CLAIM,
+DAMAGES, OR OTHER LIABILITY ARISING FROM, OUT OF, OR IN CONNECTION WITH THE
+SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.

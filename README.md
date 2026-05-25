@@ -283,6 +283,6 @@ ls data/pipeline_runs/          # timestamped directories with all outputs
 
 ## License
 
-Licensed under the MIT License. Developed as a University of Leicester MSc dissertation project (MA7097).
+All rights reserved. Developed as a University of Leicester MSc dissertation project (MA7097). See [LICENSE](LICENSE).
 
-The code in this repository is MIT-licensed. The published model checkpoints (`Satyawan1/praxis-auscult`, `Satyawan1/praxis-timbre`) are released under CC-BY-NC-4.0 (non-commercial) and are access-gated; request access via Hugging Face.
+The code in this repository is proprietary ("All rights reserved") pending a formal open licence after dissertation submission; contact the author for research or non-commercial use. The published model checkpoints (`Satyawan1/praxis-auscult`, `Satyawan1/praxis-timbre`) are released separately under CC-BY-NC-4.0 (non-commercial) and are access-gated; request access via Hugging Face.
