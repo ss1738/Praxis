@@ -161,7 +161,9 @@ def fig_trustscore_radar() -> None:
     ax.set_yticklabels(["0.25", "0.50", "0.75", "1.00"], fontsize=7.5)
     ax.tick_params(pad=8)
     ax.grid(True, linewidth=0.5, alpha=0.5)
-    ax.legend(loc="upper right", bbox_to_anchor=(1.32, 1.10), fontsize=8.5)
+    # Place the legend below the plot so it never overlaps the vertex labels
+    # (the SNOMED axis sits at the upper-right, where an in-corner legend collided).
+    ax.legend(loc="upper center", bbox_to_anchor=(0.5, -0.08), ncol=2, fontsize=8)
     ax.set_title("TrustScore per-check pass rate (fraction of 8 cases)",
                  fontsize=11, pad=18)
 
@@ -234,11 +236,18 @@ def fig_methodology_overview() -> None:
     encodes the central result of the paper in one chart: three auto-rubric
     variants compress the four-model range; TrustScore expands it."""
 
+    # Derive the shared-rubric ranges from the canonical dicts above so this
+    # figure can never drift from fig_saturation_contrast / fig_weight_sensitivity.
+    # (An earlier hardcoded version still carried the pre-correction TrustScore
+    # max of 0.731 = the inflated 73.1 flagged at the top of this file.)
+    _rule = list(RULE_BASED.values())
+    _llm = list(LLM_JUDGE.values())
+    _ts = [v / 100 for v in TRUSTSCORE.values()]
     rubrics = [
-        ("Rule-based\nauto-rubric", 0.769, 0.980, "#dc2626"),
-        ("LLM-judge\nMistral-7B-Instruct", 0.915, 0.980, "#d97706"),
+        ("Rule-based\nauto-rubric", min(_rule), max(_rule), "#dc2626"),
+        ("LLM-judge\nMistral-7B-Instruct", min(_llm), max(_llm), "#d97706"),
         ("LLM-judge\nLlama-3.1-8B-Instruct", 0.764, 0.890, "#d97706"),
-        ("TrustScore\n(7-check deterministic)", 0.512, 0.731, "#15803d"),
+        ("TrustScore\n(7-check deterministic)", min(_ts), max(_ts), "#15803d"),
     ]
 
     fig, ax = plt.subplots(figsize=(7.0, 3.6), constrained_layout=True)
