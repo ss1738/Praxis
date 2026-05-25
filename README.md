@@ -243,7 +243,7 @@ Praxis/
 
 ## API Endpoints
 
-The FastAPI backend exposes 27 endpoints. The most relevant for the dissertation pipeline:
+The FastAPI backend exposes 29 endpoints (28 under `/api/v1` plus `/health`). The most relevant for the dissertation pipeline:
 
 | Method | Path | Description |
 |--------|------|-------------|
