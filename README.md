@@ -9,7 +9,7 @@
 
 ## Abstract
 
-PRAXIS converts GP consultation audio into structured SOAP notes with SNOMED CT coding, safety-netting, and post-generation quality validation. Three custom models run locally on Apple Silicon. **PRAXIS-AUSCULT**, a 117M-parameter Conformer-CTC ASR, was trained from scratch on British GP audio; it scored 50.12% WER on PriMock57 test, an honest negative result against Whisper-large-v3 at 27.69%. **PRAXIS-TIMBRE** is a 5.80M-parameter ECAPA-TDNN diariser; it beat pyannote 3.1 fifteen-to-zero in head-to-head, with DER 7.1%. **PRAXIS-SOAP-v1** is a QLoRA fine-tune of Med42-8B on 520 NHS GP examples. Output quality is scored 0 to 100 by TrustScore: six rule-based checks (transcript fidelity, SNOMED accuracy, clinical safety, NICE guideline compliance, documentation completeness, drug interactions) plus an optional NLI entailment gate using DeBERTa-v3 for per-sentence hallucination. Five evaluation tools came out of this work: Constitutional Clinical AI, an iterative self-correction loop; the Medical Hallucination Index, a consequence-weighted error metric; the NLI entailment gate itself; an Asgari-style hallucination harness benchmarked against the 1.47% and 3.45% rates Asgari et al. published; and SNOMED CT contextual biasing, a decode-time hotword-boost yielding 31% relative medical-term WER reduction without retraining. All experiments use PriMock57 (57 British GP consultations) with bootstrap confidence intervals and Wilcoxon signed-rank tests for pairwise comparison.
+PRAXIS converts GP consultation audio into structured SOAP notes with SNOMED CT coding, safety-netting, and post-generation quality validation. Three custom models run locally on Apple Silicon. **PRAXIS-AUSCULT**, a 117M-parameter Conformer-CTC ASR, was trained from scratch on British GP audio; it scored 50.12% WER on PriMock57 test, an honest negative result against Whisper-large-v3 at 27.69%. **PRAXIS-TIMBRE** is a 5.80M-parameter ECAPA-TDNN diariser; its speaker embeddings, in a hybrid pipeline (neural VAD + KMeans), match pyannote 3.1 (DER 10.05% vs 10.45%, statistically tied), while standalone its DER is higher (44.3%). **PRAXIS-SOAP-v1** is a QLoRA fine-tune of Med42-8B on 520 NHS GP examples. Output quality is scored 0 to 100 by TrustScore: six rule-based checks (transcript fidelity, SNOMED accuracy, clinical safety, NICE guideline compliance, documentation completeness, drug interactions) plus an optional NLI entailment gate using DeBERTa-v3 for per-sentence hallucination. Five evaluation tools came out of this work: Constitutional Clinical AI, an iterative self-correction loop; the Medical Hallucination Index, a consequence-weighted error metric; the NLI entailment gate itself; an Asgari-style hallucination harness benchmarked against the 1.47% and 3.45% rates Asgari et al. published; and SNOMED CT contextual biasing, a decode-time hotword-boost yielding 31% relative medical-term WER reduction without retraining. All experiments use PriMock57 (57 British GP consultations) with bootstrap confidence intervals and Wilcoxon signed-rank tests for pairwise comparison.
 
 ## Architecture
 
@@ -34,7 +34,7 @@ PRAXIS converts GP consultation audio into structured SOAP notes with SNOMED CT 
 
 1. **PRAXIS-AUSCULT.** Custom Conformer-CTC ASR for British GP audio. 117M live inference parameters (119.6M in checkpoint state-dict; ~2.5M training-only output-head params are stripped at load), 18 Conformer blocks, d=512, 8 heads, vocab 3001. Trained from scratch on PriMock57 chunked data (4,824 segments). 50.12% WER on PriMock57 test (honest negative result against Whisper-large-v3 at 27.69%). RTF 0.036 to 0.044. The first ASR trained specifically on UK GP consultations.
 
-2. **PRAXIS-TIMBRE.** Custom ECAPA-TDNN speaker diariser. 5.80M live inference parameters (the 365K-param classifier head used during AAM-Softmax training is discarded at inference), 256-dimensional embeddings, spectral clustering. Trained on LibriSpeech (1,417 speakers, `train-clean-100` plus `train-other-500`); applied zero-shot to PriMock57 doctor and patient audio. **Beat pyannote 3.1 fifteen-to-zero in head-to-head**, achieving DER 7.1%. RTF 0.0095 on Mac CPU.
+2. **PRAXIS-TIMBRE.** Custom ECAPA-TDNN speaker diariser. 5.80M live inference parameters (the 365K-param classifier head used during AAM-Softmax training is discarded at inference), 256-dimensional embeddings, spectral clustering. Trained on LibriSpeech (1,417 speakers, `train-clean-100` plus `train-other-500`); applied zero-shot to PriMock57 doctor and patient audio. Standalone DER is 44.3% (n=7), but in a **hybrid pipeline** (pyannote VAD + TIMBRE embeddings + KMeans) it reaches **DER 10.05%, statistically tied with pyannote 3.1** (10.45%; 4-3 split, Wilcoxon p=1.0). RTF 0.0095 on Mac CPU.
 
 3. **Pre-generation NLP pipeline.** scispaCy NER with negation detection and SNOMED CT mapping runs *before* the LLM, providing structured clinical context to improve SOAP note accuracy (vs. raw transcript input). Backed by **29 NICE CKS conditions** and **102 BNF drug-interaction pairs** in the validation knowledge base.
 
@@ -83,12 +83,23 @@ Results are stored in `data/evaluation_results/` as timestamped JSON files with 
 | **PRAXIS-AUSCULT** | Conformer-CTC | **117M** | PriMock57 British GP (4,824 segments) |
 | medasr-base | Conformer-Transducer | 600M+ | American radiology dictation |
 
+Measured WER (PriMock57 test): PRAXIS-AUSCULT **50.12%** vs Whisper-large-v3 **27.69%** — an honest negative result; the compact 117M on-device model trades accuracy against the 1.55B cloud frontier.
+
+![ASR WER comparison](docs/figures/fig_wer_comparison.png)
+
 ### Speaker Diarisation
 
-| Model | Params | DER | Notes |
-|-------|--------|-----|-------|
-| **PRAXIS-TIMBRE** | **5.80M** | **7.1%** | Custom ECAPA-TDNN, 256-dim, spectral clustering. LibriSpeech-trained, applied zero-shot to GP audio. |
-| pyannote 3.1 | ~4M | -- | Lost 15-0 head-to-head vs. PRAXIS-TIMBRE on GP audio |
+DER on PriMock57 (n=7, `DiarizationErrorRate(collar=0.5, skip_overlap=True)`):
+
+| Configuration | DER | Notes |
+|---|---|---|
+| PRAXIS-TIMBRE (standalone, 5.80M ECAPA-TDNN) | 44.3% | Blind energy-VAD + agglomerative clustering; weaker on its own |
+| **Hybrid** (pyannote VAD + TIMBRE embeddings + KMeans) | **10.05%** | **Statistically tied with pyannote 3.1** (4-3 split, Wilcoxon p=1.0) |
+| pyannote 3.1 (full pipeline) | 10.45% | End-to-end baseline |
+
+*Finding: PRAXIS-TIMBRE's compact 5.80M embeddings are competitive with pyannote when paired with a neural VAD; its own segmentation/clustering front-end is the weak link.*
+
+![Speaker diarisation DER comparison](docs/figures/fig_der_comparison.png)
 
 ### SOAP Generation
 

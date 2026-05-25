@@ -1,7 +1,7 @@
 """Speaker diarisation for GP consultations.
 
 Priority order:
-  1. PRAXIS-TIMBRE (custom 5.80M ECAPA-TDNN, DER 7.1%, 62.8x faster than pyannote)
+  1. PRAXIS-TIMBRE (custom 5.80M ECAPA-TDNN; embeddings tie pyannote in a hybrid pipeline at DER 10.05%, standalone 44.3%)
   2. Pyannote Audio 3.1 (fallback if ECAPA checkpoint missing)
   3. Rule-based text heuristics (fallback if no audio / no models)
 """
@@ -64,7 +64,7 @@ class ECAPADiariser:
     """Speaker diarisation using custom ECAPA-TDNN embeddings + agglomerative clustering.
 
     5.8M params, 256-dim embeddings, AAM-Softmax trained on LibriSpeech (1,417 speakers).
-    DER 7.1% on PriMock57 test set - 3.4x better than pyannote 3.1.
+    Standalone DER 44.3% on PriMock57 (n=7); embeddings in a hybrid pipeline reach 10.05%, tied with pyannote 3.1 (10.45%).
     """
 
     def __init__(
@@ -428,7 +428,7 @@ def diarise_with_fallback(
     Priority: ECAPA-TDNN → Pyannote → rule-based.
     """
     if audio_path is not None:
-        # Try ECAPA-TDNN first (custom model, 3.4x better DER than pyannote)
+        # Try ECAPA-TDNN first (custom compact model; pyannote is the fallback)
         ecapa = ECAPADiariser()
         if ecapa.is_available:
             try:

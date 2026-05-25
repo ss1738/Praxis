@@ -7,11 +7,11 @@ Custom 5.80M-param (inference) ECAPA-TDNN with:
 - AAM-Softmax training loss (1417-speaker classifier head used only during training)
 - Trained on LibriSpeech; applied zero-shot to PriMock57 GP audio
 
-Benchmarked on PriMock57 test set:
-  PRAXIS-TIMBRE     5.80M  DER 7.1%   0.68s   15/15 speaker count
-  pyannote 3.1     ~7M    DER 24.4%  42.87s  13/15
-  TitaNet-Large    ~23M   DER 6.4%   10.57s  13/15
-  SpeechBrain ECAPA ~15M  DER 6.5%   1.71s   12/15
+Measured on PriMock57 test (n=7, DiarizationErrorRate collar=0.5, skip_overlap):
+  PRAXIS-TIMBRE standalone        DER 44.3%   (blind VAD + agglomerative clustering)
+  TIMBRE embeddings in a hybrid   DER 10.05%  (pyannote VAD + KMeans; ties pyannote 3.1, 4-3, p=1.0)
+  pyannote 3.1 (full pipeline)    DER 10.45%
+The compact 5.80M embeddings are competitive in a hybrid; standalone segmentation is the weak link.
 """
 
 from __future__ import annotations

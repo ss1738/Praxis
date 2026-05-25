@@ -407,6 +407,57 @@ def fig_weight_sensitivity() -> None:
     print(f"Wrote: {out_pdf}")
 
 
+def fig_wer_comparison() -> None:
+    """ASR WER: PRAXIS-AUSCULT (compact, on-device) vs Whisper-large-v3 (frontier).
+    Values read live from committed JSON so the chart cannot drift from the data."""
+    res = ROOT / "data" / "evaluation_results"
+    auscult = json.load(open(res / "wer_praxis-conformer_20260427_134720.json"))["mean_wer"] * 100
+    largev3 = json.load(open(res / "whisper_baseline_metrics.json"))["aggregate"]["mean_wer"] * 100
+    labels = ["PRAXIS-AUSCULT\n(117M, on-device)", "Whisper-large-v3\n(1.55B, cloud frontier)"]
+    vals = [auscult, largev3]
+    fig, ax = plt.subplots(figsize=(5.4, 3.4), constrained_layout=True)
+    bars = ax.bar(range(2), vals, color=["#1f77b4", "#7f7f7f"], edgecolor="black", linewidth=0.6, width=0.5)
+    ax.set_ylim(0, max(vals) * 1.25)
+    ax.set_ylabel("WER (%) on PriMock57 test (lower is better)")
+    ax.set_xticks(range(2)); ax.set_xticklabels(labels, fontsize=9)
+    ax.grid(True, axis="y", alpha=0.3, linewidth=0.5); ax.set_axisbelow(True)
+    for bar, v in zip(bars, vals):
+        ax.text(bar.get_x() + bar.get_width() / 2, v + 0.8, f"{v:.2f}%", ha="center", va="bottom",
+                fontsize=10, weight="bold")
+    ax.set_title("ASR word error rate: compact on-device vs frontier baseline", fontsize=10)
+    ax.spines["top"].set_visible(False); ax.spines["right"].set_visible(False)
+    fig.savefig(OUT / "fig_wer_comparison.pdf", bbox_inches="tight")
+    fig.savefig(OUT / "fig_wer_comparison.png", bbox_inches="tight", dpi=200)
+    plt.close(fig)
+    print(f"Wrote: {OUT / 'fig_wer_comparison.png'}")
+
+
+def fig_der_comparison() -> None:
+    """Speaker diarisation DER: TIMBRE standalone vs hybrid vs pyannote 3.1.
+    Values read live from hybrid_diarisation_analysis.json (real, n=7)."""
+    agg = json.load(open(ROOT / "data" / "evaluation_results" / "hybrid_diarisation_analysis.json"))["aggregate"]
+    labels = ["PRAXIS-TIMBRE\n(standalone)", "Hybrid\n(VAD+TIMBRE+KMeans)", "pyannote 3.1\n(full pipeline)"]
+    vals = [agg["timbre_baseline_mean_der"] * 100, agg["hybrid_mean_der"] * 100, agg["pyannote_baseline_mean_der"] * 100]
+    fig, ax = plt.subplots(figsize=(5.8, 3.4), constrained_layout=True)
+    bars = ax.bar(range(3), vals, color=["#d62728", "#2ca02c", "#7f7f7f"], edgecolor="black", linewidth=0.6, width=0.55)
+    ax.set_ylim(0, max(vals) * 1.25)
+    ax.set_ylabel("DER (%) on PriMock57, n=7 (lower is better)")
+    ax.set_xticks(range(3)); ax.set_xticklabels(labels, fontsize=9)
+    ax.grid(True, axis="y", alpha=0.3, linewidth=0.5); ax.set_axisbelow(True)
+    for bar, v in zip(bars, vals):
+        ax.text(bar.get_x() + bar.get_width() / 2, v + 0.9, f"{v:.2f}%", ha="center", va="bottom",
+                fontsize=10, weight="bold")
+    ax.text(0.5, 0.97, "Hybrid ties pyannote 3.1 (4-3, Wilcoxon p = 1.0)", transform=ax.transAxes,
+            ha="center", va="top", fontsize=9, color="#166534",
+            bbox=dict(facecolor="#f0fdf4", edgecolor="#166534", boxstyle="round,pad=0.4", lw=0.6))
+    ax.set_title("Speaker diarisation error rate", fontsize=10)
+    ax.spines["top"].set_visible(False); ax.spines["right"].set_visible(False)
+    fig.savefig(OUT / "fig_der_comparison.pdf", bbox_inches="tight")
+    fig.savefig(OUT / "fig_der_comparison.png", bbox_inches="tight", dpi=200)
+    plt.close(fig)
+    print(f"Wrote: {OUT / 'fig_der_comparison.png'}")
+
+
 if __name__ == "__main__":
     fig_methodology_overview()
     fig_saturation_contrast()
@@ -414,4 +465,6 @@ if __name__ == "__main__":
     fig_constitutional_trajectory()
     fig_asgari_bars()
     fig_weight_sensitivity()
+    fig_wer_comparison()
+    fig_der_comparison()
     print("\nAll figures regenerated.")
