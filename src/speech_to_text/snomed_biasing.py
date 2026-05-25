@@ -4,9 +4,11 @@ Passes UK primary-care terms (drugs, conditions, abbreviations) as hotwords to
 a pyctcdecode beam-search decoder, boosting the log-probability of any candidate
 path that produces a known medical term. Zero retraining required.
 
-POC measurement: 31% relative MC-WER reduction on PriMock57 test (n=14),
-boost=8.0, 185-term curated lexicon + suffix-mined train terms.
-See scripts/snomed_biasing_poc.py for the original measurement script.
+Measured result (honest/negative): on PriMock57 (n=40 clinical subset, boost=8.0,
+185-term curated lexicon) the relative medical-term WER reduction was 0.0% -- no
+medical terms were recovered at this checkpoint's accuracy floor. The mechanism is
+implemented and the harness is reproducible; the gain claimed in earlier drafts does
+not reproduce. See data/evaluation_results/snomed_biasing_mc_wer_latest.json.
 
 Usage:
     from src.speech_to_text.snomed_biasing import SnomedLexicon, SnomedBiaser
