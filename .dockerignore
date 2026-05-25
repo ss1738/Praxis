@@ -1,0 +1,25 @@
+# Keep the runtime image small: only ship src/, scripts/, configs/ + deps.
+.git
+.gitignore
+.dockerignore
+
+# Python caches / envs
+__pycache__/
+*.py[cod]
+*.egg-info/
+venv/
+.venv/
+env/
+
+# Large / non-runtime trees (docs incl. dissertation PDFs, eval data, models)
+docs/
+data/
+notebooks/
+tests/
+
+# Local config & OS cruft
+.env
+.DS_Store
+*.bak
+.vscode/
+.idea/

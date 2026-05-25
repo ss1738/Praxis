@@ -1,0 +1,3203 @@
+{
+  "is_synthetic": false,
+  "hardware_target": "RTX 5090 32GB Linux (satyawan-1)",
+  "host": "satyawan",
+  "git_commit": "unknown",
+  "timestamp": "2026-05-24T16:12:12.101356+00:00",
+  "model_id": "openai/whisper-large-v3",
+  "dtype": "torch.float16",
+  "chunk_length_s": 30,
+  "batch_size": 8,
+  "n_samples": 14,
+  "total_audio_sec": 7359.3,
+  "total_wall_sec": 105.9,
+  "mean_rtf": 0.0144,
+  "aggregate": {
+    "mean_wer": 0.2769,
+    "median_wer": 0.2485,
+    "wer_ci_95": [
+      0.2308,
+      0.331
+    ],
+    "mean_ce_wer": 0.2123,
+    "median_ce_wer": 0.2,
+    "ce_wer_ci_95": [
+      0.1245,
+      0.304
+    ]
+  },
+  "mter_aggregate": {
+    "itis": {
+      "ref_hits": 6,
+      "exact_match": 6,
+      "suffix_only_match": 0,
+      "complete_omission": 0
+    },
+    "osis": {
+      "ref_hits": 2,
+      "exact_match": 2,
+      "suffix_only_match": 0,
+      "complete_omission": 0
+    },
+    "emia": {
+      "ref_hits": 0,
+      "exact_match": 0,
+      "suffix_only_match": 0,
+      "complete_omission": 0
+    },
+    "aemia": {
+      "ref_hits": 0,
+      "exact_match": 0,
+      "suffix_only_match": 0,
+      "complete_omission": 0
+    },
+    "oma": {
+      "ref_hits": 0,
+      "exact_match": 0,
+      "suffix_only_match": 0,
+      "complete_omission": 0
+    },
+    "rrhoea": {
+      "ref_hits": 0,
+      "exact_match": 0,
+      "suffix_only_match": 0,
+      "complete_omission": 0
+    },
+    "phagia": {
+      "ref_hits": 0,
+      "exact_match": 0,
+      "suffix_only_match": 0,
+      "complete_omission": 0
+    },
+    "pathy": {
+      "ref_hits": 0,
+      "exact_match": 0,
+      "suffix_only_match": 0,
+      "complete_omission": 0
+    },
+    "ectomy": {
+      "ref_hits": 0,
+      "exact_match": 0,
+      "suffix_only_match": 0,
+      "complete_omission": 0
+    },
+    "otomy": {
+      "ref_hits": 0,
+      "exact_match": 0,
+      "suffix_only_match": 0,
+      "complete_omission": 0
+    },
+    "plasty": {
+      "ref_hits": 0,
+      "exact_match": 0,
+      "suffix_only_match": 0,
+      "complete_omission": 0
+    },
+    "algia": {
+      "ref_hits": 0,
+      "exact_match": 0,
+      "suffix_only_match": 0,
+      "complete_omission": 0
+    },
+    "gram": {
+      "ref_hits": 0,
+      "exact_match": 0,
+      "suffix_only_match": 0,
+      "complete_omission": 0
+    },
+    "scopy": {
+      "ref_hits": 0,
+      "exact_match": 0,
+      "suffix_only_match": 0,
+      "complete_omission": 0
+    },
+    "cillin": {
+      "ref_hits": 0,
+      "exact_match": 0,
+      "suffix_only_match": 0,
+      "complete_omission": 0
+    },
+    "azole": {
+      "ref_hits": 0,
+      "exact_match": 0,
+      "suffix_only_match": 0,
+      "complete_omission": 0
+    },
+    "olol": {
+      "ref_hits": 0,
+      "exact_match": 0,
+      "suffix_only_match": 0,
+      "complete_omission": 0
+    },
+    "pril": {
+      "ref_hits": 0,
+      "exact_match": 0,
+      "suffix_only_match": 0,
+      "complete_omission": 0
+    },
+    "sartan": {
+      "ref_hits": 0,
+      "exact_match": 0,
+      "suffix_only_match": 0,
+      "complete_omission": 0
+    },
+    "statin": {
+      "ref_hits": 0,
+      "exact_match": 0,
+      "suffix_only_match": 0,
+      "complete_omission": 0
+    },
+    "zepam": {
+      "ref_hits": 0,
+      "exact_match": 0,
+      "suffix_only_match": 0,
+      "complete_omission": 0
+    },
+    "profen": {
+      "ref_hits": 2,
+      "exact_match": 2,
+      "suffix_only_match": 0,
+      "complete_omission": 0
+    },
+    "caine": {
+      "ref_hits": 0,
+      "exact_match": 0,
+      "suffix_only_match": 0,
+      "complete_omission": 0
+    },
+    "mycin": {
+      "ref_hits": 0,
+      "exact_match": 0,
+      "suffix_only_match": 0,
+      "complete_omission": 0
+    },
+    "cycline": {
+      "ref_hits": 0,
+      "exact_match": 0,
+      "suffix_only_match": 0,
+      "complete_omission": 0
+    },
+    "pramine": {
+      "ref_hits": 0,
+      "exact_match": 0,
+      "suffix_only_match": 0,
+      "complete_omission": 0
+    },
+    "dipine": {
+      "ref_hits": 0,
+      "exact_match": 0,
+      "suffix_only_match": 0,
+      "complete_omission": 0
+    }
+  },
+  "per_sample": [
+    {
+      "audio_file": "day1_consultation02_doctor.wav",
+      "audio_dur_s": 559.2,
+      "wall_s": 9.46,
+      "rtf": 0.0169,
+      "wer": 0.2905,
+      "ce_wer": 0.3333,
+      "n_ref_tokens": 1012,
+      "n_ref_clinical": 9,
+      "wer_breakdown": {
+        "subs": 66,
+        "dels": 214,
+        "ins": 14
+      },
+      "ce_wer_breakdown": {
+        "subs": 1,
+        "dels": 2,
+        "ins": 0
+      },
+      "hypothesis_first_300": "Hello? Yes, I think it's a bit better. It's a bit, it's a bit, it's not very clear, but let's continue anyway. Okay, let's start again. So how can I help you, sir? Okay. No, no problem. I'm happy to help. Where understand this is obviously affecting you and we'll try our very best to get it sorted o",
+      "reference_first_300": "Hello? Uh uh yes. I think. It's a bit better. It's a bit, it's a bit, it's not very clear. But let's continue anyway. Uh, OK. Let's start again. So how can I help you sir? OK. No, no problem. I'm happy to help. Um whereabouts in your skin is it affected? Yeah. <INAUDIBLE_SPEECH/> No no, OK. <INAUDIB",
+      "missed_clinical_tokens": [
+        "piriton"
+      ],
+      "mter": {
+        "itis": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "osis": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "emia": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "aemia": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "oma": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "rrhoea": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "phagia": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "pathy": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "ectomy": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "otomy": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "plasty": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "algia": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "gram": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "scopy": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "cillin": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "azole": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "olol": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "pril": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "sartan": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "statin": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "zepam": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "profen": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "caine": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "mycin": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "cycline": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "pramine": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "dipine": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        }
+      }
+    },
+    {
+      "audio_file": "day1_consultation02_patient.wav",
+      "audio_dur_s": 559.2,
+      "wall_s": 7.09,
+      "rtf": 0.0127,
+      "wer": 0.3135,
+      "ce_wer": 0.2,
+      "n_ref_tokens": 772,
+      "n_ref_clinical": 5,
+      "wer_breakdown": {
+        "subs": 54,
+        "dels": 179,
+        "ins": 9
+      },
+      "ce_wer_breakdown": {
+        "subs": 0,
+        "dels": 1,
+        "ins": 0
+      },
+      "hypothesis_first_300": "Hello, can you hear me well? Okay. Yes, so it's been a few days now. I have like a sore and a red skin. It's kind of, it's really itchy and it's like super annoying. So I'd like to find something quick to solve it. What is the most annoying thing about your job? like all the time and I can't even sl",
+      "reference_first_300": "Hello. Can you hear me well? OK. Yes. So, it's been a few days now. I have like a sore, and a red skin. It's kind of, it's really itchy, and it's like super annoying. So I'd like to find something quick to solve it. Uh, mostly like my chest, my, my hands, my arms. Like, like really, it's it's super ",
+      "missed_clinical_tokens": [],
+      "mter": {
+        "itis": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "osis": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "emia": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "aemia": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "oma": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "rrhoea": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "phagia": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "pathy": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "ectomy": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "otomy": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "plasty": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "algia": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "gram": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "scopy": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "cillin": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "azole": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "olol": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "pril": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "sartan": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "statin": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "zepam": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "profen": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "caine": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "mycin": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "cycline": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "pramine": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "dipine": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        }
+      }
+    },
+    {
+      "audio_file": "day1_consultation08_doctor.wav",
+      "audio_dur_s": 466.2,
+      "wall_s": 6.93,
+      "rtf": 0.0149,
+      "wer": 0.2534,
+      "ce_wer": 0.3333,
+      "n_ref_tokens": 955,
+      "n_ref_clinical": 9,
+      "wer_breakdown": {
+        "subs": 63,
+        "dels": 176,
+        "ins": 3
+      },
+      "ce_wer_breakdown": {
+        "subs": 0,
+        "dels": 3,
+        "ins": 0
+      },
+      "hypothesis_first_300": "Hello. Hello. Just before we go any further, can I confirm your name and itchy. Whereabouts in your skin? Okay. And is this something you've had before? Did it come about quite suddenly or was it more kind of a gradual thing? Okay, and has it spread anywhere else? Has it spread to your chest, your l",
+      "reference_first_300": "Hello? Hello. Uh, just before we go any further, can I confirm your name and, age please? Twenty six, OK. And how can I help you this afternoon? OK. Um, sorry to hear work's been so stressful. Um. Tell me more about your skin first, Lou. Tell me uh, you mentioned it's been dry and itchy. Um, whereab",
+      "missed_clinical_tokens": [
+        "hayfever",
+        "microgynon",
+        "piriton"
+      ],
+      "mter": {
+        "itis": {
+          "ref_hits": 2,
+          "exact_match": 2,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "osis": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "emia": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "aemia": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "oma": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "rrhoea": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "phagia": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "pathy": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "ectomy": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "otomy": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "plasty": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "algia": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "gram": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "scopy": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "cillin": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "azole": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "olol": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "pril": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "sartan": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "statin": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "zepam": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "profen": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "caine": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "mycin": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "cycline": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "pramine": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "dipine": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        }
+      }
+    },
+    {
+      "audio_file": "day1_consultation08_patient.wav",
+      "audio_dur_s": 466.2,
+      "wall_s": 3.52,
+      "rtf": 0.0076,
+      "wer": 0.4128,
+      "ce_wer": 0.5,
+      "n_ref_tokens": 298,
+      "n_ref_clinical": 2,
+      "wer_breakdown": {
+        "subs": 27,
+        "dels": 91,
+        "ins": 5
+      },
+      "ce_wer_breakdown": {
+        "subs": 0,
+        "dels": 1,
+        "ins": 0
+      },
+      "hypothesis_first_300": "Okay. Oh, I can keep it like this. Hello, can you hear me? My name is Pfizer and I'm 26. So basically, I've been really stressed at work for the past few days and I've realized that I've got really dry itchy skin. All over my arms and my hands mainly. I know. coconut butter for the past few days. I ",
+      "reference_first_300": "OK. Ohh, OK. Hello, can you hear me? Uh, my name's Itha, and I'm twenty six. Um, so basically, I've been really stressed at work for the past few days. And, I've realised that I've got, really dry itchy skin. All over my arms, um, and my hands mainly. Uh, no. Never had . I think it started a few day",
+      "missed_clinical_tokens": [
+        "hayfever"
+      ],
+      "mter": {
+        "itis": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "osis": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "emia": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "aemia": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "oma": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "rrhoea": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "phagia": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "pathy": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "ectomy": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "otomy": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "plasty": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "algia": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "gram": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "scopy": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "cillin": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "azole": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "olol": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "pril": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "sartan": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "statin": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "zepam": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "profen": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "caine": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "mycin": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "cycline": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "pramine": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "dipine": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        }
+      }
+    },
+    {
+      "audio_file": "day1_consultation15_doctor.wav",
+      "audio_dur_s": 491.82,
+      "wall_s": 7.83,
+      "rtf": 0.0159,
+      "wer": 0.1826,
+      "ce_wer": 0.0,
+      "n_ref_tokens": 898,
+      "n_ref_clinical": 10,
+      "wer_breakdown": {
+        "subs": 74,
+        "dels": 73,
+        "ins": 17
+      },
+      "ce_wer_breakdown": {
+        "subs": 0,
+        "dels": 0,
+        "ins": 0
+      },
+      "hypothesis_first_300": "hello hello can you hear me great excellent before i go any further can i confirm your name and your age please 45 all right laura well how can I help you this afternoon? Okay, when did this all start? Okay, so it's been that long, has it? Okay, and so you mentioned, is it the skin on your hands mai",
+      "reference_first_300": "Hello? Hello. Can you hear me? Great, excellent. Before I go any further, can I confirm you name and your, um, age please? Forty five. Alright Laura, well how can I help you this afternoon? OK. When, when did this all start? OK so it's been that long, has it? OK. And so you mentioned your , is it th",
+      "missed_clinical_tokens": [],
+      "mter": {
+        "itis": {
+          "ref_hits": 3,
+          "exact_match": 3,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "osis": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "emia": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "aemia": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "oma": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "rrhoea": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "phagia": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "pathy": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "ectomy": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "otomy": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "plasty": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "algia": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "gram": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "scopy": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "cillin": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "azole": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "olol": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "pril": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "sartan": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "statin": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "zepam": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "profen": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "caine": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "mycin": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "cycline": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "pramine": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "dipine": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        }
+      }
+    },
+    {
+      "audio_file": "day1_consultation15_patient.wav",
+      "audio_dur_s": 491.76,
+      "wall_s": 4.83,
+      "rtf": 0.0098,
+      "wer": 0.4392,
+      "ce_wer": 0.5,
+      "n_ref_tokens": 469,
+      "n_ref_clinical": 2,
+      "wer_breakdown": {
+        "subs": 32,
+        "dels": 171,
+        "ins": 3
+      },
+      "ce_wer_breakdown": {
+        "subs": 0,
+        "dels": 1,
+        "ins": 0
+      },
+      "hypothesis_first_300": "Hello? Yes. Yes, I'm Laura Parkinson, and I'm 45. Yeah, so uh, soreness in my fingers, and so yeah like it's very bad in my hands yeah i mean it's gotten to a point where where it hurts a lot and i can't really do my job so i thought i should probably get it checked out uh the palm yeah yeah it's it",
+      "reference_first_300": "Hello? Yes. Uh yes. Um Laura Parkinson. And uh I'm forty five. Uh yeah. So I have uh soreness in my fingers, my finger, like, the skin on my hands is kind of cracked. Um, a couple of months ago. I got it three, four months ago. Yeah. Yeah, I haven't noticed. I mean, I have dryness, like you know, in",
+      "missed_clinical_tokens": [],
+      "mter": {
+        "itis": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "osis": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "emia": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "aemia": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "oma": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "rrhoea": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "phagia": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "pathy": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "ectomy": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "otomy": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "plasty": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "algia": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "gram": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "scopy": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "cillin": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "azole": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "olol": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "pril": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "sartan": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "statin": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "zepam": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "profen": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "caine": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "mycin": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "cycline": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "pramine": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "dipine": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        }
+      }
+    },
+    {
+      "audio_file": "day2_consultation01_doctor.wav",
+      "audio_dur_s": 329.16,
+      "wall_s": 7.52,
+      "rtf": 0.0228,
+      "wer": 0.2172,
+      "ce_wer": 0.1429,
+      "n_ref_tokens": 953,
+      "n_ref_clinical": 7,
+      "wer_breakdown": {
+        "subs": 44,
+        "dels": 144,
+        "ins": 19
+      },
+      "ce_wer_breakdown": {
+        "subs": 0,
+        "dels": 1,
+        "ins": 0
+      },
+      "hypothesis_first_300": "Hi there. Good morning. I'm Dr. Dean Mirza from Babylon. Hi. Can you hear me okay? Yeah, okay, great. Well, nice to see you this morning. Before we start your appointment, could I confirm your full name and date of birth, please? That's perfect. Thank you, Jack. Are you in a private place where you'",
+      "reference_first_300": "Hi, there. Good morning! Uh, I'm Dr. Dean Mesa from Babylon. Can you hear me OK? Yeah, OK, great. Well, nice to see you this morning. Um, before we start your appointment, could I confirm your full name and date of birth please? That's perfect, thank you, John. Um, are you in a private place where y",
+      "missed_clinical_tokens": [
+        "palpitations"
+      ],
+      "mter": {
+        "itis": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "osis": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "emia": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "aemia": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "oma": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "rrhoea": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "phagia": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "pathy": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "ectomy": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "otomy": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "plasty": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "algia": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "gram": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "scopy": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "cillin": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "azole": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "olol": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "pril": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "sartan": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "statin": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "zepam": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "profen": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "caine": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "mycin": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "cycline": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "pramine": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "dipine": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        }
+      }
+    },
+    {
+      "audio_file": "day2_consultation01_patient.wav",
+      "audio_dur_s": 329.16,
+      "wall_s": 3.4,
+      "rtf": 0.0103,
+      "wer": 0.4823,
+      "ce_wer": null,
+      "n_ref_tokens": 282,
+      "n_ref_clinical": 0,
+      "wer_breakdown": {
+        "subs": 33,
+        "dels": 98,
+        "ins": 5
+      },
+      "ce_wer_breakdown": {
+        "subs": 0,
+        "dels": 0,
+        "ins": 0
+      },
+      "hypothesis_first_300": "Jack Smith, 31st October 1990. I am, yes. Yeah, so I just feel like I can't really hear as well as I used to, like my hearing's kind of deteriorating in some way. About six weeks. I had something maybe about a year ago, but. Just the left ear, yeah. It seems to be, yeah. Yeah. It's kind of on and of",
+      "reference_first_300": "<INAUDIBLE_SPEECH/> <INAUDIBLE_SPEECH/> Yep. Can you find Uh yeah, uh Jack Smith, uh thirty first October nineteen ninety. I am, yes Yeah, so I just feel I can't really hear as well as I used to, like my hearing is kind of deteriorating in some way. Uh about six weeks. Um I had something maybe, abou",
+      "missed_clinical_tokens": [],
+      "mter": {
+        "itis": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "osis": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "emia": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "aemia": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "oma": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "rrhoea": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "phagia": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "pathy": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "ectomy": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "otomy": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "plasty": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "algia": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "gram": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "scopy": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "cillin": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "azole": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "olol": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "pril": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "sartan": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "statin": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "zepam": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "profen": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "caine": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "mycin": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "cycline": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "pramine": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "dipine": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        }
+      }
+    },
+    {
+      "audio_file": "day2_consultation03_doctor.wav",
+      "audio_dur_s": 450.84,
+      "wall_s": 8.72,
+      "rtf": 0.0193,
+      "wer": 0.2342,
+      "ce_wer": 0.0,
+      "n_ref_tokens": 901,
+      "n_ref_clinical": 3,
+      "wer_breakdown": {
+        "subs": 76,
+        "dels": 122,
+        "ins": 13
+      },
+      "ce_wer_breakdown": {
+        "subs": 0,
+        "dels": 0,
+        "ins": 0
+      },
+      "hypothesis_first_300": "Hi there, good morning. I'm Dr. Dean Middleton from Groupier Hand. Nice to see you. Before we start your appointment, could I confirm your full name and date of birth? That's okay. Okay, fine. So you're 40 years old, you said, yeah? Perfect, okay. Are you in a private place where you're okay to spea",
+      "reference_first_300": "Hi there. Good morning! Hello. I, I'm Doctor <INAUDIBLE_SPEECH/>. Nice to see you. Hi. Um, so, before we start your appointment, could I confirm your full name and date of birth, if that's OK? You're <INAUDIBLE_SPEECH/> OK, fine. So, you're you're forty years old, you said, yeah? Perfect, OK. Um, ar",
+      "missed_clinical_tokens": [],
+      "mter": {
+        "itis": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "osis": {
+          "ref_hits": 1,
+          "exact_match": 1,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "emia": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "aemia": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "oma": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "rrhoea": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "phagia": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "pathy": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "ectomy": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "otomy": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "plasty": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "algia": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "gram": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "scopy": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "cillin": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "azole": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "olol": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "pril": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "sartan": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "statin": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "zepam": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "profen": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "caine": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "mycin": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "cycline": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "pramine": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "dipine": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        }
+      }
+    },
+    {
+      "audio_file": "day2_consultation03_patient.wav",
+      "audio_dur_s": 450.84,
+      "wall_s": 7.14,
+      "rtf": 0.0158,
+      "wer": 0.2436,
+      "ce_wer": 0.0,
+      "n_ref_tokens": 628,
+      "n_ref_clinical": 3,
+      "wer_breakdown": {
+        "subs": 49,
+        "dels": 98,
+        "ins": 6
+      },
+      "ce_wer_breakdown": {
+        "subs": 0,
+        "dels": 0,
+        "ins": 0
+      },
+      "hypothesis_first_300": "Hello. Hi. Nice to meet you. Hello. Yes, my hearing. I can't really hear very well and I've noticed that my face has been feeling a bit numb recently. It's been a few weeks now, in about three weeks or something. Just one side, just on my left side, I've noticed that the hearing side have gone down ",
+      "reference_first_300": "Hello? Hi. <INAUDIBLE_SPEECH/>. Nice to meet you. Hello. Uh, yeah. Uh, Mary Richards. Uh, and my, I'm forty years old. So. <INAUDIBLE_SPEECH/> Yep. Um, so, just been having some, um, problems with my hearing, I can't really hear very well, and my , noticed that my face has been feeling a bit numb re",
+      "missed_clinical_tokens": [],
+      "mter": {
+        "itis": {
+          "ref_hits": 1,
+          "exact_match": 1,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "osis": {
+          "ref_hits": 1,
+          "exact_match": 1,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "emia": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "aemia": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "oma": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "rrhoea": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "phagia": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "pathy": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "ectomy": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "otomy": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "plasty": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "algia": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "gram": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "scopy": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "cillin": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "azole": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "olol": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "pril": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "sartan": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "statin": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "zepam": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "profen": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "caine": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "mycin": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "cycline": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "pramine": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "dipine": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        }
+      }
+    },
+    {
+      "audio_file": "day4_consultation06_doctor.wav",
+      "audio_dur_s": 606.12,
+      "wall_s": 10.17,
+      "rtf": 0.0168,
+      "wer": 0.2355,
+      "ce_wer": 0.25,
+      "n_ref_tokens": 1049,
+      "n_ref_clinical": 12,
+      "wer_breakdown": {
+        "subs": 49,
+        "dels": 189,
+        "ins": 9
+      },
+      "ce_wer_breakdown": {
+        "subs": 1,
+        "dels": 2,
+        "ins": 0
+      },
+      "hypothesis_first_300": "Hello. Hi, my name is Dr. Kumar, one of the GPs here. Can I just get you to confirm your name and date of birth for me, please? And your date of birth? Again, how can I help today? Okay. So it started this morning. Was it a sudden onset headache? Did it come on suddenly? Okay. And did it come on rea",
+      "reference_first_300": "<INAUDIBLE_SPEECH/> Ah. Hello. Hi, uh, my name is Doctor Kumar. I'm one of the GPs here. Can I just get you to confirm your name and date of birth for me, please? <INAUDIBLE_SPEECH/> Date of birth? And your date of birth? <INAUDIBLE_SPEECH/> Again, how can I help today? OK. So, it started this morni",
+      "missed_clinical_tokens": [],
+      "mter": {
+        "itis": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "osis": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "emia": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "aemia": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "oma": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "rrhoea": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "phagia": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "pathy": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "ectomy": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "otomy": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "plasty": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "algia": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "gram": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "scopy": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "cillin": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "azole": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "olol": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "pril": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "sartan": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "statin": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "zepam": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "profen": {
+          "ref_hits": 2,
+          "exact_match": 2,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "caine": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "mycin": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "cycline": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "pramine": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "dipine": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        }
+      }
+    },
+    {
+      "audio_file": "day4_consultation06_patient.wav",
+      "audio_dur_s": 606.12,
+      "wall_s": 8.17,
+      "rtf": 0.0135,
+      "wer": 0.1685,
+      "ce_wer": 0.1667,
+      "n_ref_tokens": 712,
+      "n_ref_clinical": 6,
+      "wer_breakdown": {
+        "subs": 31,
+        "dels": 75,
+        "ins": 14
+      },
+      "ce_wer_breakdown": {
+        "subs": 1,
+        "dels": 0,
+        "ins": 0
+      },
+      "hypothesis_first_300": "Hello. Yeah, I'm having like a really really strong headache i don't know what is happening i'm quite concerned so it started in the morning um i feel like uh dizzy uh my vision is a little bit blurred um like it's it's really painful and i'm getting really concerned especially because i'm having li",
+      "reference_first_300": "Hello. Uh, yeah, I'm Maria. Yeah. Sorry? Um, twenty second uh, of March, of um, ninety. Um, so, I'm having like a really, really strong headache. I don't know what is happening. I'm, quite concerned. So, it started in the morning. Um, I feel like um, uh, dizzy. Uh, my vision is a little bit blurred.",
+      "missed_clinical_tokens": [],
+      "mter": {
+        "itis": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "osis": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "emia": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "aemia": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "oma": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "rrhoea": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "phagia": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "pathy": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "ectomy": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "otomy": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "plasty": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "algia": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "gram": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "scopy": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "cillin": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "azole": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "olol": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "pril": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "sartan": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "statin": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "zepam": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "profen": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "caine": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "mycin": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "cycline": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "pramine": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "dipine": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        }
+      }
+    },
+    {
+      "audio_file": "day5_consultation03_doctor.wav",
+      "audio_dur_s": 776.34,
+      "wall_s": 8.38,
+      "rtf": 0.0108,
+      "wer": 0.2589,
+      "ce_wer": 0.3333,
+      "n_ref_tokens": 950,
+      "n_ref_clinical": 3,
+      "wer_breakdown": {
+        "subs": 35,
+        "dels": 204,
+        "ins": 7
+      },
+      "ce_wer_breakdown": {
+        "subs": 0,
+        "dels": 1,
+        "ins": 0
+      },
+      "hypothesis_first_300": "Hi there, I'm Dr Smith from Babylon. Hi there, can you just confirm your name, date of birth a confidential consultation today? What can I do for you? Okay. Do you mind just telling me a bit more about when it started? Do you think there's something which changed in your life at that time? What's yo",
+      "reference_first_300": "Hi there. I'm Doctor Smith from Babylon. Hi there. Can you just confirm your name, date of birth, and the first line of your address, first of all please? My name's <INAUDIBLE_SPEECH/>. OK. Are you in a private place where you can have a confidential consultation today? What can I do for you? OK. Do",
+      "missed_clinical_tokens": [
+        "alcohol"
+      ],
+      "mter": {
+        "itis": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "osis": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "emia": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "aemia": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "oma": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "rrhoea": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "phagia": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "pathy": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "ectomy": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "otomy": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "plasty": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "algia": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "gram": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "scopy": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "cillin": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "azole": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "olol": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "pril": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "sartan": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "statin": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "zepam": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "profen": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "caine": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "mycin": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "cycline": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "pramine": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "dipine": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        }
+      }
+    },
+    {
+      "audio_file": "day5_consultation03_patient.wav",
+      "audio_dur_s": 776.34,
+      "wall_s": 12.76,
+      "rtf": 0.0164,
+      "wer": 0.1447,
+      "ce_wer": 0.0,
+      "n_ref_tokens": 1590,
+      "n_ref_clinical": 1,
+      "wer_breakdown": {
+        "subs": 62,
+        "dels": 143,
+        "ins": 25
+      },
+      "ce_wer_breakdown": {
+        "subs": 0,
+        "dels": 0,
+        "ins": 0
+      },
+      "hypothesis_first_300": "Hi. My name is Valerie McCall. My date of birth is the 19th of September 1993. My address is 64 Cliveden Place in South Wimbledon. Yes, I am, yeah. I've been feeling really anxious over the past few months. I just get really nervous every morning about leaving the house and it started to really worr",
+      "reference_first_300": "Hi. Yeah. Uh, my name is Valerie Cole. My date of birth is the nineteenth of September, nineteen ninety three. My address is, uh, sixty four, Cliveden Place, in, South Wimbledon. Yes I am, yeah. Um, I've been feeling really anxious over the past few months. Um, I just get really nervous every mornin",
+      "missed_clinical_tokens": [],
+      "mter": {
+        "itis": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "osis": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "emia": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "aemia": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "oma": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "rrhoea": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "phagia": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "pathy": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "ectomy": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "otomy": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "plasty": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "algia": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "gram": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "scopy": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "cillin": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "azole": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "olol": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "pril": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "sartan": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "statin": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "zepam": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "profen": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "caine": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "mycin": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "cycline": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "pramine": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        },
+        "dipine": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "missed_terms": []
+        }
+      }
+    }
+  ]
+}

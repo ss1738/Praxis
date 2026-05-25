@@ -1,0 +1,47 @@
+% --- trustscore_rerun_2026_05 ---
+\begin{tabular}{lrrrrr}
+\toprule
+Model & $n$ & Mean & Std & 95\% CI lower & 95\% CI upper \\
+\midrule
+praxis-soap-v1 & 8 & 70.625 & 12.374 & 63.109 & 78.141 \\
+med42 & 8 & 69.375 & 10.836 & 62.500 & 76.250 \\
+meditron:7b & 8 & 49.375 & 14.501 & 43.125 & 60.000 \\
+mistral & 8 & 65.625 & 11.476 & 58.750 & 72.500 \\
+\bottomrule
+\end{tabular}
+
+% --- rule_based_scorer ---
+\begin{tabular}{lrrrrr}
+\toprule
+Model & $n$ & Mean & Std & 95\% CI lower & 95\% CI upper \\
+\midrule
+praxis-soap-v1 & 8 & 0.980 & 0.021 & 0.965 & 0.995 \\
+med42 & 8 & 0.969 & 0.031 & 0.946 & 0.985 \\
+meditron:7b & 8 & 0.769 & 0.126 & 0.680 & 0.856 \\
+mistral & 8 & 0.979 & 0.033 & 0.956 & 0.995 \\
+\bottomrule
+\end{tabular}
+
+% --- llm_judge_mistral_latest_20260522_115849 ---
+\begin{tabular}{lrrrrr}
+\toprule
+Model & $n$ & Mean & Std & 95\% CI lower & 95\% CI upper \\
+\midrule
+praxis-soap-v1 & 8 & 0.963 & 0.024 & 0.946 & 0.980 \\
+med42 & 8 & 0.969 & 0.021 & 0.954 & 0.980 \\
+meditron:7b & 8 & 0.915 & 0.132 & 0.826 & 0.991 \\
+mistral & 8 & 0.980 & 0.000 & 0.980 & 0.980 \\
+\bottomrule
+\end{tabular}
+
+% --- llm_judge_llama3.1_8b_20260522_123941 ---
+\begin{tabular}{lrrrrr}
+\toprule
+Model & $n$ & Mean & Std & 95\% CI lower & 95\% CI upper \\
+\midrule
+praxis-soap-v1 & 8 & 0.879 & 0.013 & 0.870 & 0.886 \\
+med42 & 8 & 0.879 & 0.015 & 0.868 & 0.886 \\
+meditron:7b & 8 & 0.764 & 0.310 & 0.545 & 0.885 \\
+mistral & 8 & 0.890 & 0.000 & 0.890 & 0.890 \\
+\bottomrule
+\end{tabular}

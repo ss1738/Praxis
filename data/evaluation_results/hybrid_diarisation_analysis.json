@@ -1,0 +1,207 @@
+{
+  "is_synthetic": false,
+  "hardware_target": "RTX 5090 32GB Linux (satyawan-1)",
+  "host": "satyawan",
+  "git_commit": "unknown",
+  "timestamp": "2026-05-24T15:51:59.249910+00:00",
+  "test_set": "primock57_test",
+  "reference_protocol": "energy-VAD-per-channel (same as h2h)",
+  "der_protocol": "pyannote.metrics.DiarizationErrorRate(collar=0.5, skip_overlap=True)",
+  "diagnostic_design": "Three diariser conditions on identical references. (A) TIMBRE-only baseline from h2h JSON. (B) Hybrid: pyannote/voice-activity-detection + TIMBRE-ECAPA per-window embed + KMeans(k=2, seed=42) clustering. (C) Pyannote 3.1 full pipeline from h2h JSON. Comparison (B - A) isolates the cost of TIMBRE's blind frame-walking and agglomerative clustering vs neural-VAD + KMeans. Comparison (C - B) isolates the remaining contribution of pyannote's end-to-end segmentation transformer beyond VAD+embed+cluster.",
+  "aggregate": {
+    "n_consultations": 7,
+    "hybrid_mean_der": 0.1005,
+    "hybrid_median_der": 0.101,
+    "timbre_baseline_mean_der": 0.443,
+    "pyannote_baseline_mean_der": 0.1045,
+    "hybrid_vs_timbre_baseline_tally": {
+      "hybrid_wins": 7,
+      "hybrid_losses": 0,
+      "ties": 0
+    },
+    "hybrid_vs_pyannote_tally": {
+      "hybrid_wins": 4,
+      "pyannote_wins": 3,
+      "ties": 0
+    },
+    "wilcoxon_hybrid_vs_timbre_p": 0.015625,
+    "wilcoxon_hybrid_vs_pyannote_p": 1.0
+  },
+  "per_consultation": [
+    {
+      "consultation_id": "day1_consultation02",
+      "timbre_baseline": {
+        "der": 0.4306
+      },
+      "hybrid": {
+        "der": 0.107,
+        "miss": 29.7379,
+        "false_alarm": 0.306,
+        "confusion": 0.35,
+        "wall_time_s": 10.6,
+        "n_turns_from_pyannote": 227,
+        "n_turns_with_embedding": 188,
+        "cluster_durations_s": {
+          "0": 256.35,
+          "1": 180.92
+        }
+      },
+      "pyannote_baseline": {
+        "der": 0.1114
+      },
+      "winner": "hybrid",
+      "hybrid_vs_timbre_pp_improvement": 32.36,
+      "hybrid_vs_pyannote_pp_gap": -0.44
+    },
+    {
+      "consultation_id": "day1_consultation08",
+      "timbre_baseline": {
+        "der": 0.4764
+      },
+      "hybrid": {
+        "der": 0.1205,
+        "miss": 16.4671,
+        "false_alarm": 0.0,
+        "confusion": 5.541,
+        "wall_time_s": 6.37,
+        "n_turns_from_pyannote": 202,
+        "n_turns_with_embedding": 172,
+        "cluster_durations_s": {
+          "0": 92.29,
+          "1": 214.11
+        }
+      },
+      "pyannote_baseline": {
+        "der": 0.0947
+      },
+      "winner": "pyannote_baseline",
+      "hybrid_vs_timbre_pp_improvement": 35.59,
+      "hybrid_vs_pyannote_pp_gap": 2.58
+    },
+    {
+      "consultation_id": "day1_consultation15",
+      "timbre_baseline": {
+        "der": 0.3841
+      },
+      "hybrid": {
+        "der": 0.1283,
+        "miss": 30.7129,
+        "false_alarm": 0.0,
+        "confusion": 0.04,
+        "wall_time_s": 6.3,
+        "n_turns_from_pyannote": 225,
+        "n_turns_with_embedding": 189,
+        "cluster_durations_s": {
+          "0": 110.82,
+          "1": 226.26
+        }
+      },
+      "pyannote_baseline": {
+        "der": 0.12
+      },
+      "winner": "pyannote_baseline",
+      "hybrid_vs_timbre_pp_improvement": 25.58,
+      "hybrid_vs_pyannote_pp_gap": 0.83
+    },
+    {
+      "consultation_id": "day2_consultation01",
+      "timbre_baseline": {
+        "der": 0.3836
+      },
+      "hybrid": {
+        "der": 0.0949,
+        "miss": 14.1379,
+        "false_alarm": 0.0,
+        "confusion": 0.0,
+        "wall_time_s": 4.09,
+        "n_turns_from_pyannote": 139,
+        "n_turns_with_embedding": 107,
+        "cluster_durations_s": {
+          "0": 209.79,
+          "1": 48.94
+        }
+      },
+      "pyannote_baseline": {
+        "der": 0.1021
+      },
+      "winner": "hybrid",
+      "hybrid_vs_timbre_pp_improvement": 28.87,
+      "hybrid_vs_pyannote_pp_gap": -0.72
+    },
+    {
+      "consultation_id": "day2_consultation03",
+      "timbre_baseline": {
+        "der": 0.4506
+      },
+      "hybrid": {
+        "der": 0.0623,
+        "miss": 11.7297,
+        "false_alarm": 0.2985,
+        "confusion": 0.0,
+        "wall_time_s": 5.83,
+        "n_turns_from_pyannote": 217,
+        "n_turns_with_embedding": 168,
+        "cluster_durations_s": {
+          "0": 139.02,
+          "1": 200.56
+        }
+      },
+      "pyannote_baseline": {
+        "der": 0.0518
+      },
+      "winner": "pyannote_baseline",
+      "hybrid_vs_timbre_pp_improvement": 38.83,
+      "hybrid_vs_pyannote_pp_gap": 1.05
+    },
+    {
+      "consultation_id": "day4_consultation06",
+      "timbre_baseline": {
+        "der": 0.4394
+      },
+      "hybrid": {
+        "der": 0.101,
+        "miss": 28.8681,
+        "false_alarm": 0.7425,
+        "confusion": 3.4044,
+        "wall_time_s": 8.14,
+        "n_turns_from_pyannote": 259,
+        "n_turns_with_embedding": 193,
+        "cluster_durations_s": {
+          "0": 257.16,
+          "1": 211.29
+        }
+      },
+      "pyannote_baseline": {
+        "der": 0.1534
+      },
+      "winner": "hybrid",
+      "hybrid_vs_timbre_pp_improvement": 33.84,
+      "hybrid_vs_pyannote_pp_gap": -5.24
+    },
+    {
+      "consultation_id": "day5_consultation03",
+      "timbre_baseline": {
+        "der": 0.536
+      },
+      "hybrid": {
+        "der": 0.0893,
+        "miss": 30.1018,
+        "false_alarm": 0.139,
+        "confusion": 0.9194,
+        "wall_time_s": 11.21,
+        "n_turns_from_pyannote": 386,
+        "n_turns_with_embedding": 303,
+        "cluster_durations_s": {
+          "0": 221.5,
+          "1": 347.29
+        }
+      },
+      "pyannote_baseline": {
+        "der": 0.098
+      },
+      "winner": "hybrid",
+      "hybrid_vs_timbre_pp_improvement": 44.67,
+      "hybrid_vs_pyannote_pp_gap": -0.87
+    }
+  ]
+}

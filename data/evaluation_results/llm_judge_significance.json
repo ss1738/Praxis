@@ -1,0 +1,90 @@
+{
+  "timestamp": "20260522_123941",
+  "judge_model": "llama3.1:8b",
+  "n_cases": 8,
+  "cases": [
+    "Chest Infection",
+    "Diabetes Review",
+    "Hypertension Review",
+    "Lower Back Pain",
+    "Mental Health - Anxiety",
+    "Paediatric Ear Infection",
+    "Persistent Cough",
+    "Skin Lesion Assessment"
+  ],
+  "per_case": {
+    "Lower Back Pain": {
+      "praxis-soap-v1": 0.89,
+      "med42": 0.86,
+      "meditron:7b": 0.88,
+      "mistral": 0.89
+    },
+    "Persistent Cough": {
+      "praxis-soap-v1": 0.86,
+      "med42": 0.89,
+      "meditron:7b": 0.86,
+      "mistral": 0.89
+    },
+    "Diabetes Review": {
+      "praxis-soap-v1": 0.86,
+      "med42": 0.86,
+      "meditron:7b": 0.82,
+      "mistral": 0.89
+    },
+    "Mental Health - Anxiety": {
+      "praxis-soap-v1": 0.88,
+      "med42": 0.89,
+      "meditron:7b": 0.86,
+      "mistral": 0.89
+    },
+    "Chest Infection": {
+      "praxis-soap-v1": 0.89,
+      "med42": 0.89,
+      "meditron:7b": 0.89,
+      "mistral": 0.89
+    },
+    "Hypertension Review": {
+      "praxis-soap-v1": 0.89,
+      "med42": 0.86,
+      "meditron:7b": 0.0,
+      "mistral": 0.89
+    },
+    "Paediatric Ear Infection": {
+      "praxis-soap-v1": 0.88,
+      "med42": 0.89,
+      "meditron:7b": 0.89,
+      "mistral": 0.89
+    },
+    "Skin Lesion Assessment": {
+      "praxis-soap-v1": 0.88,
+      "med42": 0.89,
+      "meditron:7b": 0.91,
+      "mistral": 0.89
+    }
+  },
+  "per_model_means": {
+    "praxis-soap-v1": 0.87875,
+    "med42": 0.87875,
+    "meditron:7b": 0.76375,
+    "mistral": 0.89
+  },
+  "wilcoxon_vs_praxis_soap_v1": {
+    "med42": {
+      "wilcoxon_p": 0.71875,
+      "n_paired": 8
+    },
+    "meditron:7b": {
+      "wilcoxon_p": 0.375,
+      "n_paired": 8
+    },
+    "mistral": {
+      "wilcoxon_p": 0.0625,
+      "n_paired": 8
+    }
+  },
+  "holm_corrected": {
+    "mistral": 0.1875,
+    "meditron:7b": 0.75,
+    "med42": 0.71875
+  }
+}

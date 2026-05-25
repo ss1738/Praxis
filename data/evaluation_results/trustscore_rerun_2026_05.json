@@ -1,0 +1,152 @@
+{
+  "timestamp": "2026-05-24T07:39:35.137916+00:00",
+  "source_outputs": "docs/model_comparison_results.json",
+  "implementation_snapshot": "current (verification.py with 6-check default, no NLI gate)",
+  "summary_per_model": {
+    "praxis-soap-v1": {
+      "n_cases": 8,
+      "mean_trust_score": 70.625,
+      "min": 50,
+      "max": 85,
+      "per_case": {
+        "Lower Back Pain": 80,
+        "Persistent Cough": 65,
+        "Diabetes Review": 80,
+        "Mental Health - Anxiety": 60,
+        "Chest Infection": 65,
+        "Hypertension Review": 50,
+        "Paediatric Ear Infection": 80,
+        "Skin Lesion Assessment": 85
+      },
+      "per_case_verdict": {
+        "Lower Back Pain": "approved",
+        "Persistent Cough": "needs_review",
+        "Diabetes Review": "approved",
+        "Mental Health - Anxiety": "needs_review",
+        "Chest Infection": "needs_review",
+        "Hypertension Review": "needs_review",
+        "Paediatric Ear Infection": "approved",
+        "Skin Lesion Assessment": "approved"
+      }
+    },
+    "med42": {
+      "n_cases": 8,
+      "mean_trust_score": 69.375,
+      "min": 50,
+      "max": 80,
+      "per_case": {
+        "Lower Back Pain": 80,
+        "Persistent Cough": 70,
+        "Diabetes Review": 80,
+        "Mental Health - Anxiety": 60,
+        "Chest Infection": 65,
+        "Hypertension Review": 50,
+        "Paediatric Ear Infection": 80,
+        "Skin Lesion Assessment": 70
+      },
+      "per_case_verdict": {
+        "Lower Back Pain": "approved",
+        "Persistent Cough": "approved",
+        "Diabetes Review": "approved",
+        "Mental Health - Anxiety": "needs_review",
+        "Chest Infection": "needs_review",
+        "Hypertension Review": "needs_review",
+        "Paediatric Ear Infection": "approved",
+        "Skin Lesion Assessment": "approved"
+      }
+    },
+    "meditron:7b": {
+      "n_cases": 8,
+      "mean_trust_score": 49.375,
+      "min": 40,
+      "max": 85,
+      "per_case": {
+        "Lower Back Pain": 45,
+        "Persistent Cough": 45,
+        "Diabetes Review": 45,
+        "Mental Health - Anxiety": 40,
+        "Chest Infection": 45,
+        "Hypertension Review": 85,
+        "Paediatric Ear Infection": 45,
+        "Skin Lesion Assessment": 45
+      },
+      "per_case_verdict": {
+        "Lower Back Pain": "needs_review",
+        "Persistent Cough": "needs_review",
+        "Diabetes Review": "needs_review",
+        "Mental Health - Anxiety": "needs_review",
+        "Chest Infection": "needs_review",
+        "Hypertension Review": "approved",
+        "Paediatric Ear Infection": "needs_review",
+        "Skin Lesion Assessment": "needs_review"
+      }
+    },
+    "mistral": {
+      "n_cases": 8,
+      "mean_trust_score": 65.625,
+      "min": 45,
+      "max": 80,
+      "per_case": {
+        "Lower Back Pain": 70,
+        "Persistent Cough": 80,
+        "Diabetes Review": 65,
+        "Mental Health - Anxiety": 60,
+        "Chest Infection": 60,
+        "Hypertension Review": 45,
+        "Paediatric Ear Infection": 80,
+        "Skin Lesion Assessment": 65
+      },
+      "per_case_verdict": {
+        "Lower Back Pain": "approved",
+        "Persistent Cough": "approved",
+        "Diabetes Review": "needs_review",
+        "Mental Health - Anxiety": "needs_review",
+        "Chest Infection": "needs_review",
+        "Hypertension Review": "needs_review",
+        "Paediatric Ear Infection": "approved",
+        "Skin Lesion Assessment": "needs_review"
+      }
+    }
+  },
+  "per_check_pass_rate": {
+    "praxis-soap-v1": {
+      "transcript_fidelity": 0.75,
+      "snomed_validation": 0.875,
+      "clinical_safety": 0.5,
+      "nice_guidelines": 0.125,
+      "completeness": 1.0,
+      "drug_interactions": 1.0
+    },
+    "med42": {
+      "transcript_fidelity": 0.875,
+      "snomed_validation": 0.75,
+      "clinical_safety": 0.625,
+      "nice_guidelines": 0.0,
+      "completeness": 1.0,
+      "drug_interactions": 1.0
+    },
+    "meditron:7b": {
+      "transcript_fidelity": 0.875,
+      "snomed_validation": 1.0,
+      "clinical_safety": 0.125,
+      "nice_guidelines": 0.125,
+      "completeness": 0.125,
+      "drug_interactions": 1.0
+    },
+    "mistral": {
+      "transcript_fidelity": 0.75,
+      "snomed_validation": 0.25,
+      "clinical_safety": 0.625,
+      "nice_guidelines": 0.0,
+      "completeness": 1.0,
+      "drug_interactions": 1.0
+    }
+  },
+  "ranking": [
+    "praxis-soap-v1",
+    "med42",
+    "mistral",
+    "meditron:7b"
+  ],
+  "range": 21.25
+}

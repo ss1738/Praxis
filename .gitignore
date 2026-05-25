@@ -1,0 +1,126 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Environment variables
+.env
+
+# Model weights & large data
+data/models/
+data/raw/
+data/processed/
+data/librispeech/
+data/samples/
+data/patients/
+
+# Node
+node_modules/
+
+# Office lock files
+~$*
+
+# Experiment tracking
+wandb/
+mlruns/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Docker
+*.log
+.vercel
+
+# Dry-run evaluation outputs (regenerable, not source of truth)
+data/evaluation_results/*dryrun*.json
+data/evaluation_results/*dry-run*.json
+data/evaluation_results/*_dry_run_*.json
+data/evaluation_results/*\(dry-run\)*.json
+
+# PRAXIS-VOX heavy model checkpoints - regenerable, do not commit
+praxis-vox/data/results/**/*.pt
+praxis-vox/data/results/**/*_probs.npy
+praxis-vox/data/results/**/feature_*.npy
+praxis-vox/data/features/
+praxis-vox/data/raw/
+
+# praxis-vox split index files + feature statistics (regenerable from raw data)
+praxis-vox/data/results/**/split_*.npy
+praxis-vox/data/results_v*/split_*.npy
+praxis-vox/data/results_v*/feature_*.npy
+praxis-vox/data/results_v*/*.pt
+praxis-vox/data/results_vastai_*/split_*.npy
+praxis-vox/data/results_vastai_*/*.pt
+
+# LaTeX intermediate build outputs (regenerable from .tex source)
+*.aux
+*.bbl
+*.blg
+*.lof
+*.lot
+*.out
+*.toc
+
+# Demo video frame captures + posters (intermediate)
+docs/_anim_*.jpg
+docs/_anim_*.png
+docs/_check_*.jpg
+docs/_demo_*.jpg
+docs/_demo_*.png
+docs/_v[0-9]*_t*.jpg
+docs/_v[0-9]b_t*.jpg
+docs/_v[0-9]c_t*.jpg
+docs/_v[0-9]ww_t*.jpg
+docs/_preview/
+docs/_video_audit/
+docs/concat_list.txt
+
+# Scene-by-scene render outputs (only final demo_video.mp4 is tracked)
+docs/scene_*.mp4
+docs/scene_*.py
+
+# Demo-video iteration drafts (only the canonical demo_video.mp4 is tracked)
+docs/PRAXIS_Demo_v*.mp4
+docs/PRAXIS_Demo_Final.mp4
+docs/PRAXIS_System_Demo*.mp4
+docs/PRAXIS_Animation.mp4
+
+# Stale render-script variants (current is render_demo.py)
+docs/render_demo_v[0-9].py
+
+# Presentation backups & oversized blobs (keep only the canonical deck)
+*.bak
+docs/*.pptx.bak
+
+# Pipeline run artifacts - may contain real consultation transcripts/SOAP (PII)
+data/pipeline_runs/
+
+# Belt-and-braces: no model weights or audio can ever be committed from anywhere
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.gguf
+*.wav
+*.mp3
+*.flac
+*.m4a

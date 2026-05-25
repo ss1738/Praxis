@@ -1,0 +1,12 @@
+{
+  "biased_file": "wer_praxis-conformer-biased_20260427_154230.json",
+  "greedy_file": "wer_praxis-conformer_20260427_154708.json",
+  "n_samples": 14,
+  "mean_wer_greedy": 0.5672,
+  "mean_wer_biased": 0.5696,
+  "mean_delta": 0.002392857142857145,
+  "wilcoxon_p": 0.3909912109375,
+  "mc_recall_greedy": 0.0,
+  "mc_recall_biased": 0.0,
+  "mc_recall_delta": 0.0
+}

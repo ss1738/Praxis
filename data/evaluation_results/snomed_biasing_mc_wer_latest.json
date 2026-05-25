@@ -1,0 +1,1281 @@
+{
+  "is_synthetic": false,
+  "hardware_target": "RTX 5090 32GB Linux (satyawan-1)",
+  "host": "satyawan",
+  "git_commit": "unknown",
+  "timestamp": "2026-05-24T14:37:01.806953+00:00",
+  "checkpoint": "data/models/conformer_v2",
+  "manifest": "data/processed/primock57_chunked/clinical_subset.json",
+  "subset_selection": {
+    "min_lex_hits_per_chunk": 2,
+    "max_chunks": 40
+  },
+  "aggregate": {
+    "n_chunks": 40,
+    "lexicon_size": 185,
+    "lexicon_suffix_set": [
+      "itis",
+      "osis",
+      "emia",
+      "aemia",
+      "oma",
+      "rrhoea",
+      "phagia",
+      "pathy",
+      "ectomy",
+      "otomy",
+      "plasty",
+      "algia",
+      "gram",
+      "scopy",
+      "cillin",
+      "azole",
+      "olol",
+      "pril",
+      "sartan",
+      "statin",
+      "zepam",
+      "profen",
+      "caine",
+      "mycin",
+      "cycline",
+      "pramine",
+      "dipine"
+    ],
+    "boost": 8.0,
+    "pyctcdecode_available": null,
+    "mean_wer_greedy": 0.6799,
+    "mean_wer_biased": 0.6836,
+    "mean_wer_delta": 0.0037,
+    "wilcoxon_signed_rank_p": 0.340843,
+    "total_ref_hits": 138,
+    "total_recovered_greedy": 0,
+    "total_recovered_biased": 0,
+    "mc_recall_greedy": 0.0,
+    "mc_recall_biased": 0.0,
+    "mc_wer_greedy": 1.0,
+    "mc_wer_biased": 1.0,
+    "relative_mc_wer_reduction": 0.0,
+    "total_wall_time_s": 378.17
+  },
+  "per_chunk": [
+    {
+      "audio_path": "data/processed/primock57_chunked/audio/day1_consultation03_doctor_chunk016.wav",
+      "reference": "And in terms of trying to treat your headaches today, some strong painkillers would be advisable. So, think about Paracetamol, or even Co-codamol. Um, and some anti-inflammatories, such as Ibuprofen and Naproxen. How's that sound to you? Um and uh, you know if your headaches were to become more persistent, then we could maybe think about giving you some medications that will stop your headaches from happening in the first place, something prophylactic medicines. then we could have a discussion next time I see you next week, perhaps. OK. Um, now a couple of things I want you to think about is, you know if your symptoms aren't getting better next two three days, or indeed they're getting worse.",
+      "lex_hit_count": 3,
+      "greedy": {
+        "hypothesis": "o,s some normal or co co um and some antiing flalamery so as i you  in the p uh anti ume. ok,,, more system then we can think about get any some medications that we stop your're headach from happen the first place something a claed medicine the can e so i see you wek? .",
+        "wer": 0.7983870967741935,
+        "ref_hits": 3,
+        "recovered": 0,
+        "mc_recall": 0.0,
+        "missed": [
+          "ibuprofen",
+          "naproxen",
+          "paracetamol"
+        ],
+        "wall_time_s": 0.18
+      },
+      "biased": {
+        "hypothesis": "o, you,,s some normal or co co um, and some antiing flalamery so as, i you in the p uh anti you, um,,,,,,,,,e. o, you, you, more system then we can think about get any some medications, that we' stop your're headach from happen the first place something a ecg can e, so i see, you,, you,, you,, you, you, you,? ,,,,,.",
+        "wer": 0.7661290322580645,
+        "ref_hits": 3,
+        "recovered": 0,
+        "mc_recall": 0.0,
+        "missed": [
+          "ibuprofen",
+          "naproxen",
+          "paracetamol"
+        ],
+        "wall_time_s": 40.64
+      }
+    },
+    {
+      "audio_path": "data/processed/primock57_chunked/audio/day1_consultation07_patient_chunk019.wav",
+      "reference": "Uh, give me, I'm just gonna check. It's, it's, let me know if I'm pronouncing this correctly 'cause I haven't got, I haven't got my glasses with me. So, it's , Metformin? <INAUDIBLE_SPEECH/> and, and there's another one, , Lisinopril? Is that? Yeah, <INAUDIBLE_SPEECH/>. I mean that's those two, I had, I've got them written down a wee bit of paper so. Uh, no, no, just, just, just those two. Yeah, I mean a wee bit of like <INAUDIBLE_SPEECH/>, a wee bit of Aspirin or whatever every now and again, but you know <INAUDIBLE_SPEECH/> nothing long-term.",
+      "lex_hit_count": 3,
+      "greedy": {
+        "hypothesis": "um,', it like i i think i't got my glass we me so it's it bit far then uh i i that i only worse  and i, yeah. yeah i think i sort i had, i've got written down bit bit so uh no no just just just not, i i we bit, i,. um,'.",
+        "wer": 0.7339449541284404,
+        "ref_hits": 3,
+        "recovered": 0,
+        "mc_recall": 0.0,
+        "missed": [
+          "aspirin",
+          "lisinopril",
+          "metformin"
+        ],
+        "wall_time_s": 0.02
+      },
+      "biased": {
+        "hypothesis": "um, i',, it's like i i think i i't got my glass we me so it's, it bit far then uh i, i that i only worse and, i,,,,,,,,,',. , yeah,, i think i' sort i i, i've got written down bit bit so., i',, i', i, uh, no no just just just not, i, i,, bit,,, i, i,,,,,. i, i',,,,,,,,.",
+        "wer": 0.7431192660550459,
+        "ref_hits": 3,
+        "recovered": 0,
+        "mc_recall": 0.0,
+        "missed": [
+          "aspirin",
+          "lisinopril",
+          "metformin"
+        ],
+        "wall_time_s": 12.45
+      }
+    },
+    {
+      "audio_path": "data/processed/primock57_chunked/audio/day1_consultation10_doctor_chunk017.wav",
+      "reference": "But the fact that I, I I think it's, um, probably just a simple what we'd say a UTI or a cystitis, bladder infection. Uh, you know you haven't got any other symptoms that, suggest to me that there's anything to worry about, so things like fevers and back pain. Um, would be more worrying for me to hear. Um, so it's something we can treat quite readily with antibiotics. Um, so we've got a choice of two antibiotics something called Trimethoprim or, Nitrofurantoin which is a three day course. And normally they're usually quite effective, um, for your symptoms. It's probably worth giving us a urine sample today as well if you can, so we can send it off to the lab.",
+      "lex_hit_count": 3,
+      "greedy": {
+        "hypothesis": "um,, it' um probably just a  simpleymp or a orst blood infection uh you know you haven' any other the symptoms that suggest know something to worry about or things like f,, um. , worry for me um so i we we can treatre quite readly with p six um so got short to antibitic something co try or i to and., which threee. um,,s.",
+        "wer": 0.7099236641221374,
+        "ref_hits": 3,
+        "recovered": 0,
+        "mc_recall": 0.0,
+        "missed": [
+          "cystitis",
+          "nitrofurantoin",
+          "trimethoprim"
+        ],
+        "wall_time_s": 0.02
+      },
+      "biased": {
+        "hypothesis": "um,,'s,. um, probably just a simpleymp, or a, orst blood infection,. uh, you know you haven't any other the symptoms that suggest knows to worry abouts or things like f,.,,,,.,.,,,.,,,, um. ,,, worry for me,, um, so i' we we can treatre quite readly with p six, um,, so got short to antibitic something co try or i to and, which, you, three,,,,,.,.,,,,e. um,',,,,,,,.",
+        "wer": 0.7175572519083969,
+        "ref_hits": 3,
+        "recovered": 0,
+        "mc_recall": 0.0,
+        "missed": [
+          "cystitis",
+          "nitrofurantoin",
+          "trimethoprim"
+        ],
+        "wall_time_s": 42.84
+      }
+    },
+    {
+      "audio_path": "data/processed/primock57_chunked/audio/day1_consultation12_patient_chunk001.wav",
+      "reference": "Right, so, uh, I've been having, uh, diarrhoea, for like, let's say past three days, more or less. Yeah, so it's been a, very bad diarrhoea, so it keeps me like, I keep going back and forth, to, to the toilet very often. Um, yeah it started like three days ago. And uh, uh, so it started with vomiting, so I vomited a couple of times. Uh, but then, that went away, and, uh, yeah it's just diarrhoea now.",
+      "lex_hit_count": 3,
+      "greedy": {
+        "hypothesis": "uh, for like with three past three days more and . i so it's been a, but but uh. um,' like i could going back can for to the do like off i yeah it's back like three days ago and uh, uh, it's so, it',,, i,. um,, a couple of um.",
+        "wer": 0.6265060240963856,
+        "ref_hits": 3,
+        "recovered": 0,
+        "mc_recall": 0.0,
+        "missed": [
+          "diarrhoea"
+        ],
+        "wall_time_s": 0.02
+      },
+      "biased": {
+        "hypothesis": "uh,,,, for like with three past three days more and .,,,,, i so it's been a,,,, but, uh,,,,,,. um, i,,, like, i could going back can for to the do, like off i yeah it's back like three days ago and uh, uh, it's, it, i,,,,,, i,',,,. um,',, a, couple, of,,,,,.",
+        "wer": 0.6265060240963856,
+        "ref_hits": 3,
+        "recovered": 0,
+        "mc_recall": 0.0,
+        "missed": [
+          "diarrhoea"
+        ],
+        "wall_time_s": 8.33
+      }
+    },
+    {
+      "audio_path": "data/processed/primock57_chunked/audio/day1_consultation13_doctor_chunk018.wav",
+      "reference": "So, so , there's definitely room for, improvement there. Or, I can prescribe you something stronger, like Naproxen, which is another anti-inflammatory, which can be helpful. Um, we can also add in other, painkillers like, Paracetamol, or Codeine. Which might be helpful as well. OK. And I think it's , certainly worth looking into that, so I can give you a , prescription for that today. Um, with regards to um, the next few days. It may be worth keeping a headache diary so we can try and work out what's, you know, if there's any triggers which could be causing your headaches to become worse.",
+      "lex_hit_count": 3,
+      "greedy": {
+        "hypothesis": "and, he we can also add any other paink is i paray tom or coing might be helpful as well? ok i is sos tell worth making uh i with cption for that day um with the regard to um the next few daysk. ,.",
+        "wer": 0.8055555555555556,
+        "ref_hits": 3,
+        "recovered": 0,
+        "mc_recall": 0.0,
+        "missed": [
+          "codeine",
+          "naproxen",
+          "paracetamol"
+        ],
+        "wall_time_s": 0.02
+      },
+      "biased": {
+        "hypothesis": "and,,,, he we can also add any other, paink is i paray tom, or coing might be helpful as well.,,? ok i is sos worth making uh i with cption for that day. um with the regard to um the next, days,,.,,,,.,,,k. ,,,,,,,.",
+        "wer": 0.8055555555555556,
+        "ref_hits": 3,
+        "recovered": 0,
+        "mc_recall": 0.0,
+        "missed": [
+          "codeine",
+          "naproxen",
+          "paracetamol"
+        ],
+        "wall_time_s": 6.42
+      }
+    },
+    {
+      "audio_path": "data/processed/primock57_chunked/audio/day2_consultation06_doctor_chunk015.wav",
+      "reference": "You would have, swelling of the lips, difficulty breathing. You might have something called stridor, which is an inspiratory sound that you, when you're trying, trying to breathe. It makes like a rasping sound, like this. OK. . Thankfully, you don't have anything like that right now. It seems to me like this is a localised allergic reaction. However, if anything changes, if anything deteriorates. Either make an appointment with us, or go straight to A and E. Um, uh, and in some cases, if it's, if it's, uh, progressing rapidly, it's better to go straight to A and E, rather than to, wait for a booked appointment with us, OK. What I'd like you to do now, is I'd like you to try and take some antihistamines. So you can buy them over the counter. You can get Piriton or Chlorphenamine, and you can take one tablet, four milligrams, um, up to about six times a day. OK.",
+      "lex_hit_count": 3,
+      "greedy": {
+        "hypothesis": ", ok probably you know have anything like that right and now, it seems to me like this is the medical line of reaction how anything change is it anything deters you that make, with,,e? , uh, and in some case that if it's it' uh progressing rapidly it's better to go straight to in , then to wait for a doctor without ok what i like we to do now, is i like you to try take, and, and history,,,k. .",
+        "wer": 0.6787878787878788,
+        "ref_hits": 3,
+        "recovered": 0,
+        "mc_recall": 0.0,
+        "missed": [
+          "allergic",
+          "chlorphenamine",
+          "piriton"
+        ],
+        "wall_time_s": 0.02
+      },
+      "biased": {
+        "hypothesis": ", you,,,, ok,,, probably, you know have anything like that right and now, it seems to me like this is the medical line of reaction how anything change is it anything deters,, you, make,, with,,, you,,., you, you,,? ,.,, and, in some case, if it's, it's, uh progressing rapidly, it's better to go straight to in, , then, to, wait for a doctor without ok.,, what i like we to do now, is i like you to try take, and,, history,,.,.,,.,., you,.,.,.,,,. ,,,,,,,.",
+        "wer": 0.6666666666666666,
+        "ref_hits": 3,
+        "recovered": 0,
+        "mc_recall": 0.0,
+        "missed": [
+          "allergic",
+          "chlorphenamine",
+          "piriton"
+        ],
+        "wall_time_s": 28.79
+      }
+    },
+    {
+      "audio_path": "data/processed/primock57_chunked/audio/day2_consultation07_doctor_chunk012.wav",
+      "reference": "OK, so ambulance team will be with you very shortly. I'm gonna stay on the line with you until they come. OK. when they come, what they'll do is, they're gonna put some stickers on your chest and do an ECG. And then decide where to take you after that, OK? And um, what, what, uh, can I just double check? Do you have, um, any allergies to any medication? Right, OK. Sure. Uh, what's the nature of that allergy to aspirin? Do you, does it, does it cause you heartburn? Or is it like an allergic reaction?",
+      "lex_hit_count": 3,
+      "greedy": {
+        "hypothesis": "ok what when they come what they do it some stick as in your chest and do' you and then where to take you after that ok, um,k? ok, you have um any allergies or any medication right ok sure uh what the,k? ,.",
+        "wer": 0.6666666666666666,
+        "ref_hits": 3,
+        "recovered": 0,
+        "mc_recall": 0.0,
+        "missed": [
+          "allergic",
+          "aspirin",
+          "ecg"
+        ],
+        "wall_time_s": 0.02
+      },
+      "biased": {
+        "hypothesis": "o,k,, what, when they come, what they do it some stick as in your chest and do', you,, and then, where to take you after that ok,,,,,,,,,,,,,,,,, you, you,,? ok., do you, have, um any allergies or any medication o right ok sure uh, what,,,,, you,,,, you,k? ,,,,,,,.",
+        "wer": 0.6764705882352942,
+        "ref_hits": 3,
+        "recovered": 0,
+        "mc_recall": 0.0,
+        "missed": [
+          "allergic",
+          "aspirin",
+          "ecg"
+        ],
+        "wall_time_s": 5.7
+      }
+    },
+    {
+      "audio_path": "data/processed/primock57_chunked/audio/day2_consultation07_doctor_chunk013.wav",
+      "reference": "Sure. Uh, what's the nature of that allergy to aspirin? Do you, does it, does it cause you heartburn? Or is it like an allergic reaction? OK, all right. It's very important that you communicate that to the hospital. Um, the detail you just told me, because, um, we, we may need to consider aspirin despite allergy, OK? Um, alright, um, now in terms of, um, what happens from here",
+      "lex_hit_count": 3,
+      "greedy": {
+        "hypothesis": "ok, that and not reaction? o right it's very important that you canmunicate that to the hospital uh f tell you just told me because um we may need to considerp sp okk. ,.",
+        "wer": 0.6805555555555556,
+        "ref_hits": 3,
+        "recovered": 0,
+        "mc_recall": 0.0,
+        "missed": [
+          "allergic",
+          "aspirin"
+        ],
+        "wall_time_s": 0.02
+      },
+      "biased": {
+        "hypothesis": "ok,, you,, that, and not reaction ok. you,? ok right iss very important that you canmunicate that to the hospital. uh f tell you just told me because um we may need to considerp sp,,,,k,.,.,.,k. ,,,,,,,.",
+        "wer": 0.6944444444444444,
+        "ref_hits": 3,
+        "recovered": 0,
+        "mc_recall": 0.0,
+        "missed": [
+          "allergic",
+          "aspirin"
+        ],
+        "wall_time_s": 4.2
+      }
+    },
+    {
+      "audio_path": "data/processed/primock57_chunked/audio/day2_consultation09_patient_chunk009.wav",
+      "reference": "Sure. Um. I have, uh, type two diabetes and, uh, high blood pressure. Um, I'm taking Metformin losartan and Amlodipine.",
+      "lex_hit_count": 3,
+      "greedy": {
+        "hypothesis": "sure. um i uh. um type two dibus and hi blood pressure um i taken in me  no. um,'..",
+        "wer": 0.5238095238095238,
+        "ref_hits": 3,
+        "recovered": 0,
+        "mc_recall": 0.0,
+        "missed": [
+          "amlodipine",
+          "diabetes",
+          "metformin"
+        ],
+        "wall_time_s": 0.02
+      },
+      "biased": {
+        "hypothesis": "sure. um, i uh,. um, type two dibus and hi blood pressure um im taken in tds ,,,. um,',,,..",
+        "wer": 0.5714285714285714,
+        "ref_hits": 3,
+        "recovered": 0,
+        "mc_recall": 0.0,
+        "missed": [
+          "amlodipine",
+          "diabetes",
+          "metformin"
+        ],
+        "wall_time_s": 3.7
+      }
+    },
+    {
+      "audio_path": "data/processed/primock57_chunked/audio/day3_consultation01_doctor_chunk010.wav",
+      "reference": "And any other inhalers? Is it just the Salbutamol that you use? Any other brown inhalers? <INAUDIBLE_SPEECH/> OK right and um so, do you use antihistamines like Cetirizine, Loratadine, Piriton, any of those, kind of things? Yeah. Yeah.",
+      "lex_hit_count": 4,
+      "greedy": {
+        "hypothesis": "o you ok right and um so do you use anti stings likeszin v to been pitin any otherk? kind of things uh enough can. yeah.e? .",
+        "wer": 0.7692307692307693,
+        "ref_hits": 4,
+        "recovered": 0,
+        "mc_recall": 0.0,
+        "missed": [
+          "cetirizine",
+          "loratadine",
+          "piriton",
+          "salbutamol"
+        ],
+        "wall_time_s": 0.02
+      },
+      "biased": {
+        "hypothesis": "ok you ok right. and um so do you use anti stings likeszine v to been pitin any other you you,k? kind of things uh enough can. yeah.,e? .",
+        "wer": 0.8205128205128205,
+        "ref_hits": 4,
+        "recovered": 0,
+        "mc_recall": 0.0,
+        "missed": [
+          "cetirizine",
+          "loratadine",
+          "piriton",
+          "salbutamol"
+        ],
+        "wall_time_s": 1.08
+      }
+    },
+    {
+      "audio_path": "data/processed/primock57_chunked/audio/day3_consultation01_patient_chunk009.wav",
+      "reference": "I've woke up the next morning quite swollen up and had also I, felt really bad and quite difficult breathing, but I don't know what it was I had it was like a curry or something I think. But I generally have asthma so, I took I, I take, ohh what's it called? Salbutamol inhalers? Yeah, so I do take that regularly but I've always taken it. I generally have asthma.",
+      "lex_hit_count": 3,
+      "greedy": {
+        "hypothesis": "well i general we have  months so, i don't i i. uh, would call soto and haless yeah so i do take that regularly but do always take it a generally have that.. right.",
+        "wer": 0.7733333333333333,
+        "ref_hits": 3,
+        "recovered": 0,
+        "mc_recall": 0.0,
+        "missed": [
+          "asthma",
+          "salbutamol"
+        ],
+        "wall_time_s": 0.02
+      },
+      "biased": {
+        "hypothesis": "well i general we have months so, i don't, i,.. uh, would was call soto and haless yeah so i do take that regularly, but do always take it a generally have that.. right.",
+        "wer": 0.7733333333333333,
+        "ref_hits": 3,
+        "recovered": 0,
+        "mc_recall": 0.0,
+        "missed": [
+          "asthma",
+          "salbutamol"
+        ],
+        "wall_time_s": 2.08
+      }
+    },
+    {
+      "audio_path": "data/processed/primock57_chunked/audio/day3_consultation09_patient_chunk016.wav",
+      "reference": "I know that my dad has I don't know if it it's hypo, I think it's hypothyroidism. Um, and then my, like, he's got he's got some autoimmune stuff going on, like that much I know. And then, my mom, my mom, she's actually not in a great shape. She's got diabetes type two. She's got hypertension, um, she's got, gosh, what is it, ohh, yeah, she's got high cholesterol, um, and I think that's it for her. Yeah.",
+      "lex_hit_count": 3,
+      "greedy": {
+        "hypothesis": "i know that my uh it i don't know if it's kind so, i think it's high di it it. i,' i',. um, i it's get it that some mo i on stuff goingin on like that much i i it when my mu my mu she's she actually not in a great shape is kind don be like to it's got,,,.,. um, um.",
+        "wer": 0.6555555555555556,
+        "ref_hits": 3,
+        "recovered": 0,
+        "mc_recall": 0.0,
+        "missed": [
+          "diabetes",
+          "hypertension",
+          "hypothyroidism"
+        ],
+        "wall_time_s": 0.02
+      },
+      "biased": {
+        "hypothesis": "i know that my uh it, i don't know if it's kind so, i think it's high di it. it, i',.,., i',.,.,.,,.. um, i, it's get, it that some mo i on stuff goingin on like that much i i it when my mu my mu she's, she' actually not in a great shape is kind don be like to,'s,,,,,,.,.,,',,. um,,,,,,,.",
+        "wer": 0.6777777777777778,
+        "ref_hits": 3,
+        "recovered": 0,
+        "mc_recall": 0.0,
+        "missed": [
+          "diabetes",
+          "hypertension",
+          "hypothyroidism"
+        ],
+        "wall_time_s": 3.04
+      }
+    },
+    {
+      "audio_path": "data/processed/primock57_chunked/audio/day3_consultation10_patient_chunk008.wav",
+      "reference": "Uh, my dad had hypertension. Has hypertension. Had hypertension. Yeah he died of bowel cancer ten years ago. Uh, sixty-two. Yes.",
+      "lex_hit_count": 3,
+      "greedy": {
+        "hypothesis": "uh my da had  highten uh high potential  c yeah di of bowic or ten years ago.. uh sixty two yes . o?",
+        "wer": 0.5,
+        "ref_hits": 3,
+        "recovered": 0,
+        "mc_recall": 0.0,
+        "missed": [
+          "hypertension"
+        ],
+        "wall_time_s": 0.02
+      },
+      "biased": {
+        "hypothesis": "uh my dad had highten. uh high potential c. yeah di of bowic or ten years ago.. uh sixty two yes . right?",
+        "wer": 0.45454545454545453,
+        "ref_hits": 3,
+        "recovered": 0,
+        "mc_recall": 0.0,
+        "missed": [
+          "hypertension"
+        ],
+        "wall_time_s": 1.59
+      }
+    },
+    {
+      "audio_path": "data/processed/primock57_chunked/audio/day4_consultation03_patient_chunk006.wav",
+      "reference": "Uh, they gave me some, uh, Codeine. Uh, yeah. I, I've been taking that fairly, fairly regularly. But, probably haven't taken it for a week. Yeah. Um, no. <INAUDIBLE_SPEECH/> tell you, I'm allergic to Ibuprofen, though.",
+      "lex_hit_count": 3,
+      "greedy": {
+        "hypothesis": "uh they gave me um uh hi. i yeah, i've been taking up f i regular but. uh, think for a week yeahe um no i i' no. ok.",
+        "wer": 0.575,
+        "ref_hits": 3,
+        "recovered": 0,
+        "mc_recall": 0.0,
+        "missed": [
+          "allergic",
+          "codeine",
+          "ibuprofen"
+        ],
+        "wall_time_s": 0.02
+      },
+      "biased": {
+        "hypothesis": "uh they gave me um, uh hi. i yeah, i've been taking up f, i regular, but,. uh, think, a week, yeahe. um no., i i' no. ok i,,.",
+        "wer": 0.6,
+        "ref_hits": 3,
+        "recovered": 0,
+        "mc_recall": 0.0,
+        "missed": [
+          "allergic",
+          "codeine",
+          "ibuprofen"
+        ],
+        "wall_time_s": 1.34
+      }
+    },
+    {
+      "audio_path": "data/processed/primock57_chunked/audio/day4_consultation09_doctor_chunk010.wav",
+      "reference": "Yeah, sure. Um, OK. Well, I, I would quite like to, uh, certainly get you some, uh, Ventolin, Clenil Modulite. Have you had asthma exacerbations in the past? Yeah. Have you ever been to hospital, uh, as an inpatient? As in, you know, stayed in there overnight, for asthma? Ohh, OK. So you, so, so you, uh, you , you went to hospital, and had a, a, . So you stayed in hospital for a few days did you, with an asthma exacerbation?",
+      "lex_hit_count": 3,
+      "greedy": {
+        "hypothesis": "um, just medications in the past? ok, i told uh has an patient as have you stay in there open night for that uhk so so uh you youk? um,.",
+        "wer": 0.8271604938271605,
+        "ref_hits": 3,
+        "recovered": 0,
+        "mc_recall": 0.0,
+        "missed": [
+          "asthma"
+        ],
+        "wall_time_s": 0.02
+      },
+      "biased": {
+        "hypothesis": "um, just medications in the past,,,,,,,,,,,,,,? o,.,,' to told, uh has an patient as have you stay in there open night for that uhk so so uh,, you,,, you,.,,,k? ,,,,,,.",
+        "wer": 0.8024691358024691,
+        "ref_hits": 3,
+        "recovered": 0,
+        "mc_recall": 0.0,
+        "missed": [
+          "asthma"
+        ],
+        "wall_time_s": 3.49
+      }
+    },
+    {
+      "audio_path": "data/processed/primock57_chunked/audio/day4_consultation09_doctor_chunk016.wav",
+      "reference": "Probably, yeah I would <INAUDIBLE_SPEECH/> too. So, um, they, they can come, they can make you, your mood change, can be slightly low or too, slightly high. Can give you, a high blood sugar, um, and, uh, their. Uh, <INAUDIBLE_SPEECH/>, they can also cause rash, nausea, um, headaches, but, mostly is well-tolerated, and it should help your asthma an awful lot. Um, uh, what I'd like to do is, is send you these, the, some prescriptions for your, uh, inhalers, , ongoing. So you, um, you can, once you get better from this asthma attack, you can, you can, use the Clenil Modulite in the morning, with Ventolin as a PRN. , so, a Ventolin when you need to, um, when you're getting wheezy.",
+      "lex_hit_count": 3,
+      "greedy": {
+        "hypothesis": "so, they they can come they can make you your mood change can welightly low or tolight high can give you high blood should um and uh um. um,.,,, not um headach but notly is well toerated and it help lot um uh well i do it say these the some scp. um. ,.",
+        "wer": 0.6850393700787402,
+        "ref_hits": 3,
+        "recovered": 0,
+        "mc_recall": 0.0,
+        "missed": [
+          "asthma",
+          "prn"
+        ],
+        "wall_time_s": 0.02
+      },
+      "biased": {
+        "hypothesis": "so,,,, they, they can come, they can make you your mood change can welightly low or tolight high can give you, high blood should um,, and,, uh,,,,,,,,,,,.,.,,,, um. ,.,,,,,,. um, headach, but notly is well toerated. and it help s lot.,,. um,, uh, well i dos, it say these the some crp .,.,,.,.,.,.,.,,,. ,,,,,,,,.",
+        "wer": 0.7007874015748031,
+        "ref_hits": 3,
+        "recovered": 0,
+        "mc_recall": 0.0,
+        "missed": [
+          "asthma",
+          "prn"
+        ],
+        "wall_time_s": 24.83
+      }
+    },
+    {
+      "audio_path": "data/processed/primock57_chunked/audio/day4_consultation09_patient_chunk004.wav",
+      "reference": "Yeah, yeah, I have asthma, I've had it for a while now, um. And then I have like, a hayfever, you know, and some allergies just to dust, stuff like that. Um, yeah, so, uh, you know the um, uh, Ventolin. It's called uh, Salbutamol. I got that one, and then I have a steroid, a Clenil, Clenil inhaler.",
+      "lex_hit_count": 3,
+      "greedy": {
+        "hypothesis": "yeah yeah, i have a my i throw a while now um and then i have like a ha fever know it my allergies the just i quite no no. um yeah so i you the a v ones it called a so be uh that one in the i was the i uh. uh,.",
+        "wer": 0.5737704918032787,
+        "ref_hits": 3,
+        "recovered": 0,
+        "mc_recall": 0.0,
+        "missed": [
+          "asthma",
+          "hayfever",
+          "salbutamol"
+        ],
+        "wall_time_s": 0.02
+      },
+      "biased": {
+        "hypothesis": "yeah, yeah, i have a, my i throw a while now um and then i have like a ha fever know it my allergies the just's i quite no., i,,. um yeah so i you know the a v ones it called a so be. uh that one in the i was, i, i,,,,,,,,,,. uh,,.",
+        "wer": 0.5573770491803278,
+        "ref_hits": 3,
+        "recovered": 0,
+        "mc_recall": 0.0,
+        "missed": [
+          "asthma",
+          "hayfever",
+          "salbutamol"
+        ],
+        "wall_time_s": 2.17
+      }
+    },
+    {
+      "audio_path": "data/processed/primock57_chunked/audio/day4_consultation09_patient_chunk006.wav",
+      "reference": "Not with me right now, no, I ran out. No, no, not allergic to anything. Just like, just the, dust and stuff, but nothing, no drugs. Um, yeah, my mum has eczema, and my dad has asthma. , ohh, when I was young, I also had eczema.",
+      "lex_hit_count": 4,
+      "greedy": {
+        "hypothesis": "not with me right now no went out. no no i no. um, like just uh dust and stuff but nothing no drugs um my  had it. , like i i.",
+        "wer": 0.5217391304347826,
+        "ref_hits": 4,
+        "recovered": 0,
+        "mc_recall": 0.0,
+        "missed": [
+          "allergic",
+          "asthma",
+          "eczema"
+        ],
+        "wall_time_s": 0.02
+      },
+      "biased": {
+        "hypothesis": "not with me right now, no went out.,, no, no, i, no. um, it just like, just uh dust and stuff, but nothing no drugs. um my , had, it,,. ,, like,, is,,,,.",
+        "wer": 0.5434782608695652,
+        "ref_hits": 4,
+        "recovered": 0,
+        "mc_recall": 0.0,
+        "missed": [
+          "allergic",
+          "asthma",
+          "eczema"
+        ],
+        "wall_time_s": 3.45
+      }
+    },
+    {
+      "audio_path": "data/processed/primock57_chunked/audio/day4_consultation09_patient_chunk007.wav",
+      "reference": "Um, yeah, my mum has eczema, and my dad has asthma. , ohh, when I was young, I also had eczema. And I had a milk protein allergy, when I was young too. Um. Not really, like I feel like asthma's probably a part of it, and, probably getting my, inhalers would be helpful",
+      "lex_hit_count": 4,
+      "greedy": {
+        "hypothesis": "uh, i i when i was a young i i my leg to my and i had a mil co allery. when i was young two.. um not really is like i feel like i probably private of bit, and,. get.",
+        "wer": 0.6481481481481481,
+        "ref_hits": 4,
+        "recovered": 0,
+        "mc_recall": 0.0,
+        "missed": [
+          "asthma",
+          "eczema"
+        ],
+        "wall_time_s": 0.02
+      },
+      "biased": {
+        "hypothesis": "uh, i a when i was a young i i my leg to my and i had a mil co allery. when i was young two.. um, not really, like i feel like, i, probably, private of bit,, and,,,,. i, get, like,,,.",
+        "wer": 0.6296296296296297,
+        "ref_hits": 4,
+        "recovered": 0,
+        "mc_recall": 0.0,
+        "missed": [
+          "asthma",
+          "eczema"
+        ],
+        "wall_time_s": 0.89
+      }
+    },
+    {
+      "audio_path": "data/processed/primock57_chunked/audio/day4_consultation10_doctor_chunk016.wav",
+      "reference": "Sure. Um. OK, and just to ask a few questions. Are you, uh, do you have any other medical, uh, problems? Um, that I need to be aware of? Don't <INAUDIBLE_SPEECH/>. Allergic to Amoxicillin. Um, but no other medical problems, that you? Any drug allergies? Ohh, you mentioned Amoxicillin, but anything else? Um, and, do you take any medications at the moment?",
+      "lex_hit_count": 3,
+      "greedy": {
+        "hypothesis": "ok., question a you uh you have any a medical uh problems um do aware too ? ok but now other the no ho any dr all these are you mentioned the mu cyin than any otherk? um, medic.",
+        "wer": 0.734375,
+        "ref_hits": 3,
+        "recovered": 0,
+        "mc_recall": 0.0,
+        "missed": [
+          "allergic",
+          "amoxicillin"
+        ],
+        "wall_time_s": 0.02
+      },
+      "biased": {
+        "hypothesis": "ok., you question a you uh, you have any a medical uh problems um do aware too cks ? ok, but now other the no ho any dr all these are you mentioned the mu cyin than any other?,,,? ,,, medic,,.",
+        "wer": 0.734375,
+        "ref_hits": 3,
+        "recovered": 0,
+        "mc_recall": 0.0,
+        "missed": [
+          "allergic",
+          "amoxicillin"
+        ],
+        "wall_time_s": 13.33
+      }
+    },
+    {
+      "audio_path": "data/processed/primock57_chunked/audio/day5_consultation01_doctor_chunk010.wav",
+      "reference": "What happens when you get a, when you take Aspirin? OK. And have you ever, taken any, non-steroidal anti-inflammatories, like Ibuprofen, Naproxen, anything like that? OK. Um, so, this headache is new to you, and you've, you've not had regular headaches before? What I would, suggest is, taking, uh, um, some anti-inflammatories, along with the Paracetamol.",
+      "lex_hit_count": 4,
+      "greedy": {
+        "hypothesis": "what happen when you get that, when you take us for? ok and have you you ever would tak any any non storyo andfs like i ofph and yourps and anything like thatk? ok. um so this headacheesnet and you', you've not had regular headachese before k? ,.",
+        "wer": 0.639344262295082,
+        "ref_hits": 4,
+        "recovered": 0,
+        "mc_recall": 0.0,
+        "missed": [
+          "aspirin",
+          "ibuprofen",
+          "naproxen",
+          "paracetamol"
+        ],
+        "wall_time_s": 0.02
+      },
+      "biased": {
+        "hypothesis": "what happens, when you get that, when you take us for? ok and have you you ever would, tak any any, non storyo andfs, like i ofph and yourps and anything like that? ok,,,,,,? ok. um so, this headacheesnet and you', you've not had regular headaches before?,., tds ,,,,,e? , you,,,,,,.",
+        "wer": 0.6065573770491803,
+        "ref_hits": 4,
+        "recovered": 0,
+        "mc_recall": 0.0,
+        "missed": [
+          "aspirin",
+          "ibuprofen",
+          "naproxen",
+          "paracetamol"
+        ],
+        "wall_time_s": 8.64
+      }
+    },
+    {
+      "audio_path": "data/processed/primock57_chunked/audio/day5_consultation01_doctor_chunk011.wav",
+      "reference": "What I would, suggest is, taking, uh, um, some anti-inflammatories, along with the Paracetamol. Um, as a. Uh, you said you're eating OK? I mean it, from the sounds of it, it does, sound quite like a migraine, but obviously if you had no history of that, in the past. Um, and is anything changed recently, or any, anything you've done recently might've, triggered it? <INAUDIBLE_SPEECH/> Yeah. Um, well that would be the first thing to do, is to take some anti-inflammatories along with the Paracetamol. Make sure you're really well hydrated.",
+      "lex_hit_count": 3,
+      "greedy": {
+        "hypothesis": "um some antiphms and along with the pa um as it you so your're eating ok i mean from the sounds of, does,e? o that o you can had no history of that in the past um and is anything change recently or any anything youve don recently might regulare? sure.",
+        "wer": 0.6262626262626263,
+        "ref_hits": 3,
+        "recovered": 0,
+        "mc_recall": 0.0,
+        "missed": [
+          "migraine",
+          "paracetamol"
+        ],
+        "wall_time_s": 0.02
+      },
+      "biased": {
+        "hypothesis": "um,, some antiphms and along with the paras.,. um, as it, you so your're eating ok i mean from the sound.s,,,s,,,,,,,,,e? o,,,, that o you can had no history of that, in the past,, um and is anything change recently or any anything youve don recently might regulare? sure.",
+        "wer": 0.6464646464646465,
+        "ref_hits": 3,
+        "recovered": 0,
+        "mc_recall": 0.0,
+        "missed": [
+          "migraine",
+          "paracetamol"
+        ],
+        "wall_time_s": 3.16
+      }
+    },
+    {
+      "audio_path": "data/processed/primock57_chunked/audio/day5_consultation01_patient_chunk009.wav",
+      "reference": "Uh, just with housemates, um, just friends. Um, I'd say a normal amount, um, probably, you know, a few drinks at the weekend. No. No. Sorry? Uh, just Paracetamol. Um, I'm allergic to Aspirin, so I haven't been taking that.",
+      "lex_hit_count": 3,
+      "greedy": {
+        "hypothesis": "uh just with toughns um fine. um the normal about um probablyy a few drink the and.. yeah no sorry. no just . um, i.",
+        "wer": 0.6511627906976745,
+        "ref_hits": 3,
+        "recovered": 0,
+        "mc_recall": 0.0,
+        "missed": [
+          "allergic",
+          "aspirin",
+          "paracetamol"
+        ],
+        "wall_time_s": 0.02
+      },
+      "biased": {
+        "hypothesis": "uh, just with toughns, um fine. um, the normal about, um probablyy a, few drink the and.,,, no. yeah, no.,, sorry.,, just .. um,,, i,,,,,,,.",
+        "wer": 0.6511627906976745,
+        "ref_hits": 3,
+        "recovered": 0,
+        "mc_recall": 0.0,
+        "missed": [
+          "allergic",
+          "aspirin",
+          "paracetamol"
+        ],
+        "wall_time_s": 1.17
+      }
+    },
+    {
+      "audio_path": "data/processed/primock57_chunked/audio/day5_consultation01_patient_chunk010.wav",
+      "reference": "Uh, just Paracetamol. Um, I'm allergic to Aspirin, so I haven't been taking that. Um, I just feel really sick. Um, I have in the past, I haven't been taking it, last few days. Yeah.",
+      "lex_hit_count": 3,
+      "greedy": {
+        "hypothesis": "um um i just go' think uh, i havent no. uh, i've been takening good that days yeah. sure.",
+        "wer": 0.7894736842105263,
+        "ref_hits": 3,
+        "recovered": 0,
+        "mc_recall": 0.0,
+        "missed": [
+          "allergic",
+          "aspirin",
+          "paracetamol"
+        ],
+        "wall_time_s": 0.02
+      },
+      "biased": {
+        "hypothesis": "um,, um, i just go' think uh, i havent. uh, i've been takening good that days yeah.. sure.",
+        "wer": 0.7894736842105263,
+        "ref_hits": 3,
+        "recovered": 0,
+        "mc_recall": 0.0,
+        "missed": [
+          "allergic",
+          "aspirin",
+          "paracetamol"
+        ],
+        "wall_time_s": 0.41
+      }
+    },
+    {
+      "audio_path": "data/processed/primock57_chunked/audio/day5_consultation07_doctor_chunk015.wav",
+      "reference": "It's fine to carry on what you're doing at the moment, with the lemsip. I wouldn't take, and that, that contains paracetamol so don't take any other paracetamol containing products, um, with that at the same time. Um, the cough syrup isn't advisable in the daytime because it's best for your body if you just keep coughing. But if you're kept up all night and you can't sleep at all, then it, it's OK to have a little bit of cough syrup, just to settle that down. OK? Do you have blood sugar checking equipment? Do you check? No, OK. Well, if you make sure that you have the regular diabetes and blood pressure checkups that your GP has asked you for?",
+      "lex_hit_count": 3,
+      "greedy": {
+        "hypothesis": "um,',,, um a con isn't advis well in the day time it best your body if you just keep co but if you're kept up or night and cotswe all then it it sok have a little bit of. o ok you how blood should get check right do you take ok well if you make youk? ,.",
+        "wer": 0.7022900763358778,
+        "ref_hits": 3,
+        "recovered": 0,
+        "mc_recall": 0.0,
+        "missed": [
+          "diabetes",
+          "paracetamol"
+        ],
+        "wall_time_s": 0.02
+      },
+      "biased": {
+        "hypothesis": ",',,,,,. um,, a con, isn't advis well in the day time it best your body if you just keep co but if you're kept up or night, and cot swe all then it, it sok have a little, bit of,,,s,,,,,,,, you, you,s. o,.,, you, ok. you how blood should get check right do you take ok,. well, if you,,, you,, you,? ,,,,,,,,.",
+        "wer": 0.7022900763358778,
+        "ref_hits": 3,
+        "recovered": 0,
+        "mc_recall": 0.0,
+        "missed": [
+          "diabetes",
+          "paracetamol"
+        ],
+        "wall_time_s": 21.82
+      }
+    },
+    {
+      "audio_path": "data/processed/primock57_chunked/audio/day5_consultation07_patient_chunk006.wav",
+      "reference": "No, uh, I've got hypertension, um, so I'm on some drugs for that, um, but that's it, really. Uh, just the hypertension and the diabetes. Uh, I think something called metformin, and lisinopril I think is the other one.",
+      "lex_hit_count": 5,
+      "greedy": {
+        "hypothesis": "no uh i, i've got high attention, um some one to drug that, um but that's it really. no. uh just the hi attention on dibs. uh i think i called my or and uh um. uh,,.",
+        "wer": 0.5952380952380952,
+        "ref_hits": 5,
+        "recovered": 0,
+        "mc_recall": 0.0,
+        "missed": [
+          "diabetes",
+          "hypertension",
+          "lisinopril",
+          "metformin"
+        ],
+        "wall_time_s": 0.02
+      },
+      "biased": {
+        "hypothesis": "no, uh i, i've got high attention, um, some one to drug that, um, but that's it really.,, no. uh, just the hi attention on dibs. uh, i think i called my or and uh um... uh,,,,,.",
+        "wer": 0.5952380952380952,
+        "ref_hits": 5,
+        "recovered": 0,
+        "mc_recall": 0.0,
+        "missed": [
+          "diabetes",
+          "hypertension",
+          "lisinopril",
+          "metformin"
+        ],
+        "wall_time_s": 0.76
+      }
+    },
+    {
+      "audio_path": "data/processed/primock57_chunked/audio/day5_consultation10_doctor_chunk015.wav",
+      "reference": "Um, obviously , if it settles, in the meantime then, we can cancel that. But we should do a neurological examination, look at the back of your eyes as well. Um, in terms of medication, I can prescribe you something, similar to Ibuprofen, but a bit stronger which you can take instead of Ibuprofen. And you can also take Paracetamol at the same time. So if you're happy to book a, , appointment with us, with the support line, for us to do a full examination. And start, the medication which I prescribe to you, take it with food.",
+      "lex_hit_count": 3,
+      "greedy": {
+        "hypothesis": "o, if meantime then we can that that we should do your examination look at the fact of your eyes as well um in terms or medication i canc um? so, you, you, youp from that that' strong you can tak instead of vi with medic and you the take pa not the same time so you' happy to look at appointment with this with this support line for to doph examine? um start.",
+        "wer": 0.5612244897959183,
+        "ref_hits": 3,
+        "recovered": 0,
+        "mc_recall": 0.0,
+        "missed": [
+          "ibuprofen",
+          "paracetamol"
+        ],
+        "wall_time_s": 0.02
+      },
+      "biased": {
+        "hypothesis": ",., you,, if meantime then we can that that we should do your examination look at the fact of your eyes as well. um in terms, or medication,, can,.,.,.,.,., you,? so, you, youp from that, that's strong you can tak instead of vi with medic and you the take pa not the same time so if you' happy to look at appointment with this with this support line for to doph examin?,, you, you,e? um,,, start,,,.",
+        "wer": 0.5408163265306123,
+        "ref_hits": 3,
+        "recovered": 0,
+        "mc_recall": 0.0,
+        "missed": [
+          "ibuprofen",
+          "paracetamol"
+        ],
+        "wall_time_s": 3.68
+      }
+    },
+    {
+      "audio_path": "data/processed/primock57_chunked/audio/day5_consultation11_doctor_chunk017.wav",
+      "reference": "Brings the healing blood into the area, and it gives it the best chance of, getting better. So, as much as you can, use the ice. Um, obviously you're trying to stick to a marathon programme, but. Um, I would, try and ease up on the running, if you can. And if it, if it's painful enough that you're, having to stop running, then it's not a good idea, to do that. Um. It's fine to take the Ibuprofen. Um, I can prescribe you a slightly stronger, anti-inflammatory that you can take regularly instead of the Ibuprofen, but not with the Ibuprofen. But make sure that with food. Ultimately we probably need to, examine the knee.",
+      "lex_hit_count": 3,
+      "greedy": {
+        "hypothesis": "um,s might you can use, is um i'll try to stick to  di, but um i would try  up on the running if you can if it if it's pain left, you',,, um. um, uh its fine to take the i would  um i can presc like stronger and to can be can take regular instead of the i prefer but not withk. ,.",
+        "wer": 0.680327868852459,
+        "ref_hits": 3,
+        "recovered": 0,
+        "mc_recall": 0.0,
+        "missed": [
+          "ibuprofen"
+        ],
+        "wall_time_s": 0.02
+      },
+      "biased": {
+        "hypothesis": ",,,,s might,, you can,, i's,, um, i'll try to stick to di, but,, um,, i would, try, up on the running,, if you can, if it, if it's pain left, you',,,',s,,,.,,,,,,,,. um,,,, uh,, it's fine to take the i would . um, i can presc like stronger and to can be can take regular instead of the i prefer. but, not, with,,,.,.,.,.,.,,,e. ,,,,,,.",
+        "wer": 0.6639344262295082,
+        "ref_hits": 3,
+        "recovered": 0,
+        "mc_recall": 0.0,
+        "missed": [
+          "ibuprofen"
+        ],
+        "wall_time_s": 29.25
+      }
+    },
+    {
+      "audio_path": "data/processed/primock57_chunked/audio/day5_consultation12_doctor_chunk009.wav",
+      "reference": "Uh, so, similar to Ibuprofen, but taking instead of Ibuprofen not at the same time, and taking that regularly with food. Um, hopefully that will settle it down. You can take Paracetamol along with that. Try and um, take rest, have lots of good hydration.Um, but if the pain's getting worse, or you get new symptoms, fever, rash, vomiting, neck stiffness. Um, or you keep getting episodes of the same type of thing, then we need to speak to you, and, and make a plan for, for what we can do next.",
+      "lex_hit_count": 3,
+      "greedy": {
+        "hypothesis": ", tak you that regular with food um o that we such it you can take person long with that when um take rest have not of goodhyre. o pains getting worse or you get any new symptoms fever rash fromne stness um or you keep getting ups of the same type thing then we need to yous. . we can do that?",
+        "wer": 0.5638297872340425,
+        "ref_hits": 3,
+        "recovered": 0,
+        "mc_recall": 0.0,
+        "missed": [
+          "ibuprofen",
+          "paracetamol"
+        ],
+        "wall_time_s": 0.02
+      },
+      "biased": {
+        "hypothesis": ",., tak you that regular with food, um,, that we such it you can take person, long with that when um take rest, have not of good tds , you,,.,,,,,,, you,. o, pains getting worse, or you get any new symptoms fever rash fromne stness, um, or you keep getting ups of the same type thing then we need,s,, you, you,, you, you,,, you, you,s. so., we can do that?",
+        "wer": 0.5531914893617021,
+        "ref_hits": 3,
+        "recovered": 0,
+        "mc_recall": 0.0,
+        "missed": [
+          "ibuprofen",
+          "paracetamol"
+        ],
+        "wall_time_s": 28.92
+      }
+    },
+    {
+      "audio_path": "data/processed/primock57_chunked/audio/aug_slow_day3_consultation01_doctor_chunk010.wav",
+      "reference": "And any other inhalers? Is it just the Salbutamol that you use? Any other brown inhalers? <INAUDIBLE_SPEECH/> OK right and um so, do you use antihistamines like Cetirizine, Loratadine, Piriton, any of those, kind of things? Yeah. Yeah.",
+      "lex_hit_count": 4,
+      "greedy": {
+        "hypothesis": "o ok right. and um so juus ies st are highsrezine orra period any of thosekk? yeah. yeah.",
+        "wer": 0.7692307692307693,
+        "ref_hits": 4,
+        "recovered": 0,
+        "mc_recall": 0.0,
+        "missed": [
+          "cetirizine",
+          "loratadine",
+          "piriton",
+          "salbutamol"
+        ],
+        "wall_time_s": 0.01
+      },
+      "biased": {
+        "hypothesis": "o ok right. and um so juus ies st are highsrezine orra period any of thosekk? yeah. yeahp..",
+        "wer": 0.7948717948717948,
+        "ref_hits": 4,
+        "recovered": 0,
+        "mc_recall": 0.0,
+        "missed": [
+          "cetirizine",
+          "loratadine",
+          "piriton",
+          "salbutamol"
+        ],
+        "wall_time_s": 4.38
+      }
+    },
+    {
+      "audio_path": "data/processed/primock57_chunked/audio/aug_fast_day3_consultation01_doctor_chunk010.wav",
+      "reference": "And any other inhalers? Is it just the Salbutamol that you use? Any other brown inhalers? <INAUDIBLE_SPEECH/> OK right and um so, do you use antihistamines like Cetirizine, Loratadine, Piriton, any of those, kind of things? Yeah. Yeah.",
+      "lex_hit_count": 4,
+      "greedy": {
+        "hypothesis": "o right and um so youus had st likesink? o., that kind other things?? yeah yeah.",
+        "wer": 0.7948717948717948,
+        "ref_hits": 4,
+        "recovered": 0,
+        "mc_recall": 0.0,
+        "missed": [
+          "cetirizine",
+          "loratadine",
+          "piriton",
+          "salbutamol"
+        ],
+        "wall_time_s": 0.02
+      },
+      "biased": {
+        "hypothesis": "o right. and um so youus had stin likeszin, sats ,,,,s? o., thats kind other things?,? yeah yeah.",
+        "wer": 0.7948717948717948,
+        "ref_hits": 4,
+        "recovered": 0,
+        "mc_recall": 0.0,
+        "missed": [
+          "cetirizine",
+          "loratadine",
+          "piriton",
+          "salbutamol"
+        ],
+        "wall_time_s": 3.71
+      }
+    },
+    {
+      "audio_path": "data/processed/primock57_chunked/audio/aug_slow_day4_consultation09_patient_chunk006.wav",
+      "reference": "Not with me right now, no, I ran out. No, no, not allergic to anything. Just like, just the, dust and stuff, but nothing, no drugs. Um, yeah, my mum has eczema, and my dad has asthma. , ohh, when I was young, I also had eczema.",
+      "lex_hit_count": 4,
+      "greedy": {
+        "hypothesis": "no if been right now there out no no i it like but no. um yes stuff nothing is um i a more had a like yeah it i.",
+        "wer": 0.782608695652174,
+        "ref_hits": 4,
+        "recovered": 0,
+        "mc_recall": 0.0,
+        "missed": [
+          "allergic",
+          "asthma",
+          "eczema"
+        ],
+        "wall_time_s": 0.01
+      },
+      "biased": {
+        "hypothesis": "no, if been right now there out.,,,, no no, i it like but,,. um, yes stuff nothing is., um i a more had a like yeah it i.",
+        "wer": 0.782608695652174,
+        "ref_hits": 4,
+        "recovered": 0,
+        "mc_recall": 0.0,
+        "missed": [
+          "allergic",
+          "asthma",
+          "eczema"
+        ],
+        "wall_time_s": 1.15
+      }
+    },
+    {
+      "audio_path": "data/processed/primock57_chunked/audio/aug_fast_day4_consultation09_patient_chunk006.wav",
+      "reference": "Not with me right now, no, I ran out. No, no, not allergic to anything. Just like, just the, dust and stuff, but nothing, no drugs. Um, yeah, my mum has eczema, and my dad has asthma. , ohh, when I was young, I also had eczema.",
+      "lex_hit_count": 4,
+      "greedy": {
+        "hypothesis": "no it's be right now no i no. no no. um, kind is like this the yes stuff nothing noer. no. um,  had it a my it like it i.",
+        "wer": 0.7391304347826086,
+        "ref_hits": 4,
+        "recovered": 0,
+        "mc_recall": 0.0,
+        "missed": [
+          "allergic",
+          "asthma",
+          "eczema"
+        ],
+        "wall_time_s": 0.02
+      },
+      "biased": {
+        "hypothesis": "no, it's be right now no i no. no,., no no. um, kind is like this the yes stuff nothing noer.. um, it, had it a my it like,, it, it,,.",
+        "wer": 0.7608695652173914,
+        "ref_hits": 4,
+        "recovered": 0,
+        "mc_recall": 0.0,
+        "missed": [
+          "allergic",
+          "asthma",
+          "eczema"
+        ],
+        "wall_time_s": 1.2
+      }
+    },
+    {
+      "audio_path": "data/processed/primock57_chunked/audio/aug_slow_day4_consultation09_patient_chunk007.wav",
+      "reference": "Um, yeah, my mum has eczema, and my dad has asthma. , ohh, when I was young, I also had eczema. And I had a milk protein allergy, when I was young too. Um. Not really, like I feel like asthma's probably a part of it, and, probably getting my, inhalers would be helpful",
+      "lex_hit_count": 4,
+      "greedy": {
+        "hypothesis": "uh, i, i was i it not and i had a milk i  but i wastmping.. um not really like get feel like i some probably  and i get my.",
+        "wer": 0.6666666666666666,
+        "ref_hits": 4,
+        "recovered": 0,
+        "mc_recall": 0.0,
+        "missed": [
+          "asthma",
+          "eczema"
+        ],
+        "wall_time_s": 0.01
+      },
+      "biased": {
+        "hypothesis": "uh, i, i, i was, i i it' not and i had a milk, i but i wastmping.,. . um, not really like get feel like, i some probably ., and,, i' get, my,,,,,,,.",
+        "wer": 0.6666666666666666,
+        "ref_hits": 4,
+        "recovered": 0,
+        "mc_recall": 0.0,
+        "missed": [
+          "asthma",
+          "eczema"
+        ],
+        "wall_time_s": 9.49
+      }
+    },
+    {
+      "audio_path": "data/processed/primock57_chunked/audio/aug_fast_day4_consultation09_patient_chunk007.wav",
+      "reference": "Um, yeah, my mum has eczema, and my dad has asthma. , ohh, when I was young, I also had eczema. And I had a milk protein allergy, when I was young too. Um. Not really, like I feel like asthma's probably a part of it, and, probably getting my, inhalers would be helpful",
+      "lex_hit_count": 4,
+      "greedy": {
+        "hypothesis": "uh, i now i was to i i i i and i had a mil noting vergty and i wast no. um really. um, i p uh and i getting like.",
+        "wer": 0.7592592592592593,
+        "ref_hits": 4,
+        "recovered": 0,
+        "mc_recall": 0.0,
+        "missed": [
+          "asthma",
+          "eczema"
+        ],
+        "wall_time_s": 0.02
+      },
+      "biased": {
+        "hypothesis": "uh, i i, now i was to i i i i and i had a mil noting vergty. and i wast. . um., really,,. um, i' p uh and i getting like,,,.",
+        "wer": 0.7592592592592593,
+        "ref_hits": 4,
+        "recovered": 0,
+        "mc_recall": 0.0,
+        "missed": [
+          "asthma",
+          "eczema"
+        ],
+        "wall_time_s": 0.9
+      }
+    },
+    {
+      "audio_path": "data/processed/primock57_chunked/audio/aug_slow_day5_consultation01_doctor_chunk010.wav",
+      "reference": "What happens when you get a, when you take Aspirin? OK. And have you ever, taken any, non-steroidal anti-inflammatories, like Ibuprofen, Naproxen, anything like that? OK. Um, so, this headache is new to you, and you've, you've not had regular headaches before? What I would, suggest is, taking, uh, um, some anti-inflammatories, along with the Paracetamol.",
+      "lex_hit_count": 4,
+      "greedy": {
+        "hypothesis": "happen so you, at when take  for ok and have you you ever taken in any not st s and countries, like ipach and the co and them at that?? k and so it so they you need you, you not have any headach before? i would suggest is,,e?",
+        "wer": 0.7377049180327869,
+        "ref_hits": 4,
+        "recovered": 0,
+        "mc_recall": 0.0,
+        "missed": [
+          "aspirin",
+          "ibuprofen",
+          "naproxen",
+          "paracetamol"
+        ],
+        "wall_time_s": 0.01
+      },
+      "biased": {
+        "hypothesis": "happen so you, at when take for? ok. and have you you ever taken in any not st s and countries, like ipach and the co and them at that? ok,,,,,,? ok. and so it so they you need you, you' not have any headaches before? i would, suggest,., you,,,,,.,., you, you?",
+        "wer": 0.7377049180327869,
+        "ref_hits": 4,
+        "recovered": 0,
+        "mc_recall": 0.0,
+        "missed": [
+          "aspirin",
+          "ibuprofen",
+          "naproxen",
+          "paracetamol"
+        ],
+        "wall_time_s": 14.11
+      }
+    },
+    {
+      "audio_path": "data/processed/primock57_chunked/audio/aug_fast_day5_consultation01_doctor_chunk010.wav",
+      "reference": "What happens when you get a, when you take Aspirin? OK. And have you ever, taken any, non-steroidal anti-inflammatories, like Ibuprofen, Naproxen, anything like that? OK. Um, so, this headache is new to you, and you've, you've not had regular headaches before? What I would, suggest is, taking, uh, um, some anti-inflammatories, along with the Paracetamol.",
+      "lex_hit_count": 4,
+      "greedy": {
+        "hypothesis": "happen would you get that when take ? ok and have you have taken in any non st lus and countries like i and co and? k um so this thatach is you see you not have regular headaches before? while i would suggest in um.",
+        "wer": 0.6065573770491803,
+        "ref_hits": 4,
+        "recovered": 0,
+        "mc_recall": 0.0,
+        "missed": [
+          "aspirin",
+          "ibuprofen",
+          "naproxen",
+          "paracetamol"
+        ],
+        "wall_time_s": 0.02
+      },
+      "biased": {
+        "hypothesis": "happen would you get that when take ? ok and have you have taken in any non st lus and countries, like i and cos and,,,,,,? ok. um so this thatach is you see, you not have regular headaches before? ok, you,,,,, you? while i would suggest,. in,,,,.",
+        "wer": 0.6557377049180327,
+        "ref_hits": 4,
+        "recovered": 0,
+        "mc_recall": 0.0,
+        "missed": [
+          "aspirin",
+          "ibuprofen",
+          "naproxen",
+          "paracetamol"
+        ],
+        "wall_time_s": 8.96
+      }
+    },
+    {
+      "audio_path": "data/processed/primock57_chunked/audio/aug_slow_day5_consultation07_patient_chunk006.wav",
+      "reference": "No, uh, I've got hypertension, um, so I'm on some drugs for that, um, but that's it, really. Uh, just the hypertension and the diabetes. Uh, I think something called metformin, and lisinopril I think is the other one.",
+      "lex_hit_count": 5,
+      "greedy": {
+        "hypothesis": "no uh, i i got quites, uh some once ago that, um that's it. no. uh just but quite potential ofyies. uh, so that four uh and li and.",
+        "wer": 0.6666666666666666,
+        "ref_hits": 5,
+        "recovered": 0,
+        "mc_recall": 0.0,
+        "missed": [
+          "diabetes",
+          "hypertension",
+          "lisinopril",
+          "metformin"
+        ],
+        "wall_time_s": 0.01
+      },
+      "biased": {
+        "hypothesis": "no uh, ive got quites, uh some once ago that, um, that's it.,,. uh, i just but, quite potential ofyies. uh,, so that four uh and li and.",
+        "wer": 0.7142857142857143,
+        "ref_hits": 5,
+        "recovered": 0,
+        "mc_recall": 0.0,
+        "missed": [
+          "diabetes",
+          "hypertension",
+          "lisinopril",
+          "metformin"
+        ],
+        "wall_time_s": 0.94
+      }
+    },
+    {
+      "audio_path": "data/processed/primock57_chunked/audio/aug_fast_day5_consultation07_patient_chunk006.wav",
+      "reference": "No, uh, I've got hypertension, um, so I'm on some drugs for that, um, but that's it, really. Uh, just the hypertension and the diabetes. Uh, I think something called metformin, and lisinopril I think is the other one.",
+      "lex_hit_count": 5,
+      "greedy": {
+        "hypothesis": "no uh i ive got quite send uh some got that um that's it really. uh just but my attention under uh be. uh it so. uh and itth like thereon.",
+        "wer": 0.6428571428571429,
+        "ref_hits": 5,
+        "recovered": 0,
+        "mc_recall": 0.0,
+        "missed": [
+          "diabetes",
+          "hypertension",
+          "lisinopril",
+          "metformin"
+        ],
+        "wall_time_s": 0.02
+      },
+      "biased": {
+        "hypothesis": "no uh i, ive got, quite send, uh some got that um that's it really.,. uh, just but my attention under uh bes. uh, i it so. uh and itthro, like thereon.,,.",
+        "wer": 0.6428571428571429,
+        "ref_hits": 5,
+        "recovered": 0,
+        "mc_recall": 0.0,
+        "missed": [
+          "diabetes",
+          "hypertension",
+          "lisinopril",
+          "metformin"
+        ],
+        "wall_time_s": 0.75
+      }
+    },
+    {
+      "audio_path": "data/processed/primock57_chunked/audio/aug_slow_day5_consultation12_doctor_chunk009.wav",
+      "reference": "Uh, so, similar to Ibuprofen, but taking instead of Ibuprofen not at the same time, and taking that regularly with food. Um, hopefully that will settle it down. You can take Paracetamol along with that. Try and um, take rest, have lots of good hydration.Um, but if the pain's getting worse, or you get new symptoms, fever, rash, vomiting, neck stiffness. Um, or you keep getting episodes of the same type of thing, then we need to speak to you, and, and make a plan for, for what we can do next.",
+      "lex_hit_count": 3,
+      "greedy": {
+        "hypothesis": "o,, you that please um o that we such that you can take press normal with that um take brea have lot good conation um. get yousymptos rash orne so um or you keep any left the same type thing um need you medic cans.",
+        "wer": 0.7340425531914894,
+        "ref_hits": 3,
+        "recovered": 0,
+        "mc_recall": 0.0,
+        "missed": [
+          "ibuprofen",
+          "paracetamol"
+        ],
+        "wall_time_s": 0.01
+      },
+      "biased": {
+        "hypothesis": ",.,, you that you please, um, o that we such that you can' take press normal with that, um, take ba, have lot good tds . um,,,,,, you, you,,,, you, you,. ,,, get you symptos rash orness um, or you keep any left the same type thing um need you medic,,, you,,,, you, you,s.",
+        "wer": 0.723404255319149,
+        "ref_hits": 3,
+        "recovered": 0,
+        "mc_recall": 0.0,
+        "missed": [
+          "ibuprofen",
+          "paracetamol"
+        ],
+        "wall_time_s": 23.32
+      }
+    }
+  ]
+}

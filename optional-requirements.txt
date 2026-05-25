@@ -1,0 +1,22 @@
+# PRAXIS - Optional Clinical NLP / Diarisation stack
+#
+# Install with:  make install-clinical    (or: pip install -r optional-requirements.txt)
+#
+# These enable the FULL clinical pipeline: scispaCy NER + negation, MedCAT entity
+# linking, SNOMED decode-time biasing (pyctcdecode), and the pyannote baseline diariser.
+# Every one of these is GUARDED in the code - the PRAXIS engine installs, imports, and
+# passes `make test` WITHOUT them; they only switch on the corresponding optional features.
+#
+# Requires Python 3.11-3.12: spaCy's build chain (thinc/blis) and scispaCy (nmslib)
+# have no prebuilt wheels for Python >=3.13 and fail to compile from C source there.
+
+spacy>=3.7,<4.0
+scispacy>=0.5,<0.6
+medspacy>=1.0,<2.0
+negspacy>=1.0,<2.0
+medcat>=1.9,<2.0
+pyctcdecode>=0.5,<1.0
+pyannote.audio>=3.1,<4.0
+
+# scispaCy NER model - NOT on PyPI, install separately after the above:
+#   pip install https://s3-us-west-2.amazonaws.com/ai2-s2-scispacy/releases/v0.5.4/en_core_sci_sm-0.5.4.tar.gz

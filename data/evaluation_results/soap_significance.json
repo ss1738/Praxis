@@ -1,0 +1,117 @@
+{
+  "n_cases": 8,
+  "cases": [
+    "Chest Infection",
+    "Diabetes Review",
+    "Hypertension Review",
+    "Lower Back Pain",
+    "Mental Health - Anxiety",
+    "Paediatric Ear Infection",
+    "Persistent Cough",
+    "Skin Lesion Assessment"
+  ],
+  "per_case": {
+    "Chest Infection": {
+      "praxis-soap-v1": 1.0,
+      "med42": 1.0,
+      "meditron:7b": 1.0,
+      "mistral": 1.0
+    },
+    "Diabetes Review": {
+      "praxis-soap-v1": 0.96,
+      "med42": 0.96,
+      "meditron:7b": 0.77,
+      "mistral": 0.96
+    },
+    "Hypertension Review": {
+      "praxis-soap-v1": 1.0,
+      "med42": 1.0,
+      "meditron:7b": 0.53,
+      "mistral": 1.0
+    },
+    "Lower Back Pain": {
+      "praxis-soap-v1": 1.0,
+      "med42": 0.96,
+      "meditron:7b": 0.77,
+      "mistral": 1.0
+    },
+    "Mental Health - Anxiety": {
+      "praxis-soap-v1": 0.96,
+      "med42": 0.96,
+      "meditron:7b": 0.77,
+      "mistral": 0.96
+    },
+    "Paediatric Ear Infection": {
+      "praxis-soap-v1": 0.96,
+      "med42": 0.96,
+      "meditron:7b": 0.77,
+      "mistral": 1.0
+    },
+    "Persistent Cough": {
+      "praxis-soap-v1": 1.0,
+      "med42": 1.0,
+      "meditron:7b": 0.77,
+      "mistral": 1.0
+    },
+    "Skin Lesion Assessment": {
+      "praxis-soap-v1": 0.96,
+      "med42": 0.91,
+      "meditron:7b": 0.77,
+      "mistral": 0.91
+    }
+  },
+  "summary": {
+    "praxis-soap-v1": {
+      "mean_overall": 0.98,
+      "mean_time_s": 11.61375,
+      "mean_tokens": 304.5,
+      "mean_snomed_count": 2.75,
+      "safety_netting_rate": 1.0,
+      "uk_english_rate": 1.0
+    },
+    "med42": {
+      "mean_overall": 0.96875,
+      "mean_time_s": 12.594999999999999,
+      "mean_tokens": 299.625,
+      "mean_snomed_count": 3.375,
+      "safety_netting_rate": 1.0,
+      "uk_english_rate": 1.0
+    },
+    "meditron:7b": {
+      "mean_overall": 0.76875,
+      "mean_time_s": 30.625000000000004,
+      "mean_tokens": 1101.5,
+      "mean_snomed_count": 0.75,
+      "safety_netting_rate": 0.875,
+      "uk_english_rate": 0.25
+    },
+    "mistral": {
+      "mean_overall": 0.97875,
+      "mean_time_s": 11.49,
+      "mean_tokens": 358.625,
+      "mean_snomed_count": 5.5,
+      "safety_netting_rate": 1.0,
+      "uk_english_rate": 1.0
+    }
+  },
+  "pairwise_wilcoxon": {
+    "praxis-soap-v1_vs_med42": {
+      "mean_diff": 0.011249999999999996,
+      "wilcoxon_W": 0.0,
+      "p_value": 0.5,
+      "significant_at_0.05": false
+    },
+    "praxis-soap-v1_vs_meditron:7b": {
+      "mean_diff": 0.21124999999999997,
+      "wilcoxon_W": 0.0,
+      "p_value": 0.015625,
+      "significant_at_0.05": true
+    },
+    "praxis-soap-v1_vs_mistral": {
+      "mean_diff": 0.0012499999999999872,
+      "wilcoxon_W": 1.0,
+      "p_value": 1.0,
+      "significant_at_0.05": false
+    }
+  }
+}

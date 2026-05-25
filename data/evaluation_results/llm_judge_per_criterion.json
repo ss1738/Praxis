@@ -1,0 +1,38 @@
+{
+  "med42": {
+    "structure": 1.0,
+    "content": 1.0,
+    "snomed": 0.894,
+    "safety_netting": 1.0,
+    "uk_english": 1.0,
+    "budget": 0.956,
+    "overall": 0.969
+  },
+  "meditron:7b": {
+    "structure": 1.0,
+    "content": 0.969,
+    "snomed": 0.306,
+    "safety_netting": 0.875,
+    "uk_english": 1.0,
+    "budget": 0.9,
+    "overall": 0.915
+  },
+  "mistral": {
+    "structure": 1.0,
+    "content": 1.0,
+    "snomed": 0.95,
+    "safety_netting": 1.0,
+    "uk_english": 1.0,
+    "budget": 0.95,
+    "overall": 0.98
+  },
+  "praxis-soap-v1": {
+    "structure": 1.0,
+    "content": 1.0,
+    "snomed": 0.775,
+    "safety_netting": 1.0,
+    "uk_english": 1.0,
+    "budget": 0.962,
+    "overall": 0.963
+  }
+}

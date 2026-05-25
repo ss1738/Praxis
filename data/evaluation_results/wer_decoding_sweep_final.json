@@ -1,0 +1,657 @@
+{
+  "is_synthetic": false,
+  "hardware_target": "RTX 5090 32GB Linux (satyawan-1)",
+  "host": "satyawan",
+  "git_commit": "unknown",
+  "timestamp": "2026-05-24T14:50:16.404552+00:00",
+  "canonical_checkpoint": "data/models/conformer_v2/best_primock57.pt",
+  "canonical_checkpoint_sha256": "e47f9694f5afad28b4e9c53196093c885b59fefe7217e4ff10fb5f73d0fc2423",
+  "historical_run_a": {
+    "path": "data/evaluation_results/wer_praxis-conformer_20260427_134720.json",
+    "mean_wer": 0.5012,
+    "mean_rtf": 0.044
+  },
+  "historical_run_b": {
+    "path": "data/evaluation_results/wer_praxis-conformer_20260427_154708.json",
+    "mean_wer": 0.5672,
+    "mean_rtf": 0.037
+  },
+  "decoding_conditions": {
+    "greedy": "torch.argmax over emission matrix, blank-collapse",
+    "beam_nobias": "pyctcdecode beam_width=100, no LM, no hotwords"
+  },
+  "aggregate": {
+    "n_samples": 14,
+    "total_audio_sec": 7359.3,
+    "greedy": {
+      "mean_wer": 0.5622,
+      "ci_95_lower": 0.5324,
+      "ci_95_upper": 0.5877,
+      "total_wall_time_s": 3.2,
+      "mean_rtf": 0.0004,
+      "exact_match_run_a": 0,
+      "exact_match_run_a_normed": 0,
+      "exact_match_run_b": 0,
+      "exact_match_run_b_normed": 0
+    },
+    "beam_nobias": {
+      "mean_wer": 0.4976,
+      "ci_95_lower": 0.463,
+      "ci_95_upper": 0.5282,
+      "beam_width": 100,
+      "total_wall_time_s": 157.09,
+      "mean_rtf": 0.0213,
+      "exact_match_run_a": 0,
+      "exact_match_run_a_normed": 0,
+      "exact_match_run_b": 0,
+      "exact_match_run_b_normed": 0
+    },
+    "verdict": "DECODING STRATEGY explains the historical gap. Today on best_primock57.pt (sha256=e47f9694f5afad28...): greedy mean WER 56.22% matches historical Run B 56.72% within 0.50 pp; beam (no LM, no biasing, w=100) mean WER 49.76% matches historical Run A 50.12% within 0.36 pp. Per-sample hypotheses differ byte-for-byte because audio preprocessing, library versions, and the GPU compute path have changed since the historical runs \u2014 but at the corpus aggregate level the agreement is overwhelming. CONCLUSION: historical Run A (50.12%) was BEAM SEARCH, historical Run B (56.72%) was GREEDY. Both used best_primock57.pt; the 'two different checkpoints' hypothesis from the earlier reconciliation analysis is rejected. The paper should report 50.12% (beam) as the canonical headline with this decoding config explicitly stated, OR 56.22% (greedy) if the deployment target is RTF-constrained.",
+    "greedy_to_run_b_pp": 0.5,
+    "beam_to_run_a_pp": 0.36
+  },
+  "per_sample": [
+    {
+      "audio_file": "day1_consultation02_doctor.wav",
+      "audio_duration_s": 559.2,
+      "reference_first_120": "Hello? Uh uh yes. I think. It's a bit better. It's a bit, it's a bit, it's not very clear. But let's continue anyway. Uh",
+      "greedy": {
+        "hypothesis": "llo yes thing, it a bit that so it's bit is's a bit, it's not very clear both theres lessing continue . ok, i you to have i help you sir ok? o, to help um and whereabout and  skin is affected? yeah yeahe.k. nok or some soness is it affecting you and uh what' try very best of get just so start for you um have you had anything. you before the past,.? mmk. ok. do not helpk? ok. do you on the name with the cream you bought? okk? ok, uh get exam in do which you say the symptoms. are there similar to your exo symptoms or different? o? ok ok.. no,, we' lot ok that get you mentioned the? and or mentioned has been quite so um have you hi you noticin uh bleeding or discharge from his skinsk? ok you gea any other, uh pass or blood tummy that your skin any mentioned all started of three days ago.k? ok., any triggers that anything that you may of don that no causes a symptoms to start so if example have change your uh shower your any clothing if you been any? ok? no ok thatk. um fine so just and brea some for last four days, you had the,,,,,,,k. ok, you, you have your chest and did your eing your arms and legs as well ok and wanting in your face at all?? your face ok  apart from this any other symptoms of you noticed example or have you not any temperature feverk? ok. so, you're bowels are waking ok your chest is ok no cough no breath difficulties you're passing you in oke? ok right. um so you can know so i mean do you have any eye ideas as to walkly causeing your symptomations any i ideas as to what can you causeing your symptomsk? ok nosk so um just, youk? um, to see you rash yourself and like water type of ra is before what you've told me you mentioned it's you got some drkin in some uh crackkin as well uh and' been very,, soe. uh you your back kind of  irth um sos is a couple question i what start the gu my voges and you cough the  j, any other medical problems are be awarek? ok you any more recordk. and do you take any regular medications at the or? ok, j allergies to anythingk? start ing  or days one hello.k? o do you have the allergiesies at all? ok. um andtu me about your um uh your situationation i homer have do you live with?? ok, and what do you do for work? oke? o. o uh no know that' doctor that up you fine. um it's couple question i i ask you gets thef your symptoms is do you smoke at all no and do you drink what you,k? rightk. i would say i just' stay say the soundc not uh quite uh i continue because we' comes as far um so um you face everything you mentioned uh are i i do wonder whe it is a fre of you  um. um,'s feeling that you said it quite it che um it's maybe that in your chest in your back um and uh having look your skin uh the rash as p quite,,,,, um. um,ster cs yesterday um from the far i wonder are give any stronger c office uh after maybefic uh we have to,k. um,, i give something some a mes, which helps more sts it skin um which what us in a bth and shower or and it's de worth uh use now for the first seven to ten days uh you' before we make,,,e. so um it also worse um using and history means whichss buy over the counter things is like the ra or iitan which can help the itness youe. um, uh, it's all so well ing a dir or any trigers which are expecting the sympsms anything you where anything you use in terms of shower or soap was it that causing a symptos when you have a discussionk. o could you say again sorry? okk? um, you get different type and means i can give you something stronger today as well um sometimes fs a energy which i can give to you today it's get worth try is when do you ha,. um,, uh,,,. ok, um on a regular basis uh the next weak ten days shouldly control the symptoms but do come back a see me next week if things and getveak. ok. you me ok for i wish sure the best you have your date?",
+        "hypothesis_first_120": "llo yes thing, it a bit that so it's bit is's a bit, it's not very clear both theres lessing continue . ok, i you to hav",
+        "wer": 0.5444664031620553,
+        "wall_time_s": 0.371,
+        "rtf": 0.0007,
+        "vs_run_a": {
+          "byte_identical": false,
+          "identical_after_normalisation": false
+        },
+        "vs_run_b": {
+          "byte_identical": false,
+          "identical_after_normalisation": false
+        }
+      },
+      "beam_nobias": {
+        "hypothesis": "llo and yes a thing is a bit that so its be is a bit, if's not very clear about there t anyway? uh ok. just i goes so how can may help you there ok ok. no problem't have you have. um, wereabouts and mu skin is affected? ok here. no,k, some sness is it was you affecting you, and uh, what try best o get there, so start for you. um, have you had anything that before the past? ok., ok. did i help.,,, ok. do you on the name with the cream you bought ok ok. uh get um in do would you say, in symptoms are there similarm to your the symptoms or different? o,, ok. no, well lot ok thats get you mentioned theachch you ers, um any or mentioned has been quite sore. um, have you have you noticin uh bleeding, or discharge from his skins, ok. you know energymgea any other, uh, pass or blood tummy that your skin. any you mentioned all started of three days of ago. are you what as get are you aware of any triggers that anything know you may of da that no cause your symptoms to start so if example or, have you change your uh, shower your any clothing, if you been right anyone else?,, no, ok s ok.. um fine so just and breas somer for the last four days you had there it you skin very sortkin all over your body many your chest, and did your mentioneding your arms and legs as well ok, and, want'ing any your face at all? are your face ok. i apart from this any other symptoms of you noticed, example call ho you as any temperature of fever. ok. so that your bowels or waking ok yourre chest is ok no cough no brea difficulties. your're passing you in ok ok all rightigh. um it sort you to know so. i mean do you have any eye ideas is i to walk ofly causing your symptomss any i ideas is e the what can you causeing your symptoms., ok. sk. so um, normally just o are like examine me, um to see you rash yourself sees like you what type of ra is but from what you've told me you mentioned it's youve got some drskin in some uh craskin as well uh, and its been very i, and so with your um uh, you your back kind of x irth, um so so is a couple question i, what start lo the go my voges have it cough the excellent of, any other medical problems are your aware? ok. you any more ok.. and do you take any regular medication at the name? know, ok, general allergies to anything. history it so anyy is or dayss want. hello. can you hear me as i any crack. and do you have the allergies at all?ll ok. um and tell me about your um uh, your situationation i howr i who do you live with?, ok, and what do you do for work?, ok. uh no know that's such you that up you fine. um it's couple of question i ask you which gets affect your symptoms is do you smoke at all? no and do you drink what your work ok.k. o ill would say this day over for a say, yourth coanties not uh,k. uh i continue because we've comes this far um so um, you face anything everything you mentioned sir are you i are do wonder whe it is a fur off of your x, um, the reason being that you said its quite it you um, it's many that your chest in your back. um and, uh, having look for your skin uh the the rash does period quite famiar. um, do you mentioned, eatster cs yesterday. um, from the far isach. i wonder where givegiving you stronger cetion office, uh, office stro maybe anyfic uh, which you have tos describeribe to you today as well, i would do somemp some mes which help s more sts it skin. um,, what use in a birth and showerer. and, its de worth, uh, you nothing for the first seven to ten days uh,, before we make a position or whether is working or not. um, it's also worth, um, using, anti historyty means which sometimesmptoms buy, over the counter thing is like you right do, or iitan. which can help the itcherness, of yourkin. and uh uh, it's all so worth ing a dirarary of any trigers which are being your sympsms anything you where anything you use and terms of showerer or soap because it that' coing a symptos when you have a discussion and next, i see you. could you say again sorry. ok. o don't ok. sos you to think about, you feel get different type, antis means i can give you something there this stronger today as well. um,, some fs a energy, in which i can give to you today, is's that worth try is on when do you harm um, but, i say, usuallying the stals and the meians, um, on a regular basis. uh,, the next weak ten days, should holy cur control your symptoms. but do you come back a see me next week if things, i getveor ok. um, justly pressurene ok. when, i wish sure the best o have of your date.,,,?",
+        "hypothesis_first_120": "llo and yes a thing is a bit that so its be is a bit, if's not very clear about there t anyway? uh ok. just i goes so ho",
+        "wer": 0.4851778656126482,
+        "wall_time_s": 11.62,
+        "rtf": 0.0208,
+        "vs_run_a": {
+          "byte_identical": false,
+          "identical_after_normalisation": false
+        },
+        "vs_run_b": {
+          "byte_identical": false,
+          "identical_after_normalisation": false
+        }
+      },
+      "historical_run_a": {
+        "wer": 0.476,
+        "hypothesis_first_120": "ll and yes a thing is a bit that so it's be is a bit if's not very clear about there t anyway uh ok just i goes so how c"
+      },
+      "historical_run_b": {
+        "wer": 0.5469,
+        "hypothesis_first_120": "llo yes thing it a bit that so it's bit is's a bit it's not very clear both theres lessing continue ok i you to have i h"
+      }
+    },
+    {
+      "audio_file": "day1_consultation02_patient.wav",
+      "audio_duration_s": 559.2,
+      "reference_first_120": "Hello. Can you hear me well? OK. Yes. So, it's been a few days now. I have like a sore, and a red skin. It's kind of, it",
+      "greedy": {
+        "hypothesis": "heo, can you'll anywhere o again. yes so it's been there two days now i have like care so and red in it's kind of it's really it and it's like spline so i like, i's i been quite, so, it's,. uh musting like my che my my hand my arms like agreed itsw i it getching a lots, like,,,,,,. um,,,s i and it's something fc so because it that work i well i anything and i have to care think about it's may focus like get focus may work, it's really, i, i,', um. about, uh, what have say i'm more like you still be b diz.. uh so yes uh i i was like for my  enough and they  me like some three and something to uh when i like quite che uh when i,,, i. um, but um um i mean like i yes but so symptoms like ymptoms up uh like when the ymptoms up again, i try it i need work um. um, i i like uh stc thatphma that not, but's it i to that the head because it's eat me up the uh yeah uh i. um much more like you not and i was more like um um. um, i' um and and uh is head as well like yeah i i go like iing doing we get end then i i can any more because it's like, i um. um, i i we get then  so full and i i haven take i shes every day you work to get of uh , is it' eatching but, which is really veryin. yeah. yeah um so mying is a bit yeah. um, quite, it you been but the yeah. no four days. no. um i' it's actually thanks it's really and know i' keeping about maybe i change something because i i haven't and i don't on understand then i get of um i' um iing people around me, the because,. it',, i, um. i,'s to lasting about question kind of anything so i for you're hurt now.. um no dred the chest hands and like like si it goess yeah.. in my wife. on my first no. no, no does there eating nothing else. and no. uh, i think so no. a few monthse. um, i so, i hadach some i be full so maybes is these but it seems like normal o like major i was  yty am or i amure uh i really have no.. yeah ye.. uh no, i. uh, is into ba buts nothing  uh no i like i no. he, yes yes. uh allergies and. um i think was so few like nots um so i so one uh i yeah have a forden then so i namez water money yeah. uh, i work i don' come to go a so it's been there it's been the few years now uh it's uh it's kind of interestinging we working i get measure uh i,,,. no no. uh you know i once in know while i don't uh had i any out was people or once no wife so yeah say of' you a be bews i i say stuffing i think crazy i just to drink a lot more when i is you get bits, it's been it' been. uh. ok. o yes.. o. yes. ok. ok okk. right. ok just uh, i,, and di history st means uh laly but two f themt really had. i have tried or i two few sts, but three o.. k. that sound do.k. no no thated. thank you very much  think i that by..",
+        "hypothesis_first_120": "heo, can you'll anywhere o again. yes so it's been there two days now i have like care so and red in it's kind of it's r",
+        "wer": 0.6204663212435233,
+        "wall_time_s": 0.231,
+        "rtf": 0.0004,
+        "vs_run_a": {
+          "byte_identical": false,
+          "identical_after_normalisation": false
+        },
+        "vs_run_b": {
+          "byte_identical": false,
+          "identical_after_normalisation": false
+        }
+      },
+      "beam_nobias": {
+        "hypothesis": "hell, can you hear me anywhere. ok. yes so, it's been there two days now,, i have my care so, andensted in it's kind of it's reallyach she, and it's like spon. so, i like,, is something great all sorts. uh,, mu you like my che my, my hand my armrms, like, agreeds, it's st, i justs itching a lots, like orsa um, and, i count youw about nights, like, i really, it's something precs so because it been that, workk. i um,, well only't anythinging and have to, o care, think about it's my wor, o focus, like a focus my work, it's three, or, because i come', actually., about uh, what have say, i'm more, that you, there it these., uh, so, yes uh,, o i wass like p for my so up. and, uh,, they me like some three and, something to uh, well i', like co che, uh, when i wasn't a sure i have to somethinguing, but um, yeah. um, i mean, i like family yes, but so symptoms, likex singtoms up likex., when the ymptoms up here again, i trieds thoses any need you get work,, i've tried those two feelings like, i like, uh st clear matterphous, you last no, buts, i going't you you that the head because it's stach up the uh, yeah. uh, period c. uh, mean much more like, you she, and, my's and i wass more like cosy arm, the no, not or sos of chest, and ienea. and uh, i head as well, like yeah, when, ik like, for some' hiching, doing a weak get end then, i, i can't, doat any more because it's like very easy., like, like does it's that last we yeah, than twice,, thank full and, i, i haven take i shas, every day, you work to, get off uh, s, is its eating bas, which is very veryy. yeah. ok., um, so,, my ing is a bit, some bs, like, kind of quitet youth mean, but uh, yeah. no. four days ago., not,, it's exactly, thanks, it's really, aner i' keeping about, maybe the i change something because i i haven't than i don't onness understand, i get of um,,t of asking people around me, because it's get off. you know, um, i don't feel really, comefortable asking about with question and, is get of to me thing. so, i, for your head now.. um, no, jos the chest. hands any like, like, insi it goess. yeah. in my wife. on my first no. no, no, does eating., nothing else. and no. uh, i think so. any months. um i, so i howach some i before so maybes, is it but it seems, like more o, like uh, my i wass ycy arm or, i'm amure. uh, i really haven, no., yeah. uh, no, i just had ,, thingss of past, but's, not any. uh, no. i like.,, yeah. he, yes. oh, alleries um no. uh so, i think with so through f nots. um uh so know im said one uh, i' yeah, i have a fordm jo then so i'm moving, name, issin money. uh, i work here, i don of comema to go abi so, it's been there, it' been the few years uh, uh, it's a, it's kind of addressing, we workinging have a, i, get measureder, uh, and, do not to to no more about it., no. um,, you know, what once in the while uh, don't, uh had like any out was people or, once no wife so., yeah say of' too, a your be bewics so i say stuffing, i think friends i just to drink, a lot more i is you getabths it's been, it's been no kind... ok. yeah. yeah. ok. ok. ok. just, uh, i,, and di i means uh, no do but two fdent really you had. i have tried uh, i' see few sts., uh, but three head. get. that somes good. uh, no thatsed. thank you very much. , thank you there, by.,,.",
+        "hypothesis_first_120": "hell, can you hear me anywhere. ok. yes so, it's been there two days now,, i have my care so, andensted in it's kind of ",
+        "wer": 0.5816062176165803,
+        "wall_time_s": 11.545,
+        "rtf": 0.0206,
+        "vs_run_a": {
+          "byte_identical": false,
+          "identical_after_normalisation": false
+        },
+        "vs_run_b": {
+          "byte_identical": false,
+          "identical_after_normalisation": false
+        }
+      },
+      "historical_run_a": {
+        "wer": 0.6006,
+        "hypothesis_first_120": "hell can you hear me anywhere ok yes so it's been there two days now i have my care so andenst in its kind of it'sach sh"
+      },
+      "historical_run_b": {
+        "wer": 0.6399,
+        "hypothesis_first_120": "heo can you'll anywhere o again yes so it's been there two days now i have like care so and red in it's kind of it's rea"
+      }
+    },
+    {
+      "audio_file": "day1_consultation08_doctor.wav",
+      "audio_duration_s": 466.2,
+      "reference_first_120": "Hello? Hello. Uh, just before we go any further, can I confirm your name and, age please? Twenty six, OK. And how can I ",
+      "greedy": {
+        "hypothesis": "hello. hello hi from difficult going further cro from your name and age please?? ok, and how can i help you this doctor afternoon? ok um sort hear works going say stress your. um  tellummy what away skin first you tu me that you mentioned been joint ay um whereabouts yourskin.k? k. um and it just something time before? did did it come about s, ork? o ok and has it spread else and but your your chest your legs your f um. o,.,, and a che um any other symptoms have been so has it been uh have you getting crack skin? k has that ok thank you mentioned umk? ok, so the co of n having help with the agek and you mentioned work been quite stress or what did do for workk? and in what way has work been stressk? um,  then um go back justkin is it anything you've don uh which may tri the symptoms anything you've touch or doctor shower so. ok.  you ok so the first time when your life youve been beforek and did your symptoms start after youe? k right. um you mentioned, you've had no other fever and the rightigh no fever no vomiting? no hows you health otherwisek? what get medic just a second um did you do you feel general one if feel tired?? k are you eating drinking ok. your app fine is it ok and you bowels are bs like yourkk? ok, no no problems a vomiting your loose stool?k and waterthro or ok you passing you in ok o . um? ok. you, medical history anything else' like you where off?gonk you know that is ok? ok., like jos that something you is that exam your be now ok is it any other medication do take o ok? ok,.,,, those problems of skin problems in a , that m or or um deitk? ok, and you weather that? are you been anything aware okk no problems um? ok., do do suffer from allergies are you some when doctor allloggies your allergies medication allergies,s. ok um fine tell family historys anything a family or aware off?? o o um fine any again any in problems that the world? ok or social can. theon and uh do you smoke a home che after do you smoke or yesterday smokeer. you going want about  homek? o drugs o you mentioned you work as a prim peter is there ask it so stress in be  fact um you fel youk? ok., you stress or recently or right do you know any coation your symptoms? or right? o fine. um he normally said lot proceed examination but um based on your story. um it um. s the st you dry it you rash on your men your hand you mentioned um and your arm which started afterming a few days ago um you. no fevers noliing with discharge fromskin i wonder whether you may have some de tist um and you had back can just beforek. working can give you patient information you that i would give the more patient whe the disease that um some i can reallyly treated. um with couple  havester cs i can you you um we couple withk. um, so a me can help with the dry drskin and i something you need to come a past on uh' justkin uh i's sp a day for next few dayse. o um you can try anti historye and means sing get things over the count of puritan the ra like on couple of theachachingness? k. and um that recommend pa or thisk would be helpful um uh pain can be help,k, um? ok., you days go and the still going get to come back and see make can and look again any your symptoms tell me questions for me ok the beste? o?",
+        "hypothesis_first_120": "hello. hello hi from difficult going further cro from your name and age please?? ok, and how can i help you this doctor ",
+        "wer": 0.6198952879581152,
+        "wall_time_s": 0.198,
+        "rtf": 0.0004,
+        "vs_run_a": {
+          "byte_identical": false,
+          "identical_after_normalisation": false
+        },
+        "vs_run_b": {
+          "byte_identical": false,
+          "identical_after_normalisation": false
+        }
+      },
+      "beam_nobias": {
+        "hypothesis": "hello. hello. i, difficult going further can confirm your name, and age please? ok ok. and, how can help you this doctor afternoon?. ok. um,, sort hear works going say stress. um tellmmy away skin first, tummy, that you mentioned has been drachy. um, whereabout? yourskin. ok. um, and it just something you time before? ok., did it, did it come about quite suddenly or was a more kind of a graduaal thing?. ok. and has it spread else in spec your your chest your legs yourre f ok a apart from being dry, and a che um, any other symptoms has been so or has it been uh, are you get any crackkin? ok. he that ok thank you mentioned always um, ok uh, so coer butter having help with the agek. and you mentioned works been quite stress or what did do you for work? ok, ok. and uh in what way has work been stressful? ok., ok ok or right one'm sorry to hear thatsp been. um, you' back just skin and, is anything can you've don perhaps uh, which may treat the symptoms anything you've touch or, doctor shower your so that ok fab you know? ok so the first time your life all youve been before?kk. and did your symptoms start after you onceing?k all right. um, you mentioned, do you've had no other fever and the right no fever no vomiting? how you health otherwise?, what get medication just a second. um, did you do you feel general one do feel tirer?k. are you eating drinking ok. your app fine is it ok. and you bowels are bads like you'k um, no no problems vomiting in your loose stool? ok. and your water as or ok you pass you in ok. o any ightic. um, yous feeling all in terms of your other medical history anything else' such be aware off? ogonk you all that is ok. it'siic that pill. is i mean jos that something you is that sin in the be now ok. is it. any other medication do take? o no. so tell you medication you been the problems of skin problems in the apart, from that m or um,, demitters? so was that youing is? o the weatherther. are you feeling what o anything you aware ok. let's get no problems um um move, do do you suffer from allergies are you some any so some allergies? you allergies medication allergies? ok, does in told when ok, that be help to not. um, fine. tell you family history foods anything a family aware off. o you that ok um fine, any again, any skin problems that in your world? ok, ok or right social are you can you live with the home? youon. and, do you smoke a ally, after you smoke or yesterday smokeer. you can work about re greatal drugs ok could mentioned you work as a prim or pre? is there ask itsmp stress and be fact. um, you've felt nu yourself fine over, are you like be more stress or recently, or rest do you can know where any coroation your symptoms. ok right um fine. um heo normally this said all toc examination but um,, based on your or story. um, itsal thing you, yeah, you do you essentially sties you or dry, it you rash on your men your hand you mentioned, um and your arm which started perhaps after swiming a few days ago. um, but no other the symptoms you' feeling otherwise well no fever no, belieing a dis chargeal skin or wonder whether you may have some before demhous. um, have you had a back canic before ok. um, great walk can give your patient information you bth, i would gives me more place whether disease that, um, it is some i would can reallyly treated um, with top you havesterqus like can you you, um, which you couple with inflabation. and uh smpical a mes, which you help with the dry dry skin and i something you need to come a past on uh, how'm your kin uh uhs sc the day for next few days. um, im you for i help your symptoms. um you can try anti historyein meanssing get things or the counts of puritan the raty medic on' couple of theachchingness um thats probably your recommend pa or thisk, would't be helpful. um, uh, pain can is more be helpful on thisk aboutless this this young next few days ago, and the still going't get to come back and see makes weeking can on look again any symptoms. question tell me ok i' sure the best have of good day? think,,,,,, you?",
+        "hypothesis_first_120": "hello. hello. i, difficult going further can confirm your name, and age please? ok ok. and, how can help you this doctor",
+        "wer": 0.5424083769633508,
+        "wall_time_s": 9.851,
+        "rtf": 0.0211,
+        "vs_run_a": {
+          "byte_identical": false,
+          "identical_after_normalisation": false
+        },
+        "vs_run_b": {
+          "byte_identical": false,
+          "identical_after_normalisation": false
+        }
+      },
+      "historical_run_a": {
+        "wer": 0.5517,
+        "hypothesis_first_120": "hello hello i difficult going further can confirm your name and age please ok and how can help you this doctor afternoon"
+      },
+      "historical_run_b": {
+        "wer": 0.6202,
+        "hypothesis_first_120": "hello hello hi from difficult going further cro from your name and age please ok and how can i help you this doctor afte"
+      }
+    },
+    {
+      "audio_file": "day1_consultation08_patient.wav",
+      "audio_duration_s": 466.2,
+      "reference_first_120": "OK. Ohh, OK. Hello, can you hear me? Uh, my name's Itha, and I'm twenty six. Um, so basically, I've been really stressed",
+      "greedy": {
+        "hypothesis": "ok how i can do the about. heoo can mey me um mye. um, im quite it um it so be, i think when stress up quite the for few days and i really it, that i' i,. uh,. um, um i my hands b. no no. i think it started a few days ago. uh hokoon ago. um so my skins quiteth um. um, and im heingt ho a but of the past few days i a spot no few please i'm not buting either.. no, o can um i work like, aser teacher sure. no. i theki have been for you normal in these days. uh what would not have. o. uhly i hadw in a few days ago. um no i've been before. yes if no no. is pretty i that yeah not only medic uh yeah, i think i help been. well yeah i've been drinking anything anything at door.. no ye. no. i can please' taking my such. yeah. uh no yeah. o. no. no, i think you much just be the world. no. i think you my just be so. yeah... um i thank um i my i after   toling.. yeah, i so um my da has  um my mum has. y. no no. i don't just be.ye. i no i don't uh no. no. yeah. yes, that's quite.. maybe io, i let me thank so. right. yeahk. i have i yes. yes. right. o. ok all thank you very much. that sounds go.k. i feel, i thank thank you very not. i go. i thank you very much five.",
+        "hypothesis_first_120": "ok how i can do the about. heoo can mey me um mye. um, im quite it um it so be, i think when stress up quite the for few",
+        "wer": 0.610738255033557,
+        "wall_time_s": 0.193,
+        "rtf": 0.0004,
+        "vs_run_a": {
+          "byte_identical": false,
+          "identical_after_normalisation": false
+        },
+        "vs_run_b": {
+          "byte_identical": false,
+          "identical_after_normalisation": false
+        }
+      },
+      "beam_nobias": {
+        "hypothesis": "ok., no, i can it. hello. um, no sp so um, i so. um, it so days sixty, i've been really stress up work the for few days um, i really that, i. really dr it sheskin.,. oh live in my arm um and my hands been. um no no. i think it started a a few days ago., i uh ohllo... um, so my skins quite dr um and im usingt ho up of, the about few days. i don, think spot. no few please, i'm not nothinging more ago.. no, co. um i was i, ist she. no. and came i've been for more these days. uh what would on alone.... uh you i beenwming a few days ago., um, no, i've been before., yes.. no it's pretty good a bit yeah, not only medicing., uh yeah, i think i have been, quite my.. yeah,, ive been drinking,at at door. no, yeah. no, yes. i hard taking might mu. yeah. uh no. no. o. i no. no, i think it much just be the well., i think it my just be a p. yeah... um i um i my some toon.. well yeah, ive so um, my dad has a um my mum have all think. yeah., no i don' just be. no. no i don't. um no. no. yes, that's quite.,. homon, im not think so....... i have yeah..... ok, oh, thank you very much.. yeah that'llons good.. i feel i thank you my not. io oh think i i want, all,,.",
+        "hypothesis_first_120": "ok., no, i can it. hello. um, no sp so um, i so. um, it so days sixty, i've been really stress up work the for few days ",
+        "wer": 0.5671140939597316,
+        "wall_time_s": 5.592,
+        "rtf": 0.012,
+        "vs_run_a": {
+          "byte_identical": false,
+          "identical_after_normalisation": false
+        },
+        "vs_run_b": {
+          "byte_identical": false,
+          "identical_after_normalisation": false
+        }
+      },
+      "historical_run_a": {
+        "wer": 0.5795,
+        "hypothesis_first_120": "ok no i can it helloo um no sp so um i so um it so days sixty i' been really stress up work the for few days um i really"
+      },
+      "historical_run_b": {
+        "wer": 0.6326,
+        "hypothesis_first_120": "ok how i can do the about heoo can mey me um mye um im quite it um it so be i think when stress up quite the for few day"
+      }
+    },
+    {
+      "audio_file": "day1_consultation15_doctor.wav",
+      "audio_duration_s": 491.82,
+      "reference_first_120": "Hello? Hello. Can you hear me? Great, excellent. Before I go any further, can I confirm you name and your, um, age pleas",
+      "greedy": {
+        "hypothesis": "hello hello can hear me great of bef do you furtheric confirm your name and your um age please?e? what you five i normalra will have can i help you this afternoon?. . when when did this or start o ok has been that long has it. o ok anti to mentioned your that is it thekin in your hand mainly you th drying. right ok ok cant why have you come to see me today uh is it umk? o, your symptoms? you i any greatss um um? o um with can problem your hand or affected mainly? ok, all rightigh um and you know any isgenous in your problems? ok any  breaedthing at all? right yourself spk? o ok um uh. ok. so i right notesed you go long um and you mentioned a sp is quite correct correct as well as thatrightk or right. um and therek? ok what were you doing in the timewa or started to do anything you may have done to bring the symptoms on? k? i be quite  i think that de maybe correation between the two um so you mentioned i your bad having general dryness, is that you mentioned your legs as wellk? is that, is that something you you have for a while now. ok righte. ok long ask you some very brief yes and no questions as ok with your symptoms be have you any other symptoms which a fever temperaturesk? o, you any problems of your bows and any problems that your're in or water works otherwise do you feel well you and yourself you' eat drink? you? o ok or so um think of your past medical history have any other conditions at all?? do the best type one or type two i be is ok anything else? anyskin problemsk? ok., youk which medic medic do you take? ok you have any alleries either can any medic or generalk? ok family history three w is anything much should your aware of? dib is as well o ok, and good anykin problems? oke? any history your  or bowel problems? ok all rightigh um try you can social youk? um, um any, youre know always very good aware glos um you change jobs with which what with which kind of place as you work a any real is it, um? ok? o ok ok are you think any might be a relationship between the twok? ok. o and us say any your symptoms?k have you symptoms doctor? o take time off work recently? ok all right can con questions do you smoke at all? ok? ok., like be once a week a week ok so va minal health ume. o have you tried for your symptoms have you tried anything over the counter any screen any like for that? okk? o ok all rightk? so,, it your story i think you might or deit is or contact type is very come and people your in your in your field or using c products not using blood,e. o, call anykin um moving for is couple of uption so firstly what we try do you void the trigers and your please strong recommend that you,. terms of helping your dr is the crack of skin um we can try some st cs to help withflamation as well it a strongerms ume. about the day three four time day for the next couple a week just to help for the mos feel'skin um if it' do got better about a week two weeks time um. o, and we can do we think about other things as we can give to you is it ok great general questions for mek? um do scrip now and yourphoarmmacy i been o uh i think you mean couple of weeks uh ten daysk? ok, you got better or in indeed is getting worse so you're spreaing or drness getting worse come back a see me sooner ok great thank you or think you?k? yeah,.",
+        "hypothesis_first_120": "hello hello can hear me great of bef do you furtheric confirm your name and your um age please?e? what you five i normal",
+        "wer": 0.5746102449888641,
+        "wall_time_s": 0.207,
+        "rtf": 0.0004,
+        "vs_run_a": {
+          "byte_identical": false,
+          "identical_after_normalisation": false
+        },
+        "vs_run_b": {
+          "byte_identical": false,
+          "identical_after_normalisation": false
+        }
+      },
+      "beam_nobias": {
+        "hypothesis": "hello hello can hear mek before i going you furtheric confirm your name, and your um age please? ok you fine i orra will' how can i help you this so afternoon? ok, when whener this or start? o f ok, has been that long has it ok anti you mentioned your that is it thekin in your hand mainly you dry? ok,, right ok. ok. can why, have you come to see me today, o is it because is go worse recently, your symptoms?k. yeah, that's great senses yourth. um and weak problem your hand or affected mainly? ok, all rightigh. um and you know any isgenus in your problems ok any breathing, at all? o right yourselfs scing it all off and and breathing? ok., ok. um. uh ok. or i' to right you notesed you go long. and, and you mentioned a been is quite correct correct as well allright? ok all rightigh. um, and there a long time of a bit do you remember how it or started, what were you doing in the time when more started to do anything you mayd to bring your symptoms on? o ok.. you, i you quite important i you that de any coreation between the two. um. so you mentioned something your back having general dryness, is that you mentioned your legs as well? is that, is, that i many you you have far while now? ok right ok do ok. long you ask you some very brief yes and no questions, o ok. with your symptoms to be, have you any other symptoms which a fever temperatures? any naus you' any vomiting? any problems your bow and any problems you're youin or water works? and otherwise do you feel well do you in yourself me you're eating drinking, your appetite is vmta? ok or right so um think count of your past medical history are you have any other condition is at all? do you the past type one or type two? i be is ok anything else?. anyskin problems? , deit is on? ok. which medic medic, do you take? for o ok, you have any allergies eitherer in any medications or in general ok um history three w is anything i should be aware of? dib is as well ok, and good anykin problems? o any history your of , or bow problems? ok all rightigh. um, try you can you social if for you mentioned that you work as a house keep. um, are you, you're know always very good aware gloves um you' really change, drugs with which what where which kind of place as you work is the any re sure is amal? tell, ok.. okk are you think in might of relationship between the two between, the kind of of pre are using, any your symptoms? ok.. have you symptoms doctor from doing any work have you had to take time off work recently? okk all rightigh can con questions do you smoke at all? do you drink much where belco once a weekp so week ok so, va min health or left. um, right have you tried anything for your symptoms. have you tried anything know the countingter any screen? any like for that ok all rightigh. um, ok. all rightigh um, miss is partner does so think um it in your story a you more or deititees or contact deetites it is very cm, you people your in your, in your field orre using cing products, not using glos some is get of of reaction, to the chemical any skin. um the moving four this couple of v, the firstly what we try and do you avoid the tririgers at yourk, are stronger recommend that you where gls when cleanaing at all times, in terms are helping your dr is thet of skin. um, we can try some sted cres to help withflamation as well is a stronger mes um, which you read to come of co on throughout the day three four times today, for the next, couple of week, just to help for the moist e sts anything youskin?. um if thiss do go better in about a week two weeks time are are we to come back a see again and we can you think about other things we can give to you? is ok? great any questions for me?. how so, do scription you now, and just not your pharmmacy. now been o you, uh you mean couple of weeks or ten days to foring days. um,, and if it st us' got better or in indeed is getting worse, so you're spreaing or drness getting worse, come back has see me sooner ok great, thank you or think you? you go?k,,,,?",
+        "hypothesis_first_120": "hello hello can hear mek before i going you furtheric confirm your name, and your um age please? ok you fine i orra will",
+        "wer": 0.5011135857461024,
+        "wall_time_s": 9.93,
+        "rtf": 0.0202,
+        "vs_run_a": {
+          "byte_identical": false,
+          "identical_after_normalisation": false
+        },
+        "vs_run_b": {
+          "byte_identical": false,
+          "identical_after_normalisation": false
+        }
+      },
+      "historical_run_a": {
+        "wer": 0.487,
+        "hypothesis_first_120": "hello hello can hear mek before going you furtheric confirm your name and your um age please what you fine i orra will' "
+      },
+      "historical_run_b": {
+        "wer": 0.5581,
+        "hypothesis_first_120": "hello hello can hear me great of bef do you furtheric confirm your name and your um age please e what you five i normalr"
+      }
+    },
+    {
+      "audio_file": "day1_consultation15_patient.wav",
+      "audio_duration_s": 491.76,
+      "reference_first_120": "Hello? Yes. Uh yes. Um Laura Parkinson. And uh I'm forty five. Uh yeah. So I have uh soreness in my fingers, my finger, ",
+      "greedy": {
+        "hypothesis": ". he yes. uh yes. um bit uh for some and um for fine uh yet so i have uh st my. i, think i likes get of ra, it kind of correct. um a a couple five months ago ago ago three four months ago. yeah yeah. yeah i haven't no i mean i have dryness like in other part like my b, but it's not, its not very. yeah it's not so sever it'sing i always you know i don't had great very much so yeah i, i don's been it's very bad in my hand. yeah mean it it's gone your point work with it hurt a lot my can it my job so i started i probably good check out yeah. uh the p oy. nine. um,' bit yeah it does get historyi. um i don't i mean no i don't think so. um yeah i guess when i spread bit yes it has but it some but yeah otherwise it had been b or it arm. yeah. yess that's great. . uh i mean know i do work as i help keep um i i. um,' very good about worry blood a hundred of that could be i um iw jobs um four months ago ive been more for as i had be four for while. no, i's only thing i cant think of. yeah yeah it' a sorry. yeah, it' normally it's not really major yeah it's one over bit the dr of my leg.. no. no.. yeah, it' not i. i. uh two um no no no. no that i know on no i havent thank no.. yeah. no be use in well. yes. no. uh no uh no. no. yeahye. yep.. yes, like the whole thing like fin that. yeah i you use but for after but yeah be and choer not always.. uh yeah like the past three days i havenn't been all the lower. no. time a week uhk, a couple of times a weeke. yeah, i've try get uh forty time. yeah, i really for anything.. uh dr and and anti two ston, and i is  i about like eight. . o. yeah  yes. sure. o. uh yeah kind of bit. um i wonder do i get that medic. great yeah um please and couple've a week you give better great.. ok ok, thank you very much. o.",
+        "hypothesis_first_120": ". he yes. uh yes. um bit uh for some and um for fine uh yet so i have uh st my. i, think i likes get of ra, it kind of c",
+        "wer": 0.5628997867803838,
+        "wall_time_s": 0.206,
+        "rtf": 0.0004,
+        "vs_run_a": {
+          "byte_identical": false,
+          "identical_after_normalisation": false
+        },
+        "vs_run_b": {
+          "byte_identical": false,
+          "identical_after_normalisation": false
+        }
+      },
+      "beam_nobias": {
+        "hypothesis": ". noo yes. uh yes, i'm, the before uh, f some. and, um forty fine. uh, so, i have uh, st noing my f, wife f , likeskin of red, it kind of correct. um, a couple of months ago i don three four a months ago. yeah., yeah,, i haven't no i mean., i have dryness, like you in other current, like my bs, but it's not, is's not very, it's not so sever,'sing, always weeks, i don't had great very much so. yeah, i can's been it's very bad in my hand.,, yeah, i mean, it, it's gone your point work,,, it' hurt so lot my can't really do my job so, i so i probably good check though.,, uh, the p. ok yeah., yeah, its you not all the time of but., yeah, it does get iti., i don't, i mean no, i don't think so. um yeah, i guess when i sp bit yes, it yes, but some both, but, yeah, otherwise it had been b or arm. no,, yes it's great.,, uh, i mean i i not, i do work as it how keep, um and it's be on, i'm not always, very good, about worry bloods um hut for that. could be bit, um,, iws jobbs um, four months ago., i've been more as i how a be four a a while little bit. um, that's the only i can thinker., yeah, its sorry. yeah,, it normally it's not really major, uh yeah it's lot over the dr of my legs. thank, trouble., i ago. no. no.. yeah, i's not i feel., i have any. i two. um no. no. not that, i know no i haven't like no.., v... i it' been use of well. yeah. um, no, that normal. uh no., yeah. yeah. i's he., like, the whole thing like, f in, that no, th.,, yeah,, i usually, use b for back but., yeah be room, and or, not always., uh, yeah, like, the past, three days, i haven't been old the work., no. time so a week. uh, a couple of times a week.,,. yeah, i've try get uh forty time. yeah, i really for anything., uh, and, i, antit the, i'm until it's . i, like,.,,,, yes.... o.. uh, yeah kinds good. um, oh wonder do i get that medicin., perfect great. yeah um pleases i i've a week you, get better great..,, i, thank you very much. uh,,.",
+        "hypothesis_first_120": ". noo yes. uh yes, i'm, the before uh, f some. and, um forty fine. uh, so, i have uh, st noing my f, wife f , likeskin o",
+        "wer": 0.4989339019189765,
+        "wall_time_s": 7.936,
+        "rtf": 0.0161,
+        "vs_run_a": {
+          "byte_identical": false,
+          "identical_after_normalisation": false
+        },
+        "vs_run_b": {
+          "byte_identical": false,
+          "identical_after_normalisation": false
+        }
+      },
+      "historical_run_a": {
+        "wer": 0.5165,
+        "hypothesis_first_120": "noo yes uh yes i' the before uh f some and um forty fine uh so i have uh st noing my f wife f likekin of red it kind of "
+      },
+      "historical_run_b": {
+        "wer": 0.5778,
+        "hypothesis_first_120": "he yes uh yes um bit uh for some and um for fine uh yet so i have uh st my i think i likes get of ra it kind of correct "
+      }
+    },
+    {
+      "audio_file": "day2_consultation01_doctor.wav",
+      "audio_duration_s": 329.16,
+      "reference_first_120": "Hi, there. Good morning! Uh, I'm Dr. Dean Mesa from Babylon. Can you hear me OK? Yeah, OK, great. Well, nice to see you ",
+      "greedy": {
+        "hypothesis": "hi there good morning um i'm doctor de you me from babylon right can you hear me ok great? ok., you see this morning um before we start your appointment when can can confirm your full moment date of birth thats  thank you you? ok, you speak at the moment o great so um tell memmy what' been go on you you've beening is it probably you hearing is that rightigh?k? ok. and. i, this' been day on for? six weeks ok um and before that have you had yearin problems at all?? right ok ok and um any this six week period have you had anything else happened have you had any other your symptoms at all?? right ok. uh an just c the difficulty v in hearing is that both days or just the left you your right ok. ok so you've had ringing difficulty hearing in your left year and feeling five sick and last been it on after for the six weeks or is it con continueinous the throughout last six weekse? right ok um and um, have you had any pain from the ri? ok? ok any this start coming after the year ok and you have' been express any fever? right ok andk? o, o and do use co or b try think you thats me ok away you right we should' be that does not thatk? , first that we need to do is we need to getck and just it'scl thes thing so might be  so i might help impact s doctor the going the,,. the first please that that something thats easy fx  um so we need it it through that at first and then after that we can consider other potential poibi um so that we need have.. so, what i think we could do is um maybe we you for a face to face appointment you back is' not an imagine it can be done within the next full five days or so ok and then, um,, um. o, uh ask and just start you're in aach or record in that time if you can come in and one of the g thingss just have a quick not the ear a figure well it there physicalical blood or this you going can. the do itness that you've been getting um how to bear is it? o? right  ok have been and any chest pain with the? noalp is copies and fast? o uh so let let get youk? o,., we to do and then that we could we bes which we that' go it might be that this problems so the drug or the p within the ear but we just needcl well theres of physical first,,k. o your're that youre got that you've got some tenousk. um,k? o, doctor we don we understand it we have we canly with specific specific cause for while some basiss it tens and somemp it can be drive by wider,,,,,,e. well i might do in the time between now, and when you come appointment and then to put past for ale let about to um in the note of this appointment i re appreciat, you,,,,,, um. , i doing that that uh aware of what is and what the treatment o are and there littlesttions um that help i terms of conversation about we do next if you' i with ok so um im you to,, you. o, what we do is what see you about or i this time the we we with me at you another g be but that have my note and now exactly what what is which just just it check it is that ok,,k? ok., you for to i do the number in the not this appointment bring there and the no sp you ok any is a problems any issues it bit between now when the kind appointment is just appointmentk? o or take you nice to see this's morning keep all right?",
+        "hypothesis_first_120": "hi there good morning um i'm doctor de you me from babylon right can you hear me ok great? ok., you see this morning um ",
+        "wer": 0.5645330535152151,
+        "wall_time_s": 0.138,
+        "rtf": 0.0004,
+        "vs_run_a": {
+          "byte_identical": false,
+          "identical_after_normalisation": false
+        },
+        "vs_run_b": {
+          "byte_identical": false,
+          "identical_after_normalisation": false
+        }
+      },
+      "beam_nobias": {
+        "hypothesis": "hi there,, good morning name um, i'm doctor de you nots from babylon. can you hear me ok. yeahk great. well i to see this's morning., um, before we' start quite when can can confirm your full moment date of birthies?k that's perfect, thank youja um, are you an a private place where you're get to speak at the moment. ok great. so, um tell me was's been go on you, youve beening there it, a noty hearing is that rightight? right ok. howll long has've been going on for six f ok.. um, and before that have you head any hearin problems at all? ok, right ok. ok. and, i', in this six' week period, have you had anything else happened and have you had any other is symptoms at all? ok, right ok. uh, an justk., the difficulty v, in hearing is that both is, or' just left you. so your're rightighty is fine. ok. so you' had,, difficulty hearing in your left ear, and feeling fine you sick, and last been, on enough for the six weeks, or is it continuein the throughout that six week? ok right right ok um, and, um, have you had any pain from the hear att st? ok, any dischar coming out the year, ok. um, you haven' been express any fever? right ok.. and, um, has you i been historyi at all? ok and do you use co and or b try think you knowabs mes?k no, ok away you you're right we should' be re that, does not clean that right wishes that it. or, um, the first thing that we need to do, is we need to get on have a look con sry ok, and just it'scl the sy things, so things put might be , so i might help in impacted s, talkinging, the you going into the o can need to hearing. um, the first please that, that's something that's easy fxable, b at um, so we you it it go that at first, and then, after that we can consider, other potential posibi, um, and for that we need to tell of a conc that youre drug. so, um, what i think we could do is um, medic if we book you in for a face to face appointmentment you want back and it, is not aner, it can be done within the next, full five days or so, ok, and then um, what i does also the messages, i'mve beening, uh ask, just sp you're, in aach, when re in that time for., you can come in and one of the g feel has just have a quick, look the ear, a figure are, whe it there, physicalicalb or this on the else going ok um, kind i toe., the these itness that you've been getting, um how sever is there? ok, right ok. may, i get chest pain with there? noalpation, is hoies and far? o right. um, so, let let's get your the check, be that, the mess to do and then doctor that, weak could be a suffer if out which we that't go, if might be that this problems so the drug all the balll system within the ear,, but we just need tocl well theres of physical doctor first, tryring, i do with that at first the case ok i well,, you're that you're got, that you've got, tenous ok. um,, i tell is it something that you, medic, doctors we don we understand it fully. we haveing o, you you canly this specific specific cause, for while, some basiss it tenmps and somemp don it can be drive by a wide regular different things and back., i'm then that you've mentioned that, what i might do, in the time between you now, and when you come the appointment, and'm then to, but hasing for a leaf let, about to, um, in the note for this appointment, i' really, appreciat if you just start reading about that ok. and, often that that uh awareness of what it is and what the two and o are, and there namesttions, um, that help us any termss of conversiation about, what would do next, if you're ill clear ok.. so, i im an place day to that, um, and you can mean about that, and what we do is what see you about four igness on we you with me at you another g be, but that have my notse, and not exactly you what, what my, which just just that check it is that ok. great. so, i' , be me five minutes, and you coming and is a f, i do the number in the not of this appointment really there, and then last sp you ok.. if any, is's a problems any issues it bit between now, when the kindach appointment is, just talk another, appointment, you you speak for say the ii ok.. all, take you nice to see this's morning.k all right.,, you,,,,,,,?",
+        "hypothesis_first_120": "hi there,, good morning name um, i'm doctor de you nots from babylon. can you hear me ok. yeahk great. well i to see thi",
+        "wer": 0.46379853095487933,
+        "wall_time_s": 9.466,
+        "rtf": 0.0288,
+        "vs_run_a": {
+          "byte_identical": false,
+          "identical_after_normalisation": false
+        },
+        "vs_run_b": {
+          "byte_identical": false,
+          "identical_after_normalisation": false
+        }
+      },
+      "historical_run_a": {
+        "wer": 0.4673,
+        "hypothesis_first_120": "hi there good morning name um i' doctor de you not from babylon can you hear me ok yeahk great well i to see this's morn"
+      },
+      "historical_run_b": {
+        "wer": 0.5637,
+        "hypothesis_first_120": "hi there good morning um i'm doctor de you me from babylon right can you hear me ok great ok you see this morning um bef"
+      }
+    },
+    {
+      "audio_file": "day2_consultation01_patient.wav",
+      "audio_duration_s": 329.16,
+      "reference_first_120": "<INAUDIBLE_SPEECH/> <INAUDIBLE_SPEECH/> Yep. Can you find Uh yeah, uh Jack Smith, uh thirty first October nineteen ninet",
+      "greedy": {
+        "hypothesis": "hello. uh uh can fivek. yeah uh jack smith uh f first october nineteen nineteen. yes. uh yes. yes i' just a lot a co hear as well was i you to like what few kind, it's ing in some yeah. uh, past six weeks um i had something maybe a five year ago but only last a couple of days was. um, um i occasionly get like a bing in my uh just i. um, i i i' been a two i i've tried con bit sick or a years well. i' just the left day yeah.. it seems to be a. yeah. uh. um, i' like, something thing triger as well as so' example come watching two or i listen to physical or something that was so the  anything uh i. uh not specificly  from that disnesss as so much. that uh i  doly.. o. o. o. ok. uh, it nothing major, is just kind of uh its it's not but kind of thiss tonaus like uh not not proper room beening or, i, that, but just yeah. uh, i p yeah not two couple. no long no. o. great youve got you start can cause uh this uhing up my the samely.. yeah. o. yes. o. yeah that, that's good.e. ok. k thank you theleak.",
+        "hypothesis_first_120": "hello. uh uh can fivek. yeah uh jack smith uh f first october nineteen nineteen. yes. uh yes. yes i' just a lot a co hea",
+        "wer": 0.6063829787234043,
+        "wall_time_s": 0.137,
+        "rtf": 0.0004,
+        "vs_run_a": {
+          "byte_identical": false,
+          "identical_after_normalisation": false
+        },
+        "vs_run_b": {
+          "byte_identical": false,
+          "identical_after_normalisation": false
+        }
+      },
+      "beam_nobias": {
+        "hypothesis": "uh. uh uh. can five., uh, yeah, uh,, just smith. uh,, thank's first, october, nineteen, ninety., uh, yes. yes, i just, a a proper hear as i was i used to like hear kind , it 's a raing somewhere. uh, past sixt.. um, i had something really a five year ago, but only last a couple of days, wasn't anything as long as this but., um, i, occasionly get like a ringing. in my left do. uh,, just on the one side. um know, so i been, i i've hundred of bit sick or bit doty years well.,, i' just the left o. it seems to beea., yeah. uh, kind of one and off, like some is triger as well as so,'s example from watching two, or or listen to p or something yourself the ringing a., uh, my.. uh,, not specificly apart from, dis' is since very so much.., that dont no. i ok.,,,, i,,, ok. yeah. uh, it nothing major, is just kind of. uh,, it', it's not, the kind of this to naus you know like uh,, not nothing proper room beenining anything i that, which just just at of a bit of kind of off balance said yeah not twenty couple. no. long, now.., i it great, you've got you, so i thing can cause uh,, this uh ringing up my, the same about.. ok., i..., i. yeah, i'sc., ok for., ok. thanklea.,,.",
+        "hypothesis_first_120": "uh. uh uh. can five., uh, yeah, uh,, just smith. uh,, thank's first, october, nineteen, ninety., uh, yes. yes, i just, a",
+        "wer": 0.5567375886524822,
+        "wall_time_s": 4.272,
+        "rtf": 0.013,
+        "vs_run_a": {
+          "byte_identical": false,
+          "identical_after_normalisation": false
+        },
+        "vs_run_b": {
+          "byte_identical": false,
+          "identical_after_normalisation": false
+        }
+      },
+      "historical_run_a": {
+        "wer": 0.5483,
+        "hypothesis_first_120": "uh uh uh can five uh yeah uh just smith uh thanks first october nineteen ninety uh yes yes i just a a proper hear as i w"
+      },
+      "historical_run_b": {
+        "wer": 0.5985,
+        "hypothesis_first_120": "hello uh uh can fivek yeah uh jack smith uh f first october nineteen nineteen yes uh yes yes i' just a lot a co hear as "
+      }
+    },
+    {
+      "audio_file": "day2_consultation03_doctor.wav",
+      "audio_duration_s": 450.84,
+      "reference_first_120": "Hi there. Good morning! Hello. I, I'm Doctor <INAUDIBLE_SPEECH/>. Nice to see you. Hi. Um, so, before we start your appo",
+      "greedy": {
+        "hypothesis": "hi there good morning uh' doctorg get at last to you uhs for, before we start your problems confirm your  o? o you work ok fine it so you're your years do? ok and, are you in private place where youk to speak at than  ok great um so how can i help you today?? right ok ok. and how long has this been going on all? ok right okk? and is it just on one sorry of both started right ok and that your face it feelingk? ok. can you tell where your fer? right ok? ok., um in this type any other symptoms, youve headbk? o,k ok um and  have you had any weakness or normal down in the rest of the body at all? ok? you had any difficulty swelling and have you difficult to speaking have you noticed any problems with your vision at all?k? o? ok, do have of musle hearurin feeling in in the ear um do you have any discharst come from madur at all?k any pain in the from there?e? right and um have you had any fever at all? and do you have any itness in the ear?? ok,, is that  ok or right um do you not me to ask you other the general questions do you have any other illnesses at all? ok. o ok are youk? ok., you mentioned this' great here at  and, i great you' not where you get that from that from your doctor? yeah do you remember with the name of thisthroat or thats, are you notly other medication at all? no ok. do you have any me any ergies for medication? dates ok, or  good night uh and um in terms your family are there any kind of illnesses your family or?k? rightigh o ok good and and a in terms of your own can a baby now are you you working at the moment? ok? o,k tak you can talking i you great where that much. ok so you had the similar and we doctorly like with hoes is that you up yeah araing fine um great um uh, and uh do you live alone?? o ok right. um do you have any pes at all at  ok o allr um is a else that you wanted to just from about what been going on recently?k? o. ok right all so what walk what i can with? ok? o, uh i where  in terms ofs vi with you uh  um when you've told me this does it seem you anything um that youk? ok i would like you' to bes in akach today ok. i would like it to come on back at i like gly toses you we what what you what you'recing might we something called b,k,k? we can going into thatp what that if um if that confirm un physical examination um that not usually a lot life threatening problem but um part the reason. i, can, we,,k. ok and yourelog examination just measure um you going and confirm or that i of the doctorness of or conc that i is any probably anything to see within the so i uh so, you,k. o, you need to worry about that i you think we caninar can i can reaure you how do in or to finish the re you if you in examinations so what, you,. , to you in a place to fit  one about headachs or we central london ok and then you can read the that supportty run i you that number bring nots y onnes and then we, you,,,,,k. ok correct said so we see you and how you all go to bea as sure you further that but we you mentioned the v get doctor today? hi ok nice takek? ?.",
+        "hypothesis_first_120": "hi there good morning uh' doctorg get at last to you uhs for, before we start your problems confirm your  o? o you work ",
+        "wer": 0.5726970033296337,
+        "wall_time_s": 0.19,
+        "rtf": 0.0004,
+        "vs_run_a": {
+          "byte_identical": false,
+          "identical_after_normalisation": false
+        },
+        "vs_run_b": {
+          "byte_identical": false,
+          "identical_after_normalisation": false
+        }
+      },
+      "beam_nobias": {
+        "hypothesis": "hi there, good morning name? right, doctor de get how last to you uh,s for, before we start your , confirm, yourre full name in date of birth, that's the k. ok, you ok fine it so you're your you do said yeah? o ok., are you in a private place where you'k to speak at the man? ok great. um, so, how or i help you today? ok, right ok. ok. and how long has it been going on or?k,, right ok. and, is this just on one sorry of both s started ok, right ok.. and that your face feelingn, wherein is back is that which part of it can you can you show me your finger? o,, right ok ok. um, has anything else happened um, in this time any other or symptoms, you've headb? the ok? sure ok. um, and , have you had any, weakness normalerous down in the rest of the body at all?k ok. i you had any difficult to swellowing? and have you had been difficult to speaking. have you noticed any problems with your vision at all? ok ok, and do you have the normalinous present right well? o, sure ok. uh, just going back two o can of muf hearurin feeling in the ear um, do you have any discharge come from that de at all? ok. any pain in the or from there air? right o. and um, have you had any fever at all? and, do you um, have any itness in the ear?. do you, you' co bout ti can for when you is that? ok, no heo ok all right do you not me to ask if your other the general questions,, do you have any other illnesses at all? ok,,,,,, sure ok. so are you a regular medication you mentioned it great here at was? ok, sure and, i' sure you're notic when you get that from is that from a doctor? yeah, do you remember with the name of thisth all? thats right. uh, are you not other other medication at all? no, ok. do you have any, any energies for your medication? o datetic ok, or about ak night. uh, and um, in termss your family, are there any kind of illnesses will in your familyes or? ok right o ok good.. um, and in in terms of your own can of baby now, are you, you working at the moment? ok, ok. so you have' as you me jo about with hoes is that you up, yeah, ra ok. um great. um uh, and do you live alone? ok ok. right. um, do you have any pes at all at arm? ok i say allr.. um, is the a else that you wanted to from about what been going on recently? o, ok, right rightigh. heo so what what what i we go ok. so'sm on uh. i see with ed in termss of withs and vi would with you, uh, ful, um for when you've told me, this does it seem to you you know anything um, that youve a diph, how long i would blood you to be assess in akach today. ok. i did would like it' to come to on backness at out like, gly toes you. with what were you what you'recribing might we something called b poy ok. um we can go into thatp what that is if um, if that confirmed, all un physical examination. um, that's not usually a lot life threatening problem, but um part of the reason while legt, come and' just that we can it' through the, o callle and youre of examination just mentioned was, you goingon. and, confirm or that i of the daness, how of, or the conc the ear think is any, probably anything to see within the ear. so, um uh, so, in ask your question no, i don't think that you need to worry about that, o you think, we cannoar i can, i can reasure you, however, do you on did you in order to de finishive you re sure you, if any you in examination today.k so so when i' do iness and a messagesve been for past some, to difficult you in a place of this in one about headaches or, we been central london ok, and then you can read thes, that supporty er are you that number bring yourabs, you modery onnes, and then more that you toer placeis canmu for ok. correctt said so, we' see you, and how youre go to bea sure you further that, but do youve mentioned the v gets done today? all, ok nice you' taking it? fine,,,,, you?",
+        "hypothesis_first_120": "hi there, good morning name? right, doctor de get how last to you uh,s for, before we start your , confirm, yourre full ",
+        "wer": 0.48612652608213097,
+        "wall_time_s": 10.35,
+        "rtf": 0.023,
+        "vs_run_a": {
+          "byte_identical": false,
+          "identical_after_normalisation": false
+        },
+        "vs_run_b": {
+          "byte_identical": false,
+          "identical_after_normalisation": false
+        }
+      },
+      "historical_run_a": {
+        "wer": 0.4659,
+        "hypothesis_first_120": "hi there good morning name right uh doctor de get how last to you uhs for before we start your i confirm yourre full nam"
+      },
+      "historical_run_b": {
+        "wer": 0.5641,
+        "hypothesis_first_120": "hi there good morning uh' doctorg get at last to you uhs for before we start your problems confirm your o o you work ok "
+      }
+    },
+    {
+      "audio_file": "day2_consultation03_patient.wav",
+      "audio_duration_s": 450.84,
+      "reference_first_120": "Hello? Hi. <INAUDIBLE_SPEECH/>. Nice to meet you. Hello. Uh, yeah. Uh, Mary Richards. Uh, and my, I'm forty years old. S",
+      "greedy": {
+        "hypothesis": ". uhk you. uh yes um no really bit just uh um my i forty at ago. thank.. yeah um so just's been having and um problemss in my hearing i co very well i i. um, it' feeling a bitnumb the um it's been it's been a few weeks i um and forty weeks or something. just one five just on my left side, i noticed at the hearin fine of gu kind bit.. yeah so get is the left side kind of like around my left here and kind of thel here the like my door vis was all a bit du here yeah. not i noted i think pain notes that my um. yeah ho in no. yes. no no no nothing like that no. no no no. no thats all bit. no. uh yeah it's kind of kind of uh but like four time of yeah right now, it feel very doesn't feel like when i' touchth my. no, nothing nothing think coming out no no. yes, no, nothing like that. it no no. no. it oh, no noe you co but like that. yes no. um i i' kind i've been told that po and the notse in the first painly get and i  i feeling um that' thats so fine and i,,, i,,. um,' i i fors b um ive been now, i think it's like age go it has called not quite a remember but last when is is something like that but again not nothing on. yeah so no, i you take the break my node when i can need it go and um sometimes, ive my re, but i does get that from the cheist.. uh yeah i getting perfect age as ago. comver here day sorry. no.. uh no just make that. yes. my brother had yeah b is, i think. uh i don't i have been enough ok. yeah so i mean im joy. um,, but,. um, the symptoms again i you sometimes kind like every i feel bit it um i've just had far  pain so kind of feeling uh yeah it' having work um. um yeah yeah um i uh no no. uh, no no that uh no. no just like i i i been written um occasionally and when i get back i a bit but the mainly it' really  feelinging the normal that the probably but yeah no i what i that. im i just like there one thing i think it's like can paach think could look on  a bit f to it. i i guess one time think it. yeah, i' i something its you period but that need to be thought don't probably really anything it like you' really kind and is it i nothing i' so i would di from, i don't like. nok. thats b. yes o yp.k. thank. o. yeahe. ok. yep.k. o, that's fine. ok yet, there will do that fine, thank very much.. o.",
+        "hypothesis_first_120": ". uhk you. uh yes um no really bit just uh um my i forty at ago. thank.. yeah um so just's been having and um problemss ",
+        "wer": 0.6019108280254777,
+        "wall_time_s": 0.188,
+        "rtf": 0.0004,
+        "vs_run_a": {
+          "byte_identical": false,
+          "identical_after_normalisation": false
+        },
+        "vs_run_b": {
+          "byte_identical": false,
+          "identical_after_normalisation": false
+        }
+      },
+      "beam_nobias": {
+        "hypothesis": ". uh,.... uh yes, um no really, good uh,, and my it, i' fty at all.. and. yeah.. um, say just's been nothinging um, um, problems it my hearin a co very well my, not is of my face is been feeling a bit numbly thek. . um, it's been, it's been a few weeks, i um, and that for you weeks or some. . just one five just on my left side, i noticed at the hearin, i gone kind of uh., yeah so get iss the left time, kind of like around, my left, um kind of long head the like my two lines, was all a bit longumb thereea., not, i, ive noticed i think, i easily nots that my ear. um, no, no., yes. no, no no, nothing like that. no., no no. no, that's all of good. uh, yeah, it's kind of, kind of uh,, but, like four time, of, yeah right now, feel very, doesn't feel like when i' touch toth., no, nothing, nothing think coming out. uh, no, like., no, nothing like that., uh.. i't, uh, no no you' co but like that. yes. um i, i've not i've been told that po in an notse in the first, painly guess and i did then feeling um, that that's so far, and, yeah take a re, if any too and it my de holet pain up my thoughts b. um, ive thent now, i think not that age the though i have called., not, quite a month a la when is say something like that, but again, not looking., nothing long., yeah so no, oh take the break my notse when i have need it more, and, um, sometimes, i've my re, but i does get that from the che.. uh, yeah other ting with fifty age, ago., confident yeah does sorry., no. um, no, just make that., yes. my brother had no privatera i was yes, i think good, uh,, i no i have one out ok., yeah, so, i'm a, i'm joy. um, but, because of both the kind of., it symptoms of the , but you some kind like every ing, i be a bits the eat um, i've just had far thats painla name, so,, kind of feeling uh. yeah, in' work, um, a little bit now., yeah that yeah., um, i uh, live, with my bet. no, no that.. uh, no,, it , i don i ive been written and, um, occasion ofly, and when i get back i i' of little a big but, the name thing its really, the feelinging. other the tnumb thats thet, but, yeah, no i idea what going on that., i mean i just like there one thing i think, like kind paach could your on night, a bit friends it., i guess one time to think it, you know, you' there something its you period. but that no, what meet thought i did., obviously really anything because' say you' reallyty kind. uh, is it., i, nothing, so it i would di from there, i don't know, i just's i think up quite,al that... ok... yeah., thank. ok..k.. yeah quite.. ok. yeah., that's fine.. ok, yeah, i will did that fine, thank very much., five.,,,,.",
+        "hypothesis_first_120": ". uh,.... uh yes, um no really, good uh,, and my it, i' fty at all.. and. yeah.. um, say just's been nothinging um, um, ",
+        "wer": 0.5764331210191083,
+        "wall_time_s": 8.453,
+        "rtf": 0.0187,
+        "vs_run_a": {
+          "byte_identical": false,
+          "identical_after_normalisation": false
+        },
+        "vs_run_b": {
+          "byte_identical": false,
+          "identical_after_normalisation": false
+        }
+      },
+      "historical_run_a": {
+        "wer": 0.5893,
+        "hypothesis_first_120": "uh uh yes um no really it good uh and my it i fty at all and yeah um say just's been nothinging um um problems it my hea"
+      },
+      "historical_run_b": {
+        "wer": 0.6083,
+        "hypothesis_first_120": "uhk you uh yes um no really bit just uh um my i forty at ago thank yeah um so just's been having and um problemss in my "
+      }
+    },
+    {
+      "audio_file": "day4_consultation06_doctor.wav",
+      "audio_duration_s": 606.12,
+      "reference_first_120": "<INAUDIBLE_SPEECH/> Ah. Hello. Hi, uh, my name is Doctor Kumar. I'm one of the GPs here. Can I just get you to confirm y",
+      "greedy": {
+        "hypothesis": "ok hele hi um my name is doctor youar um what the do? o, you confirm your name and dateabirth or meetings?abirth and your bigge birthk? ok and how can i help get?? o. k so is it started this morning was a seven onet havach it comek? ok and did it come on really bad or been it start off uh like it' like headach can build up to a, that to be a heade?k? ok and you you ten is the worse pain you everth in your life, how i would say the pain you fitting one on?? that ok no, that's quite have you had a headach beforee? i you a had a headache like this in the past? ok it a for all? ok if you had a same where or uh,  the head uh, the headachch is it co a front from the back? o and tell and what with your problems are you getting o? ok and um, have you tried any painulist for this already? o umk? and what time we could take a f to ma howll long the ago was are you taken it? o um and your original problems to still on going now? o okk? ok,, and have fel sort ofnausous or like your one to v it?? all right ok you've mentioned in the past you kid me st any otherk? o youve mentioned that in the past, you've had keep stand have you had any and un medical problems in the past? you? o can you still hear you can hear youk? ok, what else do you have in the family hiout ok fine ok um um and your other brother probably history? and do you take any you regular medications are you allered any any medications?? ok, any chancetic could be pregn um you noteric can medications fine from and what what youk? ok, you quite work in about it was there anything in particularly you were worried about? o? ok fine um now just another uh question have you noticed any weakness in your arms or legs anything like that youe? o,., you fine the straight line or is your yourre a what are you walking a bit funny ok sok? um,., you' say this morning uh you work up and then theyt it in the morning but four hours going develop headach um on the left side of the head side head, is it fine the eye? it behind we eye is that whe pain is? o umve all that no for allk? k thats fine you've noticed that you' benessthing that funny lines you've feel a bitnausous you vomited twice um are you feeling di as well but your, you' youk. um, you you fine um and you've take a paraym it has it help it that ok so it sounds like what you stuff from is what no is in mil b is that something you've had before? ok ? ok so um i usually with with mbs they can present at different time to livess that sometimess it can presented a child sometimess it cank? and sometimes so can it you know you co medic  so there different there different way if you can get mygra uh and the reason and white this sounds like great is it on one side the head,e. um,' you've got b vision again which great with the naus ving that sort of now um we i always a pen it headache is we and i suggest some medic,,,,e. so, and soon as possible to do like a full youlog exam well you to make sure that you know this you know what with your more specific examination that everythings. ok., you, question between now and when we can see you if you take some medications maybe something like if youre both? so yeah so my b yeah, you know you sooner than that we can it maybe co and out to for minutes pain on what yourre response to it for some and whatever medic, they take, the,,? o, last from any anywhere more hours was to seven to two hours my brings and the last last um no so what there's a lot medic treatment, the, can? ,, uh so, would you can get from theph um and we also to drink care shouldy um car to drink something like co for the three of them it is's a good so, of co,,,? o,., the treatment when that anythinging get specific mightly medication and that to try we now and when we see you to do the to do the su where we can see you? um how i if you do take these medications and you know by the time your appointment time come and you feel much to better yourself you can a co let um we can give us a calling co that?k? , any any questions from me ok uh any any further problems which you not your appointment pe do thatk? ok.",
+        "hypothesis_first_120": "ok hele hi um my name is doctor youar um what the do? o, you confirm your name and dateabirth or meetings?abirth and you",
+        "wer": 0.5081029551954243,
+        "wall_time_s": 0.253,
+        "rtf": 0.0004,
+        "vs_run_a": {
+          "byte_identical": false,
+          "identical_after_normalisation": false
+        },
+        "vs_run_b": {
+          "byte_identical": false,
+          "identical_after_normalisation": false
+        }
+      },
+      "beam_nobias": {
+        "hypothesis": "ok, badkllle ok hi and my name is doctor you hard um what the you she here can i just get you to confirm your name, and date bth or meetings?k at that., and you in big of birath, great, how can i help.,,,,k. so is it started this morning was the seven onetach you it come on suddenly? ok. and do it come on really bad, or bit start offugh uh like it work headach can build up to, headache? ok. and, if you you ten is the worse pain you've ever in your life, how i would say that pain you lookting one? o that, ok there, that's fine have you head a headache before? have you ever had a headache right this in the past? ok o it it for ok ok. and you had it say where, or, of pro the head, uh, the headache is that front from the back?k and tell and what with your problems are youre getting? ok ok. and um, have you tried any painulous for this already? ok. um ok. um what time we you take a current to howll long the agos are you take it ok ok. um, and your re problems is still on going now? ok,,,, ok. uh, so, whatabel, i have fel sort ofnausous, or like your one or for that? oy all right ok you've mentioned, in the past you kind kid me sts any other medical problems?, you've mentioned that, in the past, do you've had a kid me stands, have you had any, and on medical problems in the past? o, ask you come in the family o o can you go hear you can hear me. and mean that you mentioned your mother has mr or while else do you have in the family? hi that ok. ok umllon, and your other brother probably history.k do you take any youre regular medications? ok. are you a lo it to any medications ok, ok there any chatic could be pregn fine. and you not aeric can medications fine from and what what were you thinking might we going one i know you see quite where b it, was there anything in particular you are worried about? o,,,k ok fine. um, now, you's there another, uh question, have you noticed any weaknesss in your arms or legs anything like that? o, and when yourre walking you're able to walk fine in straight line or is your yourre, or, are you walking a bit funny ok. so, with specific cra high what what you say this morning, you w up, and then they on it in the morning, but four hours going to developed headache. um on the left side of the head next sidek is it fine the eye? it behind we eye, is that whether pain is? ok. um youve all that not for all you ok that's fine you've noticed that you measureness burrry this's funny lines you've feel a bitnausous youve vomited twice. um, are you feeling di it as wellell, but your, you've got no, you legal symptoms you're walking fine um and you've take a paraym it has it help is that ok. so it sounds like what you suffer from from is, what no is in mil b is that something you've had of before? ok ok. so, i usually with with my bs they can present at different time and life, that sometimes it can presented a child sometimes it countite whe there're all that. um, and sometimes so canet, you know even post medic ly. so there's different there's different way is you can get my bns uh, and the reason and why this sounds like m great is it 's on one side of the head withpical on my ran you've got bur vision again, which is greatp call with the nauseea vomiting that sort of difficult or m great. now, um we are obviously if your penach is headache is we you severe, and i suggest some medic, you could try that doesn't work we would want to see you, and soon as possible to do a like a full, yourloggicical exam as well and you to make sure that, you know this, you know what with your more specific examination that, of everything or seems fine. um, i what or would recommend in the threat between now and when we can see you uh, if you take some medications, maybe something like quite be pro?k. yeah so my b that you not, you know, you sooner than that, would can look at maybe apart out to forty minutes, depend on what yourre response to it is for some people and whatever medications, they take the m great doesn't other and it can last from anywhere, more hours was to send to two hours my bringns and last um, be so no so what there's lot of medic treatment so if that can be eye of prefer with then i to sickness uh so uh, would you can get from thepharcy. um, and also to drinker, shouldre um, carbo to drink something like co? for the three of them is it is a good sort of co tell to start them, weing go off up the treatment when that anything can get specific my leave medication, and there it something to try between now and when we see you to do the to do the su? os where we could see you today at some point? um how are if you you take these medications and, you know, by the time you appointment time comes any you feel much to better yourself you can of account let. um, we can give us a calling can that? uh, any any questions from me? o right ok. uh, any any further problemsing know your appointment pe? do let? ok i,,,?",
+        "hypothesis_first_120": "ok, badkllle ok hi and my name is doctor you hard um what the you she here can i just get you to confirm your name, and ",
+        "wer": 0.4223069590085796,
+        "wall_time_s": 12.892,
+        "rtf": 0.0213,
+        "vs_run_a": {
+          "byte_identical": false,
+          "identical_after_normalisation": false
+        },
+        "vs_run_b": {
+          "byte_identical": false,
+          "identical_after_normalisation": false
+        }
+      },
+      "historical_run_a": {
+        "wer": 0.4296,
+        "hypothesis_first_120": "ok badkle hi and my name is doctor you hard um what the you she here can i just get you to confirm your name and date bt"
+      },
+      "historical_run_b": {
+        "wer": 0.5131,
+        "hypothesis_first_120": "ok hele hi um my name is doctor youar um what the do o you confirm your name and dateabirth or meetings abirth and your "
+      }
+    },
+    {
+      "audio_file": "day4_consultation06_patient.wav",
+      "audio_duration_s": 606.12,
+      "reference_first_120": "Hello. Uh, yeah, I'm Maria. Yeah. Sorry? Um, twenty second uh, of March, of um, ninety. Um, so, I'm having like a really",
+      "greedy": {
+        "hypothesis": "hello no. uhy aea. yp. to. yeah. um, not up my unc um ninety. um so i have like a really really strong i. um, i i' quite and so so it' started in the morning um i feel like um uh di uh my f is a little bit bl of, um, like,. it's really pain full and i'm getting really concern special because i'm having like this uh changes in the vision um. uh, yeah uh it came like kind of suly. no. well i had a keeply stone so, i'd say that that ten um i have now um. and may five well six  six probably but it one about you being really concerned because this is very weird. sorry um well not really like it i yeah like this no yeah. um, i' it's something new it's in one side uh the left side. um, my vision is quitel um it it's it's really weird like sums exs, not. uh, it'sly yeah i tried for a be and well but uh you work so we honest i feel exactly the same. uh well uh good there iachs started a like for year a four hours ago so i would say like twenty three hours ago because i could spend. yeah yeah yeah i feel a little a bit a little bit uh working i get not st s screens. um,, i. yeah definitely and when i move like the f is that it' quite if i but i started to feel like even worsey i more so i just want have my head i had like really uh not moreing. i yeah i i've forgo mentioned definitely i gotm it twice actually as soon as the the headaches started i also vit it so,. um, i i eight but then the headache started to be reallyly where and i still feel nausea. three up i'm a about the vomits very one, i think. sorry yes uh so uh nine. um uh my mother has some my re i'm not try fit'umb and also i have  tir is mean the family so eat might be i don't know uh of i don't know. i think we i was not the nottion sorry i, i think we last con connection yeah yeah. yeah. tyrant please she as outside the terro uh. uh, i uh no not that i'm a w uh yeah not that i' aware no. uh i am really dat. well i know little' bit to i for countryry so i i feel the 's get is some kind of b on yeah to something because, i' like it yeah. but,,s pain so worry both that or maybe be atro i don't know, it's it's just like you know you' hear so many sties that you definitely start wonder if i should go away urgenttly because't and might really as,. no, not no no no. uh, not really it's really about the head thatsw i' fine it very weird., yeah. y. yep. exactlyp. sorry. uh not no, it's i don't describe but it probably i no. yes. yes. no ye um no. um now it's the first time but i very f with be because my mother has it so uh well but i never had it and i thought that younget of my  will be you knowing,,,,. um that's well i'm not sure if myin make sounds. o. o. all that's b. yes. yeah ok so and uh you, usre say that if this is on my  and if i try a medic medic,. uh, i kind enough today. no. o, o great that doesn't start. ok okk. o ok. soundsk. o ok ok sounds go yeah. sometimes it nineteen . yeah uh no thank you very much to were very helpful ok yeah thank you very much. by yes.",
+        "hypothesis_first_120": "hello no. uhy aea. yp. to. yeah. um, not up my unc um ninety. um so i have like a really really strong i. um, i i' quite",
+        "wer": 0.4311797752808989,
+        "wall_time_s": 0.25,
+        "rtf": 0.0004,
+        "vs_run_a": {
+          "byte_identical": false,
+          "identical_after_normalisation": false
+        },
+        "vs_run_b": {
+          "byte_identical": false,
+          "identical_after_normalisation": false
+        }
+      },
+      "beam_nobias": {
+        "hypothesis": "hello. uh, yeah marea. yeah. sorry.. um, twenty just not of my an't off uh um,, ninety. um so i', having like a really will is strong headache, i don't know what this happening, um quite and so so it's started in the morning um i feel like uh uh, di see uh myy is a little bit b um, like it it's it's really painful, and i'm getting really sir, special because i'm having like this uh changes in the vision., yeaho now. uh, came like kind of su., well i had a keepe st so, it' say that that's ten um i have now maybe fine well six si probably., moreabro., you reading really concerned because this is very weird. sorry. um well not, really like it i yeah like this no definitely it something you., it's in, one uh,, the left side, only. my vision is quite la um it it's it's really weird, like sums ex ones that not, i don't know hopet of be describe it properly. yeah, i tried for speak of all, but uh you work so we honest i feel exactly the same. uh well uh, there aaches that the light for year, a four hours ago so i would say like my three hours of agoel because i could't stand. yeah yeah yeah, i feel a little bit a little bit. uh, o i i not st screens um, but yeah,, definitely and when i move, like the f is that you've quite if i bad, i started to feel like even when worse if i more so i just want to have my head, my had like really uh, not moreing. i yeah i, i've forgot man definitely ive vmit twice actually as soon as the, the headachees started, i also vomit it so immediate i thought it was something that i eight but then the headachese started to be reallyly bad and i still feel nause yet. so up, i'm of about the vomits, very one, i think., sorry. yeah. uh, so uh, the not actually uh, my mother has some high res, i'm not try that's well onceu, and uh, also, i have high tirant thiss mean the family so eat might be i don't know uh of, i don't know. i think we i will'cetion sorry, i, i think we lost con connection. yeah yeah yeah. i tired. it she else as outside the tir. uh, no, not that i'm aware. uh, no not that i'm away uh, yeah not that i'm aware. uh, i' really started., well, i'm a little bit to i' for comery so a feel the kin is some kind of bring on your to or something because, um'm like this is really the pain so worried both that or maybe a stro i don't know, it's, it's just like you know you' hear so many stories but you definitely start wonder if i should gowa, urgenttly because, and might really out serious., no, not it, no, no., uh,, not really. it's really about the head thats wife i' find it very weird., yeah. yeah exactly sorry. uh, not, no, it's uh, i don't this describe but, but it,., probably kind not., yes. no. yeah. um and no, it's the first time. what, i'm very fwiliar with could being because my mother hass it so uh, well, but i never had it. and i thought that younget of my will be, you knowing much uh oh age, so, that's when i'm not sure if mygramate sends.,.. all that's great.. yeah. ok so, and uh, you, youre saying that ifnesses on my b any i tried a medication is should go away, kind not to today., uh o right that doesn not't start., ok. ok sometimes ok. ok sound's good yeah some, its signs a um. uh, no, thank you very much to were very helpful. ok, yeah, thank you very much but. its.,,,.",
+        "hypothesis_first_120": "hello. uh, yeah marea. yeah. sorry.. um, twenty just not of my an't off uh um,, ninety. um so i', having like a really w",
+        "wer": 0.3651685393258427,
+        "wall_time_s": 10.196,
+        "rtf": 0.0168,
+        "vs_run_a": {
+          "byte_identical": false,
+          "identical_after_normalisation": false
+        },
+        "vs_run_b": {
+          "byte_identical": false,
+          "identical_after_normalisation": false
+        }
+      },
+      "historical_run_a": {
+        "wer": 0.3767,
+        "hypothesis_first_120": "hello uh yeah marea yeah sorry um twenty just not of my an' off uh um ninety um so i' having like a really will is stron"
+      },
+      "historical_run_b": {
+        "wer": 0.4478,
+        "hypothesis_first_120": "hello no uhy aea yp to yeah um not up my unc um ninety um so i have like a really really strong i um i i' quite and so s"
+      }
+    },
+    {
+      "audio_file": "day5_consultation03_doctor.wav",
+      "audio_duration_s": 776.34,
+      "reference_first_120": "Hi there. I'm Doctor Smith from Babylon. Hi there. Can you just confirm your name, date of birth, and the first line of ",
+      "greedy": {
+        "hypothesis": "hi, i'm doctor smith from babylon hi can you confirm your name of birth in the first line of your address first or please ok doctork. o. ok any a, your place, where you can have a confidential consultation today? what can i do you feel?? ok do you mind telle? so, about when it started do think that which change we life that time? o six. what's so job? o. o so i just date tellmmyk? ok.,', how it affect you said it you you drk work how how was it affect do you in terms of light your slee at night and things at that? o much started much. ok what time do you go to better at night? and what thank you getle ok um when youk? o do you wait up that your alarm in the morning or just something else what you at before them?? o ok and so how many iw you think you getk? ok ok and what about your you eat problems? okk you kind your eating or with you your first change?? ok you're eating regular the noise?k and you before me about the  ppationsations just i you bit more about thate? o. o youe? um, i regular li and how andm do you think it last what when you gotk? o ok is thats something that you help before this or is it in anything thing? ok? ok any che pain with that? ok? o, how how are you said you, you're not getting much sleep and how yourre energy level in the daytime?? okk? ok.? o ok, are you avoiding contact with friends would do so see them? ok? ok, what about ho be or exercise or anything else outside side work do doing p that sider?k? right? any is it ever got so bad that eva she have to miss work? ok and what the worse so it's got have you ever being and so overwhelm that you can get into your as you can go ins your,e? other got like can you can talk? ok and apart from work, other there any other situationations o quitestream lines vk? ok uh social sex feeling couple trans anything at that? ok before this did you have any in your times in your life when you felt like this? ok? ok, and what about your new day today you i con see that your? o, that but do you have get really down about this? o? o doctor. when do you think you last fel your start? ok? and, so, you low that you fel i you just can it care me on with your job or with your life or with your normal at things that say were very much? o. well ok, and when you any you deep with that name you you live with at home? um and how much more co you you have an lu week, you think? o? ok so how much would you would do you guess? ok? ok? o., where take any other drug or thing? o ok and be done anything anything yourself helpk? ok. can thatt online look on line at all any rate? ok. and would do you think have you two have some one to unthroly? o and mean what we would suggest and first? so you can start fork are the anyer chest for what call like talkingk you type ofly tohe yourth whether can really look at your situation you youk? um, whatbing i do what you can do to try over come that. um so i can send you the link for that um in the meantime it can be a bit of a weight there are some, um. um the details on then you can get on with them straight away trying work through them as well um and if you're feeling like it's not help you all all your get um? so, when you co with work or you' can just a' normal thing day today then it's some important fit to f to give us a back and just discuss that further,e. o, do you need to take medic to control out but that's not sending the we suggest in the first in and now' put some more informationation on yourly about help with yoursw  thingss? um in termss the palpations yeah is p to be thecive thingsanxiety but it's probably be work haveach couple of place like test just mentioned that there's not something trigging the off, and then,, um. o,.k you you for water the week after you've had the test we can just get through the results with you. you you call this when you can arrange the not of blood blood test on oke? all right it take care sorry wheree?",
+        "hypothesis_first_120": "hi, i'm doctor smith from babylon hi can you confirm your name of birth in the first line of your address first or pleas",
+        "wer": 0.4936842105263158,
+        "wall_time_s": 0.32,
+        "rtf": 0.0004,
+        "vs_run_a": {
+          "byte_identical": false,
+          "identical_after_normalisation": false
+        },
+        "vs_run_b": {
+          "byte_identical": false,
+          "identical_after_normalisation": false
+        }
+      },
+      "beam_nobias": {
+        "hypothesis": "hi there, i'm doctor smith from babylon hi there, can you confirm your name to birth in the first line of your address first or please? ok doctor ok are you in a private place where you can have a confidential consultation to today? o what can i do you feel? ok., you, ok. do you mind it tell me me, a bit more about when it start you think that then you which change if with life that time?,,,, what's soja?k., o o. so, i, just date day, tell me from the start of your day, how, affects you said it, you you dr pain to work how how would it affect to you, in terms of light your slee at night and things at that? o, ok, what what time do you go to about at night time? o and what you get three? ok. um, when you vened you get to be do you w up your alarm in the morning or just something else what you up before them? ok., ok. and so how many you speak you think you get the night? o, ok. and, what about your eating patterns any you change in kind your eating or with do you your let change? o ok. you're eating regular the ? ok. and you call me about the ppations just i me a bit more about that? ok, ok it for like a regular of first be, or an irre regulargul? and how, long do you think it last what when you got ok iss thats something that youve have before this or is it any new thing? ok. ok, any che pain with that? ok. and in the daytime, how how you said you, you're not getting much sleeped and how' yourre energy level in the daytime?. you ok or what do you do anything things? ok. ok and did you are you avoiding contact with friends would do you sore see them ok. ok, what about ho be or exercise is or anything else outside outside work, do you any p else that sider? and is it ever got so bad, that youva you had to miss work?k ok. and, what the worse so it's got have you ever being and so overwhelm that you can, get into your you cann go in two region? yeah other right i could attack? o, ok. and apart from work, are there any other situationations o, quite stream lines bodyty, being, in public place there, social or sex is a couple trans anything at that? ok ok. before this did you have any in your times in your life when you felt like this? ok., ok, and, what about your mood day today, and you i can see that your're quite dis stresssed by that, but do you ever get really down about this? ok, when do you think you last felt yourself? ok. and, and yourre mood ever been so, low that you fell are you just get it curlyon with your job or with your life or with you normal things that they werere very on? ok. ok, and when you are youg with that name? you you live with that home? ok., um, and how how much more co you have an lu week, do you think? ok. ok. so how much would you would do you guess? ok., ok. do you smoke take any other drugs or? ok., ok. and you done anything, anything yourself and help what you had any you talk twenty one or when cats thatst on nine it on line at all any rate, ok. ok and would you have you two have some one to unthroly? ok., and mean what we would suggest and first instance is to so you can start for further hi the any ches, for, what we before like talkingk you type withly tohe your fpe whether you really look at your situation how you upting? the what wasbing else outside too what you can do you to turn, over come that. um so i can send you the link for that. um, in the meantime, it can be a bit of a weighte, there are some on line resources that ever really helpful, that the details onk, you can get on with them straight away in try work three them as well. um, and if you're feeling like,, it's not help youre all all your outside is getting worse to the point when you co with work, or you' can, just do you normal things day today than it's important fifty for to give us at that and, just discuss that? further any some people with anxiety do youly do you need to take medic to control out but thats not sending the weak could suggest in the first instance? o. and i' put some more in informationation on yourlys about help with your sweet problemss anything things at that? o. um, in termss of palpations you is no o to be the you say anxiety, but it is probably work have a couple of place at blood test mentioned me that there's not something trigging the off, and then arranging, the g you for water a week, after, you've had the test we can just get through the results with you? you call thisal when you can arrange the, nothing of blood blood test on? ok. or right it take care? sorry really,, you?",
+        "hypothesis_first_120": "hi there, i'm doctor smith from babylon hi there, can you confirm your name to birth in the first line of your address f",
+        "wer": 0.4073684210526316,
+        "wall_time_s": 15.212,
+        "rtf": 0.0196,
+        "vs_run_a": {
+          "byte_identical": false,
+          "identical_after_normalisation": false
+        },
+        "vs_run_b": {
+          "byte_identical": false,
+          "identical_after_normalisation": false
+        }
+      },
+      "historical_run_a": {
+        "wer": 0.4033,
+        "hypothesis_first_120": "hi there i'm doctor smith from babylon hi there can you confirm your name to birth in the first line of your address fir"
+      },
+      "historical_run_b": {
+        "wer": 0.4978,
+        "hypothesis_first_120": "hi i'm doctor smith from babylon hi can you confirm your name of birth in the first line of your address first or please"
+      }
+    },
+    {
+      "audio_file": "day5_consultation03_patient.wav",
+      "audio_duration_s": 776.34,
+      "reference_first_120": "Hi. Yeah. Uh, my name is Valerie Cole. My date of birth is the nineteenth of September, nineteen ninety three. My addres",
+      "greedy": {
+        "hypothesis": "hi uh, my name bowy co five. yes uh it nineteen of september and nineteen eight three my address is uh sixty four fives in place so. yes family yeah um i doing really anxious of the past few months um i get. so, i, i being high then it side to reallyly ing and to add up and p theanxiety and i just it know ftt to i once to check with maybe p.. um i guess so i think um i would seem me be about two so yeah. um,' and that's probably concs with starting andja um which i it its quite st every job and stress but i when you' just start,. um, i' think the past two months the the and so i work for a uh a fashioner in and the had. um, it's just a b new such i've never working readel for the bo is's not very nice be and i but i also think that it's just been i really dreads going, there,, i',,, um. i, i' i's see it one really worried but well i'm doing well i ho and it's really be on like i the rest my wife like my sle that like that. yeah great yeah so' sort i, i. i, i don't want was to work in the morning i just find the way of i can' get out of the but it's also because when i leave i just when left work i just feel so stress or worried i i it da i can't get swe, i,', i, i,'. so i get about ten eleven not for ages and i w all night. so i i'm heart can of b thing and then i'm just like kinding i'm like and that that's could make work even worse stress, but so yeah. and i didn't have an alarm but i i so waking up before that i' just my heart it's ra thing and i they feel the day i'm just like i's ing you been a really thought my hard and so like thought i was kind of hard after the morning.. i just i can't even talk it i in know when im in slee its such shellow swe but maybe three hours been getting my.. probably not significant or maybe no i would't i would it and like ra i i no. uh, normalm because i feel so down yeah so. yeah so i' it's it's usually kind of like when i real morning that i i i feel i' bit like because i like over because i's a tired um or i w i the, , i',' um. yeah, it's just kind of like just ive constant like ra it heart and it really really just but i dont know if it's st sort i think it was like a heart problems with it'. i regular i think. o can be anything i feel like couple of minutes or those day, i. um, like fine then  like holding my hand over the che but like in in yeah i would say us it only in the past so i like, i. um, just say been it's period no no um when know it pain fullck when the heart on my heart five but but yeah. it's just really bit well i i'm finding over, i just i find your enjoy it at' all. um, i feeling it's not the my job it's no one then leave i just the ti anything i previousously was really fineness just normal not so and it like yeah i't know,,,,,. well right now i i'm working so late everything as was the che i so i don' get to get myself that when i you want it go or in b uh its like. yeah,s that i' avoid don so much that came yeah so i mean sometimes just i i'. um,' go things like normally it that yeah it just been like everything. yeah, it it' just difficult to continue with like i did use like to the go running and and tenet and stuff but and no it's just not i not it. um not going guess that quite so much know think that would just uh' but i do pretty much every morning i i. yes, s not go. um know in't if so i think i always my to make it too work but i i wonder's i so the i i i. um,, it's not up that id lot to st of the have feel it get worse some work of the co um. yeah, i mean fine couple trans stress what i away like the feeling on the che its cause quite it more works it's be the air likes, um,, um. um, i'  because my life is just so focus going work quite no the majority like has difficult kind was come not really i i. no i be i mean ever but almost had a bit ofting a bit vi side' but, ive never fel anything that bad before no. yeah um i mean yeah yeah couple i do yeah, i'm pretty much down like, i don' enjoy yeah. um, i it day i talk because i'm just so worried about everything um i don't find it even when in not like even at the weaks and that just the co like con feeling it' it it i. yeah um i not i i press i cot i quite really, but i think on that called. i beent no been't uh, ive had i haven't had any to the i' thought i i yeah. um, i', stream like in yeah i had i having been worse and like could have a good family it i so i quite have i not have i worried but actually one it um not go, and, it's, just,, i',. yes,k. yeah, i live with my care it's good. no. um i don't know probably quite along on the f i it's good that that's normalable um maybe maybe have like a bit during a week,. uh,' so just drink not one so whenever there been glass fine the lot me is it' like i guess it i' keep track a bit that much. um, like probably i up on pretty like i i was usually going i so maybe like i probably over my line just sometimes those and then like maybe i glass, drink week. um i try not k, i don't take. yeah. i mum the because she also suffersp but she' just over from like depression the ly think, but, it was, i,,, yeah. um actually depression its to be not guessting it as to it's just brea the whole time but i i touch lower i i haven't so any g re that that it comes the g, i. no, i yeah i think yeah i think so, i don't work but yeah. no. .k. ok. yeahkk. yeah. ok. uh, that's pretty i forty really.k. ok, thank you ye ok, how can the much.. ik, so have you good day tight.",
+        "hypothesis_first_120": "hi uh, my name bowy co five. yes uh it nineteen of september and nineteen eight three my address is uh sixty four fives ",
+        "wer": 0.559748427672956,
+        "wall_time_s": 0.321,
+        "rtf": 0.0004,
+        "vs_run_a": {
+          "byte_identical": false,
+          "identical_after_normalisation": false
+        },
+        "vs_run_b": {
+          "byte_identical": false,
+          "identical_after_normalisation": false
+        }
+      },
+      "beam_nobias": {
+        "hypothesis": "hi not, uh, my name, bowll co deep for, it's uh,, thanking of september, and bing thank three. my, address is, uh, sixty for, fives in place. in, so ith than., yes i yeah. um, i been doing, really anxious, over the past a few months, um, is get, really not best every morning, about, be been tious and, it's sorry to reallyly, worry mean to add up' feel, the anxiety and, i just didn't know, you'st to, i once to, check with making you pe.,,,. um, i guess so, i think um, i would see maybe be about two one, so so, i' be feeling like this and, that's probably coinc smith. you starting and ja um, which, i dont say its quite, st i every jobness stress, but and when you've first start, but it's been really stress or think over the past two months, that thek. yeah. and so, i work for, a uh, uh fashion re hereer in, and, that she off this team. and, it's just a b new sex, i've never working reachel for, my bo is's not very nice me, and i, but, i also think, that, it's just been i really dreas going there, i just he, speaking to see every one and really worried, about well i'm doing well i ho., i it's really, on like, i the rest my wife, my sle things that like that.,,, great. yeah, so a been so i i, i'm, i don't say aach, i don't want was to work in the morning, so i just fine your way of, i can't get out of be, but, it's also because, when i leave, i just when left work, i just feel so stress or worried, but ever've been have done, a can't get sleep for arms now as now, it's, so get. about ten, that and like, not, for , im um ingw, all night.,, so i i, i' heart can of bra thing and then i'm just like kindnaching, i'm been like and that that's good of, week work even worse stress well of so, i didn't have an alarm, but i i so waking up before that,n'm just my heart ass ra thing and actuallyly feel other day, i'm just like i's i you been a really thought, my hardt and so like, thought i was a of hard after the morning., i just, i can't even child it, you know when im, in slee it's such shellow of slee, but maybe three, hour than yet in i., probably you, not, significant to in goods maybe. no i would't i wouldt fit and eat, like ra differently i, i'm probably and have more up with the the of because i' feel so da., yeah so. yeah so, i'm, it's it's usually kind of like, when i realize morning that, either, um, i i'm bit late, because i like over because it wass the tired, um or, i've w of the kindach think, im been late, still, it's just kind of like. just, ive constant like, ra it heartly, i it really really stress but i if it's, stress. sort, i, think it was like, a heart problems with actually.,, ir regular, i think., o can be anything i think the couple of minutes or those dayea, i was actually. so fine then, like holding in hands over the che but like in,, yeah, i would say this its only in the past so i like couple of once of the say that i've been it's very., no no, um, when i it's painfulsck, when the heart, when my heart is five, but but yeah.,,, it's just really well, i'm not, i'm finding no that, i just, i find no enjoy it at allll, kind of day day,' i doing, it's not this my job of it's, you one ill leave, i just the tiri. uh, anything that previously was really fineness just normal. not so i little, like yeah, i't notage to the whole timeing. well right now, i, i'm working so late, everything as was it the che or so i, don't get much to been for felt, but when i't you one it go i or, friends, or its b like. it's it's quite difficult that., i' avoid them so much that the i. yeah, so, i'm mean some kind that just i not, i'm not the have b, because i don't want, go and few things, i would normally of done.,, yeah, i just's been like everything that i've, had previously feeling it's been, just difficult to continue red like, and did you like but go running, and, and, tenete and stuff but, and no, it's just no., i just not enjoying yeah., and not, i'm not like, i'm not going yes it that quite so much., no,t think that would just uh's and but i do, pretty much every morning, i think, i much cause, the, like, it's not, go.,,, um no in't if though i think, i always much when make too work but, i, i wonder it 's up so this i like cough, or it's up that, a just lot st of of half, feel, it, get work some work was of the co um.,,, yeah, i mean a fine couple trans, stress, but i away, like the being on the che its cause quite, it more work it it's be the air. um, but, i think i majorit it because my life was just so focus for work, quite no than majority, because' difficult kind work,., not, really up um no, i, i mean ever really almost had a bit of tening the bit of vi side be but, i've never fel. and nothing that's bad before.,, yeah. um, i mean yeah, yeah, couple i do, yeah, i'm pretty much down like, i don't, enjoy it be, withs my day, at ta first., i'm just so worried about everything. um, i don't find that even when or no., like even that the weak head, instead of's just the, co i, feeling it' be it's that a bit unha., um i don't know i good press that i cot really, i quite really but i take on that all,,, i mean, no's no, i've had, i haven't had any to the side thoughts, or any, thoughts, i've been that extreme like in of. yeah, i haven ive having good worse and like a you have a good family is that so i quite have, ive don't have i worried, but, actually oneing it. um, not go on and it's just but, i don't go on like its now., but. yeah i don't in my parents it's a good.,, um, i don't know i probably quite along on the f, that, very was's a good. that that's a of normalable. um i maybe there really think have like a bit during a weak of f of of f or tireds, the pain was, bit once, so, whenever there have been got fine thele to me, is it's like, i guess it don't, keep track of bit that much., probably, like, probably i doctor on't that, but there was' usuallyly going, i so maybe leg. i probably over my just some those, any way, and then like maybe glass one during week, the. um,, i try not. but its, i don't take.,,, like, i co mu mum because, she also sus spro i she's stuff over from like depression and the passsly think, but it was, the i was suffering from. actually a pressure it seems to of be not beting it, as' tos, it's just stress, the whole time, but,, i justt, moment i, i haven't sort any, che b no that that i comes the ge., um, i haven't not any other., i. yeah, think yeah i think so, i don't work but yeah.,,,. yeah uh., i. ok. i,, o. that's i or be.,,, ok. ok yeah ok, howll call of up. thank you so much. i don dayk., i',,,,.",
+        "hypothesis_first_120": "hi not, uh, my name, bowll co deep for, it's uh,, thanking of september, and bing thank three. my, address is, uh, sixty",
+        "wer": 0.5119496855345912,
+        "wall_time_s": 29.77,
+        "rtf": 0.0383,
+        "vs_run_a": {
+          "byte_identical": false,
+          "identical_after_normalisation": false
+        },
+        "vs_run_b": {
+          "byte_identical": false,
+          "identical_after_normalisation": false
+        }
+      },
+      "historical_run_a": {
+        "wer": 0.5258,
+        "hypothesis_first_120": "hi not uh my name bowll co deep for its uh thanking of september and bing thank three my address is uh sixty for fives i"
+      },
+      "historical_run_b": {
+        "wer": 0.5727,
+        "hypothesis_first_120": "hi uh my name bowy co five yes uh it nineteen of september and nineteen eight three my address is uh sixty four fives in"
+      }
+    }
+  ]
+}

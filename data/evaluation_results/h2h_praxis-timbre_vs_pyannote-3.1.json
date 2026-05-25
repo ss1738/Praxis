@@ -1,0 +1,1943 @@
+{
+  "is_synthetic": false,
+  "hardware_target": "RTX 5090 32GB Linux (satyawan-1)",
+  "host": "satyawan",
+  "git_commit": "unknown",
+  "timestamp": "2026-05-24T14:30:18.783800+00:00",
+  "test_set": "primock57_test",
+  "reference_protocol": "energy-VAD-per-channel; PriMock57 channels are speaker-isolated",
+  "vad_params": {
+    "frame_ms": 30,
+    "energy_pct_threshold": 30.0,
+    "min_dur_s": 0.3
+  },
+  "der_protocol": "pyannote.metrics.DiarizationErrorRate(collar=0.5, skip_overlap=True)",
+  "pyannote_pipeline": "pyannote/speaker-diarization-3.1",
+  "aggregate": {
+    "n_consultations": 7,
+    "praxis_timbre_mean_der": 0.443,
+    "praxis_timbre_median_der": 0.4394,
+    "pyannote_3_1_mean_der": 0.1045,
+    "pyannote_3_1_median_der": 0.1021,
+    "wilcoxon_signed_rank_p": 0.015625,
+    "wilcoxon_statistic": 0.0,
+    "tally": {
+      "praxis_timbre_wins": 0,
+      "pyannote_3_1_wins": 7,
+      "ties": 0
+    }
+  },
+  "per_consultation": [
+    {
+      "consultation_id": "day1_consultation02",
+      "audio_duration_s": 559.2,
+      "reference_segments": [
+        {
+          "speaker": "DOCTOR",
+          "start": 0.06,
+          "end": 0.48
+        },
+        {
+          "speaker": "DOCTOR",
+          "start": 2.07,
+          "end": 2.88
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 3.63,
+          "end": 4.29
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 4.53,
+          "end": 5.49
+        },
+        {
+          "speaker": "DOCTOR",
+          "start": 5.34,
+          "end": 12.87
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 7.62,
+          "end": 8.04
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 12.72,
+          "end": 13.53
+        },
+        {
+          "speaker": "DOCTOR",
+          "start": 13.02,
+          "end": 13.32
+        },
+        {
+          "speaker": "DOCTOR",
+          "start": 13.71,
+          "end": 14.07
+        },
+        {
+          "speaker": "DOCTOR",
+          "start": 14.1,
+          "end": 15.57
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 14.7,
+          "end": 15.06
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 15.27,
+          "end": 15.69
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 16.32,
+          "end": 16.65
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 16.77,
+          "end": 19.35
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 19.41,
+          "end": 22.26
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 22.35,
+          "end": 24.93
+        },
+        {
+          "speaker": "DOCTOR",
+          "start": 25.08,
+          "end": 25.53
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 25.14,
+          "end": 25.86
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 25.89,
+          "end": 26.34
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 26.37,
+          "end": 27.9
+        },
+        {
+          "speaker": "DOCTOR",
+          "start": 27.96,
+          "end": 31.59
+        },
+        {
+          "speaker": "DOCTOR",
+          "start": 31.62,
+          "end": 31.92
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 32.73,
+          "end": 37.05
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 37.35,
+          "end": 41.49
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 41.67,
+          "end": 46.68
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 47.01,
+          "end": 53.07
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 53.1,
+          "end": 54.96
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 55.05,
+          "end": 56.01
+        },
+        {
+          "speaker": "DOCTOR",
+          "start": 56.07,
+          "end": 56.55
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 56.31,
+          "end": 58.41
+        },
+        {
+          "speaker": "DOCTOR",
+          "start": 58.47,
+          "end": 58.77
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 58.65,
+          "end": 59.34
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 59.37,
+          "end": 61.17
+        },
+        {
+          "speaker": "DOCTOR",
+          "start": 61.11,
+          "end": 70.56
+        },
+        {
+          "speaker": "DOCTOR",
+          "start": 70.59,
+          "end": 71.25
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 71.16,
+          "end": 75.48
+        },
+        {
+          "speaker": "DOCTOR",
+          "start": 75.78,
+          "end": 76.2
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 76.05,
+          "end": 76.65
+        },
+        {
+          "speaker": "DOCTOR",
+          "start": 76.59,
+          "end": 77.16
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 77.1,
+          "end": 78.48
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 78.6,
+          "end": 80.22
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 80.4,
+          "end": 81.45
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 81.48,
+          "end": 84.57
+        },
+        {
+          "speaker": "DOCTOR",
+          "start": 84.6,
+          "end": 85.26
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 84.63,
+          "end": 85.05
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 85.14,
+          "end": 86.55
+        },
+        {
+          "speaker": "DOCTOR",
+          "start": 86.34,
+          "end": 88.83
+        },
+        {
+          "speaker": "DOCTOR",
+          "start": 88.86,
+          "end": 89.25
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 89.04,
+          "end": 93.84
+        },
+        {
+          "speaker": "DOCTOR",
+          "start": 93.87,
+          "end": 94.44
+        }
+      ],
+      "praxis_timbre": {
+        "der": 0.4306,
+        "miss": 0.0,
+        "false_alarm": 6.47,
+        "confusion": 115.86,
+        "total": 284.08,
+        "wall_time_s": 1.71
+      },
+      "pyannote_3_1": {
+        "der": 0.1114,
+        "miss": 28.8637,
+        "false_alarm": 0.9157,
+        "confusion": 1.8759,
+        "total": 284.08,
+        "wall_time_s": 8.39
+      },
+      "winner": "pyannote_3_1"
+    },
+    {
+      "consultation_id": "day1_consultation08",
+      "audio_duration_s": 466.2,
+      "reference_segments": [
+        {
+          "speaker": "PATIENT",
+          "start": 0.51,
+          "end": 1.08
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 1.59,
+          "end": 2.52
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 2.85,
+          "end": 4.02
+        },
+        {
+          "speaker": "DOCTOR",
+          "start": 4.5,
+          "end": 5.1
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 5.76,
+          "end": 7.59
+        },
+        {
+          "speaker": "DOCTOR",
+          "start": 7.2,
+          "end": 8.31
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 7.8,
+          "end": 8.28
+        },
+        {
+          "speaker": "DOCTOR",
+          "start": 8.55,
+          "end": 11.01
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 9.69,
+          "end": 10.11
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 10.14,
+          "end": 10.5
+        },
+        {
+          "speaker": "DOCTOR",
+          "start": 11.07,
+          "end": 11.94
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 13.26,
+          "end": 16.44
+        },
+        {
+          "speaker": "DOCTOR",
+          "start": 16.32,
+          "end": 18.27
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 17.49,
+          "end": 18.27
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 18.39,
+          "end": 18.69
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 19.11,
+          "end": 24.15
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 24.18,
+          "end": 27.0
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 27.03,
+          "end": 27.36
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 27.45,
+          "end": 29.46
+        },
+        {
+          "speaker": "DOCTOR",
+          "start": 29.91,
+          "end": 30.48
+        },
+        {
+          "speaker": "DOCTOR",
+          "start": 30.81,
+          "end": 33.99
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 30.84,
+          "end": 31.17
+        },
+        {
+          "speaker": "DOCTOR",
+          "start": 34.65,
+          "end": 38.07
+        },
+        {
+          "speaker": "DOCTOR",
+          "start": 38.58,
+          "end": 40.2
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 41.34,
+          "end": 45.6
+        },
+        {
+          "speaker": "DOCTOR",
+          "start": 45.93,
+          "end": 46.5
+        },
+        {
+          "speaker": "DOCTOR",
+          "start": 46.8,
+          "end": 48.63
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 50.01,
+          "end": 50.76
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 51.03,
+          "end": 51.75
+        },
+        {
+          "speaker": "DOCTOR",
+          "start": 52.32,
+          "end": 56.49
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 52.77,
+          "end": 53.16
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 57.09,
+          "end": 58.98
+        },
+        {
+          "speaker": "DOCTOR",
+          "start": 59.25,
+          "end": 59.85
+        },
+        {
+          "speaker": "DOCTOR",
+          "start": 59.97,
+          "end": 65.01
+        },
+        {
+          "speaker": "DOCTOR",
+          "start": 65.67,
+          "end": 66.33
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 66.15,
+          "end": 67.62
+        },
+        {
+          "speaker": "DOCTOR",
+          "start": 68.61,
+          "end": 72.39
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 71.25,
+          "end": 71.58
+        },
+        {
+          "speaker": "DOCTOR",
+          "start": 72.42,
+          "end": 78.18
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 74.13,
+          "end": 74.49
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 77.31,
+          "end": 77.7
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 79.59,
+          "end": 79.92
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 80.76,
+          "end": 83.37
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 83.7,
+          "end": 84.81
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 84.87,
+          "end": 87.84
+        },
+        {
+          "speaker": "DOCTOR",
+          "start": 88.08,
+          "end": 88.59
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 89.01,
+          "end": 90.0
+        },
+        {
+          "speaker": "DOCTOR",
+          "start": 90.84,
+          "end": 91.47
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 91.26,
+          "end": 91.95
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 91.98,
+          "end": 92.55
+        }
+      ],
+      "praxis_timbre": {
+        "der": 0.4764,
+        "miss": 0.0,
+        "false_alarm": 27.7,
+        "confusion": 59.29,
+        "total": 182.59,
+        "wall_time_s": 0.81
+      },
+      "pyannote_3_1": {
+        "der": 0.0947,
+        "miss": 15.3812,
+        "false_alarm": 0.0,
+        "confusion": 1.9176,
+        "total": 182.59,
+        "wall_time_s": 6.76
+      },
+      "winner": "pyannote_3_1"
+    },
+    {
+      "consultation_id": "day1_consultation15",
+      "audio_duration_s": 491.82,
+      "reference_segments": [
+        {
+          "speaker": "DOCTOR",
+          "start": 0.0,
+          "end": 4.38
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 0.69,
+          "end": 1.47
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 2.91,
+          "end": 3.45
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 4.2,
+          "end": 5.43
+        },
+        {
+          "speaker": "DOCTOR",
+          "start": 4.41,
+          "end": 6.33
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 6.42,
+          "end": 7.59
+        },
+        {
+          "speaker": "DOCTOR",
+          "start": 7.05,
+          "end": 12.21
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 12.96,
+          "end": 14.37
+        },
+        {
+          "speaker": "DOCTOR",
+          "start": 13.92,
+          "end": 14.34
+        },
+        {
+          "speaker": "DOCTOR",
+          "start": 14.43,
+          "end": 14.73
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 14.43,
+          "end": 15.48
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 15.57,
+          "end": 16.5
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 16.83,
+          "end": 18.9
+        },
+        {
+          "speaker": "DOCTOR",
+          "start": 18.81,
+          "end": 22.2
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 22.89,
+          "end": 24.18
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 24.21,
+          "end": 25.05
+        },
+        {
+          "speaker": "DOCTOR",
+          "start": 25.05,
+          "end": 25.35
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 25.08,
+          "end": 26.01
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 26.37,
+          "end": 28.35
+        },
+        {
+          "speaker": "DOCTOR",
+          "start": 28.32,
+          "end": 28.68
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 28.44,
+          "end": 31.2
+        },
+        {
+          "speaker": "DOCTOR",
+          "start": 31.02,
+          "end": 34.26
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 34.5,
+          "end": 35.49
+        },
+        {
+          "speaker": "DOCTOR",
+          "start": 35.52,
+          "end": 35.85
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 35.55,
+          "end": 36.24
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 36.3,
+          "end": 39.0
+        },
+        {
+          "speaker": "DOCTOR",
+          "start": 38.88,
+          "end": 41.22
+        },
+        {
+          "speaker": "DOCTOR",
+          "start": 41.25,
+          "end": 41.79
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 41.58,
+          "end": 42.21
+        },
+        {
+          "speaker": "DOCTOR",
+          "start": 42.06,
+          "end": 47.55
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 42.24,
+          "end": 42.63
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 47.55,
+          "end": 47.94
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 48.3,
+          "end": 50.37
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 51.09,
+          "end": 56.43
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 56.85,
+          "end": 59.19
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 59.4,
+          "end": 61.14
+        },
+        {
+          "speaker": "DOCTOR",
+          "start": 60.93,
+          "end": 61.5
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 61.17,
+          "end": 61.53
+        },
+        {
+          "speaker": "DOCTOR",
+          "start": 61.53,
+          "end": 61.98
+        },
+        {
+          "speaker": "DOCTOR",
+          "start": 62.07,
+          "end": 62.58
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 62.31,
+          "end": 64.44
+        },
+        {
+          "speaker": "DOCTOR",
+          "start": 64.38,
+          "end": 65.64
+        },
+        {
+          "speaker": "DOCTOR",
+          "start": 65.67,
+          "end": 71.94
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 65.88,
+          "end": 66.24
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 72.57,
+          "end": 73.59
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 73.65,
+          "end": 77.16
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 77.19,
+          "end": 80.67
+        },
+        {
+          "speaker": "DOCTOR",
+          "start": 81.06,
+          "end": 84.45
+        },
+        {
+          "speaker": "DOCTOR",
+          "start": 84.87,
+          "end": 87.66
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 88.23,
+          "end": 89.7
+        }
+      ],
+      "praxis_timbre": {
+        "der": 0.3841,
+        "miss": 0.04,
+        "false_alarm": 7.22,
+        "confusion": 84.81,
+        "total": 239.71,
+        "wall_time_s": 0.9
+      },
+      "pyannote_3_1": {
+        "der": 0.12,
+        "miss": 27.9094,
+        "false_alarm": 0.04,
+        "confusion": 0.8091,
+        "total": 239.71,
+        "wall_time_s": 6.71
+      },
+      "winner": "pyannote_3_1"
+    },
+    {
+      "consultation_id": "day2_consultation01",
+      "audio_duration_s": 329.16,
+      "reference_segments": [
+        {
+          "speaker": "PATIENT",
+          "start": 0.48,
+          "end": 0.78
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 0.84,
+          "end": 1.23
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 1.5,
+          "end": 2.16
+        },
+        {
+          "speaker": "DOCTOR",
+          "start": 1.62,
+          "end": 3.12
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 2.4,
+          "end": 2.76
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 2.91,
+          "end": 3.27
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 3.48,
+          "end": 3.84
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 3.87,
+          "end": 4.8
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 4.86,
+          "end": 5.28
+        },
+        {
+          "speaker": "DOCTOR",
+          "start": 5.1,
+          "end": 7.23
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 7.98,
+          "end": 10.8
+        },
+        {
+          "speaker": "DOCTOR",
+          "start": 9.51,
+          "end": 9.99
+        },
+        {
+          "speaker": "DOCTOR",
+          "start": 10.08,
+          "end": 11.22
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 11.04,
+          "end": 13.26
+        },
+        {
+          "speaker": "DOCTOR",
+          "start": 13.14,
+          "end": 15.36
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 13.44,
+          "end": 13.83
+        },
+        {
+          "speaker": "DOCTOR",
+          "start": 15.39,
+          "end": 19.29
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 19.53,
+          "end": 20.34
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 20.43,
+          "end": 22.08
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 22.17,
+          "end": 25.71
+        },
+        {
+          "speaker": "DOCTOR",
+          "start": 22.44,
+          "end": 22.8
+        },
+        {
+          "speaker": "DOCTOR",
+          "start": 25.62,
+          "end": 26.88
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 25.98,
+          "end": 26.34
+        },
+        {
+          "speaker": "DOCTOR",
+          "start": 26.97,
+          "end": 29.49
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 29.31,
+          "end": 29.67
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 29.97,
+          "end": 30.93
+        },
+        {
+          "speaker": "DOCTOR",
+          "start": 30.6,
+          "end": 31.71
+        },
+        {
+          "speaker": "DOCTOR",
+          "start": 31.77,
+          "end": 35.97
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 36.51,
+          "end": 37.98
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 38.01,
+          "end": 41.43
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 41.61,
+          "end": 42.06
+        },
+        {
+          "speaker": "DOCTOR",
+          "start": 41.73,
+          "end": 42.36
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 42.09,
+          "end": 42.48
+        },
+        {
+          "speaker": "DOCTOR",
+          "start": 42.39,
+          "end": 43.68
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 42.84,
+          "end": 43.74
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 44.04,
+          "end": 45.57
+        },
+        {
+          "speaker": "DOCTOR",
+          "start": 45.54,
+          "end": 46.86
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 46.35,
+          "end": 46.92
+        },
+        {
+          "speaker": "DOCTOR",
+          "start": 47.07,
+          "end": 47.52
+        },
+        {
+          "speaker": "DOCTOR",
+          "start": 47.7,
+          "end": 49.83
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 50.55,
+          "end": 56.91
+        },
+        {
+          "speaker": "DOCTOR",
+          "start": 57.0,
+          "end": 57.69
+        },
+        {
+          "speaker": "DOCTOR",
+          "start": 57.99,
+          "end": 58.41
+        },
+        {
+          "speaker": "DOCTOR",
+          "start": 58.56,
+          "end": 60.6
+        },
+        {
+          "speaker": "DOCTOR",
+          "start": 60.84,
+          "end": 64.02
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 60.96,
+          "end": 61.41
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 63.21,
+          "end": 63.54
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 63.81,
+          "end": 64.35
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 65.07,
+          "end": 70.68
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 70.74,
+          "end": 74.4
+        }
+      ],
+      "praxis_timbre": {
+        "der": 0.3836,
+        "miss": 0.0,
+        "false_alarm": 1.82,
+        "confusion": 55.32,
+        "total": 148.94,
+        "wall_time_s": 0.59
+      },
+      "pyannote_3_1": {
+        "der": 0.1021,
+        "miss": 12.5497,
+        "false_alarm": 0.0,
+        "confusion": 2.6503,
+        "total": 148.94,
+        "wall_time_s": 4.57
+      },
+      "winner": "pyannote_3_1"
+    },
+    {
+      "consultation_id": "day2_consultation03",
+      "audio_duration_s": 450.84,
+      "reference_segments": [
+        {
+          "speaker": "PATIENT",
+          "start": 0.24,
+          "end": 0.72
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 0.75,
+          "end": 1.53
+        },
+        {
+          "speaker": "DOCTOR",
+          "start": 1.5,
+          "end": 2.97
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 1.56,
+          "end": 1.89
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 1.92,
+          "end": 2.49
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 2.67,
+          "end": 3.24
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 3.39,
+          "end": 5.22
+        },
+        {
+          "speaker": "DOCTOR",
+          "start": 3.78,
+          "end": 7.8
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 5.43,
+          "end": 5.79
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 5.82,
+          "end": 6.21
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 6.9,
+          "end": 7.62
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 8.1,
+          "end": 9.27
+        },
+        {
+          "speaker": "DOCTOR",
+          "start": 9.33,
+          "end": 14.58
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 9.93,
+          "end": 10.44
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 11.04,
+          "end": 11.61
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 15.09,
+          "end": 15.81
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 15.9,
+          "end": 16.8
+        },
+        {
+          "speaker": "DOCTOR",
+          "start": 16.77,
+          "end": 17.1
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 16.95,
+          "end": 17.64
+        },
+        {
+          "speaker": "DOCTOR",
+          "start": 17.31,
+          "end": 17.76
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 17.85,
+          "end": 21.3
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 21.36,
+          "end": 22.32
+        },
+        {
+          "speaker": "DOCTOR",
+          "start": 21.87,
+          "end": 22.59
+        },
+        {
+          "speaker": "DOCTOR",
+          "start": 22.62,
+          "end": 23.04
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 23.43,
+          "end": 24.24
+        },
+        {
+          "speaker": "DOCTOR",
+          "start": 23.49,
+          "end": 26.67
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 25.23,
+          "end": 25.86
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 26.52,
+          "end": 26.91
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 27.3,
+          "end": 27.63
+        },
+        {
+          "speaker": "DOCTOR",
+          "start": 27.45,
+          "end": 30.99
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 30.54,
+          "end": 31.02
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 31.35,
+          "end": 31.68
+        },
+        {
+          "speaker": "DOCTOR",
+          "start": 31.89,
+          "end": 35.01
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 33.6,
+          "end": 33.93
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 34.71,
+          "end": 35.04
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 35.67,
+          "end": 38.61
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 38.64,
+          "end": 41.4
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 41.43,
+          "end": 44.85
+        },
+        {
+          "speaker": "DOCTOR",
+          "start": 45.21,
+          "end": 46.11
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 45.96,
+          "end": 46.65
+        },
+        {
+          "speaker": "DOCTOR",
+          "start": 46.2,
+          "end": 48.78
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 48.12,
+          "end": 48.51
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 49.5,
+          "end": 51.96
+        },
+        {
+          "speaker": "DOCTOR",
+          "start": 51.9,
+          "end": 52.35
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 51.99,
+          "end": 52.89
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 52.95,
+          "end": 54.54
+        },
+        {
+          "speaker": "DOCTOR",
+          "start": 55.05,
+          "end": 56.01
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 55.86,
+          "end": 56.4
+        },
+        {
+          "speaker": "DOCTOR",
+          "start": 56.13,
+          "end": 58.83
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 57.27,
+          "end": 57.66
+        }
+      ],
+      "praxis_timbre": {
+        "der": 0.4506,
+        "miss": 0.0,
+        "false_alarm": 7.93,
+        "confusion": 79.11,
+        "total": 193.18,
+        "wall_time_s": 0.79
+      },
+      "pyannote_3_1": {
+        "der": 0.0518,
+        "miss": 9.2121,
+        "false_alarm": 0.6022,
+        "confusion": 0.196,
+        "total": 193.18,
+        "wall_time_s": 6.25
+      },
+      "winner": "pyannote_3_1"
+    },
+    {
+      "consultation_id": "day4_consultation06",
+      "audio_duration_s": 606.12,
+      "reference_segments": [
+        {
+          "speaker": "DOCTOR",
+          "start": 0.0,
+          "end": 6.93
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 0.57,
+          "end": 1.02
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 2.01,
+          "end": 2.55
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 2.58,
+          "end": 3.03
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 3.06,
+          "end": 3.54
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 3.6,
+          "end": 3.93
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 3.96,
+          "end": 4.29
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 4.77,
+          "end": 5.43
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 6.93,
+          "end": 7.65
+        },
+        {
+          "speaker": "DOCTOR",
+          "start": 6.96,
+          "end": 8.28
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 8.13,
+          "end": 8.94
+        },
+        {
+          "speaker": "DOCTOR",
+          "start": 8.7,
+          "end": 21.12
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 14.13,
+          "end": 14.58
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 17.91,
+          "end": 18.3
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 18.48,
+          "end": 20.25
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 21.27,
+          "end": 21.84
+        },
+        {
+          "speaker": "DOCTOR",
+          "start": 21.57,
+          "end": 23.91
+        },
+        {
+          "speaker": "DOCTOR",
+          "start": 24.12,
+          "end": 27.36
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 24.75,
+          "end": 25.35
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 27.54,
+          "end": 29.43
+        },
+        {
+          "speaker": "DOCTOR",
+          "start": 27.78,
+          "end": 28.23
+        },
+        {
+          "speaker": "DOCTOR",
+          "start": 29.4,
+          "end": 29.79
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 29.46,
+          "end": 33.24
+        },
+        {
+          "speaker": "DOCTOR",
+          "start": 33.84,
+          "end": 35.52
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 34.29,
+          "end": 34.62
+        },
+        {
+          "speaker": "DOCTOR",
+          "start": 36.0,
+          "end": 36.81
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 36.66,
+          "end": 43.23
+        },
+        {
+          "speaker": "DOCTOR",
+          "start": 37.32,
+          "end": 37.74
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 43.5,
+          "end": 44.67
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 44.79,
+          "end": 48.99
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 49.14,
+          "end": 60.93
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 60.96,
+          "end": 62.79
+        },
+        {
+          "speaker": "DOCTOR",
+          "start": 63.39,
+          "end": 63.75
+        },
+        {
+          "speaker": "DOCTOR",
+          "start": 63.9,
+          "end": 69.81
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 69.69,
+          "end": 71.25
+        },
+        {
+          "speaker": "DOCTOR",
+          "start": 69.9,
+          "end": 70.5
+        },
+        {
+          "speaker": "DOCTOR",
+          "start": 70.74,
+          "end": 75.75
+        },
+        {
+          "speaker": "DOCTOR",
+          "start": 75.78,
+          "end": 79.59
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 79.89,
+          "end": 81.24
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 81.27,
+          "end": 82.71
+        },
+        {
+          "speaker": "DOCTOR",
+          "start": 83.22,
+          "end": 83.91
+        },
+        {
+          "speaker": "DOCTOR",
+          "start": 84.03,
+          "end": 90.18
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 91.08,
+          "end": 96.39
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 96.42,
+          "end": 98.01
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 98.19,
+          "end": 99.75
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 99.87,
+          "end": 100.92
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 100.95,
+          "end": 101.34
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 101.37,
+          "end": 101.88
+        },
+        {
+          "speaker": "DOCTOR",
+          "start": 102.15,
+          "end": 103.26
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 102.75,
+          "end": 103.2
+        }
+      ],
+      "praxis_timbre": {
+        "der": 0.4394,
+        "miss": 0.0,
+        "false_alarm": 17.44,
+        "confusion": 126.22,
+        "total": 326.91,
+        "wall_time_s": 1.06
+      },
+      "pyannote_3_1": {
+        "der": 0.1534,
+        "miss": 27.114,
+        "false_alarm": 1.2656,
+        "confusion": 21.7528,
+        "total": 326.91,
+        "wall_time_s": 8.33
+      },
+      "winner": "pyannote_3_1"
+    },
+    {
+      "consultation_id": "day5_consultation03",
+      "audio_duration_s": 776.34,
+      "reference_segments": [
+        {
+          "speaker": "PATIENT",
+          "start": 0.36,
+          "end": 1.17
+        },
+        {
+          "speaker": "DOCTOR",
+          "start": 0.84,
+          "end": 1.17
+        },
+        {
+          "speaker": "DOCTOR",
+          "start": 1.44,
+          "end": 3.57
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 1.47,
+          "end": 1.77
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 3.72,
+          "end": 5.31
+        },
+        {
+          "speaker": "DOCTOR",
+          "start": 4.44,
+          "end": 9.45
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 5.64,
+          "end": 6.27
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 6.84,
+          "end": 7.26
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 8.19,
+          "end": 8.52
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 9.3,
+          "end": 11.19
+        },
+        {
+          "speaker": "DOCTOR",
+          "start": 10.2,
+          "end": 10.65
+        },
+        {
+          "speaker": "DOCTOR",
+          "start": 10.71,
+          "end": 11.19
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 11.49,
+          "end": 12.87
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 13.35,
+          "end": 18.06
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 18.15,
+          "end": 18.6
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 19.29,
+          "end": 20.76
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 21.18,
+          "end": 22.56
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 23.04,
+          "end": 24.42
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 24.93,
+          "end": 25.74
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 25.92,
+          "end": 26.85
+        },
+        {
+          "speaker": "DOCTOR",
+          "start": 27.48,
+          "end": 31.65
+        },
+        {
+          "speaker": "DOCTOR",
+          "start": 31.71,
+          "end": 32.28
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 32.16,
+          "end": 33.09
+        },
+        {
+          "speaker": "DOCTOR",
+          "start": 32.91,
+          "end": 34.68
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 33.18,
+          "end": 33.51
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 35.31,
+          "end": 35.91
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 35.94,
+          "end": 40.89
+        },
+        {
+          "speaker": "DOCTOR",
+          "start": 38.64,
+          "end": 39.03
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 41.01,
+          "end": 41.4
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 41.49,
+          "end": 43.08
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 43.14,
+          "end": 44.43
+        },
+        {
+          "speaker": "DOCTOR",
+          "start": 43.29,
+          "end": 43.68
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 44.55,
+          "end": 48.78
+        },
+        {
+          "speaker": "DOCTOR",
+          "start": 45.21,
+          "end": 45.75
+        },
+        {
+          "speaker": "DOCTOR",
+          "start": 48.57,
+          "end": 48.96
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 48.9,
+          "end": 49.83
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 50.04,
+          "end": 51.15
+        },
+        {
+          "speaker": "DOCTOR",
+          "start": 50.16,
+          "end": 51.87
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 51.18,
+          "end": 51.96
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 52.02,
+          "end": 53.31
+        },
+        {
+          "speaker": "DOCTOR",
+          "start": 52.56,
+          "end": 52.92
+        },
+        {
+          "speaker": "DOCTOR",
+          "start": 53.1,
+          "end": 54.51
+        },
+        {
+          "speaker": "DOCTOR",
+          "start": 54.72,
+          "end": 57.48
+        },
+        {
+          "speaker": "DOCTOR",
+          "start": 57.54,
+          "end": 63.75
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 60.72,
+          "end": 61.02
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 62.91,
+          "end": 63.21
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 63.78,
+          "end": 64.44
+        },
+        {
+          "speaker": "DOCTOR",
+          "start": 63.9,
+          "end": 64.74
+        },
+        {
+          "speaker": "PATIENT",
+          "start": 64.56,
+          "end": 66.54
+        },
+        {
+          "speaker": "DOCTOR",
+          "start": 64.98,
+          "end": 65.55
+        }
+      ],
+      "praxis_timbre": {
+        "der": 0.536,
+        "miss": 0.0,
+        "false_alarm": 37.08,
+        "confusion": 149.95,
+        "total": 348.94,
+        "wall_time_s": 1.36
+      },
+      "pyannote_3_1": {
+        "der": 0.098,
+        "miss": 26.9554,
+        "false_alarm": 0.139,
+        "confusion": 7.1155,
+        "total": 348.94,
+        "wall_time_s": 11.53
+      },
+      "winner": "pyannote_3_1"
+    }
+  ]
+}

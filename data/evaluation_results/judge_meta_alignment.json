@@ -1,0 +1,521 @@
+{
+  "is_synthetic": false,
+  "host": "Satyawans-MacBook-Pro.local",
+  "git_commit": "49ea49e8c981b2e227d4c0fc31d7ef29554a11fd",
+  "timestamp": "2026-05-24T15:38:44.458994+00:00",
+  "inputs": {
+    "trustscore": "data/evaluation_results/trustscore_rerun_2026_05.json",
+    "mistral_judge": "data/evaluation_results/llm_judge_mistral_latest_20260522_115849.json",
+    "llama_judge": "data/evaluation_results/llm_judge_llama3.1_8b_20260522_123941.json",
+    "rule_based_scorer": "data/evaluation_results/soap_significance.json"
+  },
+  "ranking_correlation": {
+    "macro_kendall_tau": {
+      "mistral_vs_trustscore": -0.3125,
+      "llama_vs_trustscore": -0.0417,
+      "rule_vs_trustscore": 0.3333,
+      "mistral_vs_llama": 0.25
+    },
+    "per_case": [
+      {
+        "case": "Chest Infection",
+        "trustscore_vector": [
+          65.0,
+          65.0,
+          60.0,
+          45.0
+        ],
+        "mistral_judge_vector": [
+          0.98,
+          0.98,
+          0.98,
+          0.98
+        ],
+        "llama_judge_vector": [
+          0.89,
+          0.89,
+          0.89,
+          0.89
+        ],
+        "rule_based_vector": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "tau_mistral_vs_trustscore": 0.0,
+        "tau_llama_vs_trustscore": 0.0,
+        "tau_rule_vs_trustscore": 0.0,
+        "tau_mistral_vs_llama": 0.0
+      },
+      {
+        "case": "Diabetes Review",
+        "trustscore_vector": [
+          80.0,
+          80.0,
+          65.0,
+          45.0
+        ],
+        "mistral_judge_vector": [
+          0.93,
+          0.98,
+          0.98,
+          0.73
+        ],
+        "llama_judge_vector": [
+          0.86,
+          0.86,
+          0.89,
+          0.82
+        ],
+        "rule_based_vector": [
+          0.96,
+          0.96,
+          0.96,
+          0.77
+        ],
+        "tau_mistral_vs_trustscore": 0.3333,
+        "tau_llama_vs_trustscore": 0.1667,
+        "tau_rule_vs_trustscore": 0.5,
+        "tau_mistral_vs_llama": 0.6667
+      },
+      {
+        "case": "Hypertension Review",
+        "trustscore_vector": [
+          50.0,
+          50.0,
+          45.0,
+          85.0
+        ],
+        "mistral_judge_vector": [
+          0.98,
+          0.93,
+          0.98,
+          0.68
+        ],
+        "llama_judge_vector": [
+          0.89,
+          0.86,
+          0.89,
+          0.0
+        ],
+        "rule_based_vector": [
+          1.0,
+          1.0,
+          1.0,
+          0.53
+        ],
+        "tau_mistral_vs_trustscore": -0.6667,
+        "tau_llama_vs_trustscore": -0.6667,
+        "tau_rule_vs_trustscore": -0.5,
+        "tau_mistral_vs_llama": 0.8333
+      },
+      {
+        "case": "Lower Back Pain",
+        "trustscore_vector": [
+          80.0,
+          80.0,
+          70.0,
+          45.0
+        ],
+        "mistral_judge_vector": [
+          0.94,
+          0.94,
+          0.98,
+          0.93
+        ],
+        "llama_judge_vector": [
+          0.89,
+          0.86,
+          0.89,
+          0.88
+        ],
+        "rule_based_vector": [
+          1.0,
+          0.96,
+          1.0,
+          0.77
+        ],
+        "tau_mistral_vs_trustscore": 0.1667,
+        "tau_llama_vs_trustscore": 0.0,
+        "tau_rule_vs_trustscore": 0.3333,
+        "tau_mistral_vs_llama": 0.3333
+      },
+      {
+        "case": "Mental Health - Anxiety",
+        "trustscore_vector": [
+          60.0,
+          60.0,
+          60.0,
+          40.0
+        ],
+        "mistral_judge_vector": [
+          0.98,
+          0.98,
+          0.98,
+          1.0
+        ],
+        "llama_judge_vector": [
+          0.88,
+          0.89,
+          0.89,
+          0.86
+        ],
+        "rule_based_vector": [
+          0.96,
+          0.96,
+          0.96,
+          0.77
+        ],
+        "tau_mistral_vs_trustscore": -0.5,
+        "tau_llama_vs_trustscore": 0.5,
+        "tau_rule_vs_trustscore": 0.5,
+        "tau_mistral_vs_llama": -0.5
+      },
+      {
+        "case": "Paediatric Ear Infection",
+        "trustscore_vector": [
+          80.0,
+          80.0,
+          80.0,
+          45.0
+        ],
+        "mistral_judge_vector": [
+          0.98,
+          0.98,
+          0.98,
+          1.0
+        ],
+        "llama_judge_vector": [
+          0.88,
+          0.89,
+          0.89,
+          0.89
+        ],
+        "rule_based_vector": [
+          0.96,
+          0.96,
+          1.0,
+          0.77
+        ],
+        "tau_mistral_vs_trustscore": -0.5,
+        "tau_llama_vs_trustscore": -0.1667,
+        "tau_rule_vs_trustscore": 0.5,
+        "tau_mistral_vs_llama": 0.1667
+      },
+      {
+        "case": "Persistent Cough",
+        "trustscore_vector": [
+          65.0,
+          70.0,
+          80.0,
+          45.0
+        ],
+        "mistral_judge_vector": [
+          0.98,
+          0.98,
+          0.98,
+          1.0
+        ],
+        "llama_judge_vector": [
+          0.86,
+          0.89,
+          0.89,
+          0.86
+        ],
+        "rule_based_vector": [
+          1.0,
+          1.0,
+          1.0,
+          0.77
+        ],
+        "tau_mistral_vs_trustscore": -0.5,
+        "tau_llama_vs_trustscore": 0.6667,
+        "tau_rule_vs_trustscore": 0.5,
+        "tau_mistral_vs_llama": -0.3333
+      },
+      {
+        "case": "Skin Lesion Assessment",
+        "trustscore_vector": [
+          85.0,
+          70.0,
+          65.0,
+          45.0
+        ],
+        "mistral_judge_vector": [
+          0.93,
+          0.98,
+          0.98,
+          1.0
+        ],
+        "llama_judge_vector": [
+          0.88,
+          0.89,
+          0.89,
+          0.91
+        ],
+        "rule_based_vector": [
+          0.96,
+          0.91,
+          0.91,
+          0.77
+        ],
+        "tau_mistral_vs_trustscore": -0.8333,
+        "tau_llama_vs_trustscore": -0.8333,
+        "tau_rule_vs_trustscore": 0.8333,
+        "tau_mistral_vs_llama": 0.8333
+      }
+    ]
+  },
+  "verdict_agreement_cohen_kappa": {
+    "mistral_vs_trustscore": {
+      "kappa": -0.0631,
+      "observed_agreement": 0.375,
+      "expected_agreement": 0.4121,
+      "categories": [
+        "approved",
+        "needs_review"
+      ]
+    },
+    "llama_vs_trustscore": {
+      "kappa": -0.0306,
+      "observed_agreement": 0.375,
+      "expected_agreement": 0.3936,
+      "categories": [
+        "approved",
+        "needs_review",
+        "rejected"
+      ]
+    },
+    "rule_vs_trustscore": {
+      "kappa": -0.0631,
+      "observed_agreement": 0.375,
+      "expected_agreement": 0.4121,
+      "categories": [
+        "approved",
+        "needs_review"
+      ]
+    },
+    "mistral_vs_llama": {
+      "kappa": 0.4921,
+      "observed_agreement": 0.9688,
+      "expected_agreement": 0.9385,
+      "categories": [
+        "approved",
+        "needs_review",
+        "rejected"
+      ]
+    }
+  },
+  "criterion_saturation": {
+    "mistral_judge": {
+      "structure": {
+        "model_means": {
+          "praxis-soap-v1": 1.0,
+          "med42": 1.0,
+          "mistral": 1.0,
+          "meditron:7b": 1.0
+        },
+        "mean": 1.0,
+        "std": 0.0,
+        "max_minus_min": 0.0
+      },
+      "content": {
+        "model_means": {
+          "praxis-soap-v1": 1.0,
+          "med42": 1.0,
+          "mistral": 1.0,
+          "meditron:7b": 0.9688
+        },
+        "mean": 0.9922,
+        "std": 0.0156,
+        "max_minus_min": 0.0312
+      },
+      "snomed": {
+        "model_means": {
+          "praxis-soap-v1": 0.775,
+          "med42": 0.8937,
+          "mistral": 0.95,
+          "meditron:7b": 0.3063
+        },
+        "mean": 0.7312,
+        "std": 0.2926,
+        "max_minus_min": 0.6437
+      },
+      "safety_netting": {
+        "model_means": {
+          "praxis-soap-v1": 1.0,
+          "med42": 1.0,
+          "mistral": 1.0,
+          "meditron:7b": 0.875
+        },
+        "mean": 0.9688,
+        "std": 0.0625,
+        "max_minus_min": 0.125
+      },
+      "uk_english": {
+        "model_means": {
+          "praxis-soap-v1": 1.0,
+          "med42": 1.0,
+          "mistral": 1.0,
+          "meditron:7b": 1.0
+        },
+        "mean": 1.0,
+        "std": 0.0,
+        "max_minus_min": 0.0
+      },
+      "budget": {
+        "model_means": {
+          "praxis-soap-v1": 0.9625,
+          "med42": 0.9562,
+          "mistral": 0.95,
+          "meditron:7b": 0.9
+        },
+        "mean": 0.9422,
+        "std": 0.0286,
+        "max_minus_min": 0.0625
+      }
+    },
+    "llama_judge": {
+      "structure": {
+        "model_means": {
+          "praxis-soap-v1": 0.95,
+          "med42": 0.95,
+          "mistral": 0.95,
+          "meditron:7b": 0.8187
+        },
+        "mean": 0.9172,
+        "std": 0.0656,
+        "max_minus_min": 0.1312
+      },
+      "content": {
+        "model_means": {
+          "praxis-soap-v1": 0.85,
+          "med42": 0.85,
+          "mistral": 0.85,
+          "meditron:7b": 0.7688
+        },
+        "mean": 0.8297,
+        "std": 0.0406,
+        "max_minus_min": 0.0812
+      },
+      "snomed": {
+        "model_means": {
+          "praxis-soap-v1": 0.775,
+          "med42": 0.775,
+          "mistral": 0.8,
+          "meditron:7b": 0.6625
+        },
+        "mean": 0.7531,
+        "std": 0.0616,
+        "max_minus_min": 0.1375
+      },
+      "safety_netting": {
+        "model_means": {
+          "praxis-soap-v1": 0.8688,
+          "med42": 0.8625,
+          "mistral": 0.9188,
+          "meditron:7b": 0.7063
+        },
+        "mean": 0.8391,
+        "std": 0.0921,
+        "max_minus_min": 0.2125
+      },
+      "uk_english": {
+        "model_means": {
+          "praxis-soap-v1": 1.0,
+          "med42": 1.0,
+          "mistral": 1.0,
+          "meditron:7b": 0.875
+        },
+        "mean": 0.9688,
+        "std": 0.0625,
+        "max_minus_min": 0.125
+      },
+      "budget": {
+        "model_means": {
+          "praxis-soap-v1": 0.9188,
+          "med42": 0.9187,
+          "mistral": 0.9313,
+          "meditron:7b": 0.7937
+        },
+        "mean": 0.8906,
+        "std": 0.0649,
+        "max_minus_min": 0.1375
+      }
+    }
+  },
+  "trustscore_check_stratification": {
+    "transcript_fidelity": {
+      "model_pass_rates": {
+        "praxis-soap-v1": 0.75,
+        "med42": 0.875,
+        "mistral": 0.75,
+        "meditron:7b": 0.875
+      },
+      "mean": 0.8125,
+      "std": 0.0722,
+      "max_minus_min": 0.125
+    },
+    "snomed_validation": {
+      "model_pass_rates": {
+        "praxis-soap-v1": 0.875,
+        "med42": 0.75,
+        "mistral": 0.25,
+        "meditron:7b": 1.0
+      },
+      "mean": 0.7188,
+      "std": 0.3287,
+      "max_minus_min": 0.75
+    },
+    "clinical_safety": {
+      "model_pass_rates": {
+        "praxis-soap-v1": 0.5,
+        "med42": 0.625,
+        "mistral": 0.625,
+        "meditron:7b": 0.125
+      },
+      "mean": 0.4688,
+      "std": 0.2366,
+      "max_minus_min": 0.5
+    },
+    "nice_guidelines": {
+      "model_pass_rates": {
+        "praxis-soap-v1": 0.125,
+        "med42": 0.0,
+        "mistral": 0.0,
+        "meditron:7b": 0.125
+      },
+      "mean": 0.0625,
+      "std": 0.0722,
+      "max_minus_min": 0.125
+    },
+    "completeness": {
+      "model_pass_rates": {
+        "praxis-soap-v1": 1.0,
+        "med42": 1.0,
+        "mistral": 1.0,
+        "meditron:7b": 0.125
+      },
+      "mean": 0.7812,
+      "std": 0.4375,
+      "max_minus_min": 0.875
+    },
+    "drug_interactions": {
+      "model_pass_rates": {
+        "praxis-soap-v1": 1.0,
+        "med42": 1.0,
+        "mistral": 1.0,
+        "meditron:7b": 1.0
+      },
+      "mean": 1.0,
+      "std": 0.0,
+      "max_minus_min": 0.0
+    }
+  },
+  "interpretation_notes": {
+    "verdict_thresholds_llm": "\u22650.7 \u2192 approved, 0.4 to 0.69 \u2192 needs_review, <0.4 \u2192 rejected",
+    "verdict_thresholds_trustscore": "\u226570 \u2192 approved, 40 to 69 \u2192 needs_review, <40 \u2192 rejected",
+    "saturated_criterion": "std < 0.05 (across the 4 models)"
+  }
+}

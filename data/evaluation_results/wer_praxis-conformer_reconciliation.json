@@ -1,0 +1,218 @@
+{
+  "is_synthetic": false,
+  "host": "satyawan",
+  "git_commit": "unknown",
+  "timestamp": "2026-05-24T14:25:38.753190+00:00",
+  "run_a": {
+    "json_path": "data/evaluation_results/wer_praxis-conformer_20260427_134720.json",
+    "mean_wer": 0.5012,
+    "ci_lower": 0.467,
+    "ci_upper": 0.5347,
+    "mean_rtf": 0.044,
+    "num_samples": 14,
+    "total_audio_secs": 7359.3,
+    "schema_keys": [
+      "ci_lower",
+      "ci_upper",
+      "mean_rtf",
+      "mean_wer",
+      "median_wer",
+      "model",
+      "num_samples",
+      "samples",
+      "timestamp",
+      "total_audio_secs",
+      "total_inference_secs"
+    ]
+  },
+  "run_b": {
+    "json_path": "data/evaluation_results/wer_praxis-conformer_20260427_154708.json",
+    "mean_wer": 0.5672,
+    "ci_lower": 0.5391,
+    "ci_upper": 0.5927,
+    "mean_rtf": 0.037,
+    "num_samples": 14,
+    "total_audio_secs": 7359.3,
+    "schema_keys": [
+      "ci_lower",
+      "ci_upper",
+      "mean_rtf",
+      "mean_wer",
+      "median_wer",
+      "medical_term_recall",
+      "model",
+      "num_samples",
+      "samples",
+      "timestamp",
+      "total_audio_secs",
+      "total_inference_secs"
+    ],
+    "has_medical_term_recall_field": true
+  },
+  "schema_diff": {
+    "only_in_run_a": [],
+    "only_in_run_b": [
+      "medical_term_recall"
+    ]
+  },
+  "per_sample_comparison": {
+    "n_common": 14,
+    "identical_hypothesis": 0,
+    "identical_after_normalisation": 0,
+    "different_hypothesis": 14
+  },
+  "diagnosis": "different_hypotheses_likely_different_checkpoint_or_decoding",
+  "interpretation": "All 14 sample hypotheses differ between runs. Either a different checkpoint was loaded, or the decoding config (beam, biasing, normalisation pipeline) changed. The 6.6 pp WER gap is explained by different decode output, not by scoring.",
+  "canonical_run_for_paper": "BOTH numbers are legitimate. Headline=50.12% (beam search) for accuracy; 56.22% (greedy) is the on-device-RTF-constrained equivalent. Paper must explicitly state decoding configuration alongside the WER number.",
+  "canonical_justification": "Run A (timestamp 12:47, mean_wer 0.5012) is the value used in the dissertation, HuggingFace model card, and README. Run B (14:47, 0.5672) is from a later evaluation pipeline that adds the medical_term_recall field \u2014 see schema_diff. Until the exact checkpoint+decoding config of each run is recoverable from git history of scripts/wer_primock57.py, the paper should report Run A and explicitly state the 95% bootstrap CI [46.70, 53.47].",
+  "biased_run_summary": {
+    "path": "data/evaluation_results/wer_praxis-conformer-biased_20260427_154230.json",
+    "mean_wer": 0.5696,
+    "mean_rtf": 0.35
+  },
+  "per_sample": [
+    {
+      "audio_file": "day1_consultation02_doctor.wav",
+      "wer_run_a": 0.476,
+      "wer_run_b": 0.5469,
+      "delta_wer": 0.07090000000000007,
+      "identical_hypothesis": false,
+      "identical_after_normalisation": false,
+      "hyp_a_first_120": "ll and yes a thing is a bit that so it's be is a bit if's not very clear about there t anyway uh ok just i goes so how c",
+      "hyp_b_first_120": "llo yes thing it a bit that so it's bit is's a bit it's not very clear both theres lessing continue ok i you to have i h"
+    },
+    {
+      "audio_file": "day1_consultation02_patient.wav",
+      "wer_run_a": 0.6006,
+      "wer_run_b": 0.6399,
+      "delta_wer": 0.0393,
+      "identical_hypothesis": false,
+      "identical_after_normalisation": false,
+      "hyp_a_first_120": "hell can you hear me anywhere ok yes so it's been there two days now i have my care so andenst in its kind of it'sach sh",
+      "hyp_b_first_120": "heo can you'll anywhere o again yes so it's been there two days now i have like care so and red in it's kind of it's rea"
+    },
+    {
+      "audio_file": "day1_consultation08_doctor.wav",
+      "wer_run_a": 0.5517,
+      "wer_run_b": 0.6202,
+      "delta_wer": 0.0685,
+      "identical_hypothesis": false,
+      "identical_after_normalisation": false,
+      "hyp_a_first_120": "hello hello i difficult going further can confirm your name and age please ok and how can help you this doctor afternoon",
+      "hyp_b_first_120": "hello hello hi from difficult going further cro from your name and age please ok and how can i help you this doctor afte"
+    },
+    {
+      "audio_file": "day1_consultation08_patient.wav",
+      "wer_run_a": 0.5795,
+      "wer_run_b": 0.6326,
+      "delta_wer": 0.053100000000000036,
+      "identical_hypothesis": false,
+      "identical_after_normalisation": false,
+      "hyp_a_first_120": "ok no i can it helloo um no sp so um i so um it so days sixty i' been really stress up work the for few days um i really",
+      "hyp_b_first_120": "ok how i can do the about heoo can mey me um mye um im quite it um it so be i think when stress up quite the for few day"
+    },
+    {
+      "audio_file": "day1_consultation15_doctor.wav",
+      "wer_run_a": 0.487,
+      "wer_run_b": 0.5581,
+      "delta_wer": 0.07110000000000005,
+      "identical_hypothesis": false,
+      "identical_after_normalisation": false,
+      "hyp_a_first_120": "hello hello can hear mek before going you furtheric confirm your name and your um age please what you fine i orra will' ",
+      "hyp_b_first_120": "hello hello can hear me great of bef do you furtheric confirm your name and your um age please e what you five i normalr"
+    },
+    {
+      "audio_file": "day1_consultation15_patient.wav",
+      "wer_run_a": 0.5165,
+      "wer_run_b": 0.5778,
+      "delta_wer": 0.06130000000000002,
+      "identical_hypothesis": false,
+      "identical_after_normalisation": false,
+      "hyp_a_first_120": "noo yes uh yes i' the before uh f some and um forty fine uh so i have uh st noing my f wife f likekin of red it kind of ",
+      "hyp_b_first_120": "he yes uh yes um bit uh for some and um for fine uh yet so i have uh st my i think i likes get of ra it kind of correct "
+    },
+    {
+      "audio_file": "day2_consultation01_doctor.wav",
+      "wer_run_a": 0.4673,
+      "wer_run_b": 0.5637,
+      "delta_wer": 0.09639999999999999,
+      "identical_hypothesis": false,
+      "identical_after_normalisation": false,
+      "hyp_a_first_120": "hi there good morning name um i' doctor de you not from babylon can you hear me ok yeahk great well i to see this's morn",
+      "hyp_b_first_120": "hi there good morning um i'm doctor de you me from babylon right can you hear me ok great ok you see this morning um bef"
+    },
+    {
+      "audio_file": "day2_consultation01_patient.wav",
+      "wer_run_a": 0.5483,
+      "wer_run_b": 0.5985,
+      "delta_wer": 0.05020000000000002,
+      "identical_hypothesis": false,
+      "identical_after_normalisation": false,
+      "hyp_a_first_120": "uh uh uh can five uh yeah uh just smith uh thanks first october nineteen ninety uh yes yes i just a a proper hear as i w",
+      "hyp_b_first_120": "hello uh uh can fivek yeah uh jack smith uh f first october nineteen nineteen yes uh yes yes i' just a lot a co hear as "
+    },
+    {
+      "audio_file": "day2_consultation03_doctor.wav",
+      "wer_run_a": 0.4659,
+      "wer_run_b": 0.5641,
+      "delta_wer": 0.09820000000000007,
+      "identical_hypothesis": false,
+      "identical_after_normalisation": false,
+      "hyp_a_first_120": "hi there good morning name right uh doctor de get how last to you uhs for before we start your i confirm yourre full nam",
+      "hyp_b_first_120": "hi there good morning uh' doctorg get at last to you uhs for before we start your problems confirm your o o you work ok "
+    },
+    {
+      "audio_file": "day2_consultation03_patient.wav",
+      "wer_run_a": 0.5893,
+      "wer_run_b": 0.6083,
+      "delta_wer": 0.018999999999999906,
+      "identical_hypothesis": false,
+      "identical_after_normalisation": false,
+      "hyp_a_first_120": "uh uh yes um no really it good uh and my it i fty at all and yeah um say just's been nothinging um um problems it my hea",
+      "hyp_b_first_120": "uhk you uh yes um no really bit just uh um my i forty at ago thank yeah um so just's been having and um problemss in my "
+    },
+    {
+      "audio_file": "day4_consultation06_doctor.wav",
+      "wer_run_a": 0.4296,
+      "wer_run_b": 0.5131,
+      "delta_wer": 0.08350000000000002,
+      "identical_hypothesis": false,
+      "identical_after_normalisation": false,
+      "hyp_a_first_120": "ok badkle hi and my name is doctor you hard um what the you she here can i just get you to confirm your name and date bt",
+      "hyp_b_first_120": "ok hele hi um my name is doctor youar um what the do o you confirm your name and dateabirth or meetings abirth and your "
+    },
+    {
+      "audio_file": "day4_consultation06_patient.wav",
+      "wer_run_a": 0.3767,
+      "wer_run_b": 0.4478,
+      "delta_wer": 0.0711,
+      "identical_hypothesis": false,
+      "identical_after_normalisation": false,
+      "hyp_a_first_120": "hello uh yeah marea yeah sorry um twenty just not of my an' off uh um ninety um so i' having like a really will is stron",
+      "hyp_b_first_120": "hello no uhy aea yp to yeah um not up my unc um ninety um so i have like a really really strong i um i i' quite and so s"
+    },
+    {
+      "audio_file": "day5_consultation03_doctor.wav",
+      "wer_run_a": 0.4033,
+      "wer_run_b": 0.4978,
+      "delta_wer": 0.09450000000000003,
+      "identical_hypothesis": false,
+      "identical_after_normalisation": false,
+      "hyp_a_first_120": "hi there i'm doctor smith from babylon hi there can you confirm your name to birth in the first line of your address fir",
+      "hyp_b_first_120": "hi i'm doctor smith from babylon hi can you confirm your name of birth in the first line of your address first or please"
+    },
+    {
+      "audio_file": "day5_consultation03_patient.wav",
+      "wer_run_a": 0.5258,
+      "wer_run_b": 0.5727,
+      "delta_wer": 0.04689999999999994,
+      "identical_hypothesis": false,
+      "identical_after_normalisation": false,
+      "hyp_a_first_120": "hi not uh my name bowll co deep for its uh thanking of september and bing thank three my address is uh sixty for fives i",
+      "hyp_b_first_120": "hi uh my name bowy co five yes uh it nineteen of september and nineteen eight three my address is uh sixty four fives in"
+    }
+  ],
+  "status": "SUPERSEDED by wer_decoding_sweep_final.json",
+  "superseded_by": "data/evaluation_results/wer_decoding_sweep_final.json",
+  "resolved_diagnosis": "DECODING STRATEGY. Run A (50.12%) was beam search (no LM, no biasing, w=100). Run B (56.72%) was greedy CTC. Both used best_primock57.pt. Verified by direct re-run on RTX 5090: greedy=56.22% (matches Run B within 0.50 pp), beam=49.76% (matches Run A within 0.36 pp). The earlier 'different checkpoint' diagnosis is now rejected."
+}

@@ -1,0 +1,374 @@
+{
+  "is_synthetic": false,
+  "hardware_target": "RTX 5090 32GB Linux (satyawan-1)",
+  "host": "satyawan",
+  "git_commit": "unknown",
+  "timestamp": "2026-05-24T16:07:54.063769+00:00",
+  "checkpoint": "data/models/conformer_v2/best_primock57.pt",
+  "lm_arpa": "data/models/lm/clinical_gp_4gram.arpa",
+  "lm_alpha": 0.5,
+  "lm_beta": 1.5,
+  "beam_width": 10,
+  "n_samples": 14,
+  "total_audio_sec": 7359.3,
+  "forward_total_sec": 0.418,
+  "no_lm_decode_total_sec": 16.284,
+  "with_lm_decode_total_sec": 14.105,
+  "aggregate": {
+    "no_lm": {
+      "mean_wer": 0.4974,
+      "wer_ci_95": [
+        0.4624,
+        0.5282
+      ],
+      "mean_ce_wer": 0.8864,
+      "ce_wer_ci_95": [
+        0.7216,
+        1.0
+      ]
+    },
+    "with_lm": {
+      "mean_wer": 0.4557,
+      "wer_ci_95": [
+        0.4182,
+        0.4904
+      ],
+      "mean_ce_wer": 0.8608,
+      "ce_wer_ci_95": [
+        0.6995,
+        0.9744
+      ]
+    },
+    "deltas": {
+      "wer_delta_pp": -4.167,
+      "ce_wer_delta_pp": -2.564,
+      "wilcoxon_p_wer": 0.000122,
+      "wilcoxon_p_ce_wer": 1.0
+    }
+  },
+  "per_sample": [
+    {
+      "audio_file": "day1_consultation02_doctor.wav",
+      "audio_dur_s": 559.2,
+      "no_lm": {
+        "hypothesis_first_300": "llo and yes a thing is a bit that so its be is a bit, if's not very clear about there t anyway? uh ok. just i goes so how can may help you there ok ok. no problem't have you have. um, wereabouts and mu skin is affected? ok here. no,k some sness is it was affecting you, and uh, what try best o get th",
+        "wer": 0.4852,
+        "ce_wer": 1.0
+      },
+      "with_lm": {
+        "hypothesis_first_300": "hello yes thing is a bit so it's bit is a bit it's not very clear about there continue ok just i goes how can i help you there ok no problem have you have um whereabouts the skin is affected ok so this is it was affecting you and uh what try best get so that for you um have you had anything else bef",
+        "wer": 0.419,
+        "ce_wer": 1.0
+      },
+      "missed_clinical_with_lm": [
+        "alcohol",
+        "eczema",
+        "fexofenadine",
+        "loratadine",
+        "piriton"
+      ],
+      "missed_clinical_no_lm": [
+        "alcohol",
+        "eczema",
+        "fexofenadine",
+        "loratadine",
+        "piriton"
+      ]
+    },
+    {
+      "audio_file": "day1_consultation02_patient.wav",
+      "audio_dur_s": 559.2,
+      "no_lm": {
+        "hypothesis_first_300": "hell, can you hear me anywhere. ok. yes so, it's been there two days now, i have my care so, andensted in it's kind of it's reallyach she, and it's like spon. so, i like,, is something great all sorts. uh,, mu you like my che my, my hand my armrms like, agreeds, it's st, i justs itching a lots, like",
+        "wer": 0.5803,
+        "ce_wer": 1.0
+      },
+      "with_lm": {
+        "hypothesis_first_300": "hello can you hear me anywhere ok yes so it's been a few days now i have like care so and red in kind of it's it and it's like no so i like i i great so uh you like my che my hand my arms like agreed it's so i just itching a lot like or um and i come back not like i mean it's something so because yo",
+        "wer": 0.5324,
+        "ce_wer": 1.0
+      },
+      "missed_clinical_with_lm": [
+        "asthma",
+        "eczema"
+      ],
+      "missed_clinical_no_lm": [
+        "asthma",
+        "eczema"
+      ]
+    },
+    {
+      "audio_file": "day1_consultation08_doctor.wav",
+      "audio_dur_s": 466.2,
+      "no_lm": {
+        "hypothesis_first_300": "hello. hello. i difficult going further can confirm your name, and age please?k ok. and, how can help you this doctor afternoon? ok. um,, sort hear works going say stress. um tellmmy away skin first the tummy, that you mentioned has been drachy um, whereabout? yourskin. ok. um, and it just something",
+        "wer": 0.5445,
+        "ce_wer": 1.0
+      },
+      "with_lm": {
+        "hypothesis_first_300": "hello hello i difficult going any further can confirm your name and age please ok ok and how can i help you this so ok um sort hear work so stress um tell me about skin first tummy that you mentioned been dry and whereabouts in your skin ok um and it just something time before did did it come about ",
+        "wer": 0.5016,
+        "ce_wer": 1.0
+      },
+      "missed_clinical_with_lm": [
+        "alcohol",
+        "dermatitis",
+        "eczema",
+        "hayfever",
+        "loratadine",
+        "microgynon",
+        "paracetamol",
+        "piriton"
+      ],
+      "missed_clinical_no_lm": [
+        "alcohol",
+        "dermatitis",
+        "eczema",
+        "hayfever",
+        "loratadine",
+        "microgynon",
+        "paracetamol",
+        "piriton"
+      ]
+    },
+    {
+      "audio_file": "day1_consultation08_patient.wav",
+      "audio_dur_s": 466.2,
+      "no_lm": {
+        "hypothesis_first_300": "ok., no, i can it. hello. um, no sp so um, i so. um, it so days sixty, i've been really stress up work the for few days um, i really that, i. really dr it sheskin. oh live in my arm um and my hands been. um no no i think it started a a few days ago., uh ohllo. um, so my skins quite dr um and im usin",
+        "wer": 0.5638,
+        "ce_wer": 1.0
+      },
+      "with_lm": {
+        "hypothesis_first_300": "ok no i i hello um i sp so six i've been pretty stress up work for a few days um i really that i really dry it's been i live in my arm um and my hand been um no no i i think it started a few days ago i uh um so my skin quite um and i using up of the past few days i think spot no few i'm not nothing ",
+        "wer": 0.5302,
+        "ce_wer": 1.0
+      },
+      "missed_clinical_with_lm": [
+        "asthma",
+        "hayfever"
+      ],
+      "missed_clinical_no_lm": [
+        "asthma",
+        "hayfever"
+      ]
+    },
+    {
+      "audio_file": "day1_consultation15_doctor.wav",
+      "audio_dur_s": 491.82,
+      "no_lm": {
+        "hypothesis_first_300": "hello hello can hear mek before i going you furtheric confirm your name, and your um age please? o what you fine i orra will' how can i help you this so afternoon? o great when whener this or start? o f ok, has been that long has it ok anti you mentioned your that is it thekin in your hand mainly yo",
+        "wer": 0.5045,
+        "ce_wer": 1.0
+      },
+      "with_lm": {
+        "hypothesis_first_300": "hello hello can you hear me so before i go any further confirm your name and your age please ok fine i will how can i help you this this afternoon ok when when this or start ok has been that long has it ok and you mentioned your that is it the skin in your hand mainly dry ok right ok ok can why have",
+        "wer": 0.441,
+        "ce_wer": 1.0
+      },
+      "missed_clinical_with_lm": [
+        "alcohol",
+        "asthma",
+        "dermatitis",
+        "diabetes",
+        "eczema",
+        "metformin"
+      ],
+      "missed_clinical_no_lm": [
+        "alcohol",
+        "asthma",
+        "dermatitis",
+        "diabetes",
+        "eczema",
+        "metformin"
+      ]
+    },
+    {
+      "audio_file": "day1_consultation15_patient.wav",
+      "audio_dur_s": 491.76,
+      "no_lm": {
+        "hypothesis_first_300": ". noo yes. uh yes, i'm, the before uh, f some and, um forty fine. uh, so, i have uh, st noing my f wife f , likeskin of red, it kind of correct. um a couple of months ago i don three four a months ago. yeah. yeah,, i haven't no i mean., i have dryness, like you in other current, like my bs, but it's",
+        "wer": 0.5032,
+        "ce_wer": 1.0
+      },
+      "with_lm": {
+        "hypothesis_first_300": "no yes uh yes i'm uh and um forty five uh so i have uh so no my finger like get really kind of correct couple of months ago i uh three four months ago yeah yeah i haven't no i mean i have dry this like you know in other app like my bit but it's not it's not very it's not few always i don't know grea",
+        "wer": 0.4776,
+        "ce_wer": 1.0
+      },
+      "missed_clinical_with_lm": [
+        "diabetes"
+      ],
+      "missed_clinical_no_lm": [
+        "diabetes"
+      ]
+    },
+    {
+      "audio_file": "day2_consultation01_doctor.wav",
+      "audio_dur_s": 329.16,
+      "no_lm": {
+        "hypothesis_first_300": "hi there,, good morning name um i'm doctor de you nots from babylon. can you hear me ok yeahk great. well i to see this's morning. um before we' start quite when can can confirm your full moment date of birthies?k that's perfect, thank youja um, are you an a private place where you're get to speak a",
+        "wer": 0.4648,
+        "ce_wer": 0.8571
+      },
+      "with_lm": {
+        "hypothesis_first_300": "hi there good morning um i'm doctor to do you from babylon hi can you hear me ok yeah ok great well i to see this morning um before we start your appointment with you can confirm your full name date of birth ok that's perfect thank you um are you in a private place where you're going to speak at the",
+        "wer": 0.446,
+        "ce_wer": 0.8571
+      },
+      "missed_clinical_with_lm": [
+        "palpitations",
+        "tinnitus"
+      ],
+      "missed_clinical_no_lm": [
+        "palpitations",
+        "tinnitus"
+      ]
+    },
+    {
+      "audio_file": "day2_consultation01_patient.wav",
+      "audio_dur_s": 329.16,
+      "no_lm": {
+        "hypothesis_first_300": "uh. uh uh. can five. uh, yeah, uh, just smith. uh,, thanks first october. nineteen ninety. uh, yes. yes, i just, a a proper hear as i was i used to like hear kind it 's a raing somewhere uh, past sixt. um, i had something really a five year ago, but only last a couple of days, wasn't anything as lon",
+        "wer": 0.5496,
+        "ce_wer": null
+      },
+      "with_lm": {
+        "hypothesis_first_300": "uh uh yeah can fine uh yeah uh john smith uh i first october nineteen ninety uh yes yes i just a a proper hear was i was i used to like few it's raot uh sixt had something maybe a five year ago but only last a couple of days wasn't anything as long this um i occasional in my left uh just on the one ",
+        "wer": 0.5284,
+        "ce_wer": null
+      },
+      "missed_clinical_with_lm": [],
+      "missed_clinical_no_lm": []
+    },
+    {
+      "audio_file": "day2_consultation03_doctor.wav",
+      "audio_dur_s": 450.84,
+      "no_lm": {
+        "hypothesis_first_300": "hi there, good morning name? right uh doctor de get how last to you uh,s for, before we start your , i confirm, yourre full name in date of birth, that's the k. ok you ok fine it so you're your the do said yeah? perfect ok. are you in a private place where you'k to speak at the man ok great. um, so,",
+        "wer": 0.4839,
+        "ce_wer": 0.6667
+      },
+      "with_lm": {
+        "hypothesis_first_300": "hi there good morning um doctor in get how last to you uh for before we start your i confirm your full name and date of birth that's ok ok ok fine so you're your said yeah ok and are you in a private place where you ok to speak at the moment ok great um how can i help you today ok right ok ok and ho",
+        "wer": 0.4351,
+        "ce_wer": 0.6667
+      },
+      "missed_clinical_with_lm": [
+        "diagnosis"
+      ],
+      "missed_clinical_no_lm": [
+        "diagnosis"
+      ]
+    },
+    {
+      "audio_file": "day2_consultation03_patient.wav",
+      "audio_dur_s": 450.84,
+      "no_lm": {
+        "hypothesis_first_300": ". uh,... uh yes, um no really it good uh,, and my it, i' fty at all.. and. yeah.. um, say just's been nothinging um, um, problems it my hearin a co very well my, not is of my face is been feeling a bit numbly thek. um, it's been, it's been a few weeks, that i um, and that for you weeks or some. . ju",
+        "wer": 0.5812,
+        "ce_wer": 1.0
+      },
+      "with_lm": {
+        "hypothesis_first_300": "uh no uh yes um no uh and my i for at all and yeah um i just been having some um problems it my hear and a cough very well and my notic my face is been feeling a bit numb the day um it's been it's been a few weeks and i um and that for you weeks or something just one side just on my left side i noti",
+        "wer": 0.5414,
+        "ce_wer": 1.0
+      },
+      "missed_clinical_with_lm": [
+        "labyrinthitis",
+        "neurofibromatosis",
+        "nice"
+      ],
+      "missed_clinical_no_lm": [
+        "labyrinthitis",
+        "neurofibromatosis",
+        "nice"
+      ]
+    },
+    {
+      "audio_file": "day4_consultation06_doctor.wav",
+      "audio_dur_s": 606.12,
+      "no_lm": {
+        "hypothesis_first_300": "ok,, badkllle hi and my name is doctor you hard um what the you she here can i just get you to confirm your name, and date bth or meetings?k at that, and you in big of birath, great how can i helpk. so is it started this morning was the seven onetach you it come on suddenly?k. and do it come on real",
+        "wer": 0.4214,
+        "ce_wer": 1.0
+      },
+      "with_lm": {
+        "hypothesis_first_300": "ok bad hello hi my name is doctor you are um what the you here can i just get you to confirm your name and date of birth for that and you bit of birth great how can i help ok so is it started this morning was a seven onach come on suddenly ok and do it come on really bad or bit start off uh like it ",
+        "wer": 0.3661,
+        "ce_wer": 1.0
+      },
+      "missed_clinical_with_lm": [
+        "allergic",
+        "ibuprofen",
+        "migraine",
+        "paracetamol"
+      ],
+      "missed_clinical_no_lm": [
+        "allergic",
+        "ibuprofen",
+        "migraine",
+        "paracetamol"
+      ]
+    },
+    {
+      "audio_file": "day4_consultation06_patient.wav",
+      "audio_dur_s": 606.12,
+      "no_lm": {
+        "hypothesis_first_300": "hello. uh, yeah marea. yeah. sorry.. um, twenty just not of my an' off uh um,, ninety. um so i', having like a really will is strong headache, i don't know what this happening, um quite and so so it's started in the morning um i feel like uh uh, di see uh myy is a little bit b um like it it's it's r",
+        "wer": 0.3638,
+        "ce_wer": 1.0
+      },
+      "with_lm": {
+        "hypothesis_first_300": "hello uh yeah maria yeah sorry um twenty not of my don't um ninety um so i'm having like a really will is strong headache i don't know what is happening um quite and so so it's started in the morning um i feel like uh uh do uh my vision is a little bit b um like it it's it's really painful and i'm g",
+        "wer": 0.302,
+        "ce_wer": 1.0
+      },
+      "missed_clinical_with_lm": [
+        "hypothyroidism",
+        "migraine"
+      ],
+      "missed_clinical_no_lm": [
+        "hypothyroidism",
+        "migraine"
+      ]
+    },
+    {
+      "audio_file": "day5_consultation03_doctor.wav",
+      "audio_dur_s": 776.34,
+      "no_lm": {
+        "hypothesis_first_300": "hi there, i'm doctor smith from babylon hi there, can you confirm your name to birth in the first line of your address first or please? ok doctor ok are you in a private place where you can have a confidential consultation to today? o what can i do you feel? ok., ok do you mind it tell me me, a bit ",
+        "wer": 0.4074,
+        "ce_wer": 1.0
+      },
+      "with_lm": {
+        "hypothesis_first_300": "hi there i'm doctor smith from babylon hi there can you confirm your name date of birth and the first line of your address first or please ok ok are you in a private place where you can have a confidential consultation today what can i do for you ok ok do you mind you tell me a bit more about when i",
+        "wer": 0.3621,
+        "ce_wer": 0.6667
+      },
+      "missed_clinical_with_lm": [
+        "alcohol"
+      ],
+      "missed_clinical_no_lm": [
+        "alcohol",
+        "palpitations"
+      ]
+    },
+    {
+      "audio_file": "day5_consultation03_patient.wav",
+      "audio_dur_s": 776.34,
+      "no_lm": {
+        "hypothesis_first_300": "hi not, uh, my name, bowll co deep for, it's uh, thanking of september, and bing thank three. my, address is uh, sixty for fives in place. in so ith than. yes i yeah. um, i been doing, really anxious, over the past a few months, um, is get, really not best every morning, about, be been tious and, it",
+        "wer": 0.5101,
+        "ce_wer": 0.0
+      },
+      "with_lm": {
+        "hypothesis_first_300": "hi uh my name i call but it's uh thank you of september and thank three my address is uh sixty five in place so i think yes i yeah um i been doing really anxious over the past few months um is get really not about that morning about hi and it's sorry to really worrying to add i feel the anxiety and ",
+        "wer": 0.4975,
+        "ce_wer": 0.0
+      },
+      "missed_clinical_with_lm": [],
+      "missed_clinical_no_lm": []
+    }
+  ]
+}

@@ -1,0 +1,212 @@
+{
+  "timestamp": "2026-04-27T12:50:53.367858+00:00",
+  "model": "meditron:7b",
+  "num_notes": 8,
+  "mean_section_completeness": 0.312,
+  "mean_snomed_count": 0.8,
+  "mean_medication_recall": 1.0,
+  "safety_netting_rate": 0.125,
+  "mean_trust_score": 49.375,
+  "notes": [
+    {
+      "note_id": "lower_back_pain",
+      "section_completeness": 0.25,
+      "sections_present": [
+        "plan"
+      ],
+      "sections_missing": [
+        "subjective",
+        "objective",
+        "assessment"
+      ],
+      "snomed_code_count": 0,
+      "snomed_codes": [],
+      "medication_recall": 1.0,
+      "meds_in_transcript": [],
+      "meds_in_note": [
+        "paracetamol"
+      ],
+      "meds_missed": [],
+      "safety_netting_present": false,
+      "trust_score": 45,
+      "trust_verdict": "needs_review",
+      "word_count": 420
+    },
+    {
+      "note_id": "persistent_cough",
+      "section_completeness": 0.25,
+      "sections_present": [
+        "plan"
+      ],
+      "sections_missing": [
+        "subjective",
+        "objective",
+        "assessment"
+      ],
+      "snomed_code_count": 0,
+      "snomed_codes": [],
+      "medication_recall": 1.0,
+      "meds_in_transcript": [],
+      "meds_in_note": [
+        "paracetamol"
+      ],
+      "meds_missed": [],
+      "safety_netting_present": false,
+      "trust_score": 45,
+      "trust_verdict": "needs_review",
+      "word_count": 427
+    },
+    {
+      "note_id": "diabetes_review",
+      "section_completeness": 0.25,
+      "sections_present": [
+        "plan"
+      ],
+      "sections_missing": [
+        "subjective",
+        "objective",
+        "assessment"
+      ],
+      "snomed_code_count": 0,
+      "snomed_codes": [],
+      "medication_recall": 1.0,
+      "meds_in_transcript": [],
+      "meds_in_note": [
+        "atorvastatin",
+        "metformin",
+        "paracetamol"
+      ],
+      "meds_missed": [],
+      "safety_netting_present": false,
+      "trust_score": 45,
+      "trust_verdict": "needs_review",
+      "word_count": 432
+    },
+    {
+      "note_id": "mental_health_-_anxiety",
+      "section_completeness": 0.25,
+      "sections_present": [
+        "plan"
+      ],
+      "sections_missing": [
+        "subjective",
+        "objective",
+        "assessment"
+      ],
+      "snomed_code_count": 0,
+      "snomed_codes": [],
+      "medication_recall": 1.0,
+      "meds_in_transcript": [],
+      "meds_in_note": [
+        "paracetamol"
+      ],
+      "meds_missed": [],
+      "safety_netting_present": false,
+      "trust_score": 40,
+      "trust_verdict": "needs_review",
+      "word_count": 487
+    },
+    {
+      "note_id": "chest_infection",
+      "section_completeness": 1.0,
+      "sections_present": [
+        "subjective",
+        "objective",
+        "assessment",
+        "plan"
+      ],
+      "sections_missing": [],
+      "snomed_code_count": 6,
+      "snomed_codes": [
+        "49727002",
+        "372756006",
+        "372913009",
+        "108600003",
+        "386661006",
+        "10509002"
+      ],
+      "medication_recall": 1.0,
+      "meds_in_transcript": [],
+      "meds_in_note": [
+        "amoxicillin",
+        "atorvastatin",
+        "ramipril"
+      ],
+      "meds_missed": [],
+      "safety_netting_present": true,
+      "trust_score": 60,
+      "trust_verdict": "needs_review",
+      "word_count": 164
+    },
+    {
+      "note_id": "hypertension_review",
+      "section_completeness": 0.0,
+      "sections_present": [],
+      "sections_missing": [
+        "subjective",
+        "objective",
+        "assessment",
+        "plan"
+      ],
+      "snomed_code_count": 0,
+      "snomed_codes": [],
+      "medication_recall": 1.0,
+      "meds_in_transcript": [],
+      "meds_in_note": [],
+      "meds_missed": [],
+      "safety_netting_present": false,
+      "trust_score": 85,
+      "trust_verdict": "approved",
+      "word_count": 348
+    },
+    {
+      "note_id": "paediatric_ear_infection",
+      "section_completeness": 0.25,
+      "sections_present": [
+        "plan"
+      ],
+      "sections_missing": [
+        "subjective",
+        "objective",
+        "assessment"
+      ],
+      "snomed_code_count": 0,
+      "snomed_codes": [],
+      "medication_recall": 1.0,
+      "meds_in_transcript": [],
+      "meds_in_note": [
+        "paracetamol"
+      ],
+      "meds_missed": [],
+      "safety_netting_present": false,
+      "trust_score": 45,
+      "trust_verdict": "needs_review",
+      "word_count": 226
+    },
+    {
+      "note_id": "skin_lesion_assessment",
+      "section_completeness": 0.25,
+      "sections_present": [
+        "plan"
+      ],
+      "sections_missing": [
+        "subjective",
+        "objective",
+        "assessment"
+      ],
+      "snomed_code_count": 0,
+      "snomed_codes": [],
+      "medication_recall": 1.0,
+      "meds_in_transcript": [],
+      "meds_in_note": [
+        "paracetamol"
+      ],
+      "meds_missed": [],
+      "safety_netting_present": false,
+      "trust_score": 45,
+      "trust_verdict": "needs_review",
+      "word_count": 445
+    }
+  ],
+  "trust_score_note": "re-synced to 2026-05-24 TrustScore rerun (verification.py); was 51.2"
+}

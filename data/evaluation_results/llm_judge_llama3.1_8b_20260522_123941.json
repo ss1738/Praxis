@@ -1,0 +1,514 @@
+{
+  "timestamp": "20260522_123941",
+  "judge_model": "llama3.1:8b",
+  "n_records": 32,
+  "n_scored": 32,
+  "per_record": [
+    {
+      "case": "Lower Back Pain",
+      "model": "praxis-soap-v1",
+      "judge_model": "llama3.1:8b",
+      "judge_score": {
+        "structure": 0.95,
+        "content": 0.85,
+        "snomed": 0.8,
+        "safety_netting": 0.9,
+        "uk_english": 1.0,
+        "budget": 0.95,
+        "overall": 0.89
+      },
+      "elapsed_secs": 5.28
+    },
+    {
+      "case": "Lower Back Pain",
+      "model": "med42",
+      "judge_model": "llama3.1:8b",
+      "judge_score": {
+        "structure": 0.95,
+        "content": 0.85,
+        "snomed": 0.7,
+        "safety_netting": 0.8,
+        "uk_english": 1.0,
+        "budget": 0.9,
+        "overall": 0.86
+      },
+      "elapsed_secs": 2.42
+    },
+    {
+      "case": "Lower Back Pain",
+      "model": "meditron:7b",
+      "judge_model": "llama3.1:8b",
+      "judge_score": {
+        "structure": 0.95,
+        "content": 0.85,
+        "snomed": 0.8,
+        "safety_netting": 0.9,
+        "uk_english": 1.0,
+        "budget": 0.9,
+        "overall": 0.88
+      },
+      "elapsed_secs": 3.93
+    },
+    {
+      "case": "Lower Back Pain",
+      "model": "mistral",
+      "judge_model": "llama3.1:8b",
+      "judge_score": {
+        "structure": 0.95,
+        "content": 0.85,
+        "snomed": 0.8,
+        "safety_netting": 0.95,
+        "uk_english": 1.0,
+        "budget": 0.9,
+        "overall": 0.89
+      },
+      "elapsed_secs": 2.52
+    },
+    {
+      "case": "Persistent Cough",
+      "model": "praxis-soap-v1",
+      "judge_model": "llama3.1:8b",
+      "judge_score": {
+        "structure": 0.95,
+        "content": 0.85,
+        "snomed": 0.8,
+        "safety_netting": 0.75,
+        "uk_english": 1.0,
+        "budget": 0.9,
+        "overall": 0.86
+      },
+      "elapsed_secs": 3.37
+    },
+    {
+      "case": "Persistent Cough",
+      "model": "med42",
+      "judge_model": "llama3.1:8b",
+      "judge_score": {
+        "structure": 0.95,
+        "content": 0.85,
+        "snomed": 0.8,
+        "safety_netting": 0.9,
+        "uk_english": 1.0,
+        "budget": 0.95,
+        "overall": 0.89
+      },
+      "elapsed_secs": 2.5
+    },
+    {
+      "case": "Persistent Cough",
+      "model": "meditron:7b",
+      "judge_model": "llama3.1:8b",
+      "judge_score": {
+        "structure": 0.95,
+        "content": 0.85,
+        "snomed": 0.7,
+        "safety_netting": 0.8,
+        "uk_english": 1.0,
+        "budget": 0.9,
+        "overall": 0.86
+      },
+      "elapsed_secs": 4.0
+    },
+    {
+      "case": "Persistent Cough",
+      "model": "mistral",
+      "judge_model": "llama3.1:8b",
+      "judge_score": {
+        "structure": 0.95,
+        "content": 0.85,
+        "snomed": 0.8,
+        "safety_netting": 0.9,
+        "uk_english": 1.0,
+        "budget": 0.95,
+        "overall": 0.89
+      },
+      "elapsed_secs": 2.36
+    },
+    {
+      "case": "Diabetes Review",
+      "model": "praxis-soap-v1",
+      "judge_model": "llama3.1:8b",
+      "judge_score": {
+        "structure": 0.95,
+        "content": 0.85,
+        "snomed": 0.7,
+        "safety_netting": 0.8,
+        "uk_english": 1.0,
+        "budget": 0.9,
+        "overall": 0.86
+      },
+      "elapsed_secs": 2.95
+    },
+    {
+      "case": "Diabetes Review",
+      "model": "med42",
+      "judge_model": "llama3.1:8b",
+      "judge_score": {
+        "structure": 0.95,
+        "content": 0.85,
+        "snomed": 0.8,
+        "safety_netting": 0.7,
+        "uk_english": 1.0,
+        "budget": 0.9,
+        "overall": 0.86
+      },
+      "elapsed_secs": 2.52
+    },
+    {
+      "case": "Diabetes Review",
+      "model": "meditron:7b",
+      "judge_model": "llama3.1:8b",
+      "judge_score": {
+        "structure": 0.8,
+        "content": 0.95,
+        "snomed": 0.7,
+        "safety_netting": 0.5,
+        "uk_english": 1.0,
+        "budget": 0.85,
+        "overall": 0.82
+      },
+      "elapsed_secs": 3.59
+    },
+    {
+      "case": "Diabetes Review",
+      "model": "mistral",
+      "judge_model": "llama3.1:8b",
+      "judge_score": {
+        "structure": 0.95,
+        "content": 0.85,
+        "snomed": 0.8,
+        "safety_netting": 0.9,
+        "uk_english": 1.0,
+        "budget": 0.95,
+        "overall": 0.89
+      },
+      "elapsed_secs": 2.4
+    },
+    {
+      "case": "Mental Health - Anxiety",
+      "model": "praxis-soap-v1",
+      "judge_model": "llama3.1:8b",
+      "judge_score": {
+        "structure": 0.95,
+        "content": 0.85,
+        "snomed": 0.8,
+        "safety_netting": 0.9,
+        "uk_english": 1.0,
+        "budget": 0.9,
+        "overall": 0.88
+      },
+      "elapsed_secs": 3.05
+    },
+    {
+      "case": "Mental Health - Anxiety",
+      "model": "med42",
+      "judge_model": "llama3.1:8b",
+      "judge_score": {
+        "structure": 0.95,
+        "content": 0.85,
+        "snomed": 0.8,
+        "safety_netting": 0.9,
+        "uk_english": 1.0,
+        "budget": 0.95,
+        "overall": 0.89
+      },
+      "elapsed_secs": 2.42
+    },
+    {
+      "case": "Mental Health - Anxiety",
+      "model": "meditron:7b",
+      "judge_model": "llama3.1:8b",
+      "judge_score": {
+        "structure": 0.95,
+        "content": 0.85,
+        "snomed": 0.7,
+        "safety_netting": 0.8,
+        "uk_english": 1.0,
+        "budget": 0.9,
+        "overall": 0.86
+      },
+      "elapsed_secs": 3.93
+    },
+    {
+      "case": "Mental Health - Anxiety",
+      "model": "mistral",
+      "judge_model": "llama3.1:8b",
+      "judge_score": {
+        "structure": 0.95,
+        "content": 0.85,
+        "snomed": 0.8,
+        "safety_netting": 0.95,
+        "uk_english": 1.0,
+        "budget": 0.9,
+        "overall": 0.89
+      },
+      "elapsed_secs": 2.39
+    },
+    {
+      "case": "Chest Infection",
+      "model": "praxis-soap-v1",
+      "judge_model": "llama3.1:8b",
+      "judge_score": {
+        "structure": 0.95,
+        "content": 0.85,
+        "snomed": 0.8,
+        "safety_netting": 0.9,
+        "uk_english": 1.0,
+        "budget": 0.95,
+        "overall": 0.89
+      },
+      "elapsed_secs": 3.13
+    },
+    {
+      "case": "Chest Infection",
+      "model": "med42",
+      "judge_model": "llama3.1:8b",
+      "judge_score": {
+        "structure": 0.95,
+        "content": 0.85,
+        "snomed": 0.8,
+        "safety_netting": 0.9,
+        "uk_english": 1.0,
+        "budget": 0.95,
+        "overall": 0.89
+      },
+      "elapsed_secs": 2.47
+    },
+    {
+      "case": "Chest Infection",
+      "model": "meditron:7b",
+      "judge_model": "llama3.1:8b",
+      "judge_score": {
+        "structure": 0.95,
+        "content": 0.85,
+        "snomed": 0.8,
+        "safety_netting": 0.9,
+        "uk_english": 1.0,
+        "budget": 0.95,
+        "overall": 0.89
+      },
+      "elapsed_secs": 5.61
+    },
+    {
+      "case": "Chest Infection",
+      "model": "mistral",
+      "judge_model": "llama3.1:8b",
+      "judge_score": {
+        "structure": 0.95,
+        "content": 0.85,
+        "snomed": 0.8,
+        "safety_netting": 0.95,
+        "uk_english": 1.0,
+        "budget": 0.9,
+        "overall": 0.89
+      },
+      "elapsed_secs": 2.54
+    },
+    {
+      "case": "Hypertension Review",
+      "model": "praxis-soap-v1",
+      "judge_model": "llama3.1:8b",
+      "judge_score": {
+        "structure": 0.95,
+        "content": 0.85,
+        "snomed": 0.8,
+        "safety_netting": 0.9,
+        "uk_english": 1.0,
+        "budget": 0.95,
+        "overall": 0.89
+      },
+      "elapsed_secs": 2.77
+    },
+    {
+      "case": "Hypertension Review",
+      "model": "med42",
+      "judge_model": "llama3.1:8b",
+      "judge_score": {
+        "structure": 0.95,
+        "content": 0.85,
+        "snomed": 0.7,
+        "safety_netting": 0.9,
+        "uk_english": 1.0,
+        "budget": 0.8,
+        "overall": 0.86
+      },
+      "elapsed_secs": 2.38
+    },
+    {
+      "case": "Hypertension Review",
+      "model": "meditron:7b",
+      "judge_model": "llama3.1:8b",
+      "judge_score": {
+        "structure": 0.0,
+        "content": 0.0,
+        "snomed": 0.0,
+        "safety_netting": 0.0,
+        "uk_english": 0.0,
+        "budget": 0.0,
+        "overall": 0.0
+      },
+      "elapsed_secs": 2.76
+    },
+    {
+      "case": "Hypertension Review",
+      "model": "mistral",
+      "judge_model": "llama3.1:8b",
+      "judge_score": {
+        "structure": 0.95,
+        "content": 0.85,
+        "snomed": 0.8,
+        "safety_netting": 0.9,
+        "uk_english": 1.0,
+        "budget": 0.95,
+        "overall": 0.89
+      },
+      "elapsed_secs": 2.33
+    },
+    {
+      "case": "Paediatric Ear Infection",
+      "model": "praxis-soap-v1",
+      "judge_model": "llama3.1:8b",
+      "judge_score": {
+        "structure": 0.95,
+        "content": 0.85,
+        "snomed": 0.8,
+        "safety_netting": 0.9,
+        "uk_english": 1.0,
+        "budget": 0.9,
+        "overall": 0.88
+      },
+      "elapsed_secs": 2.95
+    },
+    {
+      "case": "Paediatric Ear Infection",
+      "model": "med42",
+      "judge_model": "llama3.1:8b",
+      "judge_score": {
+        "structure": 0.95,
+        "content": 0.85,
+        "snomed": 0.8,
+        "safety_netting": 0.9,
+        "uk_english": 1.0,
+        "budget": 0.95,
+        "overall": 0.89
+      },
+      "elapsed_secs": 2.32
+    },
+    {
+      "case": "Paediatric Ear Infection",
+      "model": "meditron:7b",
+      "judge_model": "llama3.1:8b",
+      "judge_score": {
+        "structure": 0.95,
+        "content": 0.85,
+        "snomed": 0.8,
+        "safety_netting": 0.9,
+        "uk_english": 1.0,
+        "budget": 0.95,
+        "overall": 0.89
+      },
+      "elapsed_secs": 3.04
+    },
+    {
+      "case": "Paediatric Ear Infection",
+      "model": "mistral",
+      "judge_model": "llama3.1:8b",
+      "judge_score": {
+        "structure": 0.95,
+        "content": 0.85,
+        "snomed": 0.8,
+        "safety_netting": 0.9,
+        "uk_english": 1.0,
+        "budget": 0.95,
+        "overall": 0.89
+      },
+      "elapsed_secs": 2.61
+    },
+    {
+      "case": "Skin Lesion Assessment",
+      "model": "praxis-soap-v1",
+      "judge_model": "llama3.1:8b",
+      "judge_score": {
+        "structure": 0.95,
+        "content": 0.85,
+        "snomed": 0.7,
+        "safety_netting": 0.9,
+        "uk_english": 1.0,
+        "budget": 0.9,
+        "overall": 0.88
+      },
+      "elapsed_secs": 3.1
+    },
+    {
+      "case": "Skin Lesion Assessment",
+      "model": "med42",
+      "judge_model": "llama3.1:8b",
+      "judge_score": {
+        "structure": 0.95,
+        "content": 0.85,
+        "snomed": 0.8,
+        "safety_netting": 0.9,
+        "uk_english": 1.0,
+        "budget": 0.95,
+        "overall": 0.89
+      },
+      "elapsed_secs": 2.62
+    },
+    {
+      "case": "Skin Lesion Assessment",
+      "model": "meditron:7b",
+      "judge_model": "llama3.1:8b",
+      "judge_score": {
+        "structure": 1.0,
+        "content": 0.95,
+        "snomed": 0.8,
+        "safety_netting": 0.85,
+        "uk_english": 1.0,
+        "budget": 0.9,
+        "overall": 0.91
+      },
+      "elapsed_secs": 4.89
+    },
+    {
+      "case": "Skin Lesion Assessment",
+      "model": "mistral",
+      "judge_model": "llama3.1:8b",
+      "judge_score": {
+        "structure": 0.95,
+        "content": 0.85,
+        "snomed": 0.8,
+        "safety_netting": 0.9,
+        "uk_english": 1.0,
+        "budget": 0.95,
+        "overall": 0.89
+      },
+      "elapsed_secs": 2.83
+    }
+  ],
+  "per_model_means": {
+    "praxis-soap-v1": 0.87875,
+    "med42": 0.87875,
+    "meditron:7b": 0.76375,
+    "mistral": 0.89
+  },
+  "wilcoxon_vs_praxis_soap_v1": {
+    "med42": {
+      "wilcoxon_p": 0.71875,
+      "n_paired": 8
+    },
+    "meditron:7b": {
+      "wilcoxon_p": 0.375,
+      "n_paired": 8
+    },
+    "mistral": {
+      "wilcoxon_p": 0.0625,
+      "n_paired": 8
+    }
+  },
+  "holm_corrected": {
+    "mistral": 0.1875,
+    "meditron:7b": 0.75,
+    "med42": 0.71875
+  },
+  "judge_prompt": "You are an expert NHS GP reviewer evaluating an AI-generated SOAP consultation note.\n\nScore the note on six criteria, each on a 0.0-1.0 scale where 1.0 = perfect, 0.0 = completely missing or wrong:\n\n1. structure: Are all four SOAP sections (Subjective, Objective, Assessment, Plan) clearly present and well-organised?\n2. content: Does the note accurately reflect what was discussed in the consultation transcript, without omitting key clinical information or fabricating content?\n3. snomed: Are appropriate SNOMED CT codes present (numeric concept IDs in the note where clinical concepts are mentioned)?\n4. safety_netting: Does the Plan section include appropriate safety-netting advice (e.g., \"return if symptoms worsen\", \"seek urgent help if...\", \"call 111 if...\")?\n5. uk_english: Does the note use British clinical terminology (e.g., \"GP\", \"A&E\", \"paracetamol\") rather than American (e.g., \"PCP\", \"ER\", \"acetaminophen\")?\n6. budget: Is the note appropriately concise and well-paced \u2014 neither truncated nor excessively verbose?\n\nCONSULTATION TRANSCRIPT:\n---\n{transcript}\n---\n\nGENERATED SOAP NOTE:\n---\n{soap_note}\n---\n\nReturn ONLY a single JSON object on one line, with keys structure, content, snomed, safety_netting, uk_english, budget (each 0.0-1.0 float to 2 decimal places) and overall (the unweighted mean of the six). Example: {{\"structure\": 0.95, \"content\": 0.85, \"snomed\": 0.70, \"safety_netting\": 0.90, \"uk_english\": 1.00, \"budget\": 0.90, \"overall\": 0.88}}\n\nJSON:"
+}

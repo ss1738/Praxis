@@ -1,0 +1,34 @@
+{
+  "praxis-soap-v1": {
+    "transcript_fidelity": 0.75,
+    "snomed_validation": 0.875,
+    "clinical_safety": 0.5,
+    "nice_guidelines": 0.125,
+    "completeness": 1.0,
+    "drug_interactions": 1.0
+  },
+  "med42": {
+    "transcript_fidelity": 0.875,
+    "snomed_validation": 0.75,
+    "clinical_safety": 0.625,
+    "nice_guidelines": 0.0,
+    "completeness": 1.0,
+    "drug_interactions": 1.0
+  },
+  "meditron:7b": {
+    "transcript_fidelity": 0.875,
+    "snomed_validation": 1.0,
+    "clinical_safety": 0.125,
+    "nice_guidelines": 0.125,
+    "completeness": 0.125,
+    "drug_interactions": 1.0
+  },
+  "mistral": {
+    "transcript_fidelity": 0.75,
+    "snomed_validation": 0.25,
+    "clinical_safety": 0.625,
+    "nice_guidelines": 0.0,
+    "completeness": 1.0,
+    "drug_interactions": 1.0
+  }
+}

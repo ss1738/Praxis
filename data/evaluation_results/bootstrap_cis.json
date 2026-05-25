@@ -1,0 +1,50 @@
+{
+  "med42": {
+    "mean": 0.96875,
+    "ci_low": 0.95375,
+    "ci_high": 0.98,
+    "n": 8
+  },
+  "meditron:7b": {
+    "mean": 0.915,
+    "ci_low": 0.8187500000000001,
+    "ci_high": 0.99125,
+    "n": 8
+  },
+  "mistral": {
+    "mean": 0.98,
+    "ci_low": 0.98,
+    "ci_high": 0.98,
+    "n": 8
+  },
+  "praxis-soap-v1": {
+    "mean": 0.9625,
+    "ci_low": 0.9450000000000001,
+    "ci_high": 0.975,
+    "n": 8
+  },
+  "rule_based_praxis-soap-v1": {
+    "mean": 0.98,
+    "ci_low": 0.965,
+    "ci_high": 0.995,
+    "n": 8
+  },
+  "rule_based_mistral": {
+    "mean": 0.97875,
+    "ci_low": 0.95625,
+    "ci_high": 1.0,
+    "n": 8
+  },
+  "rule_based_med42": {
+    "mean": 0.96875,
+    "ci_low": 0.94625,
+    "ci_high": 0.985,
+    "n": 8
+  },
+  "rule_based_meditron:7b": {
+    "mean": 0.76875,
+    "ci_low": 0.6799999999999999,
+    "ci_high": 0.85625,
+    "n": 8
+  }
+}

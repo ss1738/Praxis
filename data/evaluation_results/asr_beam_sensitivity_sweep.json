@@ -1,0 +1,626 @@
+{
+  "is_synthetic": false,
+  "hardware_target": "RTX 5090 32GB Linux (satyawan-1)",
+  "host": "satyawan",
+  "git_commit": "unknown",
+  "timestamp": "2026-05-24T15:26:54.711858+00:00",
+  "canonical_checkpoint": "data/models/conformer_v2/best_primock57.pt",
+  "canonical_checkpoint_sha256": "e47f9694f5afad28b4e9c53196093c885b59fefe7217e4ff10fb5f73d0fc2423",
+  "n_samples": 14,
+  "total_audio_s": 7359.3,
+  "forward_total_s": 9.96,
+  "forward_rtf": 0.001353,
+  "beam_widths_swept": [
+    10,
+    50,
+    100,
+    200,
+    500
+  ],
+  "results": [
+    {
+      "decoder": "greedy",
+      "beam_width": null,
+      "mean_wer": 0.4991,
+      "ci_95_lower": 0.464,
+      "ci_95_upper": 0.5317,
+      "decode_total_s": 0.067,
+      "decode_rtf": 9e-06,
+      "forward_plus_decode_rtf": 0.001362,
+      "per_sample": [
+        {
+          "audio_file": "day1_consultation02_doctor.wav",
+          "wer": 0.48221343873517786,
+          "decode_s": 0.0053,
+          "hypothesis_first_120": "ll and yes a thing is a bit that so it's be is a bit if's not very clear about there t anyway uh ok just i goes so how c"
+        },
+        {
+          "audio_file": "day1_consultation02_patient.wav",
+          "wer": 0.5854922279792746,
+          "decode_s": 0.0051,
+          "hypothesis_first_120": "hell, can you hear me anywhere. ok. yes so it's been there two days now i have my care so andenst in its kind of it'sach"
+        },
+        {
+          "audio_file": "day1_consultation08_doctor.wav",
+          "wer": 0.5518324607329843,
+          "decode_s": 0.0043,
+          "hypothesis_first_120": "hello. hello i difficult going further can confirm your name and age please? ok. and how can help you this doctor aftern"
+        },
+        {
+          "audio_file": "day1_consultation08_patient.wav",
+          "wer": 0.5738255033557047,
+          "decode_s": 0.0041,
+          "hypothesis_first_120": "ok. no i can it. helloo um, no sp so um, i so. um it so days sixty, i' been really stress up work the for few days um, i"
+        },
+        {
+          "audio_file": "day1_consultation15_doctor.wav",
+          "wer": 0.5055679287305123,
+          "decode_s": 0.0045,
+          "hypothesis_first_120": "hello hello can hear mek before going you furtheric confirm your name and your um age please? what you fine i orra will'"
+        },
+        {
+          "audio_file": "day1_consultation15_patient.wav",
+          "wer": 0.5074626865671642,
+          "decode_s": 0.0044,
+          "hypothesis_first_120": ". noo yes. uh yes i' the before uh f some and um forty fine. uh so, i have uh st noing my f wife f , likekin of red it k"
+        },
+        {
+          "audio_file": "day2_consultation01_doctor.wav",
+          "wer": 0.459601259181532,
+          "decode_s": 0.0031,
+          "hypothesis_first_120": "hi there good morning name um i' doctor de you not from babylon can you hear me ok yeahk great well i to see this's morn"
+        },
+        {
+          "audio_file": "day2_consultation01_patient.wav",
+          "wer": 0.5531914893617021,
+          "decode_s": 0.003,
+          "hypothesis_first_120": "uh. uh uh can five. uh yeah uh just smith uh, thanks first october nineteen ninety. uh yes. yes i just a a proper hear a"
+        },
+        {
+          "audio_file": "day2_consultation03_doctor.wav",
+          "wer": 0.4728079911209767,
+          "decode_s": 0.0042,
+          "hypothesis_first_120": "hi there good morning name right uh doctor de get how last to you uhs for, before we start your  i confirm yourre full n"
+        },
+        {
+          "audio_file": "day2_consultation03_patient.wav",
+          "wer": 0.5875796178343949,
+          "decode_s": 0.0041,
+          "hypothesis_first_120": ". uh uh yes um no really it good uh and my it i fty at all and. yeah. um say just's been nothinging um um problems it my"
+        },
+        {
+          "audio_file": "day4_consultation06_doctor.wav",
+          "wer": 0.4261201143946616,
+          "decode_s": 0.0054,
+          "hypothesis_first_120": "ok badkle hi and my name is doctor you hard um what the you she here can i just get you to confirm your name and date bt"
+        },
+        {
+          "audio_file": "day4_consultation06_patient.wav",
+          "wer": 0.36657303370786515,
+          "decode_s": 0.0055,
+          "hypothesis_first_120": "hello uh yeah marea. yeah. sorry. um twenty just not of my an' off uh um ninety. um so i', having like a really will is "
+        },
+        {
+          "audio_file": "day5_consultation03_doctor.wav",
+          "wer": 0.4010526315789474,
+          "decode_s": 0.0069,
+          "hypothesis_first_120": "hi there, i'm doctor smith from babylon hi there can you confirm your name to birth in the first line of your address fi"
+        },
+        {
+          "audio_file": "day5_consultation03_patient.wav",
+          "wer": 0.5144654088050314,
+          "decode_s": 0.0071,
+          "hypothesis_first_120": "hi not uh, my name,  bowll co  deep for its uh thanking of september and bing thank three my address is uh sixty for fiv"
+        }
+      ],
+      "delta_wer_pp_vs_greedy": 0.0,
+      "delta_decode_s_vs_greedy": 0.0,
+      "efficiency_index_pp_per_s": null,
+      "on_pareto_frontier": true
+    },
+    {
+      "decoder": "beam_nobias",
+      "beam_width": 10,
+      "mean_wer": 0.4974,
+      "ci_95_lower": 0.4624,
+      "ci_95_upper": 0.5282,
+      "decode_total_s": 16.314,
+      "decode_rtf": 0.002217,
+      "forward_plus_decode_rtf": 0.00357,
+      "per_sample": [
+        {
+          "audio_file": "day1_consultation02_doctor.wav",
+          "wer": 0.4851778656126482,
+          "decode_s": 1.2186,
+          "hypothesis_first_120": "llo and yes a thing is a bit that so its be is a bit, if's not very clear about there t anyway? uh ok. just i goes so ho"
+        },
+        {
+          "audio_file": "day1_consultation02_patient.wav",
+          "wer": 0.5803108808290155,
+          "decode_s": 1.2538,
+          "hypothesis_first_120": "hell, can you hear me anywhere. ok. yes so, it's been there two days now, i have my care so, andensted in it's kind of i"
+        },
+        {
+          "audio_file": "day1_consultation08_doctor.wav",
+          "wer": 0.5445026178010471,
+          "decode_s": 1.0313,
+          "hypothesis_first_120": "hello. hello. i difficult going further can confirm your name, and age please?k ok. and, how can help you this doctor af"
+        },
+        {
+          "audio_file": "day1_consultation08_patient.wav",
+          "wer": 0.5637583892617449,
+          "decode_s": 0.6278,
+          "hypothesis_first_120": "ok., no, i can it. hello. um, no sp so um, i so. um, it so days sixty, i've been really stress up work the for few days "
+        },
+        {
+          "audio_file": "day1_consultation15_doctor.wav",
+          "wer": 0.5044543429844098,
+          "decode_s": 1.0494,
+          "hypothesis_first_120": "hello hello can hear mek before i going you furtheric confirm your name, and your um age please? o what you fine i orra "
+        },
+        {
+          "audio_file": "day1_consultation15_patient.wav",
+          "wer": 0.5031982942430704,
+          "decode_s": 0.8541,
+          "hypothesis_first_120": ". noo yes. uh yes, i'm, the before uh, f some and, um forty fine. uh, so, i have uh, st noing my f wife f , likeskin of "
+        },
+        {
+          "audio_file": "day2_consultation01_doctor.wav",
+          "wer": 0.4648478488982162,
+          "decode_s": 0.9193,
+          "hypothesis_first_120": "hi there,, good morning name um i'm doctor de you nots from babylon. can you hear me ok yeahk great. well i to see this'"
+        },
+        {
+          "audio_file": "day2_consultation01_patient.wav",
+          "wer": 0.549645390070922,
+          "decode_s": 0.4841,
+          "hypothesis_first_120": "uh. uh uh. can five. uh, yeah, uh, just smith. uh,, thanks first october. nineteen ninety. uh, yes. yes, i just, a a pro"
+        },
+        {
+          "audio_file": "day2_consultation03_doctor.wav",
+          "wer": 0.4839067702552719,
+          "decode_s": 1.0601,
+          "hypothesis_first_120": "hi there, good morning name? right uh doctor de get how last to you uh,s for, before we start your , i confirm, yourre f"
+        },
+        {
+          "audio_file": "day2_consultation03_patient.wav",
+          "wer": 0.5812101910828026,
+          "decode_s": 0.8962,
+          "hypothesis_first_120": ". uh,... uh yes, um no really it good uh,, and my it, i' fty at all.. and. yeah.. um, say just's been nothinging um, um,"
+        },
+        {
+          "audio_file": "day4_consultation06_doctor.wav",
+          "wer": 0.4213536701620591,
+          "decode_s": 1.3742,
+          "hypothesis_first_120": "ok,, badkllle hi and my name is doctor you hard um what the you she here can i just get you to confirm your name, and da"
+        },
+        {
+          "audio_file": "day4_consultation06_patient.wav",
+          "wer": 0.3637640449438202,
+          "decode_s": 1.1219,
+          "hypothesis_first_120": "hello. uh, yeah marea. yeah. sorry.. um, twenty just not of my an' off uh um,, ninety. um so i', having like a really wi"
+        },
+        {
+          "audio_file": "day5_consultation03_doctor.wav",
+          "wer": 0.4073684210526316,
+          "decode_s": 1.5693,
+          "hypothesis_first_120": "hi there, i'm doctor smith from babylon hi there, can you confirm your name to birth in the first line of your address f"
+        },
+        {
+          "audio_file": "day5_consultation03_patient.wav",
+          "wer": 0.510062893081761,
+          "decode_s": 2.8538,
+          "hypothesis_first_120": "hi not, uh, my name, bowll co deep for, it's uh, thanking of september, and bing thank three. my, address is uh, sixty f"
+        }
+      ],
+      "delta_wer_pp_vs_greedy": -0.17,
+      "delta_decode_s_vs_greedy": 16.25,
+      "efficiency_index_pp_per_s": -0.01046,
+      "on_pareto_frontier": true
+    },
+    {
+      "decoder": "beam_nobias",
+      "beam_width": 50,
+      "mean_wer": 0.4979,
+      "ci_95_lower": 0.4634,
+      "ci_95_upper": 0.5284,
+      "decode_total_s": 71.154,
+      "decode_rtf": 0.009669,
+      "forward_plus_decode_rtf": 0.011022,
+      "per_sample": [
+        {
+          "audio_file": "day1_consultation02_doctor.wav",
+          "wer": 0.4851778656126482,
+          "decode_s": 5.2028,
+          "hypothesis_first_120": "llo and yes a thing is a bit that so its be is a bit, if's not very clear about there t anyway? uh ok. just i goes so ho"
+        },
+        {
+          "audio_file": "day1_consultation02_patient.wav",
+          "wer": 0.5790155440414507,
+          "decode_s": 5.2645,
+          "hypothesis_first_120": "hell, can you hear me anywhere. ok. yes so, it's been there two days now,, i have my care so, andensted in it's kind of "
+        },
+        {
+          "audio_file": "day1_consultation08_doctor.wav",
+          "wer": 0.5424083769633508,
+          "decode_s": 4.4122,
+          "hypothesis_first_120": "hello. hello. i, difficult going further can confirm your name, and age please? ok ok. and, how can help you this doctor"
+        },
+        {
+          "audio_file": "day1_consultation08_patient.wav",
+          "wer": 0.5671140939597316,
+          "decode_s": 2.52,
+          "hypothesis_first_120": "ok., no, i can it. hello. um, no sp so um, i so. um, it so days sixty, i've been really stress up work the for few days "
+        },
+        {
+          "audio_file": "day1_consultation15_doctor.wav",
+          "wer": 0.5033407572383074,
+          "decode_s": 4.4564,
+          "hypothesis_first_120": "hello hello can hear mek before i going you furtheric confirm your name, and your um age please? o what you fine i orra "
+        },
+        {
+          "audio_file": "day1_consultation15_patient.wav",
+          "wer": 0.5053304904051172,
+          "decode_s": 3.6289,
+          "hypothesis_first_120": ". noo yes. uh yes, i'm, the before uh, f some and, um forty fine. uh, so, i have uh, st noing my f, wife f , likeskin of"
+        },
+        {
+          "audio_file": "day2_consultation01_doctor.wav",
+          "wer": 0.4648478488982162,
+          "decode_s": 4.1376,
+          "hypothesis_first_120": "hi there,, good morning name um, i'm doctor de you nots from babylon. can you hear me ok. yeahk great. well i to see thi"
+        },
+        {
+          "audio_file": "day2_consultation01_patient.wav",
+          "wer": 0.5531914893617021,
+          "decode_s": 1.987,
+          "hypothesis_first_120": "uh. uh uh. can five., uh, yeah, uh,, just smith. uh,, thank's first, october, nineteen, ninety., uh, yes. yes, i just, a"
+        },
+        {
+          "audio_file": "day2_consultation03_doctor.wav",
+          "wer": 0.48612652608213097,
+          "decode_s": 4.6731,
+          "hypothesis_first_120": "hi there, good morning name? right, doctor de get how last to you uh,s for, before we start your , confirm, yourre full "
+        },
+        {
+          "audio_file": "day2_consultation03_patient.wav",
+          "wer": 0.5780254777070064,
+          "decode_s": 3.8962,
+          "hypothesis_first_120": ". uh,.... uh yes, um no really, good uh,, and my it, i' fty at all.. and. yeah.. um, say just's been nothinging um, um, "
+        },
+        {
+          "audio_file": "day4_consultation06_doctor.wav",
+          "wer": 0.4204003813155386,
+          "decode_s": 5.8694,
+          "hypothesis_first_120": "ok, badkllle ok hi and my name is doctor you hard um what the you she here can i just get you to confirm your name, and "
+        },
+        {
+          "audio_file": "day4_consultation06_patient.wav",
+          "wer": 0.3651685393258427,
+          "decode_s": 4.7672,
+          "hypothesis_first_120": "hello. uh, yeah marea. yeah. sorry.. um, twenty just not of my an't off uh um,, ninety. um so i', having like a really w"
+        },
+        {
+          "audio_file": "day5_consultation03_doctor.wav",
+          "wer": 0.4073684210526316,
+          "decode_s": 6.7908,
+          "hypothesis_first_120": "hi there, i'm doctor smith from babylon hi there, can you confirm your name to birth in the first line of your address f"
+        },
+        {
+          "audio_file": "day5_consultation03_patient.wav",
+          "wer": 0.5125786163522013,
+          "decode_s": 13.548,
+          "hypothesis_first_120": "hi not, uh, my name, bowll co deep for, it's uh,, thanking of september, and bing thank three. my, address is, uh, sixty"
+        }
+      ],
+      "delta_wer_pp_vs_greedy": -0.12,
+      "delta_decode_s_vs_greedy": 71.09,
+      "efficiency_index_pp_per_s": -0.00169,
+      "on_pareto_frontier": false
+    },
+    {
+      "decoder": "beam_nobias",
+      "beam_width": 100,
+      "mean_wer": 0.4976,
+      "ci_95_lower": 0.463,
+      "ci_95_upper": 0.5282,
+      "decode_total_s": 146.879,
+      "decode_rtf": 0.019958,
+      "forward_plus_decode_rtf": 0.021312,
+      "per_sample": [
+        {
+          "audio_file": "day1_consultation02_doctor.wav",
+          "wer": 0.4851778656126482,
+          "decode_s": 10.7192,
+          "hypothesis_first_120": "llo and yes a thing is a bit that so its be is a bit, if's not very clear about there t anyway? uh ok. just i goes so ho"
+        },
+        {
+          "audio_file": "day1_consultation02_patient.wav",
+          "wer": 0.5816062176165803,
+          "decode_s": 10.8359,
+          "hypothesis_first_120": "hell, can you hear me anywhere. ok. yes so, it's been there two days now,, i have my care so, andensted in it's kind of "
+        },
+        {
+          "audio_file": "day1_consultation08_doctor.wav",
+          "wer": 0.5424083769633508,
+          "decode_s": 9.3274,
+          "hypothesis_first_120": "hello. hello. i, difficult going further can confirm your name, and age please? ok ok. and, how can help you this doctor"
+        },
+        {
+          "audio_file": "day1_consultation08_patient.wav",
+          "wer": 0.5671140939597316,
+          "decode_s": 5.0078,
+          "hypothesis_first_120": "ok., no, i can it. hello. um, no sp so um, i so. um, it so days sixty, i've been really stress up work the for few days "
+        },
+        {
+          "audio_file": "day1_consultation15_doctor.wav",
+          "wer": 0.5011135857461024,
+          "decode_s": 9.2567,
+          "hypothesis_first_120": "hello hello can hear mek before i going you furtheric confirm your name, and your um age please? ok you fine i orra will"
+        },
+        {
+          "audio_file": "day1_consultation15_patient.wav",
+          "wer": 0.4989339019189765,
+          "decode_s": 7.3647,
+          "hypothesis_first_120": ". noo yes. uh yes, i'm, the before uh, f some. and, um forty fine. uh, so, i have uh, st noing my f, wife f , likeskin o"
+        },
+        {
+          "audio_file": "day2_consultation01_doctor.wav",
+          "wer": 0.46379853095487933,
+          "decode_s": 9.1207,
+          "hypothesis_first_120": "hi there,, good morning name um, i'm doctor de you nots from babylon. can you hear me ok. yeahk great. well i to see thi"
+        },
+        {
+          "audio_file": "day2_consultation01_patient.wav",
+          "wer": 0.5567375886524822,
+          "decode_s": 3.9981,
+          "hypothesis_first_120": "uh. uh uh. can five., uh, yeah, uh,, just smith. uh,, thank's first, october, nineteen, ninety., uh, yes. yes, i just, a"
+        },
+        {
+          "audio_file": "day2_consultation03_doctor.wav",
+          "wer": 0.48612652608213097,
+          "decode_s": 9.8029,
+          "hypothesis_first_120": "hi there, good morning name? right, doctor de get how last to you uh,s for, before we start your , confirm, yourre full "
+        },
+        {
+          "audio_file": "day2_consultation03_patient.wav",
+          "wer": 0.5764331210191083,
+          "decode_s": 7.8321,
+          "hypothesis_first_120": ". uh,.... uh yes, um no really, good uh,, and my it, i' fty at all.. and. yeah.. um, say just's been nothinging um, um, "
+        },
+        {
+          "audio_file": "day4_consultation06_doctor.wav",
+          "wer": 0.4223069590085796,
+          "decode_s": 11.9428,
+          "hypothesis_first_120": "ok, badkllle ok hi and my name is doctor you hard um what the you she here can i just get you to confirm your name, and "
+        },
+        {
+          "audio_file": "day4_consultation06_patient.wav",
+          "wer": 0.3651685393258427,
+          "decode_s": 9.4056,
+          "hypothesis_first_120": "hello. uh, yeah marea. yeah. sorry.. um, twenty just not of my an't off uh um,, ninety. um so i', having like a really w"
+        },
+        {
+          "audio_file": "day5_consultation03_doctor.wav",
+          "wer": 0.4073684210526316,
+          "decode_s": 13.6368,
+          "hypothesis_first_120": "hi there, i'm doctor smith from babylon hi there, can you confirm your name to birth in the first line of your address f"
+        },
+        {
+          "audio_file": "day5_consultation03_patient.wav",
+          "wer": 0.5119496855345912,
+          "decode_s": 28.6278,
+          "hypothesis_first_120": "hi not, uh, my name, bowll co deep for, it's uh,, thanking of september, and bing thank three. my, address is, uh, sixty"
+        }
+      ],
+      "delta_wer_pp_vs_greedy": -0.15,
+      "delta_decode_s_vs_greedy": 146.81,
+      "efficiency_index_pp_per_s": -0.00102,
+      "on_pareto_frontier": false
+    },
+    {
+      "decoder": "beam_nobias",
+      "beam_width": 200,
+      "mean_wer": 0.4974,
+      "ci_95_lower": 0.4635,
+      "ci_95_upper": 0.5278,
+      "decode_total_s": 313.565,
+      "decode_rtf": 0.042608,
+      "forward_plus_decode_rtf": 0.043961,
+      "per_sample": [
+        {
+          "audio_file": "day1_consultation02_doctor.wav",
+          "wer": 0.4851778656126482,
+          "decode_s": 22.6434,
+          "hypothesis_first_120": "llo and yes a thing is a bit that so its be is a bit, if's not very clear about there t anyway? uh ok. just i goes so ho"
+        },
+        {
+          "audio_file": "day1_consultation02_patient.wav",
+          "wer": 0.5816062176165803,
+          "decode_s": 22.7478,
+          "hypothesis_first_120": "hell, can you hear me anywhere. ok. yes so, it's been there two days now,, i have my care so, andensted in it's kind of "
+        },
+        {
+          "audio_file": "day1_consultation08_doctor.wav",
+          "wer": 0.5424083769633508,
+          "decode_s": 20.0503,
+          "hypothesis_first_120": "hello. hello. i, difficult going further can confirm your name, and age please?k, ok. and, how can help you this doctor "
+        },
+        {
+          "audio_file": "day1_consultation08_patient.wav",
+          "wer": 0.5671140939597316,
+          "decode_s": 10.3068,
+          "hypothesis_first_120": "ok., no, i can it. hello. um, no sp so um, i so. um, it so days sixty, i've been really stress up work the for few days "
+        },
+        {
+          "audio_file": "day1_consultation15_doctor.wav",
+          "wer": 0.5011135857461024,
+          "decode_s": 19.5659,
+          "hypothesis_first_120": "hello hello can hear mek before i going you furtheric confirm your name, and your um age please? o. you fine i orra will"
+        },
+        {
+          "audio_file": "day1_consultation15_patient.wav",
+          "wer": 0.5010660980810234,
+          "decode_s": 15.2389,
+          "hypothesis_first_120": ". noo yes. uh yes, i'm, the before uh, f some. and, um forty fine. uh, so, i have uh, st noing my f, wife f , likeskin o"
+        },
+        {
+          "audio_file": "day2_consultation01_doctor.wav",
+          "wer": 0.4648478488982162,
+          "decode_s": 20.5422,
+          "hypothesis_first_120": "hi there,, good morning name um, i'm doctor de you nots from babylon. can you hear me ok. yeahk great. well i to see thi"
+        },
+        {
+          "audio_file": "day2_consultation01_patient.wav",
+          "wer": 0.5531914893617021,
+          "decode_s": 8.5351,
+          "hypothesis_first_120": "uh. uh uh. can five., uh, yeah, uh,, just smith. uh,, thank's first, october, nineteen, ninety., uh, yes. yes, i just, a"
+        },
+        {
+          "audio_file": "day2_consultation03_doctor.wav",
+          "wer": 0.48501664816870144,
+          "decode_s": 21.7443,
+          "hypothesis_first_120": "hi there, good morning name? right, doctor de get how last to you uh,s for, before we start your , confirm, yourre full "
+        },
+        {
+          "audio_file": "day2_consultation03_patient.wav",
+          "wer": 0.5748407643312102,
+          "decode_s": 17.0907,
+          "hypothesis_first_120": ". uh,.... uh yes, um no really, good uh,, and my it, i' fty at all.. and. yeah.. um, say just's been nothinging um, um, "
+        },
+        {
+          "audio_file": "day4_consultation06_doctor.wav",
+          "wer": 0.4232602478551001,
+          "decode_s": 24.9691,
+          "hypothesis_first_120": "ok, badkllle ok hi and my name is doctor you hard um what the you she here can i just get you to confirm your name, and "
+        },
+        {
+          "audio_file": "day4_consultation06_patient.wav",
+          "wer": 0.3651685393258427,
+          "decode_s": 18.8816,
+          "hypothesis_first_120": "hello. uh, yeah marea. yeah. sorry.. um, twenty just not of my an't off uh um,, ninety. um so i', having like a really w"
+        },
+        {
+          "audio_file": "day5_consultation03_doctor.wav",
+          "wer": 0.4073684210526316,
+          "decode_s": 28.1193,
+          "hypothesis_first_120": "hi there, i'm doctor smith from babylon hi there, can you confirm your name to birth in the first line of your address f"
+        },
+        {
+          "audio_file": "day5_consultation03_patient.wav",
+          "wer": 0.5113207547169811,
+          "decode_s": 63.1297,
+          "hypothesis_first_120": "hi not, uh, my name, bowller co deep for, it's uh,, thanking of september, and bing thank three. my, address is, uh, six"
+        }
+      ],
+      "delta_wer_pp_vs_greedy": -0.17,
+      "delta_decode_s_vs_greedy": 313.5,
+      "efficiency_index_pp_per_s": -0.00054,
+      "on_pareto_frontier": false
+    },
+    {
+      "decoder": "beam_nobias",
+      "beam_width": 500,
+      "mean_wer": 0.4978,
+      "ci_95_lower": 0.4638,
+      "ci_95_upper": 0.5283,
+      "decode_total_s": 889.559,
+      "decode_rtf": 0.120875,
+      "forward_plus_decode_rtf": 0.122229,
+      "per_sample": [
+        {
+          "audio_file": "day1_consultation02_doctor.wav",
+          "wer": 0.4851778656126482,
+          "decode_s": 61.3574,
+          "hypothesis_first_120": "llo and yes a thing is a bit that so its be is a bit, if's not very clear about there t anyway? uh ok. just i goes so ho"
+        },
+        {
+          "audio_file": "day1_consultation02_patient.wav",
+          "wer": 0.5841968911917098,
+          "decode_s": 62.2416,
+          "hypothesis_first_120": "hell, can you hear me anywhere. ok. yes so, it's been there two days now,, i have my care so, andensted in its kind of i"
+        },
+        {
+          "audio_file": "day1_consultation08_doctor.wav",
+          "wer": 0.543455497382199,
+          "decode_s": 56.4542,
+          "hypothesis_first_120": "hello. hello. i, difficult going further can confirm your name, and age please?k, ok. and, how can help you this doctor "
+        },
+        {
+          "audio_file": "day1_consultation08_patient.wav",
+          "wer": 0.5637583892617449,
+          "decode_s": 29.5788,
+          "hypothesis_first_120": "ok., no, i can it. hello. um, no sp so um, i so. um, it so days sixty, i've been really stress up work the for few days "
+        },
+        {
+          "audio_file": "day1_consultation15_doctor.wav",
+          "wer": 0.5022271714922049,
+          "decode_s": 54.2743,
+          "hypothesis_first_120": "hello hello can hear mek before i going you furtheric confirm your name, and your um age please? o. you fine i orra will"
+        },
+        {
+          "audio_file": "day1_consultation15_patient.wav",
+          "wer": 0.5010660980810234,
+          "decode_s": 43.9248,
+          "hypothesis_first_120": ". noo yes. uh yes, i'm, the before uh, some. and, um forty fine. uh, so, i have uh, st noing my f, wife f , likeskin of "
+        },
+        {
+          "audio_file": "day2_consultation01_doctor.wav",
+          "wer": 0.46589716684155297,
+          "decode_s": 63.4135,
+          "hypothesis_first_120": "hi there,, good morning name um, i'm doctor de you nots from babylon. can you hear me ok. yeahk great. well i to see thi"
+        },
+        {
+          "audio_file": "day2_consultation01_patient.wav",
+          "wer": 0.5531914893617021,
+          "decode_s": 25.1427,
+          "hypothesis_first_120": "uh. uh uh. can five., uh, yeah, uh,, just smith. uh,, thank's first, october, nineteen, ninety., uh, yes. yes, i just, a"
+        },
+        {
+          "audio_file": "day2_consultation03_doctor.wav",
+          "wer": 0.48501664816870144,
+          "decode_s": 63.2972,
+          "hypothesis_first_120": "hi there, good morning name? right, doctor de get how last to you uh,s for, before we start your , confirm, yourre full "
+        },
+        {
+          "audio_file": "day2_consultation03_patient.wav",
+          "wer": 0.5764331210191083,
+          "decode_s": 49.0102,
+          "hypothesis_first_120": ". uh,.... uh yes, um no really, good uh,, and my it, i' fty at all.. and. yeah.. um, say just's been nothinging um, um, "
+        },
+        {
+          "audio_file": "day4_consultation06_doctor.wav",
+          "wer": 0.4232602478551001,
+          "decode_s": 69.0845,
+          "hypothesis_first_120": "ok, badkllle ok hi and my name is doctor you hard um what the you she here can i just get you to confirm your name, and "
+        },
+        {
+          "audio_file": "day4_consultation06_patient.wav",
+          "wer": 0.3651685393258427,
+          "decode_s": 48.7303,
+          "hypothesis_first_120": "hello. uh, yeah marea. yeah. sorry.. um, twenty just not of my an't off uh um,, ninety. um so i', having like a really w"
+        },
+        {
+          "audio_file": "day5_consultation03_doctor.wav",
+          "wer": 0.40842105263157896,
+          "decode_s": 76.1502,
+          "hypothesis_first_120": "hi there, i'm doctor smith from babylon hi there, can you confirm your name to birth in the first line of your address f"
+        },
+        {
+          "audio_file": "day5_consultation03_patient.wav",
+          "wer": 0.5125786163522013,
+          "decode_s": 186.8988,
+          "hypothesis_first_120": "hi not, uh, my name, bowller co deep for, it's uh,, thanking of september, and bing thank, three. my, address is, uh, si"
+        }
+      ],
+      "delta_wer_pp_vs_greedy": -0.13,
+      "delta_decode_s_vs_greedy": 889.49,
+      "efficiency_index_pp_per_s": -0.00015,
+      "on_pareto_frontier": false
+    }
+  ],
+  "tables": {
+    "markdown": "| Decoder | Beam w | Mean WER | 95% CI | Decode (s) | RTF (forward+decode) |\n|---|---|---|---|---|---|\n| `greedy` | \u2014 | 49.91% | [46.40%, 53.17%] | 0.07 | 0.0014 |\n| `beam_nobias` | 10 | 49.74% | [46.24%, 52.82%] | 16.31 | 0.0036 |\n| `beam_nobias` | 50 | 49.79% | [46.34%, 52.84%] | 71.15 | 0.0110 |\n| `beam_nobias` | 100 | 49.76% | [46.30%, 52.82%] | 146.88 | 0.0213 |\n| `beam_nobias` | 200 | 49.74% | [46.35%, 52.78%] | 313.56 | 0.0440 |\n| `beam_nobias` | 500 | 49.78% | [46.38%, 52.83%] | 889.56 | 0.1222 |\n",
+    "latex": "\\begin{tabular}{lrrrrr}\n\\toprule\nDecoder & Beam $w$ & Mean WER (\\%) & 95\\% CI (\\%) & Decode time (s) & RTF (forward+decode) \\\\\n\\midrule\ngreedy & -- & 49.91 & [46.40, 53.17] & 0.07 & 0.0014 \\\\\nbeam\\\\_nobias & 10 & 49.74 & [46.24, 52.82] & 16.31 & 0.0036 \\\\\nbeam\\\\_nobias & 50 & 49.79 & [46.34, 52.84] & 71.15 & 0.0110 \\\\\nbeam\\\\_nobias & 100 & 49.76 & [46.30, 52.82] & 146.88 & 0.0213 \\\\\nbeam\\\\_nobias & 200 & 49.74 & [46.35, 52.78] & 313.56 & 0.0440 \\\\\nbeam\\\\_nobias & 500 & 49.78 & [46.38, 52.83] & 889.56 & 0.1222 \\\\\n\\bottomrule\n\\end{tabular}\n"
+  }
+}

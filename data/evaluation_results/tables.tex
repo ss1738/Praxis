@@ -1,0 +1,31 @@
+% PRAXIS Evaluation Tables — auto-generated 2026-04-27 13:51
+% Do not edit manually. Regenerate with: python3 -m src.evaluation.generate_tables
+
+\begin{table}[htbp]
+\centering
+\caption{Word Error Rate (WER) on PriMock57 Test Set (N=14)}
+\label{tab:wer-benchmark}
+\begin{tabular}{lrrrr}
+\toprule
+Model & Mean WER (\%) & Median WER (\%) & 95\% CI & RTF \\
+\midrule
+  praxis-conformer & 50.12 & 50.17 & [46.70, 53.47] & 0.044 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[htbp]
+\centering
+\caption{SOAP Note Quality Evaluation}
+\label{tab:soap-quality}
+\begin{tabular}{lrrrrrr}
+\toprule
+Model & N & Completeness & SNOMED & Med. Recall & Safety Net & TrustScore \\
+\midrule
+  med42 & 8 & 100\% & 3.4 & 100\% & 100\% & 69.4 \\
+  meditron:7b & 8 & 31\% & 0.8 & 100\% & 12\% & 49.4 \\
+  mistral & 8 & 100\% & 5.5 & 100\% & 100\% & 65.6 \\
+  praxis-soap-v1 & 8 & 100\% & 2.8 & 100\% & 100\% & 70.6 \\
+\bottomrule
+\end{tabular}
+\end{table}

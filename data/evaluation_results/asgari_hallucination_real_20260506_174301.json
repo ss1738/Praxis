@@ -1,0 +1,191 @@
+{
+  "timestamp": "2026-05-06T17:43:01+00:00",
+  "source": "data/evaluation_results/streaming_eval_real_20260506_143329.json",
+  "per_case": {
+    "baseline": [
+      {
+        "case": "Lower Back Pain",
+        "n_sentences": 11,
+        "hallucination_rate": 1.0,
+        "mhi_omission": 0.2653
+      },
+      {
+        "case": "Persistent Cough",
+        "n_sentences": 11,
+        "hallucination_rate": 1.0,
+        "mhi_omission": 0.2683
+      },
+      {
+        "case": "Diabetes Review",
+        "n_sentences": 12,
+        "hallucination_rate": 1.0,
+        "mhi_omission": 0.0957
+      },
+      {
+        "case": "Mental Health - Anxiety",
+        "n_sentences": 9,
+        "hallucination_rate": 0.8889,
+        "mhi_omission": 0.1111
+      },
+      {
+        "case": "Chest Infection",
+        "n_sentences": 11,
+        "hallucination_rate": 0.8182,
+        "mhi_omission": 0.2073
+      },
+      {
+        "case": "Hypertension Review",
+        "n_sentences": 12,
+        "hallucination_rate": 0.75,
+        "mhi_omission": 0.0
+      },
+      {
+        "case": "Paediatric Ear Infection",
+        "n_sentences": 7,
+        "hallucination_rate": 1.0,
+        "mhi_omission": 0.0
+      },
+      {
+        "case": "Skin Lesion Assessment",
+        "n_sentences": 6,
+        "hallucination_rate": 0.8333,
+        "mhi_omission": 0.619
+      }
+    ],
+    "constitutional": [
+      {
+        "case": "Lower Back Pain",
+        "n_sentences": 12,
+        "hallucination_rate": 1.0,
+        "mhi_omission": 0.2653
+      },
+      {
+        "case": "Persistent Cough",
+        "n_sentences": 13,
+        "hallucination_rate": 0.9231,
+        "mhi_omission": 0.0
+      },
+      {
+        "case": "Diabetes Review",
+        "n_sentences": 8,
+        "hallucination_rate": 1.0,
+        "mhi_omission": 0.1702
+      },
+      {
+        "case": "Mental Health - Anxiety",
+        "n_sentences": 12,
+        "hallucination_rate": 1.0,
+        "mhi_omission": 0.3889
+      },
+      {
+        "case": "Chest Infection",
+        "n_sentences": 17,
+        "hallucination_rate": 0.8235,
+        "mhi_omission": 0.2073
+      },
+      {
+        "case": "Hypertension Review",
+        "n_sentences": 9,
+        "hallucination_rate": 0.7778,
+        "mhi_omission": 0.0
+      },
+      {
+        "case": "Paediatric Ear Infection",
+        "n_sentences": 9,
+        "hallucination_rate": 1.0,
+        "mhi_omission": 0.1212
+      },
+      {
+        "case": "Skin Lesion Assessment",
+        "n_sentences": 7,
+        "hallucination_rate": 0.8571,
+        "mhi_omission": 0.1905
+      }
+    ],
+    "streaming": [
+      {
+        "case": "Lower Back Pain",
+        "n_sentences": 0,
+        "hallucination_rate": 0.0,
+        "mhi_omission": 1.0
+      },
+      {
+        "case": "Persistent Cough",
+        "n_sentences": 0,
+        "hallucination_rate": 0.0,
+        "mhi_omission": 1.0
+      },
+      {
+        "case": "Diabetes Review",
+        "n_sentences": 0,
+        "hallucination_rate": 0.0,
+        "mhi_omission": 1.0
+      },
+      {
+        "case": "Mental Health - Anxiety",
+        "n_sentences": 0,
+        "hallucination_rate": 0.0,
+        "mhi_omission": 1.0
+      },
+      {
+        "case": "Chest Infection",
+        "n_sentences": 1,
+        "hallucination_rate": 0.0,
+        "mhi_omission": 1.0
+      },
+      {
+        "case": "Hypertension Review",
+        "n_sentences": 0,
+        "hallucination_rate": 0.0,
+        "mhi_omission": 1.0
+      },
+      {
+        "case": "Paediatric Ear Infection",
+        "n_sentences": 0,
+        "hallucination_rate": 0.0,
+        "mhi_omission": 1.0
+      },
+      {
+        "case": "Skin Lesion Assessment",
+        "n_sentences": 0,
+        "hallucination_rate": 0.0,
+        "mhi_omission": 1.0
+      }
+    ]
+  },
+  "aggregate": {
+    "baseline": {
+      "mean_hr": 0.9113,
+      "ci": [
+        0.84185,
+        0.977275
+      ],
+      "mean_omission": 0.1958375,
+      "empty_notes": 0,
+      "cases_under_asgari_hr": 0,
+      "n_cases": 8
+    },
+    "constitutional": {
+      "mean_hr": 0.9226875,
+      "ci": [
+        0.8606925,
+        0.9779375
+      ],
+      "mean_omission": 0.167925,
+      "empty_notes": 0,
+      "cases_under_asgari_hr": 0,
+      "n_cases": 8
+    },
+    "streaming": {
+      "mean_hr": 0.0,
+      "ci": [
+        0.0,
+        0.0
+      ],
+      "mean_omission": 1.0,
+      "empty_notes": 7,
+      "cases_under_asgari_hr": 8,
+      "n_cases": 8
+    }
+  }
+}

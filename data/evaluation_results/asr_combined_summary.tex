@@ -1,0 +1,13 @@
+% PRAXIS ASR — combined summary table across all evaluated decoders on PriMock57 test (n=14)
+% Numerical content only. Caption + analysis remain the author's hand.
+
+\begin{tabular}{lrrrrr}
+\toprule
+ASR configuration & Mean WER (\%) & WER 95\% CI (\%) & Mean CE-WER (\%) & CE-WER 95\% CI (\%) & Mean RTF \\
+\midrule
+PRAXIS-AUSCULT greedy CTC                                & 49.91 & [46.40, 53.17]   & 88.64 & [72.16, 100.00] & 0.0014 \\
+PRAXIS-AUSCULT beam $w=10$ (no LM)                       & 49.74 & [46.24, 52.82]   & 88.64 & [72.16, 100.00] & 0.0036 \\
+PRAXIS-AUSCULT beam $w=10$ + clinical kenlm 4-gram       & 45.57 & [41.82, 49.04]   & 86.08 & [69.95, 97.44]  & 0.0033 \\
+\texttt{openai/whisper-large-v3} (fp16, 30s chunks)      & 27.69 & [23.08, 33.10]   & 21.23 & [12.45, 30.40]  & 0.0144 \\
+\bottomrule
+\end{tabular}

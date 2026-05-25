@@ -1,0 +1,6491 @@
+{
+  "is_synthetic": false,
+  "host": "Satyawans-MacBook-Pro.local",
+  "git_commit": "49ea49e8c981b2e227d4c0fc31d7ef29554a11fd",
+  "timestamp": "2026-05-24T15:36:56.214030+00:00",
+  "source_sweep_json": "data/evaluation_results/wer_decoding_sweep_final.json",
+  "clinical_entity_mask": {
+    "n_snomed_lexicon": 185,
+    "n_drug_interaction_terms": 69,
+    "n_combined": 215,
+    "medical_suffixes": [
+      "itis",
+      "osis",
+      "emia",
+      "aemia",
+      "oma",
+      "rrhoea",
+      "phagia",
+      "pathy",
+      "ectomy",
+      "otomy",
+      "plasty",
+      "algia",
+      "gram",
+      "scopy",
+      "cillin",
+      "azole",
+      "olol",
+      "pril",
+      "sartan",
+      "statin",
+      "zepam",
+      "profen",
+      "caine",
+      "mycin",
+      "cycline",
+      "pramine",
+      "dipine"
+    ]
+  },
+  "per_decoder": {
+    "greedy": {
+      "per_sample": [
+        {
+          "audio_file": "day1_consultation02_doctor.wav",
+          "wer_overall": 0.5444664031620553,
+          "ce_wer": 1.0,
+          "wer_breakdown": {
+            "subs": 298,
+            "dels": 233,
+            "ins": 20
+          },
+          "ce_wer_breakdown": {
+            "subs": 0,
+            "dels": 9,
+            "ins": 0
+          },
+          "n_ref_clinical": 9,
+          "n_ref_functional": 1003,
+          "missed_clinical_tokens": [
+            "alcohol",
+            "eczema",
+            "fexofenadine",
+            "loratadine",
+            "piriton"
+          ],
+          "extra_clinical_in_hyp": [],
+          "mter": {
+            "itis": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "osis": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "emia": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "aemia": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "oma": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "rrhoea": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "phagia": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "pathy": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "ectomy": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "otomy": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "plasty": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "algia": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "gram": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "scopy": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "cillin": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "azole": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "olol": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "pril": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "sartan": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "statin": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "zepam": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "profen": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "caine": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "mycin": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "cycline": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "pramine": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "dipine": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            }
+          }
+        },
+        {
+          "audio_file": "day1_consultation02_patient.wav",
+          "wer_overall": 0.6204663212435233,
+          "ce_wer": 1.0,
+          "wer_breakdown": {
+            "subs": 304,
+            "dels": 157,
+            "ins": 18
+          },
+          "ce_wer_breakdown": {
+            "subs": 0,
+            "dels": 5,
+            "ins": 0
+          },
+          "n_ref_clinical": 5,
+          "n_ref_functional": 767,
+          "missed_clinical_tokens": [
+            "asthma",
+            "eczema"
+          ],
+          "extra_clinical_in_hyp": [],
+          "mter": {
+            "itis": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "osis": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "emia": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "aemia": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "oma": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "rrhoea": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "phagia": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "pathy": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "ectomy": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "otomy": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "plasty": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "algia": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "gram": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "scopy": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "cillin": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "azole": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "olol": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "pril": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "sartan": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "statin": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "zepam": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "profen": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "caine": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "mycin": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "cycline": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "pramine": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "dipine": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            }
+          }
+        },
+        {
+          "audio_file": "day1_consultation08_doctor.wav",
+          "wer_overall": 0.6198952879581152,
+          "ce_wer": 1.0,
+          "wer_breakdown": {
+            "subs": 289,
+            "dels": 302,
+            "ins": 1
+          },
+          "ce_wer_breakdown": {
+            "subs": 0,
+            "dels": 9,
+            "ins": 0
+          },
+          "n_ref_clinical": 9,
+          "n_ref_functional": 946,
+          "missed_clinical_tokens": [
+            "alcohol",
+            "dermatitis",
+            "eczema",
+            "hayfever",
+            "loratadine",
+            "microgynon",
+            "paracetamol",
+            "piriton"
+          ],
+          "extra_clinical_in_hyp": [],
+          "mter": {
+            "itis": {
+              "ref_hits": 2,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 2,
+              "missed_terms": [
+                "dermatitis",
+                "dermatitis"
+              ]
+            },
+            "osis": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "emia": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "aemia": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "oma": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "rrhoea": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "phagia": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "pathy": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "ectomy": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "otomy": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "plasty": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "algia": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "gram": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "scopy": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "cillin": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "azole": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "olol": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "pril": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "sartan": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "statin": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "zepam": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "profen": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "caine": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "mycin": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "cycline": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "pramine": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "dipine": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            }
+          }
+        },
+        {
+          "audio_file": "day1_consultation08_patient.wav",
+          "wer_overall": 0.610738255033557,
+          "ce_wer": 1.0,
+          "wer_breakdown": {
+            "subs": 134,
+            "dels": 36,
+            "ins": 12
+          },
+          "ce_wer_breakdown": {
+            "subs": 0,
+            "dels": 2,
+            "ins": 0
+          },
+          "n_ref_clinical": 2,
+          "n_ref_functional": 296,
+          "missed_clinical_tokens": [
+            "asthma",
+            "hayfever"
+          ],
+          "extra_clinical_in_hyp": [],
+          "mter": {
+            "itis": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "osis": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "emia": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "aemia": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "oma": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "rrhoea": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "phagia": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "pathy": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "ectomy": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "otomy": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "plasty": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "algia": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "gram": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "scopy": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "cillin": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "azole": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "olol": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "pril": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "sartan": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "statin": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "zepam": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "profen": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "caine": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "mycin": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "cycline": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "pramine": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "dipine": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            }
+          }
+        },
+        {
+          "audio_file": "day1_consultation15_doctor.wav",
+          "wer_overall": 0.5746102449888641,
+          "ce_wer": 1.0,
+          "wer_breakdown": {
+            "subs": 265,
+            "dels": 237,
+            "ins": 14
+          },
+          "ce_wer_breakdown": {
+            "subs": 0,
+            "dels": 10,
+            "ins": 0
+          },
+          "n_ref_clinical": 10,
+          "n_ref_functional": 888,
+          "missed_clinical_tokens": [
+            "alcohol",
+            "asthma",
+            "dermatitis",
+            "diabetes",
+            "eczema",
+            "metformin"
+          ],
+          "extra_clinical_in_hyp": [],
+          "mter": {
+            "itis": {
+              "ref_hits": 3,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 3,
+              "missed_terms": [
+                "dermatitis",
+                "dermatitis",
+                "dermatitis"
+              ]
+            },
+            "osis": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "emia": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "aemia": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "oma": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "rrhoea": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "phagia": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "pathy": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "ectomy": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "otomy": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "plasty": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "algia": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "gram": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "scopy": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "cillin": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "azole": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "olol": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "pril": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "sartan": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "statin": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "zepam": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "profen": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "caine": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "mycin": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "cycline": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "pramine": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "dipine": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            }
+          }
+        },
+        {
+          "audio_file": "day1_consultation15_patient.wav",
+          "wer_overall": 0.5628997867803838,
+          "ce_wer": 1.0,
+          "wer_breakdown": {
+            "subs": 182,
+            "dels": 69,
+            "ins": 13
+          },
+          "ce_wer_breakdown": {
+            "subs": 0,
+            "dels": 2,
+            "ins": 0
+          },
+          "n_ref_clinical": 2,
+          "n_ref_functional": 467,
+          "missed_clinical_tokens": [
+            "diabetes"
+          ],
+          "extra_clinical_in_hyp": [],
+          "mter": {
+            "itis": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "osis": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "emia": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "aemia": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "oma": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "rrhoea": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "phagia": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "pathy": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "ectomy": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "otomy": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "plasty": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "algia": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "gram": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "scopy": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "cillin": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "azole": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "olol": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "pril": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "sartan": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "statin": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "zepam": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "profen": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "caine": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "mycin": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "cycline": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "pramine": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "dipine": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            }
+          }
+        },
+        {
+          "audio_file": "day2_consultation01_doctor.wav",
+          "wer_overall": 0.5645330535152151,
+          "ce_wer": 0.8571428571428571,
+          "wer_breakdown": {
+            "subs": 251,
+            "dels": 280,
+            "ins": 7
+          },
+          "ce_wer_breakdown": {
+            "subs": 0,
+            "dels": 6,
+            "ins": 0
+          },
+          "n_ref_clinical": 7,
+          "n_ref_functional": 946,
+          "missed_clinical_tokens": [
+            "palpitations",
+            "tinnitus"
+          ],
+          "extra_clinical_in_hyp": [],
+          "mter": {
+            "itis": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "osis": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "emia": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "aemia": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "oma": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "rrhoea": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "phagia": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "pathy": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "ectomy": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "otomy": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "plasty": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "algia": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "gram": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "scopy": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "cillin": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "azole": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "olol": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "pril": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "sartan": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "statin": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "zepam": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "profen": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "caine": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "mycin": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "cycline": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "pramine": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "dipine": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            }
+          }
+        },
+        {
+          "audio_file": "day2_consultation01_patient.wav",
+          "wer_overall": 0.6063829787234043,
+          "ce_wer": null,
+          "wer_breakdown": {
+            "subs": 110,
+            "dels": 60,
+            "ins": 1
+          },
+          "ce_wer_breakdown": {
+            "subs": 0,
+            "dels": 0,
+            "ins": 0
+          },
+          "n_ref_clinical": 0,
+          "n_ref_functional": 282,
+          "missed_clinical_tokens": [],
+          "extra_clinical_in_hyp": [],
+          "mter": {
+            "itis": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "osis": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "emia": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "aemia": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "oma": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "rrhoea": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "phagia": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "pathy": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "ectomy": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "otomy": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "plasty": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "algia": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "gram": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "scopy": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "cillin": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "azole": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "olol": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "pril": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "sartan": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "statin": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "zepam": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "profen": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "caine": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "mycin": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "cycline": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "pramine": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "dipine": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            }
+          }
+        },
+        {
+          "audio_file": "day2_consultation03_doctor.wav",
+          "wer_overall": 0.5726970033296337,
+          "ce_wer": 0.6666666666666666,
+          "wer_breakdown": {
+            "subs": 227,
+            "dels": 270,
+            "ins": 19
+          },
+          "ce_wer_breakdown": {
+            "subs": 0,
+            "dels": 2,
+            "ins": 0
+          },
+          "n_ref_clinical": 3,
+          "n_ref_functional": 898,
+          "missed_clinical_tokens": [
+            "diagnosis"
+          ],
+          "extra_clinical_in_hyp": [],
+          "mter": {
+            "itis": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "osis": {
+              "ref_hits": 1,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 1,
+              "missed_terms": [
+                "diagnosis"
+              ]
+            },
+            "emia": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "aemia": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "oma": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "rrhoea": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "phagia": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "pathy": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "ectomy": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "otomy": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "plasty": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "algia": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "gram": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "scopy": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "cillin": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "azole": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "olol": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "pril": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "sartan": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "statin": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "zepam": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "profen": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "caine": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "mycin": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "cycline": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "pramine": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "dipine": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            }
+          }
+        },
+        {
+          "audio_file": "day2_consultation03_patient.wav",
+          "wer_overall": 0.6019108280254777,
+          "ce_wer": 1.0,
+          "wer_breakdown": {
+            "subs": 227,
+            "dels": 134,
+            "ins": 17
+          },
+          "ce_wer_breakdown": {
+            "subs": 0,
+            "dels": 3,
+            "ins": 0
+          },
+          "n_ref_clinical": 3,
+          "n_ref_functional": 625,
+          "missed_clinical_tokens": [
+            "labyrinthitis",
+            "neurofibromatosis",
+            "nice"
+          ],
+          "extra_clinical_in_hyp": [],
+          "mter": {
+            "itis": {
+              "ref_hits": 1,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 1,
+              "missed_terms": [
+                "labyrinthitis"
+              ]
+            },
+            "osis": {
+              "ref_hits": 1,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 1,
+              "missed_terms": [
+                "neurofibromatosis"
+              ]
+            },
+            "emia": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "aemia": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "oma": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "rrhoea": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "phagia": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "pathy": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "ectomy": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "otomy": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "plasty": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "algia": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "gram": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "scopy": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "cillin": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "azole": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "olol": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "pril": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "sartan": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "statin": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "zepam": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "profen": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "caine": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "mycin": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "cycline": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "pramine": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "dipine": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            }
+          }
+        },
+        {
+          "audio_file": "day4_consultation06_doctor.wav",
+          "wer_overall": 0.5081029551954243,
+          "ce_wer": 1.0,
+          "wer_breakdown": {
+            "subs": 289,
+            "dels": 219,
+            "ins": 25
+          },
+          "ce_wer_breakdown": {
+            "subs": 0,
+            "dels": 12,
+            "ins": 0
+          },
+          "n_ref_clinical": 12,
+          "n_ref_functional": 1037,
+          "missed_clinical_tokens": [
+            "allergic",
+            "ibuprofen",
+            "migraine",
+            "paracetamol"
+          ],
+          "extra_clinical_in_hyp": [],
+          "mter": {
+            "itis": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "osis": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "emia": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "aemia": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "oma": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "rrhoea": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "phagia": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "pathy": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "ectomy": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "otomy": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "plasty": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "algia": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "gram": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "scopy": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "cillin": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "azole": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "olol": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "pril": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "sartan": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "statin": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "zepam": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "profen": {
+              "ref_hits": 2,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 2,
+              "missed_terms": [
+                "ibuprofen",
+                "ibuprofen"
+              ]
+            },
+            "caine": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "mycin": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "cycline": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "pramine": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "dipine": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            }
+          }
+        },
+        {
+          "audio_file": "day4_consultation06_patient.wav",
+          "wer_overall": 0.4311797752808989,
+          "ce_wer": 1.0,
+          "wer_breakdown": {
+            "subs": 206,
+            "dels": 70,
+            "ins": 31
+          },
+          "ce_wer_breakdown": {
+            "subs": 0,
+            "dels": 6,
+            "ins": 0
+          },
+          "n_ref_clinical": 6,
+          "n_ref_functional": 706,
+          "missed_clinical_tokens": [
+            "hypothyroidism",
+            "migraine"
+          ],
+          "extra_clinical_in_hyp": [],
+          "mter": {
+            "itis": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "osis": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "emia": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "aemia": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "oma": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "rrhoea": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "phagia": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "pathy": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "ectomy": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "otomy": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "plasty": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "algia": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "gram": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "scopy": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "cillin": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "azole": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "olol": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "pril": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "sartan": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "statin": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "zepam": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "profen": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "caine": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "mycin": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "cycline": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "pramine": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "dipine": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            }
+          }
+        },
+        {
+          "audio_file": "day5_consultation03_doctor.wav",
+          "wer_overall": 0.4936842105263158,
+          "ce_wer": 1.0,
+          "wer_breakdown": {
+            "subs": 287,
+            "dels": 156,
+            "ins": 26
+          },
+          "ce_wer_breakdown": {
+            "subs": 0,
+            "dels": 3,
+            "ins": 0
+          },
+          "n_ref_clinical": 3,
+          "n_ref_functional": 947,
+          "missed_clinical_tokens": [
+            "alcohol",
+            "palpitations"
+          ],
+          "extra_clinical_in_hyp": [],
+          "mter": {
+            "itis": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "osis": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "emia": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "aemia": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "oma": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "rrhoea": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "phagia": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "pathy": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "ectomy": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "otomy": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "plasty": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "algia": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "gram": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "scopy": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "cillin": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "azole": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "olol": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "pril": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "sartan": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "statin": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "zepam": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "profen": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "caine": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "mycin": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "cycline": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "pramine": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "dipine": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            }
+          }
+        },
+        {
+          "audio_file": "day5_consultation03_patient.wav",
+          "wer_overall": 0.559748427672956,
+          "ce_wer": 0.0,
+          "wer_breakdown": {
+            "subs": 503,
+            "dels": 364,
+            "ins": 23
+          },
+          "ce_wer_breakdown": {
+            "subs": 0,
+            "dels": 0,
+            "ins": 0
+          },
+          "n_ref_clinical": 1,
+          "n_ref_functional": 1589,
+          "missed_clinical_tokens": [],
+          "extra_clinical_in_hyp": [],
+          "mter": {
+            "itis": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "osis": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "emia": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "aemia": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "oma": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "rrhoea": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "phagia": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "pathy": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "ectomy": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "otomy": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "plasty": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "algia": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "gram": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "scopy": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "cillin": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "azole": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "olol": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "pril": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "sartan": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "statin": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "zepam": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "profen": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "caine": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "mycin": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "cycline": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "pramine": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "dipine": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            }
+          }
+        }
+      ],
+      "aggregate": {
+        "n_samples": 14,
+        "mean_wer_overall": 0.5622,
+        "mean_ce_wer": 0.8864,
+        "ce_wer_ci_lower": 0.7216,
+        "ce_wer_ci_upper": 1.0,
+        "median_ce_wer": 1.0,
+        "mean_clinical_tokens_per_sample": 5.14,
+        "total_clinical_ref_tokens": 72
+      },
+      "mter_aggregate": {
+        "itis": {
+          "ref_hits": 6,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 6,
+          "sample_missed_terms": [
+            "dermatitis",
+            "dermatitis",
+            "dermatitis",
+            "dermatitis",
+            "dermatitis",
+            "labyrinthitis"
+          ]
+        },
+        "osis": {
+          "ref_hits": 2,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 2,
+          "sample_missed_terms": [
+            "diagnosis",
+            "neurofibromatosis"
+          ]
+        },
+        "emia": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "sample_missed_terms": []
+        },
+        "aemia": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "sample_missed_terms": []
+        },
+        "oma": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "sample_missed_terms": []
+        },
+        "rrhoea": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "sample_missed_terms": []
+        },
+        "phagia": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "sample_missed_terms": []
+        },
+        "pathy": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "sample_missed_terms": []
+        },
+        "ectomy": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "sample_missed_terms": []
+        },
+        "otomy": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "sample_missed_terms": []
+        },
+        "plasty": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "sample_missed_terms": []
+        },
+        "algia": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "sample_missed_terms": []
+        },
+        "gram": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "sample_missed_terms": []
+        },
+        "scopy": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "sample_missed_terms": []
+        },
+        "cillin": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "sample_missed_terms": []
+        },
+        "azole": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "sample_missed_terms": []
+        },
+        "olol": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "sample_missed_terms": []
+        },
+        "pril": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "sample_missed_terms": []
+        },
+        "sartan": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "sample_missed_terms": []
+        },
+        "statin": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "sample_missed_terms": []
+        },
+        "zepam": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "sample_missed_terms": []
+        },
+        "profen": {
+          "ref_hits": 2,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 2,
+          "sample_missed_terms": [
+            "ibuprofen",
+            "ibuprofen"
+          ]
+        },
+        "caine": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "sample_missed_terms": []
+        },
+        "mycin": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "sample_missed_terms": []
+        },
+        "cycline": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "sample_missed_terms": []
+        },
+        "pramine": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "sample_missed_terms": []
+        },
+        "dipine": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "sample_missed_terms": []
+        }
+      }
+    },
+    "beam_nobias": {
+      "per_sample": [
+        {
+          "audio_file": "day1_consultation02_doctor.wav",
+          "wer_overall": 0.4851778656126482,
+          "ce_wer": 1.0,
+          "wer_breakdown": {
+            "subs": 338,
+            "dels": 119,
+            "ins": 34
+          },
+          "ce_wer_breakdown": {
+            "subs": 0,
+            "dels": 9,
+            "ins": 0
+          },
+          "n_ref_clinical": 9,
+          "n_ref_functional": 1003,
+          "missed_clinical_tokens": [
+            "alcohol",
+            "eczema",
+            "fexofenadine",
+            "loratadine",
+            "piriton"
+          ],
+          "extra_clinical_in_hyp": [],
+          "mter": {
+            "itis": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "osis": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "emia": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "aemia": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "oma": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "rrhoea": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "phagia": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "pathy": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "ectomy": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "otomy": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "plasty": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "algia": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "gram": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "scopy": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "cillin": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "azole": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "olol": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "pril": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "sartan": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "statin": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "zepam": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "profen": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "caine": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "mycin": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "cycline": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "pramine": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "dipine": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            }
+          }
+        },
+        {
+          "audio_file": "day1_consultation02_patient.wav",
+          "wer_overall": 0.5816062176165803,
+          "ce_wer": 1.0,
+          "wer_breakdown": {
+            "subs": 342,
+            "dels": 86,
+            "ins": 21
+          },
+          "ce_wer_breakdown": {
+            "subs": 0,
+            "dels": 5,
+            "ins": 0
+          },
+          "n_ref_clinical": 5,
+          "n_ref_functional": 767,
+          "missed_clinical_tokens": [
+            "asthma",
+            "eczema"
+          ],
+          "extra_clinical_in_hyp": [],
+          "mter": {
+            "itis": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "osis": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "emia": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "aemia": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "oma": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "rrhoea": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "phagia": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "pathy": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "ectomy": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "otomy": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "plasty": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "algia": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "gram": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "scopy": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "cillin": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "azole": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "olol": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "pril": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "sartan": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "statin": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "zepam": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "profen": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "caine": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "mycin": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "cycline": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "pramine": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "dipine": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            }
+          }
+        },
+        {
+          "audio_file": "day1_consultation08_doctor.wav",
+          "wer_overall": 0.5424083769633508,
+          "ce_wer": 1.0,
+          "wer_breakdown": {
+            "subs": 335,
+            "dels": 169,
+            "ins": 14
+          },
+          "ce_wer_breakdown": {
+            "subs": 0,
+            "dels": 9,
+            "ins": 0
+          },
+          "n_ref_clinical": 9,
+          "n_ref_functional": 946,
+          "missed_clinical_tokens": [
+            "alcohol",
+            "dermatitis",
+            "eczema",
+            "hayfever",
+            "loratadine",
+            "microgynon",
+            "paracetamol",
+            "piriton"
+          ],
+          "extra_clinical_in_hyp": [],
+          "mter": {
+            "itis": {
+              "ref_hits": 2,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 2,
+              "missed_terms": [
+                "dermatitis",
+                "dermatitis"
+              ]
+            },
+            "osis": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "emia": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "aemia": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "oma": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "rrhoea": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "phagia": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "pathy": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "ectomy": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "otomy": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "plasty": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "algia": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "gram": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "scopy": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "cillin": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "azole": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "olol": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "pril": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "sartan": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "statin": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "zepam": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "profen": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "caine": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "mycin": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "cycline": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "pramine": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "dipine": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            }
+          }
+        },
+        {
+          "audio_file": "day1_consultation08_patient.wav",
+          "wer_overall": 0.5671140939597316,
+          "ce_wer": 1.0,
+          "wer_breakdown": {
+            "subs": 127,
+            "dels": 38,
+            "ins": 4
+          },
+          "ce_wer_breakdown": {
+            "subs": 0,
+            "dels": 2,
+            "ins": 0
+          },
+          "n_ref_clinical": 2,
+          "n_ref_functional": 296,
+          "missed_clinical_tokens": [
+            "asthma",
+            "hayfever"
+          ],
+          "extra_clinical_in_hyp": [],
+          "mter": {
+            "itis": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "osis": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "emia": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "aemia": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "oma": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "rrhoea": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "phagia": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "pathy": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "ectomy": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "otomy": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "plasty": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "algia": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "gram": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "scopy": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "cillin": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "azole": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "olol": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "pril": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "sartan": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "statin": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "zepam": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "profen": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "caine": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "mycin": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "cycline": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "pramine": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "dipine": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            }
+          }
+        },
+        {
+          "audio_file": "day1_consultation15_doctor.wav",
+          "wer_overall": 0.5011135857461024,
+          "ce_wer": 1.0,
+          "wer_breakdown": {
+            "subs": 304,
+            "dels": 121,
+            "ins": 25
+          },
+          "ce_wer_breakdown": {
+            "subs": 0,
+            "dels": 10,
+            "ins": 0
+          },
+          "n_ref_clinical": 10,
+          "n_ref_functional": 888,
+          "missed_clinical_tokens": [
+            "alcohol",
+            "asthma",
+            "dermatitis",
+            "diabetes",
+            "eczema",
+            "metformin"
+          ],
+          "extra_clinical_in_hyp": [],
+          "mter": {
+            "itis": {
+              "ref_hits": 3,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 3,
+              "missed_terms": [
+                "dermatitis",
+                "dermatitis",
+                "dermatitis"
+              ]
+            },
+            "osis": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "emia": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "aemia": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "oma": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "rrhoea": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "phagia": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "pathy": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "ectomy": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "otomy": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "plasty": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "algia": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "gram": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "scopy": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "cillin": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "azole": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "olol": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "pril": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "sartan": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "statin": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "zepam": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "profen": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "caine": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "mycin": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "cycline": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "pramine": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "dipine": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            }
+          }
+        },
+        {
+          "audio_file": "day1_consultation15_patient.wav",
+          "wer_overall": 0.4989339019189765,
+          "ce_wer": 1.0,
+          "wer_breakdown": {
+            "subs": 163,
+            "dels": 53,
+            "ins": 18
+          },
+          "ce_wer_breakdown": {
+            "subs": 0,
+            "dels": 2,
+            "ins": 0
+          },
+          "n_ref_clinical": 2,
+          "n_ref_functional": 467,
+          "missed_clinical_tokens": [
+            "diabetes"
+          ],
+          "extra_clinical_in_hyp": [],
+          "mter": {
+            "itis": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "osis": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "emia": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "aemia": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "oma": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "rrhoea": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "phagia": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "pathy": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "ectomy": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "otomy": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "plasty": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "algia": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "gram": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "scopy": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "cillin": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "azole": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "olol": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "pril": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "sartan": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "statin": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "zepam": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "profen": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "caine": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "mycin": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "cycline": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "pramine": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "dipine": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            }
+          }
+        },
+        {
+          "audio_file": "day2_consultation01_doctor.wav",
+          "wer_overall": 0.46379853095487933,
+          "ce_wer": 0.8571428571428571,
+          "wer_breakdown": {
+            "subs": 308,
+            "dels": 112,
+            "ins": 22
+          },
+          "ce_wer_breakdown": {
+            "subs": 0,
+            "dels": 6,
+            "ins": 0
+          },
+          "n_ref_clinical": 7,
+          "n_ref_functional": 946,
+          "missed_clinical_tokens": [
+            "palpitations",
+            "tinnitus"
+          ],
+          "extra_clinical_in_hyp": [],
+          "mter": {
+            "itis": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "osis": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "emia": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "aemia": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "oma": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "rrhoea": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "phagia": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "pathy": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "ectomy": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "otomy": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "plasty": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "algia": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "gram": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "scopy": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "cillin": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "azole": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "olol": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "pril": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "sartan": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "statin": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "zepam": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "profen": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "caine": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "mycin": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "cycline": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "pramine": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "dipine": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            }
+          }
+        },
+        {
+          "audio_file": "day2_consultation01_patient.wav",
+          "wer_overall": 0.5567375886524822,
+          "ce_wer": null,
+          "wer_breakdown": {
+            "subs": 91,
+            "dels": 52,
+            "ins": 14
+          },
+          "ce_wer_breakdown": {
+            "subs": 0,
+            "dels": 0,
+            "ins": 0
+          },
+          "n_ref_clinical": 0,
+          "n_ref_functional": 282,
+          "missed_clinical_tokens": [],
+          "extra_clinical_in_hyp": [],
+          "mter": {
+            "itis": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "osis": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "emia": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "aemia": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "oma": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "rrhoea": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "phagia": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "pathy": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "ectomy": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "otomy": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "plasty": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "algia": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "gram": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "scopy": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "cillin": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "azole": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "olol": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "pril": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "sartan": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "statin": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "zepam": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "profen": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "caine": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "mycin": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "cycline": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "pramine": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "dipine": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            }
+          }
+        },
+        {
+          "audio_file": "day2_consultation03_doctor.wav",
+          "wer_overall": 0.48612652608213097,
+          "ce_wer": 0.6666666666666666,
+          "wer_breakdown": {
+            "subs": 284,
+            "dels": 129,
+            "ins": 25
+          },
+          "ce_wer_breakdown": {
+            "subs": 0,
+            "dels": 2,
+            "ins": 0
+          },
+          "n_ref_clinical": 3,
+          "n_ref_functional": 898,
+          "missed_clinical_tokens": [
+            "diagnosis"
+          ],
+          "extra_clinical_in_hyp": [],
+          "mter": {
+            "itis": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "osis": {
+              "ref_hits": 1,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 1,
+              "missed_terms": [
+                "diagnosis"
+              ]
+            },
+            "emia": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "aemia": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "oma": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "rrhoea": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "phagia": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "pathy": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "ectomy": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "otomy": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "plasty": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "algia": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "gram": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "scopy": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "cillin": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "azole": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "olol": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "pril": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "sartan": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "statin": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "zepam": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "profen": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "caine": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "mycin": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "cycline": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "pramine": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "dipine": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            }
+          }
+        },
+        {
+          "audio_file": "day2_consultation03_patient.wav",
+          "wer_overall": 0.5764331210191083,
+          "ce_wer": 1.0,
+          "wer_breakdown": {
+            "subs": 247,
+            "dels": 93,
+            "ins": 22
+          },
+          "ce_wer_breakdown": {
+            "subs": 0,
+            "dels": 3,
+            "ins": 0
+          },
+          "n_ref_clinical": 3,
+          "n_ref_functional": 625,
+          "missed_clinical_tokens": [
+            "labyrinthitis",
+            "neurofibromatosis",
+            "nice"
+          ],
+          "extra_clinical_in_hyp": [],
+          "mter": {
+            "itis": {
+              "ref_hits": 1,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 1,
+              "missed_terms": [
+                "labyrinthitis"
+              ]
+            },
+            "osis": {
+              "ref_hits": 1,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 1,
+              "missed_terms": [
+                "neurofibromatosis"
+              ]
+            },
+            "emia": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "aemia": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "oma": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "rrhoea": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "phagia": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "pathy": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "ectomy": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "otomy": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "plasty": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "algia": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "gram": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "scopy": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "cillin": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "azole": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "olol": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "pril": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "sartan": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "statin": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "zepam": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "profen": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "caine": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "mycin": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "cycline": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "pramine": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "dipine": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            }
+          }
+        },
+        {
+          "audio_file": "day4_consultation06_doctor.wav",
+          "wer_overall": 0.4223069590085796,
+          "ce_wer": 1.0,
+          "wer_breakdown": {
+            "subs": 309,
+            "dels": 85,
+            "ins": 49
+          },
+          "ce_wer_breakdown": {
+            "subs": 0,
+            "dels": 12,
+            "ins": 0
+          },
+          "n_ref_clinical": 12,
+          "n_ref_functional": 1037,
+          "missed_clinical_tokens": [
+            "allergic",
+            "ibuprofen",
+            "migraine",
+            "paracetamol"
+          ],
+          "extra_clinical_in_hyp": [],
+          "mter": {
+            "itis": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "osis": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "emia": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "aemia": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "oma": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "rrhoea": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "phagia": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "pathy": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "ectomy": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "otomy": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "plasty": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "algia": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "gram": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "scopy": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "cillin": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "azole": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "olol": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "pril": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "sartan": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "statin": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "zepam": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "profen": {
+              "ref_hits": 2,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 2,
+              "missed_terms": [
+                "ibuprofen",
+                "ibuprofen"
+              ]
+            },
+            "caine": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "mycin": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "cycline": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "pramine": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "dipine": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            }
+          }
+        },
+        {
+          "audio_file": "day4_consultation06_patient.wav",
+          "wer_overall": 0.3651685393258427,
+          "ce_wer": 1.0,
+          "wer_breakdown": {
+            "subs": 175,
+            "dels": 49,
+            "ins": 36
+          },
+          "ce_wer_breakdown": {
+            "subs": 0,
+            "dels": 6,
+            "ins": 0
+          },
+          "n_ref_clinical": 6,
+          "n_ref_functional": 706,
+          "missed_clinical_tokens": [
+            "hypothyroidism",
+            "migraine"
+          ],
+          "extra_clinical_in_hyp": [],
+          "mter": {
+            "itis": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "osis": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "emia": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "aemia": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "oma": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "rrhoea": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "phagia": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "pathy": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "ectomy": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "otomy": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "plasty": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "algia": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "gram": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "scopy": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "cillin": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "azole": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "olol": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "pril": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "sartan": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "statin": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "zepam": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "profen": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "caine": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "mycin": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "cycline": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "pramine": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "dipine": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            }
+          }
+        },
+        {
+          "audio_file": "day5_consultation03_doctor.wav",
+          "wer_overall": 0.4073684210526316,
+          "ce_wer": 1.0,
+          "wer_breakdown": {
+            "subs": 262,
+            "dels": 75,
+            "ins": 50
+          },
+          "ce_wer_breakdown": {
+            "subs": 0,
+            "dels": 3,
+            "ins": 0
+          },
+          "n_ref_clinical": 3,
+          "n_ref_functional": 947,
+          "missed_clinical_tokens": [
+            "alcohol",
+            "palpitations"
+          ],
+          "extra_clinical_in_hyp": [],
+          "mter": {
+            "itis": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "osis": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "emia": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "aemia": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "oma": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "rrhoea": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "phagia": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "pathy": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "ectomy": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "otomy": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "plasty": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "algia": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "gram": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "scopy": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "cillin": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "azole": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "olol": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "pril": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "sartan": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "statin": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "zepam": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "profen": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "caine": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "mycin": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "cycline": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "pramine": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "dipine": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            }
+          }
+        },
+        {
+          "audio_file": "day5_consultation03_patient.wav",
+          "wer_overall": 0.5119496855345912,
+          "ce_wer": 0.0,
+          "wer_breakdown": {
+            "subs": 535,
+            "dels": 213,
+            "ins": 66
+          },
+          "ce_wer_breakdown": {
+            "subs": 0,
+            "dels": 0,
+            "ins": 0
+          },
+          "n_ref_clinical": 1,
+          "n_ref_functional": 1589,
+          "missed_clinical_tokens": [],
+          "extra_clinical_in_hyp": [],
+          "mter": {
+            "itis": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "osis": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "emia": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "aemia": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "oma": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "rrhoea": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "phagia": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "pathy": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "ectomy": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "otomy": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "plasty": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "algia": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "gram": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "scopy": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "cillin": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "azole": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "olol": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "pril": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "sartan": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "statin": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "zepam": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "profen": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "caine": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "mycin": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "cycline": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "pramine": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            },
+            "dipine": {
+              "ref_hits": 0,
+              "exact_match": 0,
+              "suffix_only_match": 0,
+              "complete_omission": 0,
+              "missed_terms": []
+            }
+          }
+        }
+      ],
+      "aggregate": {
+        "n_samples": 14,
+        "mean_wer_overall": 0.4976,
+        "mean_ce_wer": 0.8864,
+        "ce_wer_ci_lower": 0.7216,
+        "ce_wer_ci_upper": 1.0,
+        "median_ce_wer": 1.0,
+        "mean_clinical_tokens_per_sample": 5.14,
+        "total_clinical_ref_tokens": 72
+      },
+      "mter_aggregate": {
+        "itis": {
+          "ref_hits": 6,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 6,
+          "sample_missed_terms": [
+            "dermatitis",
+            "dermatitis",
+            "dermatitis",
+            "dermatitis",
+            "dermatitis",
+            "labyrinthitis"
+          ]
+        },
+        "osis": {
+          "ref_hits": 2,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 2,
+          "sample_missed_terms": [
+            "diagnosis",
+            "neurofibromatosis"
+          ]
+        },
+        "emia": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "sample_missed_terms": []
+        },
+        "aemia": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "sample_missed_terms": []
+        },
+        "oma": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "sample_missed_terms": []
+        },
+        "rrhoea": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "sample_missed_terms": []
+        },
+        "phagia": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "sample_missed_terms": []
+        },
+        "pathy": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "sample_missed_terms": []
+        },
+        "ectomy": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "sample_missed_terms": []
+        },
+        "otomy": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "sample_missed_terms": []
+        },
+        "plasty": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "sample_missed_terms": []
+        },
+        "algia": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "sample_missed_terms": []
+        },
+        "gram": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "sample_missed_terms": []
+        },
+        "scopy": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "sample_missed_terms": []
+        },
+        "cillin": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "sample_missed_terms": []
+        },
+        "azole": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "sample_missed_terms": []
+        },
+        "olol": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "sample_missed_terms": []
+        },
+        "pril": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "sample_missed_terms": []
+        },
+        "sartan": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "sample_missed_terms": []
+        },
+        "statin": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "sample_missed_terms": []
+        },
+        "zepam": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "sample_missed_terms": []
+        },
+        "profen": {
+          "ref_hits": 2,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 2,
+          "sample_missed_terms": [
+            "ibuprofen",
+            "ibuprofen"
+          ]
+        },
+        "caine": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "sample_missed_terms": []
+        },
+        "mycin": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "sample_missed_terms": []
+        },
+        "cycline": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "sample_missed_terms": []
+        },
+        "pramine": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "sample_missed_terms": []
+        },
+        "dipine": {
+          "ref_hits": 0,
+          "exact_match": 0,
+          "suffix_only_match": 0,
+          "complete_omission": 0,
+          "sample_missed_terms": []
+        }
+      }
+    }
+  }
+}

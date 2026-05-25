@@ -1,0 +1,23 @@
+# QLoRA Fine-Tuning Configuration
+# AI Medical Notes — Whisper on PriMock57
+
+model_size: "medium"
+
+# LoRA hyperparameters
+lora_r: 16
+lora_alpha: 32
+lora_dropout: 0.1
+
+# Training
+epochs: 10
+batch_size: 8
+learning_rate: 1.0e-5
+warmup_steps: 50
+
+# Output
+output_dir: "data/models/whisper-medical-lora"
+
+# Dataset
+train_data: "data/processed/primock57/train.json"
+val_data: "data/processed/primock57/val.json"
+test_data: "data/processed/primock57/test.json"

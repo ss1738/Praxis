@@ -1,0 +1,113 @@
+{
+  "source_file": "data/evaluation_results/streaming_eval_real_20260506_143329.json",
+  "estimated_p": 0.9113,
+  "p_diagnostic": {
+    "n_cases": 8,
+    "rates": [
+      1.0,
+      1.0,
+      1.0,
+      0.8889,
+      0.8182,
+      0.75,
+      1.0,
+      0.8333
+    ],
+    "mean": 0.9113,
+    "min": 0.75,
+    "max": 1.0
+  },
+  "delta": 0.1,
+  "delta_diagnostic": {
+    "source": "default conservative estimate",
+    "note": "calibrate against clinician labels post-panel"
+  },
+  "k": 3,
+  "N": 30,
+  "theoretical_epsilon": 1.0,
+  "theoretical_epsilon_asymptotic": 1.0,
+  "is_meaningful": false,
+  "empirical_streaming_rate": 0.0,
+  "bound_holds": true,
+  "bound_record": {
+    "p": 0.9113,
+    "delta": 0.1,
+    "k": 3,
+    "N": 30,
+    "per_position_bound": 0.277450736761021,
+    "per_position_asymptotic": 0.5067563810265252,
+    "note_level_bound": 1.0,
+    "note_level_asymptotic": 1.0,
+    "is_meaningful": false
+  },
+  "bound_grid": {
+    "p_grid": [
+      0.01,
+      0.05,
+      0.1,
+      0.2,
+      0.5,
+      0.9
+    ],
+    "delta_grid": [
+      0.01,
+      0.02,
+      0.05,
+      0.1,
+      0.2,
+      0.5
+    ],
+    "k": 3,
+    "N": 30,
+    "note_level_bound_matrix": [
+      [
+        0.003029996940897,
+        0.006059381887152,
+        0.015143866610624999,
+        0.030272451870000005,
+        0.06048387072,
+        0.15075376875
+      ],
+      [
+        0.015781073060625,
+        0.03154555947,
+        0.07873975664062502,
+        0.15706741875000005,
+        0.3124992000000001,
+        0.7692304687500001
+      ],
+      [
+        0.033293138970000004,
+        0.06651271151999999,
+        0.16573235625000005,
+        0.32964869999999996,
+        0.6521472000000003,
+        1.0
+      ],
+      [
+        0.07469798352,
+        0.14903346432,
+        0.3698877000000001,
+        0.7309392000000002,
+        1.0,
+        1.0
+      ],
+      [
+        0.27919685624999996,
+        0.5543247,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      [
+        0.9159018221700002,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    ]
+  }
+}

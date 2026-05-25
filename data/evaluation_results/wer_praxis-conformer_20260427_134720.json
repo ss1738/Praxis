@@ -1,0 +1,140 @@
+{
+  "model": "praxis-conformer",
+  "timestamp": "2026-04-27T12:47:20.653431+00:00",
+  "num_samples": 14,
+  "mean_wer": 0.5012,
+  "median_wer": 0.5017,
+  "ci_lower": 0.467,
+  "ci_upper": 0.5347,
+  "total_audio_secs": 7359.3,
+  "total_inference_secs": 363.7,
+  "mean_rtf": 0.044,
+  "samples": [
+    {
+      "audio_file": "day1_consultation02_doctor.wav",
+      "reference": "hello uh uh yes i think it's a bit better it's a bit it's a bit it's not very clear but let's continue anyway uh ok let's start again so how can i help you sir ok no no problem i'm happy to help um wh",
+      "hypothesis": "ll and yes a thing is a bit that so it's be is a bit if's not very clear about there t anyway uh ok just i goes so how can may help you there ok no problem't have you have um wereabout and mu skin is ",
+      "wer": 0.476,
+      "audio_duration_secs": 559.2,
+      "inference_secs": 27.67,
+      "rtf": 0.049
+    },
+    {
+      "audio_file": "day1_consultation02_patient.wav",
+      "reference": "hello can you hear me well ok yes so it's been a few days now i have like a sore and a red skin it's kind of it's really itchy and it's like super annoying so i'd like to find something quick to solve",
+      "hypothesis": "hell can you hear me anywhere ok yes so it's been there two days now i have my care so andenst in its kind of it'sach she and it's like spon so i like is something great all sorts uh mu you like my ch",
+      "wer": 0.6006,
+      "audio_duration_secs": 559.2,
+      "inference_secs": 26.44,
+      "rtf": 0.047
+    },
+    {
+      "audio_file": "day1_consultation08_doctor.wav",
+      "reference": "hello hello uh just before we go any further can i confirm your name and age please twenty six ok and how can i help you this afternoon ok um sorry to hear work's been so stressful um tell me more abo",
+      "hypothesis": "hello hello i difficult going further can confirm your name and age please ok and how can help you this doctor afternoon ok um sort hear works going say stress um tellmmy away skin first the tummy tha",
+      "wer": 0.5517,
+      "audio_duration_secs": 466.2,
+      "inference_secs": 14.63,
+      "rtf": 0.031
+    },
+    {
+      "audio_file": "day1_consultation08_patient.wav",
+      "reference": "ok ohh ok hello can you hear me uh my name's itha and i'm twenty six um so basically i've been really stressed at work for the past few days and i've realised that i've got really dry itchy skin all o",
+      "hypothesis": "ok no i can it helloo um no sp so um i so um it so days sixty i' been really stress up work the for few days um i really that i really dr it she'skin oh live in my arm um and my hand been um no no i t",
+      "wer": 0.5795,
+      "audio_duration_secs": 466.2,
+      "inference_secs": 14.65,
+      "rtf": 0.031
+    },
+    {
+      "audio_file": "day1_consultation15_doctor.wav",
+      "reference": "hello hello can you hear me great excellent before i go any further can i confirm you name and your um age please forty five alright laura well how can i help you this afternoon ok when when did this ",
+      "hypothesis": "hello hello can hear mek before going you furtheric confirm your name and your um age please what you fine i orra will' how can i help you this so afternoon great when whener this or start f ok has be",
+      "wer": 0.487,
+      "audio_duration_secs": 491.82,
+      "inference_secs": 16.93,
+      "rtf": 0.034
+    },
+    {
+      "audio_file": "day1_consultation15_patient.wav",
+      "reference": "hello yes uh yes um laura parkinson and uh i'm forty five uh yeah so i have uh soreness in my fingers my finger like the skin on my hands is kind of cracked um a couple of months ago i got it three fo",
+      "hypothesis": "noo yes uh yes i' the before uh f some and um forty fine uh so i have uh st noing my f wife f likekin of red it kind of correct um a couple of months ago i don three four a months ago yeah yeah i have",
+      "wer": 0.5165,
+      "audio_duration_secs": 491.76,
+      "inference_secs": 15.66,
+      "rtf": 0.032
+    },
+    {
+      "audio_file": "day2_consultation01_doctor.wav",
+      "reference": "hi there good morning uh i'm dr dean mesa from babylon can you hear me ok yeah ok great well nice to see you this morning um before we start your appointment could i confirm your full name and date of",
+      "hypothesis": "hi there good morning name um i' doctor de you not from babylon can you hear me ok yeahk great well i to see this's morning um before we' start quite when can can confirm your full moment date of birt",
+      "wer": 0.4673,
+      "audio_duration_secs": 329.16,
+      "inference_secs": 8.14,
+      "rtf": 0.025
+    },
+    {
+      "audio_file": "day2_consultation01_patient.wav",
+      "reference": "yep can you find uh yeah uh jack smith uh thirty first october nineteen ninety i am yes yeah so i just feel i can't really hear as well as i used to like my hearing is kind of deteriorating in some wa",
+      "hypothesis": "uh uh uh can five uh yeah uh just smith uh thanks first october nineteen ninety uh yes yes i just a a proper hear as i was i used to like what hear kind it's raing somewhere uh past sixt um i had some",
+      "wer": 0.5483,
+      "audio_duration_secs": 329.16,
+      "inference_secs": 8.23,
+      "rtf": 0.025
+    },
+    {
+      "audio_file": "day2_consultation03_doctor.wav",
+      "reference": "hi there good morning hello i i'm doctor nice to see you hi um so before we start your appointment could i confirm your full name and date of birth if that's ok you're ok fine so you're you're forty y",
+      "hypothesis": "hi there good morning name right uh doctor de get how last to you uhs for before we start your i confirm yourre full name in date of birth that's thek you ok fine it so you your're your you do said ye",
+      "wer": 0.4659,
+      "audio_duration_secs": 450.84,
+      "inference_secs": 14.19,
+      "rtf": 0.031
+    },
+    {
+      "audio_file": "day2_consultation03_patient.wav",
+      "reference": "hello hi nice to meet you hello uh yeah uh mary richards uh and my i'm forty years old so yep um so just been having some um problems with my hearing i can't really hear very well and my noticed that ",
+      "hypothesis": "uh uh yes um no really it good uh and my it i fty at all and yeah um say just's been nothinging um um problems it my hearin a co very well my not is of my face is been feeling a bit numbly thek um it'",
+      "wer": 0.5893,
+      "audio_duration_secs": 450.84,
+      "inference_secs": 14.1,
+      "rtf": 0.031
+    },
+    {
+      "audio_file": "day4_consultation06_doctor.wav",
+      "reference": "ah hello hi uh my name is doctor kumar i'm one of the gps here can i just get you to confirm your name and date of birth for me please date of birth and your date of birth again how can i help today o",
+      "hypothesis": "ok badkle hi and my name is doctor you hard um what the you she here can i just get you to confirm your name and date bth or meetings at that and you in big of birath great how can i helpk so is it st",
+      "wer": 0.4296,
+      "audio_duration_secs": 606.12,
+      "inference_secs": 31.03,
+      "rtf": 0.051
+    },
+    {
+      "audio_file": "day4_consultation06_patient.wav",
+      "reference": "hello uh yeah i'm maria yeah sorry um twenty second uh of march of um ninety um so i'm having like a really really strong headache i don't know what is happening i'm quite concerned so it started in t",
+      "hypothesis": "hello uh yeah marea yeah sorry um twenty just not of my an' off uh um ninety um so i' having like a really will is strong headache i don't know what this happening um quite and so so it's started in t",
+      "wer": 0.3767,
+      "audio_duration_secs": 606.12,
+      "inference_secs": 28.3,
+      "rtf": 0.047
+    },
+    {
+      "audio_file": "day5_consultation03_doctor.wav",
+      "reference": "hi there i'm doctor smith from babylon hi there can you just confirm your name date of birth and the first line of your address first of all please my name's ok are you in a private place where you ca",
+      "hypothesis": "hi there i'm doctor smith from babylon hi there can you confirm your name to birth in the first line of your address first or please ok doctor ok are you in a private place where you can have a confid",
+      "wer": 0.4033,
+      "audio_duration_secs": 776.34,
+      "inference_secs": 81.37,
+      "rtf": 0.105
+    },
+    {
+      "audio_file": "day5_consultation03_patient.wav",
+      "reference": "hi yeah uh my name is valerie cole my date of birth is the nineteenth of september nineteen ninety three my address is uh sixty four cliveden place in south wimbledon yes i am yeah um i've been feelin",
+      "hypothesis": "hi not uh my name bowll co deep for its uh thanking of september and bing thank three my address is uh sixty for fives in place in so ith than yes i yeah um i been doing really anxious over the past a",
+      "wer": 0.5258,
+      "audio_duration_secs": 776.34,
+      "inference_secs": 62.36,
+      "rtf": 0.08
+    }
+  ]
+}

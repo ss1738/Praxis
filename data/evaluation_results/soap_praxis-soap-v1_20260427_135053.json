@@ -1,0 +1,229 @@
+{
+  "timestamp": "2026-04-27T12:50:53.359301+00:00",
+  "model": "praxis-soap-v1",
+  "num_notes": 8,
+  "mean_section_completeness": 1.0,
+  "mean_snomed_count": 2.8,
+  "mean_medication_recall": 1.0,
+  "safety_netting_rate": 1.0,
+  "mean_trust_score": 70.625,
+  "notes": [
+    {
+      "note_id": "lower_back_pain",
+      "section_completeness": 1.0,
+      "sections_present": [
+        "subjective",
+        "objective",
+        "assessment",
+        "plan"
+      ],
+      "sections_missing": [],
+      "snomed_code_count": 3,
+      "snomed_codes": [
+        "373254001",
+        "386661006",
+        "161891005"
+      ],
+      "medication_recall": 1.0,
+      "meds_in_transcript": [],
+      "meds_in_note": [
+        "naproxen",
+        "paracetamol"
+      ],
+      "meds_missed": [],
+      "safety_netting_present": true,
+      "trust_score": 80,
+      "trust_verdict": "approved",
+      "word_count": 183
+    },
+    {
+      "note_id": "persistent_cough",
+      "section_completeness": 1.0,
+      "sections_present": [
+        "subjective",
+        "objective",
+        "assessment",
+        "plan"
+      ],
+      "sections_missing": [],
+      "snomed_code_count": 6,
+      "snomed_codes": [
+        "267036007",
+        "233604007",
+        "49727002",
+        "13645005",
+        "386661006",
+        "10509002"
+      ],
+      "medication_recall": 1.0,
+      "meds_in_transcript": [],
+      "meds_in_note": [],
+      "meds_missed": [],
+      "safety_netting_present": true,
+      "trust_score": 65,
+      "trust_verdict": "needs_review",
+      "word_count": 252
+    },
+    {
+      "note_id": "diabetes_review",
+      "section_completeness": 1.0,
+      "sections_present": [
+        "subjective",
+        "objective",
+        "assessment",
+        "plan"
+      ],
+      "sections_missing": [],
+      "snomed_code_count": 1,
+      "snomed_codes": [
+        "44054006"
+      ],
+      "medication_recall": 1.0,
+      "meds_in_transcript": [],
+      "meds_in_note": [
+        "atorvastatin",
+        "metformin"
+      ],
+      "meds_missed": [],
+      "safety_netting_present": true,
+      "trust_score": 80,
+      "trust_verdict": "approved",
+      "word_count": 180
+    },
+    {
+      "note_id": "mental_health_-_anxiety",
+      "section_completeness": 1.0,
+      "sections_present": [
+        "subjective",
+        "objective",
+        "assessment",
+        "plan"
+      ],
+      "sections_missing": [],
+      "snomed_code_count": 3,
+      "snomed_codes": [
+        "1003403007",
+        "197480006",
+        "25064002"
+      ],
+      "medication_recall": 1.0,
+      "meds_in_transcript": [],
+      "meds_in_note": [
+        "sertraline"
+      ],
+      "meds_missed": [],
+      "safety_netting_present": true,
+      "trust_score": 60,
+      "trust_verdict": "needs_review",
+      "word_count": 210
+    },
+    {
+      "note_id": "chest_infection",
+      "section_completeness": 1.0,
+      "sections_present": [
+        "subjective",
+        "objective",
+        "assessment",
+        "plan"
+      ],
+      "sections_missing": [],
+      "snomed_code_count": 5,
+      "snomed_codes": [
+        "267036007",
+        "372756006",
+        "49727002",
+        "386661006",
+        "10509002"
+      ],
+      "medication_recall": 1.0,
+      "meds_in_transcript": [],
+      "meds_in_note": [
+        "amoxicillin",
+        "paracetamol",
+        "salbutamol"
+      ],
+      "meds_missed": [],
+      "safety_netting_present": true,
+      "trust_score": 65,
+      "trust_verdict": "needs_review",
+      "word_count": 201
+    },
+    {
+      "note_id": "hypertension_review",
+      "section_completeness": 1.0,
+      "sections_present": [
+        "subjective",
+        "objective",
+        "assessment",
+        "plan"
+      ],
+      "sections_missing": [],
+      "snomed_code_count": 1,
+      "snomed_codes": [
+        "38341003"
+      ],
+      "medication_recall": 1.0,
+      "meds_in_transcript": [],
+      "meds_in_note": [
+        "ramipril"
+      ],
+      "meds_missed": [],
+      "safety_netting_present": true,
+      "trust_score": 60,
+      "trust_verdict": "needs_review",
+      "word_count": 168
+    },
+    {
+      "note_id": "paediatric_ear_infection",
+      "section_completeness": 1.0,
+      "sections_present": [
+        "subjective",
+        "objective",
+        "assessment",
+        "plan"
+      ],
+      "sections_missing": [],
+      "snomed_code_count": 2,
+      "snomed_codes": [
+        "372756006",
+        "65363002"
+      ],
+      "medication_recall": 1.0,
+      "meds_in_transcript": [],
+      "meds_in_note": [
+        "amoxicillin",
+        "ibuprofen",
+        "paracetamol"
+      ],
+      "meds_missed": [],
+      "safety_netting_present": true,
+      "trust_score": 80,
+      "trust_verdict": "approved",
+      "word_count": 181
+    },
+    {
+      "note_id": "skin_lesion_assessment",
+      "section_completeness": 1.0,
+      "sections_present": [
+        "subjective",
+        "objective",
+        "assessment",
+        "plan"
+      ],
+      "sections_missing": [],
+      "snomed_code_count": 1,
+      "snomed_codes": [
+        "32343005"
+      ],
+      "medication_recall": 1.0,
+      "meds_in_transcript": [],
+      "meds_in_note": [],
+      "meds_missed": [],
+      "safety_netting_present": true,
+      "trust_score": 95,
+      "trust_verdict": "approved",
+      "word_count": 178
+    }
+  ],
+  "trust_score_note": "re-synced to 2026-05-24 TrustScore rerun (verification.py); was 73.1"
+}

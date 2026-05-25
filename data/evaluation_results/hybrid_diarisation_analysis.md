@@ -1,0 +1,5 @@
+| Condition | Mean DER | Median DER |
+|---|---|---|
+| TIMBRE baseline | 44.30% | 43.94% |
+| Hybrid (pyannote VAD + TIMBRE + KMeans) | 10.05% | 10.10% |
+| Pyannote 3.1 full pipeline | 10.45% | 10.21% |

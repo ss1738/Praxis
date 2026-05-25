@@ -1,0 +1,79 @@
+\begin{tabular}{lrrrrr}
+\toprule
+Decoder & $n$ & Mean WER (\%) & Mean CE-WER (\%) & CE-WER 95\% CI (\%) & Clinical tokens / sample \\
+\midrule
+greedy & 14 & 56.22 & 88.64 & [72.16, 100.00] & 5.1 \\
+beam\_nobias & 14 & 49.76 & 88.64 & [72.16, 100.00] & 5.1 \\
+\bottomrule
+\end{tabular}
+
+
+% --- MTER per suffix (greedy) ---
+\begin{tabular}{lrrrrr}
+\toprule
+Suffix & Ref hits & Exact match & Suffix-only match & Complete omission & Exact-recovery rate (\%) \\
+\midrule
+itis & 6 & 0 & 0 & 6 & 0.0 \\
+osis & 2 & 0 & 0 & 2 & 0.0 \\
+emia & 0 & 0 & 0 & 0 & 0.0 \\
+aemia & 0 & 0 & 0 & 0 & 0.0 \\
+oma & 0 & 0 & 0 & 0 & 0.0 \\
+rrhoea & 0 & 0 & 0 & 0 & 0.0 \\
+phagia & 0 & 0 & 0 & 0 & 0.0 \\
+pathy & 0 & 0 & 0 & 0 & 0.0 \\
+ectomy & 0 & 0 & 0 & 0 & 0.0 \\
+otomy & 0 & 0 & 0 & 0 & 0.0 \\
+plasty & 0 & 0 & 0 & 0 & 0.0 \\
+algia & 0 & 0 & 0 & 0 & 0.0 \\
+gram & 0 & 0 & 0 & 0 & 0.0 \\
+scopy & 0 & 0 & 0 & 0 & 0.0 \\
+cillin & 0 & 0 & 0 & 0 & 0.0 \\
+azole & 0 & 0 & 0 & 0 & 0.0 \\
+olol & 0 & 0 & 0 & 0 & 0.0 \\
+pril & 0 & 0 & 0 & 0 & 0.0 \\
+sartan & 0 & 0 & 0 & 0 & 0.0 \\
+statin & 0 & 0 & 0 & 0 & 0.0 \\
+zepam & 0 & 0 & 0 & 0 & 0.0 \\
+profen & 2 & 0 & 0 & 2 & 0.0 \\
+caine & 0 & 0 & 0 & 0 & 0.0 \\
+mycin & 0 & 0 & 0 & 0 & 0.0 \\
+cycline & 0 & 0 & 0 & 0 & 0.0 \\
+pramine & 0 & 0 & 0 & 0 & 0.0 \\
+dipine & 0 & 0 & 0 & 0 & 0.0 \\
+\bottomrule
+\end{tabular}
+
+% --- MTER per suffix (beam_nobias) ---
+\begin{tabular}{lrrrrr}
+\toprule
+Suffix & Ref hits & Exact match & Suffix-only match & Complete omission & Exact-recovery rate (\%) \\
+\midrule
+itis & 6 & 0 & 0 & 6 & 0.0 \\
+osis & 2 & 0 & 0 & 2 & 0.0 \\
+emia & 0 & 0 & 0 & 0 & 0.0 \\
+aemia & 0 & 0 & 0 & 0 & 0.0 \\
+oma & 0 & 0 & 0 & 0 & 0.0 \\
+rrhoea & 0 & 0 & 0 & 0 & 0.0 \\
+phagia & 0 & 0 & 0 & 0 & 0.0 \\
+pathy & 0 & 0 & 0 & 0 & 0.0 \\
+ectomy & 0 & 0 & 0 & 0 & 0.0 \\
+otomy & 0 & 0 & 0 & 0 & 0.0 \\
+plasty & 0 & 0 & 0 & 0 & 0.0 \\
+algia & 0 & 0 & 0 & 0 & 0.0 \\
+gram & 0 & 0 & 0 & 0 & 0.0 \\
+scopy & 0 & 0 & 0 & 0 & 0.0 \\
+cillin & 0 & 0 & 0 & 0 & 0.0 \\
+azole & 0 & 0 & 0 & 0 & 0.0 \\
+olol & 0 & 0 & 0 & 0 & 0.0 \\
+pril & 0 & 0 & 0 & 0 & 0.0 \\
+sartan & 0 & 0 & 0 & 0 & 0.0 \\
+statin & 0 & 0 & 0 & 0 & 0.0 \\
+zepam & 0 & 0 & 0 & 0 & 0.0 \\
+profen & 2 & 0 & 0 & 2 & 0.0 \\
+caine & 0 & 0 & 0 & 0 & 0.0 \\
+mycin & 0 & 0 & 0 & 0 & 0.0 \\
+cycline & 0 & 0 & 0 & 0 & 0.0 \\
+pramine & 0 & 0 & 0 & 0 & 0.0 \\
+dipine & 0 & 0 & 0 & 0 & 0.0 \\
+\bottomrule
+\end{tabular}

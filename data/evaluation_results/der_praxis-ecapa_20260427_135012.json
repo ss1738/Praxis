@@ -1,0 +1,115 @@
+{
+  "model": "praxis-ecapa",
+  "model_description": "Custom ECAPA-TDNN (5.8M params, 256-dim)",
+  "timestamp": "2026-04-27T12:50:12.934651+00:00",
+  "num_samples": 10,
+  "speaker_count_accuracy": 0.0,
+  "mean_segments_per_sample": 101.0,
+  "total_audio_secs": 5898.06,
+  "total_inference_secs": 48.31,
+  "mean_rtf": 0.009,
+  "rtf_ci_lower": 0.008,
+  "rtf_ci_upper": 0.01,
+  "samples": [
+    {
+      "audio_file": "day1_consultation01_doctor.wav",
+      "expected_speakers": 1,
+      "detected_speakers": 2,
+      "speaker_count_correct": false,
+      "num_segments": 70,
+      "audio_duration_secs": 457.92,
+      "inference_secs": 6.22,
+      "rtf": 0.014
+    },
+    {
+      "audio_file": "day1_consultation02_doctor.wav",
+      "expected_speakers": 1,
+      "detected_speakers": 2,
+      "speaker_count_correct": false,
+      "num_segments": 87,
+      "audio_duration_secs": 559.2,
+      "inference_secs": 4.33,
+      "rtf": 0.008
+    },
+    {
+      "audio_file": "day1_consultation03_doctor.wav",
+      "expected_speakers": 1,
+      "detected_speakers": 2,
+      "speaker_count_correct": false,
+      "num_segments": 82,
+      "audio_duration_secs": 544.32,
+      "inference_secs": 4.11,
+      "rtf": 0.008
+    },
+    {
+      "audio_file": "day1_consultation04_doctor.wav",
+      "expected_speakers": 1,
+      "detected_speakers": 2,
+      "speaker_count_correct": false,
+      "num_segments": 113,
+      "audio_duration_secs": 615.48,
+      "inference_secs": 4.74,
+      "rtf": 0.008
+    },
+    {
+      "audio_file": "day1_consultation05_doctor.wav",
+      "expected_speakers": 1,
+      "detected_speakers": 2,
+      "speaker_count_correct": false,
+      "num_segments": 96,
+      "audio_duration_secs": 577.02,
+      "inference_secs": 4.38,
+      "rtf": 0.008
+    },
+    {
+      "audio_file": "day1_consultation06_doctor.wav",
+      "expected_speakers": 1,
+      "detected_speakers": 2,
+      "speaker_count_correct": false,
+      "num_segments": 128,
+      "audio_duration_secs": 662.52,
+      "inference_secs": 5.22,
+      "rtf": 0.008
+    },
+    {
+      "audio_file": "day1_consultation07_doctor.wav",
+      "expected_speakers": 1,
+      "detected_speakers": 2,
+      "speaker_count_correct": false,
+      "num_segments": 170,
+      "audio_duration_secs": 858.24,
+      "inference_secs": 6.63,
+      "rtf": 0.008
+    },
+    {
+      "audio_file": "day1_consultation08_doctor.wav",
+      "expected_speakers": 1,
+      "detected_speakers": 2,
+      "speaker_count_correct": false,
+      "num_segments": 80,
+      "audio_duration_secs": 466.2,
+      "inference_secs": 3.74,
+      "rtf": 0.008
+    },
+    {
+      "audio_file": "day1_consultation09_doctor.wav",
+      "expected_speakers": 1,
+      "detected_speakers": 2,
+      "speaker_count_correct": false,
+      "num_segments": 84,
+      "audio_duration_secs": 536.82,
+      "inference_secs": 4.21,
+      "rtf": 0.008
+    },
+    {
+      "audio_file": "day1_consultation10_doctor.wav",
+      "expected_speakers": 1,
+      "detected_speakers": 2,
+      "speaker_count_correct": false,
+      "num_segments": 100,
+      "audio_duration_secs": 620.34,
+      "inference_secs": 4.73,
+      "rtf": 0.008
+    }
+  ]
+}

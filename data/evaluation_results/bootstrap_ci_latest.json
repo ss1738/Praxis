@@ -1,0 +1,226 @@
+{
+  "n_iter": 1000,
+  "seed": 42,
+  "ci_method": "percentile_bootstrap",
+  "ci_pct": 95.0,
+  "results": {
+    "trustscore_rerun_2026_05": [
+      {
+        "model": "praxis-soap-v1",
+        "n": 8,
+        "mean": 70.625,
+        "median": 72.5,
+        "std": 12.3744,
+        "ci_lower": 63.1094,
+        "ci_upper": 78.1406,
+        "ci_method": "percentile_bootstrap",
+        "n_iter": 1000,
+        "seed": 42
+      },
+      {
+        "model": "med42",
+        "n": 8,
+        "mean": 69.375,
+        "median": 70.0,
+        "std": 10.8356,
+        "ci_lower": 62.5,
+        "ci_upper": 76.25,
+        "ci_method": "percentile_bootstrap",
+        "n_iter": 1000,
+        "seed": 42
+      },
+      {
+        "model": "meditron:7b",
+        "n": 8,
+        "mean": 49.375,
+        "median": 45.0,
+        "std": 14.5006,
+        "ci_lower": 43.125,
+        "ci_upper": 60.0,
+        "ci_method": "percentile_bootstrap",
+        "n_iter": 1000,
+        "seed": 42
+      },
+      {
+        "model": "mistral",
+        "n": 8,
+        "mean": 65.625,
+        "median": 65.0,
+        "std": 11.4759,
+        "ci_lower": 58.75,
+        "ci_upper": 72.5,
+        "ci_method": "percentile_bootstrap",
+        "n_iter": 1000,
+        "seed": 42
+      }
+    ],
+    "rule_based_scorer": [
+      {
+        "model": "praxis-soap-v1",
+        "n": 8,
+        "mean": 0.98,
+        "median": 0.98,
+        "std": 0.0214,
+        "ci_lower": 0.965,
+        "ci_upper": 0.995,
+        "ci_method": "percentile_bootstrap",
+        "n_iter": 1000,
+        "seed": 42
+      },
+      {
+        "model": "med42",
+        "n": 8,
+        "mean": 0.9688,
+        "median": 0.96,
+        "std": 0.0309,
+        "ci_lower": 0.9463,
+        "ci_upper": 0.9851,
+        "ci_method": "percentile_bootstrap",
+        "n_iter": 1000,
+        "seed": 42
+      },
+      {
+        "model": "meditron:7b",
+        "n": 8,
+        "mean": 0.7688,
+        "median": 0.77,
+        "std": 0.1256,
+        "ci_lower": 0.68,
+        "ci_upper": 0.8562,
+        "ci_method": "percentile_bootstrap",
+        "n_iter": 1000,
+        "seed": 42
+      },
+      {
+        "model": "mistral",
+        "n": 8,
+        "mean": 0.9788,
+        "median": 1.0,
+        "std": 0.0331,
+        "ci_lower": 0.9563,
+        "ci_upper": 0.995,
+        "ci_method": "percentile_bootstrap",
+        "n_iter": 1000,
+        "seed": 42
+      }
+    ],
+    "llm_judge_mistral_latest_20260522_115849": [
+      {
+        "model": "praxis-soap-v1",
+        "n": 8,
+        "mean": 0.9625,
+        "median": 0.98,
+        "std": 0.0243,
+        "ci_lower": 0.9463,
+        "ci_upper": 0.98,
+        "ci_method": "percentile_bootstrap",
+        "n_iter": 1000,
+        "seed": 42
+      },
+      {
+        "model": "med42",
+        "n": 8,
+        "mean": 0.9688,
+        "median": 0.98,
+        "std": 0.021,
+        "ci_lower": 0.9537,
+        "ci_upper": 0.98,
+        "ci_method": "percentile_bootstrap",
+        "n_iter": 1000,
+        "seed": 42
+      },
+      {
+        "model": "meditron:7b",
+        "n": 8,
+        "mean": 0.915,
+        "median": 0.99,
+        "std": 0.1324,
+        "ci_lower": 0.8263,
+        "ci_upper": 0.9912,
+        "ci_method": "percentile_bootstrap",
+        "n_iter": 1000,
+        "seed": 42
+      },
+      {
+        "model": "mistral",
+        "n": 8,
+        "mean": 0.98,
+        "median": 0.98,
+        "std": 0.0,
+        "ci_lower": 0.98,
+        "ci_upper": 0.98,
+        "ci_method": "percentile_bootstrap",
+        "n_iter": 1000,
+        "seed": 42
+      }
+    ],
+    "llm_judge_llama3.1_8b_20260522_123941": [
+      {
+        "model": "praxis-soap-v1",
+        "n": 8,
+        "mean": 0.8788,
+        "median": 0.88,
+        "std": 0.0125,
+        "ci_lower": 0.87,
+        "ci_upper": 0.8862,
+        "ci_method": "percentile_bootstrap",
+        "n_iter": 1000,
+        "seed": 42
+      },
+      {
+        "model": "med42",
+        "n": 8,
+        "mean": 0.8788,
+        "median": 0.89,
+        "std": 0.0155,
+        "ci_lower": 0.8675,
+        "ci_upper": 0.8862,
+        "ci_method": "percentile_bootstrap",
+        "n_iter": 1000,
+        "seed": 42
+      },
+      {
+        "model": "meditron:7b",
+        "n": 8,
+        "mean": 0.7637,
+        "median": 0.87,
+        "std": 0.3098,
+        "ci_lower": 0.545,
+        "ci_upper": 0.885,
+        "ci_method": "percentile_bootstrap",
+        "n_iter": 1000,
+        "seed": 42
+      },
+      {
+        "model": "mistral",
+        "n": 8,
+        "mean": 0.89,
+        "median": 0.89,
+        "std": 0.0,
+        "ci_lower": 0.89,
+        "ci_upper": 0.89,
+        "ci_method": "percentile_bootstrap",
+        "n_iter": 1000,
+        "seed": 42
+      }
+    ]
+  },
+  "tables": {
+    "trustscore_rerun_2026_05": {
+      "markdown": "| Model | n | Mean | Std | 95% CI lower | 95% CI upper |\n|---|---|---|---|---|---|\n| `praxis-soap-v1` | 8 | 70.625 | 12.374 | 63.109 | 78.141 |\n| `med42` | 8 | 69.375 | 10.836 | 62.500 | 76.250 |\n| `meditron:7b` | 8 | 49.375 | 14.501 | 43.125 | 60.000 |\n| `mistral` | 8 | 65.625 | 11.476 | 58.750 | 72.500 |\n",
+      "latex": "\\begin{tabular}{lrrrrr}\n\\toprule\nModel & $n$ & Mean & Std & 95\\% CI lower & 95\\% CI upper \\\\\n\\midrule\npraxis-soap-v1 & 8 & 70.625 & 12.374 & 63.109 & 78.141 \\\\\nmed42 & 8 & 69.375 & 10.836 & 62.500 & 76.250 \\\\\nmeditron:7b & 8 & 49.375 & 14.501 & 43.125 & 60.000 \\\\\nmistral & 8 & 65.625 & 11.476 & 58.750 & 72.500 \\\\\n\\bottomrule\n\\end{tabular}\n"
+    },
+    "rule_based_scorer": {
+      "markdown": "| Model | n | Mean | Std | 95% CI lower | 95% CI upper |\n|---|---|---|---|---|---|\n| `praxis-soap-v1` | 8 | 0.980 | 0.021 | 0.965 | 0.995 |\n| `med42` | 8 | 0.969 | 0.031 | 0.946 | 0.985 |\n| `meditron:7b` | 8 | 0.769 | 0.126 | 0.680 | 0.856 |\n| `mistral` | 8 | 0.979 | 0.033 | 0.956 | 0.995 |\n",
+      "latex": "\\begin{tabular}{lrrrrr}\n\\toprule\nModel & $n$ & Mean & Std & 95\\% CI lower & 95\\% CI upper \\\\\n\\midrule\npraxis-soap-v1 & 8 & 0.980 & 0.021 & 0.965 & 0.995 \\\\\nmed42 & 8 & 0.969 & 0.031 & 0.946 & 0.985 \\\\\nmeditron:7b & 8 & 0.769 & 0.126 & 0.680 & 0.856 \\\\\nmistral & 8 & 0.979 & 0.033 & 0.956 & 0.995 \\\\\n\\bottomrule\n\\end{tabular}\n"
+    },
+    "llm_judge_mistral_latest_20260522_115849": {
+      "markdown": "| Model | n | Mean | Std | 95% CI lower | 95% CI upper |\n|---|---|---|---|---|---|\n| `praxis-soap-v1` | 8 | 0.963 | 0.024 | 0.946 | 0.980 |\n| `med42` | 8 | 0.969 | 0.021 | 0.954 | 0.980 |\n| `meditron:7b` | 8 | 0.915 | 0.132 | 0.826 | 0.991 |\n| `mistral` | 8 | 0.980 | 0.000 | 0.980 | 0.980 |\n",
+      "latex": "\\begin{tabular}{lrrrrr}\n\\toprule\nModel & $n$ & Mean & Std & 95\\% CI lower & 95\\% CI upper \\\\\n\\midrule\npraxis-soap-v1 & 8 & 0.963 & 0.024 & 0.946 & 0.980 \\\\\nmed42 & 8 & 0.969 & 0.021 & 0.954 & 0.980 \\\\\nmeditron:7b & 8 & 0.915 & 0.132 & 0.826 & 0.991 \\\\\nmistral & 8 & 0.980 & 0.000 & 0.980 & 0.980 \\\\\n\\bottomrule\n\\end{tabular}\n"
+    },
+    "llm_judge_llama3.1_8b_20260522_123941": {
+      "markdown": "| Model | n | Mean | Std | 95% CI lower | 95% CI upper |\n|---|---|---|---|---|---|\n| `praxis-soap-v1` | 8 | 0.879 | 0.013 | 0.870 | 0.886 |\n| `med42` | 8 | 0.879 | 0.015 | 0.868 | 0.886 |\n| `meditron:7b` | 8 | 0.764 | 0.310 | 0.545 | 0.885 |\n| `mistral` | 8 | 0.890 | 0.000 | 0.890 | 0.890 |\n",
+      "latex": "\\begin{tabular}{lrrrrr}\n\\toprule\nModel & $n$ & Mean & Std & 95\\% CI lower & 95\\% CI upper \\\\\n\\midrule\npraxis-soap-v1 & 8 & 0.879 & 0.013 & 0.870 & 0.886 \\\\\nmed42 & 8 & 0.879 & 0.015 & 0.868 & 0.886 \\\\\nmeditron:7b & 8 & 0.764 & 0.310 & 0.545 & 0.885 \\\\\nmistral & 8 & 0.890 & 0.000 & 0.890 & 0.890 \\\\\n\\bottomrule\n\\end{tabular}\n"
+    }
+  }
+}
