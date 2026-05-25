@@ -267,6 +267,9 @@ class ClinicalScribePipeline:
         t0 = time.perf_counter()
 
         # Stage 0: STT
+        # Uses the Whisper baseline so the audio->SOAP path is turn-key without the
+        # private PRAXIS-AUSCULT checkpoint. Switch to EngineType.PRAXIS_CONFORMER to
+        # run the contributed model (requires best_primock57.pt locally; see README).
         logger.info("Stage 0: Speech-to-text...")
         preprocessor = AudioPreprocessor()
         engine = create_engine(EngineType.WHISPER)

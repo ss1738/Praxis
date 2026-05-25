@@ -165,6 +165,8 @@ An external reviewer needs the following in addition to `make install` to reprod
 
 Pull both with `huggingface-cli download Satyawan1/praxis-auscult --local-dir data/models/conformer_v2` and the analogous command for praxis-timbre. Without these files, `make demo`, `make benchmark-asr`, and `make benchmark-der` will fail to load weights.
 
+**Which ASR engine runs.** PRAXIS supports four speech engines: the contributed **PRAXIS-AUSCULT** Conformer-CTC (`engine=praxis_conformer`) plus MedASR, Whisper, and faster-whisper baselines used for the WER comparison above. So the system stays turn-key for a reviewer who has not downloaded the private checkpoint, the default transcription route and the audio→SOAP pipeline use a baseline engine (auto-downloaded from Hugging Face on first use). To run the contributed model, download the `praxis-auscult` checkpoint above and pass `engine=praxis_conformer` (the engine raises a clear `FileNotFoundError` if the checkpoint is absent). All headline WER numbers in this README are PRAXIS-AUSCULT, not the baseline default.
+
 **2. `requirements.txt` uses range pins (`>=major.minor,<next-major`), not exact pins.** Versions are reproducible at the major-version level but not bit-exact. There is no `requirements.lock`. For bit-exact reproduction, capture `pip freeze > requirements.lock.txt` after a successful install and pin from there.
 
 ## Project Structure

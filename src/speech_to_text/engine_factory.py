@@ -30,6 +30,10 @@ def create_engine(
     engine_type: EngineType = EngineType.MEDASR,
     **kwargs,
 ) -> ASREngine:
+    # The default is a baseline (MedASR) rather than PRAXIS_CONFORMER on purpose:
+    # baselines auto-download from Hugging Face, so the system is turn-key without
+    # the private PRAXIS-AUSCULT checkpoint. Pass EngineType.PRAXIS_CONFORMER to run
+    # the contributed model (requires best_primock57.pt locally; see README).
     if engine_type == EngineType.MEDASR:
         from src.speech_to_text.medasr_engine import MedASREngine
         return MedASREngine(**kwargs)

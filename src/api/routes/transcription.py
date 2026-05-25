@@ -33,7 +33,12 @@ def _get_engine(engine_type: EngineType):
 @router.post("/transcribe", response_model=TranscribeResponse)
 async def transcribe_audio(
     file: UploadFile = File(..., description="Audio file (WAV, MP3, FLAC, OGG)"),
-    engine: EngineType = Query(default=EngineType.MEDASR, description="ASR engine"),
+    engine: EngineType = Query(
+        default=EngineType.MEDASR,
+        description="ASR engine. Default is a baseline (MedASR) so the endpoint is "
+        "turn-key without the private PRAXIS-AUSCULT checkpoint; pass "
+        "'praxis_conformer' to run the contributed model (needs best_primock57.pt).",
+    ),
     apply_spell_check: bool = Query(default=True, description="Apply medical spell-checker"),
 ):
     """Upload audio, get transcription back."""
